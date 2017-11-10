@@ -1,4 +1,4 @@
-/////                                                  \\\\\
+ï»¿/////                                                  \\\\\
 ///// EE descriptions                                  \\\\\
 /////                                                  \\\\\
 
@@ -11,57 +11,57 @@ Memoriza un hechizo extra de nivel 1
 
 Peso: 2
 ~
-@505 =~Juzam Reghanna nunca salía de su biblioteca, aunque a pesar de esto hizo varios viajes dentro de Amn en busca de conocimientos perdidos. Este bastón le permitió volver sano y salvo mas de una vez.
+@505 =~Juzam Reghanna nunca salÃ­a de su biblioteca, aunque a pesar de esto hizo varios viajes dentro de Amn en busca de conocimientos perdidos. Este bastÃ³n le permitiÃ³ volver sano y salvo mas de una vez.
 
-ESTADÍSTICAS:
+ESTADÃSTICAS:
 
 Habilidades:
- Lanza Imagen Espejada dos veces al día
- Lanza Blindness dos veces al día
+ Lanza Imagen Espejada dos veces al dÃ­a
+ Lanza Blindness dos veces al dÃ­a
 
 THAC0:  +2 bonus
-Daño:  1D6 + 2
-Tipo de Daño:  Aplastante
+DaÃ±o:  1D6 + 2
+Tipo de DaÃ±o:  Aplastante
 Peso: 3
 Factor de Velocidad: 3
-Tipo de Talento: Bastón
-Tipo:  dos puños
+Tipo de Talento: BastÃ³n
+Tipo:  dos puÃ±os
 Requiere: 5 Fuerza y 9 inteligencia
 ~
-@507 =~Khalvar Sagresshim era un gran Aterador quien se pasó la mayoría de la vida estudiando a los gorgons. Eventualmente ganó tanto conocimiento que pudo crear este gran bastón.
+@507 =~Khalvar Sagresshim era un gran Aterador quien se pasÃ³ la mayorÃ­a de la vida estudiando a los gorgons. Eventualmente ganÃ³ tanto conocimiento que pudo crear este gran bastÃ³n.
 
-ESTADÍSTICAS:
+ESTADÃSTICAS:
 
 Habilidades Equipadas:
  +3 AC Bonus
- +3 a todas las tiradas de salvación
- Protección contra Petrificación
- Inmune al daño Acido
+ +3 a todas las tiradas de salvaciÃ³n
+ ProtecciÃ³n contra PetrificaciÃ³n
+ Inmune al daÃ±o Acido
  Invisibilidad
 
 Habilidades Especiales:
- Lanza De la Carne a la Piedra 2 veces al día
- Lanza Flecha Acida de Melf 5 veces al día
+ Lanza De la Carne a la Piedra 2 veces al dÃ­a
+ Lanza Flecha Acida de Melf 5 veces al dÃ­a
 
 Habilidades de Combate:
  Disipar Magia en cada golpe
 
 THAC0: +5
-Daño: 1d6 +5, +1d4 daño ácido
-Daño Tipo: Aplastante
+DaÃ±o: 1d6 +5, +1d4 daÃ±o Ã¡cido
+DaÃ±o Tipo: Aplastante
 Peso: 4
 Factor de Velocidad: 1
-Tipo de Talento: Bastón
- Tipo: 2-Puños
-Requiere: 17 inteligencia y 15 Constitución
+Tipo de Talento: BastÃ³n
+ Tipo: 2-PuÃ±os
+Requiere: 17 inteligencia y 15 ConstituciÃ³n
 ~
-@509 =~Joorg era un bandido en las tierras que rodean a los Diez Plueblos. Por casi cuatro años, él y su banda de orcos, hobgoblins y ogros sembraron el terror entre las vias comerciales y los pueblerinos. No fué hasta que asaltaron una caravana en la que viajaba la familia de Lord Maarsken que los aprendieron. Lord Maarsken le dió esta arma al capitán de la brigada despachada para asegurarse que trajera a los bandidos a la justicia.
+@509 =~Joorg era un bandido en las tierras que rodean a los Diez Plueblos. Por casi cuatro aÃ±os, Ã©l y su banda de orcos, hobgoblins y ogros sembraron el terror entre las vias comerciales y los pueblerinos. No fuÃ© hasta que asaltaron una caravana en la que viajaba la familia de Lord Maarsken que los aprendieron. Lord Maarsken le diÃ³ esta arma al capitÃ¡n de la brigada despachada para asegurarse que trajera a los bandidos a la justicia.
 
-ESTADÍSTICAS:
+ESTADÃSTICAS:
 
 Habilidades Equipadas:
  +1 Fuerza
- +2 Constitución
+ +2 ConstituciÃ³n
  -2 Destreza
  Regenera 2 hp/turno
 
@@ -69,42 +69,42 @@ Habilidades de Combate:
  5% de probabilidades de golpe vorpal
 
 THAC0:  +4 bonus
-Daño:  2D6 + 4
-Tipo de Daño:  cortante
+DaÃ±o:  2D6 + 4
+Tipo de DaÃ±o:  cortante
 Peso: 20
 Factor de Velocidad: 6
 Tipo de Talento: Hacha
-Tipo:  2-Puños
+Tipo:  2-PuÃ±os
 Requiere: 18 Fuerza
 ~
-@511 =~Geirthan Agghadrais era seguidor de Tempus del área de los Diez Pueblos. Al servicio de su dios luchó en varias campañas. En una de ellas, fué acusado de un crimen por un grupo de abjuradores y luego de un muy corto juicio fué encarcelado en las entrañas de la tierra. Meses después se descubrió que no había hecho mal, y en con un gran sentimiento de culpa, Henstraadt, el abjurador que lo condenó, lo liberó y le dió esta armadura que no volvería a permitir que esto ocurriera nuevamente.
+@511 =~Geirthan Agghadrais era seguidor de Tempus del Ã¡rea de los Diez Pueblos. Al servicio de su dios luchÃ³ en varias campaÃ±as. En una de ellas, fuÃ© acusado de un crimen por un grupo de abjuradores y luego de un muy corto juicio fuÃ© encarcelado en las entraÃ±as de la tierra. Meses despuÃ©s se descubriÃ³ que no habÃ­a hecho mal, y en con un gran sentimiento de culpa, Henstraadt, el abjurador que lo condenÃ³, lo liberÃ³ y le diÃ³ esta armadura que no volverÃ­a a permitir que esto ocurriera nuevamente.
 
-ESTADÍSTICAS:
+ESTADÃSTICAS:
 
 Habilidades:
  Inmune a Magia Muerta
- Inmune a Escuela de Magia: Abjuración
+ Inmune a Escuela de Magia: AbjuraciÃ³n
 Clase de Armadura: -4
 Peso: 50
 Requiere: 18 Fuerza
 ~
-@513 =~Como lo dice el nombre, esta espada le confiere a quien la usa el poder de nunca estar en situación de no poder moverse. 
+@513 =~Como lo dice el nombre, esta espada le confiere a quien la usa el poder de nunca estar en situaciÃ³n de no poder moverse. 
 
-ESTADÍSTICAS:
+ESTADÃSTICAS:
 
 Habilidades Equipadas:
  Inmune a casi todo lo que afecte la movilidad
- Protección del Plano Negativo
+ ProtecciÃ³n del Plano Negativo
 
 Habilidades Especiales:
- Lanza Celeridad Mejorada 2 veces al día
+ Lanza Celeridad Mejorada 2 veces al dÃ­a
 
 THAC0: +5
-Daño:  2D4 +5
-Tipo de Daño:  cortante
+DaÃ±o:  2D4 +5
+Tipo de DaÃ±o:  cortante
 Peso: 3
 Factor de Velocidad: 0
 Tipo de Talento: Espada Larga
-Tipo:  1-Puños
+Tipo:  1-PuÃ±os
 Requiere: 9 Fuerza
 ~

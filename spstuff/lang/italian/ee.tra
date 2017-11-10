@@ -5,108 +5,123 @@
 // since EE generates usabilities automatically, we have to cut them from the descript
 // otherwise these are identical to the descriptions in setup.tra
 
-@503 =~Una leggenda racconta che questo particolare tipo di pietra Ioun venne forgiata con l'anima imprigionata di un mago Zhentarim. Questa polverosa pietra ioun garantir‡ a chi la indossa la capacit‡ di memorizzare un incantesimo extra di primo livello.
+@503 =~Una leggenda racconta che questo particolare tipo di pietra ioun viene forgiata con l'anima imprigionata di un mago Zhentarim. Questa pietra ioun color rosa antico garantir√† a chi la porta la capacit√† di memorizzare un incantesimo addizionale di primo livello.
 
 STATISTICHE:
 
-Memorizza un incantesimo extra di primo livello
+Abilit√† durante l'uso:
+- Il portatore pu√≤ memorizzare un incantesimo addizionale di 1¬∞ livello
 
 Peso: 2
 ~
-@505 =~Noto per il suo stile di vita accademico, Juzam Reghanna fu sempre restio all'idea di allontanarsi dalla sua biblioteca. CiÚ nonostante, fece diversi viaggi nelle campagne di Amn allo scopo di cercare conoscenze perdute o dimenticate da aggiungere alla sua vasta collezione di sapere. Questo bastone lo aiutÚ a ritornare sano e salvo, confondendo pi˘ di una volta la sua tunica con i suoi poteri d'illusione e la capacit‡ di oscurare la vista.
+@505 =~Noto per il suo stile di vita accademico, Juzam Reghanna fu sempre restio all'idea di allontanarsi dalla sua biblioteca. Ci√≤ nonostante, fece numerosi viaggi nella campagna dell'Amn allo scopo di cercare conoscenze perdute o dimenticate da aggiungere alla sua vasta collezione di sapere. Questo bastone lo aiut√≤ a ritornare sano e salvo, confondendo pi√π di una volta potenziali rapinatori con i suoi poteri d'illusione e con la capacit√† di annebbiare la vista.
 
 STATISTICHE:
 
-Abilit‡:
-Lancia "Immagine Speculare" due volte al giorno
-Lancia "Cecit‡" due volte al giorno
+Abilit√† attivabili:
+- Lancia Immagini Illusorie due volte al giorno
+- Lancia Accecare due volte al giorno
 
-THAC0: Bonus +2
-Danno: 1D6 +2
-Tipo di Danno: Contundente
+THAC0: +2
+Danno: 1d6+2 (contundente)
+Fattore-velocit√†: 3
+Tipo di Competenza: Bastone Rinforzato
+Tipo: A due mani
+
+Richiede:
+Forza 5
+Intelligenza 9
+
 Peso: 3
-Fattore Velocit‡: 3
-Tipo di Capacit‡: Bastone Ferrato
-Tipo: A due mani
-Richiede: Forza 5 e Intelligenza 9
 ~
-@507 =~Khalvar Sagresshim era un famoso alteratore che trascorse la maggior parte della sua vita studiando le gorgoni. Infine raccolse abbastanza conoscenze per forgiare quella che Ë stata senza dubbio la sua ultima creazione, il Bastone della Gorgone.
+@507 =~Khalvar Sagresshim era un famoso alteratore che trascorse la maggior parte della sua vita studiando le gorgoni. Alla fine, raccolse abbastanza conoscenze da forgiare quella che √® stata senza dubbio la sua migliore creazione, il Bastone della Gorgone.
 
 STATISTICHE:
 
-Abilit‡:
-Bonus +3 alla Classe Armatura
-Bonus +3 a tutti i tiri salvezza
-Protezione dalla Pietrificazione
-Immunit‡ ai danni da acido
-Invisibilit‡
+Abilit√† durante l'uso:
+- Classe Armatura: +3
+- Tiri-salvezza: +3
+- Protezione dalla Pietrificazione
+- Immunit√† ai danni da acido
+- Invisibilit√†
 
-Abilit‡ Speciali:
-Lancia "Carne in Pietra" due volte al giorno
-Lancia "Freccia Acida di Melf" cinque volte al giorno
+Abilit√† attivabili:
+- Lancia Carne in Pietra due volte al giorno
+- Lancia Freccia Acida di Melf cinque volte al giorno
 
-Abilit‡ in Combattimento:
-Dissolvi magie ad ogni colpo
+Abilit√† in combattimento:
+- Dissolvi magie ad ogni colpo messo a segno
 
-THAC0: Bonus +5
-Danno: 1d6 +5, +1d4 danni da acido
+THAC0: +5
+Danno: 1d6+5, +1d4 punti di danno da acido
 Tipo di Danno: Contundente
-Peso: 4
-Fattore Velocit‡: 1
-Tipo di Competenza: Bastone Ferrato
+Fattore-velocit√†: 1
+Tipo di Competenza: Bastone Rinforzato
 Tipo: A due mani
-Richiede: Intelligenza 17 e Costituzione 15
+
+Richiede:
+Intelligenza 17
+Costituzione 15
+
+Peso: 4
 ~
-@509 =~Joorg Ë stato un capo bandito nelle terre che circondano le Dieci Cittadine. Per quasi quattro anni lui e la sua disparata banda di orchi, hobgoblin e ogre si appostarono sulle rotte commerciali seminando fuoco e terrore tra chiunque le attraversasse. Tutto questo durÚ fino a quando non assalirono la carovana su cui viaggiava la famiglia di Lord Maarsken, assalto che era stato ideato proprio per dar loro la caccia e porre fine alle loro scorrerie. Lord Maarsken donÚ quest'arma al capitano responsabile dell'inseguimento per assicurarsi che il bandito fosse consegnato alla giustizia.
+@509 =~Joorg √® stato un capo bandito nelle terre che circondano le Dieci Citt√†. Per quasi quattro anni, lui e la sua disparata banda di orchi, hobgoblin e ogre si appostarono sulle rotte commerciali, seminando fuoco e terrore tra ovunque passassero. Tutto questo dur√≤ fino a quando non assalirono la carovana dove viaggiava la famiglia di Lord Maarsken: venne fatto uno sforzo congiunto per dar loro la caccia e porre fine alle loro scorrerie. Lord Maarsken don√≤ quest'arma al capitano responsabile dell'inseguimento per assicurarsi che il bandito fosse consegnato alla giustizia.
 
 STATISTICHE:
 
-Abilit‡:
-+1 Forza
-+2 Costituzione
--2 Destrezza
-Rigenera 2 punti ferita al round
+Abilit√†:
+- Forza: +1
+- Costituzione: +2
+- Destrezza: -2
+- Rigenera 2 Punti Ferita per round
 
-Abilit‡ di combattimento:
-5% di possibilit‡ di colpo vorpal
+Abilit√† di combattimento:
+- 5% di possibilit√† di colpo vorpal
 
-THAC0: Bonus +4
-Danno: 2D6 +4
-Tipo di Danno: Da taglio
-Peso: 20
-Fattore Velocit‡: 6
+THAC0: +4
+Danno: 2d6+4 (tagliente)
+Fattore-velocit√†: 6
 Tipo di Competenza: Ascia
 Tipo: A due mani
-Richiede: Forza 18
+
+Richiede:
+Forza 18
+
+Peso: 20
 ~
-@511 =~Geirthan Agghadrais fu un seguace di Tempus nella zona circostante le Dieci Cittadine. CombattË numerose campagne in onore del suo dio, tanto al nord quanto nelle terre del sud. Nel corso di uno di questi scontri venne accusato di un empio crimine da un gruppo di abiuratori e, dopo un processo fin troppo breve, fu condannato ad essere imprigionato nelle viscere pi˘ profonde della terra. Diversi mesi dopo si scoprÏ che non aveva commesso alcun male e che, al contrario, era stato un necromante senza nome a compiere i misfatti a causa dei quali Geirthan era stato imprigionato. Tormentato dai rimorsi, Henstraadt, l'abiuratore che lo aveva imprigionato nelle profondit‡, lo liberÚ e creÚ per lui questa corazza che lo avrebbe protetto se si fosse imbattuto nuovamente in un simile destino. Impregnandola con un'immunit‡ alle magie in cui era specializzato, si fece ricambiare alcuni favori per assicurarsi che, se Geirthan si fosse mai imbattuto nel necromante che era stato la causa del suo dolore, non sarebbe caduto vittima della magia della morte. CiÚ che accadde a Geirthan o al necromante non Ë risaputo, ma Henstraadt venne assassinato dai suoi collaboratori pochi mesi dopo la creazione di un oggetto che temevano li avrebbe portati alla caduta.
+@511 =~Geirthan Agghadrais fu un seguace di Tempus proveniente dalla zona circostante le Dieci Citt√†. Combatt√© numerose campagne in onore del suo dio, sia nel nord sia nelle terre del sud. Durante uno di questi scontri, venne accusato di un empio crimine da un gruppo di scongiuratori e, dopo un processo fin troppo breve, fu condannato ad essere imprigionato nelle viscere pi√π profonde della terra. Alcuni mesi dopo, si scopr√¨ che non aveva commesso alcun male e che, al contrario, era stato un necromante senza nome a compiere i misfatti per i quali Geirthan era stato imprigionato. Tormentato dai rimorsi, lo scongiuratore che lo aveva scagliato nelle profondit√†, Henstraadt, lo liber√≤ e cre√≤ per lui quest'armatura che lo avrebbe protetto se un simile fatto si fosse mai ripresentato. Oltre a permearla con l'immunit√† alle magie in cui era specializzato, si fece ricambiare alcuni favori per assicurarsi che, se Geirthan si fosse mai imbattuto nel necromante che era stato la causa del suo dolore, non sarebbe caduto vittima degli incantesimi della morte. Ci√≤ che accadde a Geirthan o al necromante non √® noto, ma Henstraadt venne assassinato dai suoi collaboratori pochi mesi dopo per avere creato un oggetto che temevano potesse portare alla loro stessa rovina.
 
 STATISTICHE:
 
-Abilit‡:
-Immunit‡ alla magia della morte
-Immunit‡ a una scuola d'incantesimo: Abiurazione
-Classe Armatura: -4
+Abilit√† durante l'uso:
+- Classe Armatura: -4
+- Immunit√† alla magia della morte
+- Immunit√† a una scuola di magia: Scongiurazione
+
+Richiede:
+Forza 18
+
 Peso: 50
-Richiede: Forza 18
 ~
-@513 =~Con la sua capacit‡ di proteggere la persona che la brandisce dall'essere immobilizzato in qualsiasi modo, questa lama ha davvero guadagnato il suo nome. Forse la sua caratteristica migliore Ë che non impedisce ad un individuo di aumentare la sua mobilit‡: al contrario, lo aiuta addirittura in tale obiettivo.
+@513 =~Con la sua capacit√† di proteggere chi la brandisce dall'essere immobilizzato da quasi ogni mezzo, questa lama ha davvero guadagnato il suo nome. Forse la sua caratteristica migliore √® che non impedisce ad un individuo di aumentare la sua mobilit√†: al contrario, lo aiuta addirittura a tale scopo.
 
 STATISTICHE:
 
-Abilit‡:
-Immunit‡ alla maggior parte delle cose che alterano la mobilit‡
-Protezione dal Piano Negativo
+Abilit√† durante l'uso:
+- Immunit√† alla maggior parte degli effetti che alterano la mobilit√†
+- Protezione dal Piano Negativo
 
-Abilit‡ Speciali:
-Lancia "Velocit‡ Potenziata" due volte al giorno
+Abilit√† attivabili:
+- Lancia Velocit√† Potenziata due volte al giorno
 
-THAC0: Bonus +5
-Damage: 2D4 +5
-Tipo di Danno: Da taglio
-Peso: 3
-Fattore Velocit‡: 0
+THAC0: +5
+Danni: 2d4+5 (tagliente)
+Fattore-velocit√†: 0
 Tipo di Competenza: Spada Lunga
-Tipo: Una mano
-Richiede: Forza 9
+Tipo: A una mano
+
+Richiede:
+Forza 9
+
+Peso: 3
 ~

@@ -1,110 +1,110 @@
-/////                                                  \\\\\
+ï»¿/////                                                  \\\\\
 ///// EE descriptions                                  \\\\\
 /////                                                  \\\\\
 
 // since EE generates usabilities automatically, we have to cut them from the descript
 // otherwise these are identical to the descriptions in setup.tra
 
-@503 =~Legendy vyprávìjí, e tento typ iounského kamene je skout se zotroèenou duší  Zhentarimského mága. Tento zaprášenı iounskı kámen dává nositeli schopnost memorizovat kouzlo první úrovné navíc.
+@503 =~Legendy vyprÃ¡vÃ¬jÃ­, Å¾e tento typ iounskÃ©ho kamene je skout se zotroÃ¨enou duÅ¡Ã­  ZhentarimskÃ©ho mÃ¡ga. Tento zaprÃ¡Å¡enÃ½ iounskÃ½ kÃ¡men dÃ¡vÃ¡ nositeli schopnost memorizovat kouzlo prvnÃ­ ÃºrovnÃ© navÃ­c.
 
-Memorizuje 1 kouzlo 1.úrovnì navíc
+Memorizuje 1 kouzlo 1.ÃºrovnÃ¬ navÃ­c
 
-Váha: 2
+VÃ¡ha: 2
 ~
-@505 =~Známı pro jeho vìdeckı ivotní styl, Juzam Reghanna vdycky nerad opouštìl svou knihovnu. Pøesto èasto podnikal vılety Amnskou pøírodou k vùli hledání ztracenıch nebo zapomenutıch uèení aby zvìtšil u tak velkou zásobu vìdomostí. Tato hùl mu pomáhala se bezpeènì vrátit, více ne jednou zmátl lupièe silou jeho iluzí a schopností oslepit jejich zrak.
+@505 =~ZnÃ¡mÃ½ pro jeho vÃ¬deckÃ½ Å¾ivotnÃ­ styl, Juzam Reghanna vÅ¾dycky nerad opouÅ¡tÃ¬l svou knihovnu. PÃ¸esto Ã¨asto podnikal vÃ½lety Amnskou pÃ¸Ã­rodou k vÃ¹li hledÃ¡nÃ­ ztracenÃ½ch nebo zapomenutÃ½ch uÃ¨enÃ­ aby zvÃ¬tÅ¡il uÅ¾ tak velkou zÃ¡sobu vÃ¬domostÃ­. Tato hÃ¹l mu pomÃ¡hala se bezpeÃ¨nÃ¬ vrÃ¡tit, vÃ­ce neÅ¾ jednou zmÃ¡tl lupiÃ¨e silou jeho iluzÃ­ a schopnostÃ­ oslepit jejich zrak.
 
 VLASTNOSTI:
 
 Vlastnosti:
- Dvakrát dennì sesilá Zrcadlenı obraz
- Dvakrát dennì sesílá Slepotu
+ DvakrÃ¡t dennÃ¬ sesilÃ¡ ZrcadlenÃ½ obraz
+ DvakrÃ¡t dennÃ¬ sesÃ­lÃ¡ Slepotu
 
 THAC0:  +2 bonus
-Zranìní:  1k6 + 2
-Druh zranìní:  Drtivé
-Váhat: 3
+ZranÃ¬nÃ­:  1k6 + 2
+Druh zranÃ¬nÃ­:  DrtivÃ©
+VÃ¡hat: 3
 Rychlost: 3
-Druh dovednosti: Hùl
-Druh:  obouruèní
-Vyaduje: 5 síla a 9 inteligence
+Druh dovednosti: HÃ¹l
+Druh:  obouruÃ¨nÃ­
+VyÅ¾aduje: 5 sÃ­la a 9 inteligence
 ~
-@507 =~Khalvar Sagresshim byl slavnı mìnitel, kterı vìnoval vìtšinu svého ivota studií gorgon. Eventuálnì shromaïoval dostateèné mnoství znalostí aby vyrobil jeho unikátní dílo, Hùl Gorgon.
+@507 =~Khalvar Sagresshim byl slavnÃ½ mÃ¬nitel, kterÃ½ vÃ¬noval vÃ¬tÅ¡inu svÃ©ho Å¾ivota studiÃ­ gorgon. EventuÃ¡lnÃ¬ shromaÅ¾Ã¯oval dostateÃ¨nÃ© mnoÅ¾stvÃ­ znalostÃ­ aby vyrobil jeho unikÃ¡tnÃ­ dÃ­lo, HÃ¹l Gorgon.
 
 VLASTNOSTI:
 
-Pøi pouití:
+PÃ¸i pouÅ¾itÃ­:
  +3 AC bonus
- +3 záchranné hody
- Protekce na zkamenìní
+ +3 zÃ¡chrannÃ© hody
+ Protekce na zkamenÃ¬nÃ­
  Imunta na jed
  Neviditelnost
 
-Speciální schopnosti:
- Sesílá Maso na kámen 2 krát/den
- Sesílá Melfùv kyselinovı šíp 5 krát/den
+SpeciÃ¡lnÃ­ schopnosti:
+ SesÃ­lÃ¡ Maso na kÃ¡men 2 krÃ¡t/den
+ SesÃ­lÃ¡ MelfÃ¹v kyselinovÃ½ Å¡Ã­p 5 krÃ¡t/den
 
 Schopnosti v boji:
- Rozpyt magii kadım zásahem
+ Rozpyt magii kaÅ¾dÃ½m zÃ¡sahem
 
 THAC0: +5
-Zranìí: 1k6 +5, +1k4 zranìní jedem
-Druh zranìní: Drtivé
-Váha: 4
+ZranÃ¬Ã­: 1k6 +5, +1k4 zranÃ¬nÃ­ jedem
+Druh zranÃ¬nÃ­: DrtivÃ©
+VÃ¡ha: 4
 Rychlost: 1
-Druh dovednosti: Hùl
- Druh: obouruèní
-Vyaduje: 17 inteligence a 15 odolnost
+Druh dovednosti: HÃ¹l
+ Druh: obouruÃ¨nÃ­
+VyÅ¾aduje: 17 inteligence a 15 odolnost
 ~
-@509 =~Joorg byl šéf banditù v zemích obklopujících Deset Mìst. Témìø ètyøi roky on a jeho banda orkù, hobgoblinù a ogrù loupili na obchodních stezkách, vypalovi a terotizovali kde jen mohli.Tak to pokraèovalo dokud nenapadli karavanu, kterou cestovala rodina Lorda Maarskena, té dalo námahu zabít je a ukonèit jejich drancování. Lord Maarsken daroval tuto zbraò kapitánovi, aby zajistil pøedáni bandity spravedlnosti.
+@509 =~Joorg byl Å¡Ã©f banditÃ¹ v zemÃ­ch obklopujÃ­cÃ­ch Deset MÃ¬st. TÃ©mÃ¬Ã¸ Ã¨tyÃ¸i roky on a jeho banda orkÃ¹, hobgoblinÃ¹ a ogrÃ¹ loupili na obchodnÃ­ch stezkÃ¡ch, vypalovi a terotizovali kde jen mohli.Tak to pokraÃ¨ovalo dokud nenapadli karavanu, kterou cestovala rodina Lorda Maarskena, tÃ© dalo nÃ¡mahu zabÃ­t je a ukonÃ¨it jejich drancovÃ¡nÃ­. Lord Maarsken daroval tuto zbraÃ² kapitÃ¡novi, aby zajistil pÃ¸edÃ¡ni bandity spravedlnosti.
 
 VLASTNOSTI:
 
-Pøi pouití:
- +1 síla
+PÃ¸i pouÅ¾itÃ­:
+ +1 sÃ­la
  +2 odolnost
  -2 obratnost
- Regeneruje 2 ivoty/kolo
+ Regeneruje 2 Å¾ivoty/kolo
 
 Schopnosti v boji:
- 5% šance na smrtící zásah
+ 5% Å¡ance na smrtÃ­cÃ­ zÃ¡sah
 
 THAC0:  +4 bonus
-Zranìní:  2K6 + 4
-Druh zranìní:  seèné
-Váha: 20
+ZranÃ¬nÃ­:  2K6 + 4
+Druh zranÃ¬nÃ­:  seÃ¨nÃ©
+VÃ¡ha: 20
 Rychlost: 6
 Druh dovednosti: Sekera
-Druh:  obouruèní
-Vyaduje: 18 síla
+Druh:  obouruÃ¨nÃ­
+VyÅ¾aduje: 18 sÃ­la
 ~
-@511 =~Geirthan Agghadrais byl následovník Tempuse z oblasti okolo Deseti Mìst. Ve slubì ke svému bohu bojoval v mnoha bitvách jak na severu, tak i v zemích na jihu. Bìhem jedné z tìchto bitev byl skupinou ochráncù obvinìn ze zloèinu a po následujícím extrémì krátkém soudu byl odsouzen k uvìzenìní v útrobách zemì. O nìkolik mìsícù pozdìji se pøišlo na to , e nic neudìlal a doopravdy to byl neznámı nekromant kdo spáchal zloèin za kterı byl Geirthan odsouzen. K vùli vıèitkám svìdomí, Henstraadt, ochránce, je ho uvrhl do hlubin, ho osvobodil a vytvoøil pro nìj tuto zbroj, která ho má chránit od podobnì strašného osudu. Stejnì tak ji naplnil imuntou na jeho školu magie, zaklel nìkolik vıhod, aby se ujistil, e pokud Geirthan znovu narazí na onoho nekromanta, kterı byl pøíèinou jeho utrpení, nepadne pod jeho zlovolnou magií. Jak skonèil Geirthan nebo onen nekromant není známo, ale Henstraadt byl zavradìn svımi vlastnímy spoleèníky pár mìsícù poté co stvoøil nìco, co mohlo zpùsobit jejich pád .
+@511 =~Geirthan Agghadrais byl nÃ¡sledovnÃ­k Tempuse z oblasti okolo Deseti MÃ¬st. Ve sluÅ¾bÃ¬ ke svÃ©mu bohu bojoval v mnoha bitvÃ¡ch jak na severu, tak i v zemÃ­ch na jihu. BÃ¬hem jednÃ© z tÃ¬chto bitev byl skupinou ochrÃ¡ncÃ¹ obvinÃ¬n ze zloÃ¨inu a po nÃ¡sledujÃ­cÃ­m extrÃ©mÃ¬ krÃ¡tkÃ©m soudu byl odsouzen k uvÃ¬zenÃ¬nÃ­ v ÃºtrobÃ¡ch zemÃ¬. O nÃ¬kolik mÃ¬sÃ­cÃ¹ pozdÃ¬ji se pÃ¸iÅ¡lo na to , Å¾e nic neudÃ¬lal a doopravdy to byl neznÃ¡mÃ½ nekromant kdo spÃ¡chal zloÃ¨in za kterÃ½ byl Geirthan odsouzen. K vÃ¹li vÃ½Ã¨itkÃ¡m svÃ¬domÃ­, Henstraadt, ochrÃ¡nce, jeÅ¾ ho uvrhl do hlubin, ho osvobodil a vytvoÃ¸il pro nÃ¬j tuto zbroj, kterÃ¡ ho mÃ¡ chrÃ¡nit od podobnÃ¬ straÅ¡nÃ©ho osudu. StejnÃ¬ tak ji naplnil imuntou na jeho Å¡kolu magie, zaklel nÃ¬kolik vÃ½hod, aby se ujistil, Å¾e pokud Geirthan znovu narazÃ­ na onoho nekromanta, kterÃ½ byl pÃ¸Ã­Ã¨inou jeho utrpenÃ­, nepadne pod jeho zlovolnou magiÃ­. Jak skonÃ¨il Geirthan nebo onen nekromant nenÃ­ znÃ¡mo, ale Henstraadt byl zavraÅ¾dÃ¬n svÃ½mi vlastnÃ­my spoleÃ¨nÃ­ky pÃ¡r mÃ¬sÃ­cÃ¹ potÃ© co stvoÃ¸il nÃ¬co, co mohlo zpÃ¹sobit jejich pÃ¡d .
 
 VLASTNOSTI:
 
 Schopnosti:
  Imunita na magii smrti
- Imunita na školu magie: Ochranná
-Obr. èíslo: -4
-Váha: 50
-Vyaduje: 18 síla
+ Imunita na Å¡kolu magie: OchrannÃ¡
+Obr. Ã¨Ã­slo: -4
+VÃ¡ha: 50
+VyÅ¾aduje: 18 sÃ­la
 ~
-@513 =~Právì svou schopností uchránit nositele od jakékoliv formy zadrení, si tato zbraò vyslouila své jméno. Moná ta nejlepší vìc na tom všem je, e nebrání ve vylepšení pohyblivosti, dokonce mùe pomoci.
+@513 =~PrÃ¡vÃ¬ svou schopnostÃ­ uchrÃ¡nit nositele od jakÃ©koliv formy zadrÅ¾enÃ­, si tato zbraÃ² vyslouÅ¾ila svÃ© jmÃ©no. MoÅ¾nÃ¡ ta nejlepÅ¡Ã­ vÃ¬c na tom vÅ¡em je, Å¾e nebrÃ¡nÃ­ ve vylepÅ¡enÃ­ pohyblivosti, dokonce mÃ¹Å¾e pomoci.
 
 VLASTNOSTI:
 
-Pøi pouití:
- Imunita na vìtšinu vìcí, které ovlivòují pohyblivost
- Protekce na negativní sféru
+PÃ¸i pouÅ¾itÃ­:
+ Imunita na vÃ¬tÅ¡inu vÃ¬cÃ­, kterÃ© ovlivÃ²ujÃ­ pohyblivost
+ Protekce na negativnÃ­ sfÃ©ru
 
-Speciální schopnosti:
- Sesílá vylepšenı spìch 2 krát/den
+SpeciÃ¡lnÃ­ schopnosti:
+ SesÃ­lÃ¡ vylepÅ¡enÃ½ spÃ¬ch 2 krÃ¡t/den
 
 THAC0: +5
-Zranìní:  2K4 +5
-Druh zranìní:  seèné
-Váha: 3
+ZranÃ¬nÃ­:  2K4 +5
+Druh zranÃ¬nÃ­:  seÃ¨nÃ©
+VÃ¡ha: 3
 Rychlost: 0
-Druh dovednosti: Dlouhı meè
-Druh: jednoruèní
-Vyaduje: 9 síla
+Druh dovednosti: DlouhÃ½ meÃ¨
+Druh: jednoruÃ¨nÃ­
+VyÅ¾aduje: 9 sÃ­la
 ~

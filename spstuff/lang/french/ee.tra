@@ -1,113 +1,113 @@
-/////                                                  \\\\\
+ï»¿/////                                                  \\\\\
 ///// EE descriptions                                  \\\\\
 /////                                                  \\\\\
 
 // since EE generates usabilities automatically, we have to cut them from the descript
 // otherwise these are identical to the descriptions in setup.tra
 
-@503=~Les légendes racontent qu’on fabrique ce genre de pierres ioniques en utilisant les âmes de Mages Zentharims. Cette pierre apportera au possesseur la possibilité de mémoriser un sort de niveau 1 en plus.
+@503=~Les lÃ©gendes racontent quâ€™on fabrique ce genre de pierres ioniques en utilisant les Ã¢mes de Mages Zentharims. Cette pierre apportera au possesseur la possibilitÃ© de mÃ©moriser un sort de niveau 1 en plus.
 
-Mémorise un sort supplémentaire de niveau 1
+MÃ©morise un sort supplÃ©mentaire de niveau 1
 
 Poids : 2
 ~
-@505=~Illustre pour son style de vie érudit, Juzam Reghanna avait horreur de quitter sa bibliothèque. Malgré cela, il mena de nombreux voyages à travers les campagnes Amniennes dans le but d’ajouter encore plus de connaissances à sa déjà vaste collection de savoir. Ce bâton a maintes fois contribué au retour sain et sauf de Juzam, déroutant plus d’une fois les brigands grâce à ses pouvoirs d’Illusion et sa capacité à embrumer leur vision.
+@505=~Illustre pour son style de vie Ã©rudit, Juzam Reghanna avait horreur de quitter sa bibliothÃ¨que. MalgrÃ© cela, il mena de nombreux voyages Ã  travers les campagnes Amniennes dans le but dâ€™ajouter encore plus de connaissances Ã  sa dÃ©jÃ  vaste collection de savoir. Ce bÃ¢ton a maintes fois contribuÃ© au retour sain et sauf de Juzam, dÃ©routant plus dâ€™une fois les brigands grÃ¢ce Ã  ses pouvoirs dâ€™Illusion et sa capacitÃ© Ã  embrumer leur vision.
 
 PARAMETRES :
 
-Capacités :
+CapacitÃ©s :
 Image Miroir, deux fois par jour
-Cécité, deux fois par jour
+CÃ©citÃ©, deux fois par jour
 
 TAC0 : +2
-Dégâts : 1D6 +2
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +2
+Type de dÃ©gÃ¢ts : contondant
 Poids : 3
 Facteur de vitesse : 3
-Type de compétence : bâton
-Type : arme à 2 mains
-Force nécessaire : 5
-Intelligence nécessaire : 9
+Type de compÃ©tence : bÃ¢ton
+Type : arme Ã  2 mains
+Force nÃ©cessaire : 5
+Intelligence nÃ©cessaire : 9
 ~
-@507=~Khalvar Sagresshim était un transmutateur très renommé qui avait consacré la quasi-totalité de sa vie à étudier les gorgones. Il a finalement accumulé suffisamment de connaissance pour créer ce qui est sans doute son ultime création, le Bâton de la Gorgone.
+@507=~Khalvar Sagresshim Ã©tait un transmutateur trÃ¨s renommÃ© qui avait consacrÃ© la quasi-totalitÃ© de sa vie Ã  Ã©tudier les gorgones. Il a finalement accumulÃ© suffisamment de connaissance pour crÃ©er ce qui est sans doute son ultime crÃ©ation, le BÃ¢ton de la Gorgone.
 
 PARAMETRES :
 
-Capacités d’Equipement :
-Classe d’armure : +3
+CapacitÃ©s dâ€™Equipement :
+Classe dâ€™armure : +3
 Jets de sauvegarde : +3
-Protection contre la Pétrification
-Immunité aux dégâts de type acide
-Invisibilité
+Protection contre la PÃ©trification
+ImmunitÃ© aux dÃ©gÃ¢ts de type acide
+InvisibilitÃ©
 
-Capacités Spéciales :
+CapacitÃ©s SpÃ©ciales :
 Transformation de la Chair en Pierre, deux fois par jour
-Flèches Acides de Melf, deux fois par jour
+FlÃ¨ches Acides de Melf, deux fois par jour
 
-Capacités de Combat :
-à chaque coup, Dissipation de la Magie
+CapacitÃ©s de Combat :
+Ã  chaque coup, Dissipation de la Magie
 
 TAC0 : +5
-Dégâts : 1D6 +5, +1D4 de dégâts d'acide
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +5, +1D4 de dÃ©gÃ¢ts d'acide
+Type de dÃ©gÃ¢ts : contondant
 Poids : 4
 Facteur de vitesse : 1
-Type de compétence : bâton
-Type : arme à 2 mains
-Intelligence nécessaire : 17
-Constitution nécessaire : 15
+Type de compÃ©tence : bÃ¢ton
+Type : arme Ã  2 mains
+Intelligence nÃ©cessaire : 17
+Constitution nÃ©cessaire : 15
 ~
-@509=~Joorg était le chef d’une organisation de bandits opérant dans les environs des Dix Cités. Pendant près de quatre ans, lui et sa horde multiraciale d’orcs, de gobelins et d'ogres rôdaient le long des routes commerciales en semant feu et terreur partout sur leur chemin. Cela dura jusqu’à ce qu’ils aient tendu une embuscade à la caravane transportant la famille de Sir Maarksen ; cela provoqua un effort commun destiné à les traquer et à mettre fin à leurs activités. Sir Maarksen offrit cette arme au capitaine en charge de la chasse pour s’assurer que le bandit serait livré à la justice.
+@509=~Joorg Ã©tait le chef dâ€™une organisation de bandits opÃ©rant dans les environs des Dix CitÃ©s. Pendant prÃ¨s de quatre ans, lui et sa horde multiraciale dâ€™orcs, de gobelins et d'ogres rÃ´daient le long des routes commerciales en semant feu et terreur partout sur leur chemin. Cela dura jusquâ€™Ã  ce quâ€™ils aient tendu une embuscade Ã  la caravane transportant la famille de Sir Maarksen ; cela provoqua un effort commun destinÃ© Ã  les traquer et Ã  mettre fin Ã  leurs activitÃ©s. Sir Maarksen offrit cette arme au capitaine en charge de la chasse pour sâ€™assurer que le bandit serait livrÃ© Ã  la justice.
 
 PARAMETRES :
 
-Capacités d’equipement :
+CapacitÃ©s dâ€™equipement :
 Force : +1
 Constitution : +2
-Dextérité : -2
-Régénération : 2 pv par round
+DextÃ©ritÃ© : -2
+RÃ©gÃ©nÃ©ration : 2 pv par round
 
-Capacités de combat :
-5% de chance d’effectuer un coup vorpal
+CapacitÃ©s de combat :
+5% de chance dâ€™effectuer un coup vorpal
 
 TAC0 : +4
-Dégâts : 2D6 +4
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 2D6 +4
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 20
 Facteur de vitesse : 6
-Type de compétence : hache
-Type : arme à 2 mains
-Force nécessaire : 18
+Type de compÃ©tence : hache
+Type : arme Ã  2 mains
+Force nÃ©cessaire : 18
 ~
-@511=~Geirthan Agghadrais était un adorateur de Tempus originaire des alentours des Dix Cités. Pour servir son dieu, il mena de nombreuses campagnes aussi bien dans le Nord que dans les terres du Sud. Au cours de l’une de ces campagnes, il fut accusé d’un crime odieux par un groupe d’abjurateurs, et après un procès très succinct, fut condamné à l’emprisonnement dans les plus profondes entrailles de la Terre. Quelques mois après, il apparut qu’il n’avait commis aucun crime : en effet il s’avéra que le coupable des fautes pour lesquelles Geirthan avait été condamné était en fait un nécromancien sans nom. Dans un élan de remords, Henstraadt, l’abjurateur qui l’avait banni dans les profondeurs terrestres, le libéra et créa pour lui cette armure qui devait le protéger de ce genre d’injustice. Il conféra de même à l’armure une série d’immunités de son propre domaine de magie, s’assurant ainsi que si Geirthan parvenait un jour à retrouver le nécromancien coupable de sa tristesse, il ne tomberait pas devant la magie noire de son ennemi. Personne ne sait ce qu’il advint de Geirthan ni du nécromancien, mais Henstraadt fut assassiné par ses propres confrères a peine quelques mois après, pour avoir crée un objet susceptible de se retourner contre eux et de les mener à leur perte.
+@511=~Geirthan Agghadrais Ã©tait un adorateur de Tempus originaire des alentours des Dix CitÃ©s. Pour servir son dieu, il mena de nombreuses campagnes aussi bien dans le Nord que dans les terres du Sud. Au cours de lâ€™une de ces campagnes, il fut accusÃ© dâ€™un crime odieux par un groupe dâ€™abjurateurs, et aprÃ¨s un procÃ¨s trÃ¨s succinct, fut condamnÃ© Ã  lâ€™emprisonnement dans les plus profondes entrailles de la Terre. Quelques mois aprÃ¨s, il apparut quâ€™il nâ€™avait commis aucun crime : en effet il sâ€™avÃ©ra que le coupable des fautes pour lesquelles Geirthan avait Ã©tÃ© condamnÃ© Ã©tait en fait un nÃ©cromancien sans nom. Dans un Ã©lan de remords, Henstraadt, lâ€™abjurateur qui lâ€™avait banni dans les profondeurs terrestres, le libÃ©ra et crÃ©a pour lui cette armure qui devait le protÃ©ger de ce genre dâ€™injustice. Il confÃ©ra de mÃªme Ã  lâ€™armure une sÃ©rie dâ€™immunitÃ©s de son propre domaine de magie, sâ€™assurant ainsi que si Geirthan parvenait un jour Ã  retrouver le nÃ©cromancien coupable de sa tristesse, il ne tomberait pas devant la magie noire de son ennemi. Personne ne sait ce quâ€™il advint de Geirthan ni du nÃ©cromancien, mais Henstraadt fut assassinÃ© par ses propres confrÃ¨res a peine quelques mois aprÃ¨s, pour avoir crÃ©e un objet susceptible de se retourner contre eux et de les mener Ã  leur perte.
 
 PARAMETRES :
 
-Capacités spéciales :
-Immunité contre la magie noire
-Immunité à l’école de magie : Abjuration
+CapacitÃ©s spÃ©ciales :
+ImmunitÃ© contre la magie noire
+ImmunitÃ© Ã  lâ€™Ã©cole de magie : Abjuration
 
-Classe d’Armure : -4
+Classe dâ€™Armure : -4
 Poids : 50
-Force nécessaire : 18
+Force nÃ©cessaire : 18
 ~
-@513=~De par le fait qu'elle immunise son porteur contre presque toute forme d’altération des mouvements, cette épée mérite largement son nom. La meilleure caractéristique de cette épée est probablement qu’elle n’empêche pas son porteur d'améliorer sa mobilité, mais peut même l'aider dans ce but.
+@513=~De par le fait qu'elle immunise son porteur contre presque toute forme dâ€™altÃ©ration des mouvements, cette Ã©pÃ©e mÃ©rite largement son nom. La meilleure caractÃ©ristique de cette Ã©pÃ©e est probablement quâ€™elle nâ€™empÃªche pas son porteur d'amÃ©liorer sa mobilitÃ©, mais peut mÃªme l'aider dans ce but.
 
 PARAMETRES :
 
-Capacités d’équipement :
-Immunité contre la presque totalité de ce qui peut diminuer la mobilité du porteur
-Protection contre le Plan Négatif
+CapacitÃ©s dâ€™Ã©quipement :
+ImmunitÃ© contre la presque totalitÃ© de ce qui peut diminuer la mobilitÃ© du porteur
+Protection contre le Plan NÃ©gatif
 
-Capacités spéciales :
-Lance Hâte Améliorée, deux fois par jour
+CapacitÃ©s spÃ©ciales :
+Lance HÃ¢te AmÃ©liorÃ©e, deux fois par jour
 
 TAC0 : +5
-Dégâts : 2D4 +5
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 2D4 +5
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 3
 Facteur de vitesse : 0
-Type de compétence : épée longue
-Type : arme à 1 main
-Force nécessaire : 9
+Type de compÃ©tence : Ã©pÃ©e longue
+Type : arme Ã  1 main
+Force nÃ©cessaire : 9
 ~
