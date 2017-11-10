@@ -1,0 +1,110 @@
+/////                                                  \\\\\
+///// EE descriptions                                  \\\\\
+/////                                                  \\\\\
+
+// since EE generates usabilities automatically, we have to cut them from the descript
+// otherwise these are identical to the descriptions in setup.tra
+
+@503 =~Legendy vyprávìjí, že tento typ iounského kamene je skout se zotroèenou duší  Zhentarimského mága. Tento zaprášený iounský kámen dává nositeli schopnost memorizovat kouzlo první úrovné navíc.
+
+Memorizuje 1 kouzlo 1.úrovnì navíc
+
+Váha: 2
+~
+@505 =~Známý pro jeho vìdecký životní styl, Juzam Reghanna vždycky nerad opouštìl svou knihovnu. Pøesto èasto podnikal výlety Amnskou pøírodou k vùli hledání ztracených nebo zapomenutých uèení aby zvìtšil už tak velkou zásobu vìdomostí. Tato hùl mu pomáhala se bezpeènì vrátit, více než jednou zmátl lupièe silou jeho iluzí a schopností oslepit jejich zrak.
+
+VLASTNOSTI:
+
+Vlastnosti:
+ Dvakrát dennì sesilá Zrcadlený obraz
+ Dvakrát dennì sesílá Slepotu
+
+THAC0:  +2 bonus
+Zranìní:  1k6 + 2
+Druh zranìní:  Drtivé
+Váhat: 3
+Rychlost: 3
+Druh dovednosti: Hùl
+Druh:  obouruèní
+Vyžaduje: 5 síla a 9 inteligence
+~
+@507 =~Khalvar Sagresshim byl slavný mìnitel, který vìnoval vìtšinu svého života studií gorgon. Eventuálnì shromažïoval dostateèné množství znalostí aby vyrobil jeho unikátní dílo, Hùl Gorgon.
+
+VLASTNOSTI:
+
+Pøi použití:
+ +3 AC bonus
+ +3 záchranné hody
+ Protekce na zkamenìní
+ Imunta na jed
+ Neviditelnost
+
+Speciální schopnosti:
+ Sesílá Maso na kámen 2 krát/den
+ Sesílá Melfùv kyselinový šíp 5 krát/den
+
+Schopnosti v boji:
+ Rozpyt magii každým zásahem
+
+THAC0: +5
+Zranìí: 1k6 +5, +1k4 zranìní jedem
+Druh zranìní: Drtivé
+Váha: 4
+Rychlost: 1
+Druh dovednosti: Hùl
+ Druh: obouruèní
+Vyžaduje: 17 inteligence a 15 odolnost
+~
+@509 =~Joorg byl šéf banditù v zemích obklopujících Deset Mìst. Témìø ètyøi roky on a jeho banda orkù, hobgoblinù a ogrù loupili na obchodních stezkách, vypalovi a terotizovali kde jen mohli.Tak to pokraèovalo dokud nenapadli karavanu, kterou cestovala rodina Lorda Maarskena, té dalo námahu zabít je a ukonèit jejich drancování. Lord Maarsken daroval tuto zbraò kapitánovi, aby zajistil pøedáni bandity spravedlnosti.
+
+VLASTNOSTI:
+
+Pøi použití:
+ +1 síla
+ +2 odolnost
+ -2 obratnost
+ Regeneruje 2 životy/kolo
+
+Schopnosti v boji:
+ 5% šance na smrtící zásah
+
+THAC0:  +4 bonus
+Zranìní:  2K6 + 4
+Druh zranìní:  seèné
+Váha: 20
+Rychlost: 6
+Druh dovednosti: Sekera
+Druh:  obouruèní
+Vyžaduje: 18 síla
+~
+@511 =~Geirthan Agghadrais byl následovník Tempuse z oblasti okolo Deseti Mìst. Ve službì ke svému bohu bojoval v mnoha bitvách jak na severu, tak i v zemích na jihu. Bìhem jedné z tìchto bitev byl skupinou ochráncù obvinìn ze zloèinu a po následujícím extrémì krátkém soudu byl odsouzen k uvìzenìní v útrobách zemì. O nìkolik mìsícù pozdìji se pøišlo na to , že nic neudìlal a doopravdy to byl neznámý nekromant kdo spáchal zloèin za který byl Geirthan odsouzen. K vùli výèitkám svìdomí, Henstraadt, ochránce, jež ho uvrhl do hlubin, ho osvobodil a vytvoøil pro nìj tuto zbroj, která ho má chránit od podobnì strašného osudu. Stejnì tak ji naplnil imuntou na jeho školu magie, zaklel nìkolik výhod, aby se ujistil, že pokud Geirthan znovu narazí na onoho nekromanta, který byl pøíèinou jeho utrpení, nepadne pod jeho zlovolnou magií. Jak skonèil Geirthan nebo onen nekromant není známo, ale Henstraadt byl zavraždìn svými vlastnímy spoleèníky pár mìsícù poté co stvoøil nìco, co mohlo zpùsobit jejich pád .
+
+VLASTNOSTI:
+
+Schopnosti:
+ Imunita na magii smrti
+ Imunita na školu magie: Ochranná
+Obr. èíslo: -4
+Váha: 50
+Vyžaduje: 18 síla
+~
+@513 =~Právì svou schopností uchránit nositele od jakékoliv formy zadržení, si tato zbraò vysloužila své jméno. Možná ta nejlepší vìc na tom všem je, že nebrání ve vylepšení pohyblivosti, dokonce mùže pomoci.
+
+VLASTNOSTI:
+
+Pøi použití:
+ Imunita na vìtšinu vìcí, které ovlivòují pohyblivost
+ Protekce na negativní sféru
+
+Speciální schopnosti:
+ Sesílá vylepšený spìch 2 krát/den
+
+THAC0: +5
+Zranìní:  2K4 +5
+Druh zranìní:  seèné
+Váha: 3
+Rychlost: 0
+Druh dovednosti: Dlouhý meè
+Druh: jednoruèní
+Vyžaduje: 9 síla
+~

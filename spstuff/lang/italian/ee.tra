@@ -1,0 +1,112 @@
+/////                                                  \\\\\
+///// EE descriptions                                  \\\\\
+/////                                                  \\\\\
+
+// since EE generates usabilities automatically, we have to cut them from the descript
+// otherwise these are identical to the descriptions in setup.tra
+
+@503 =~Una leggenda racconta che questo particolare tipo di pietra Ioun venne forgiata con l'anima imprigionata di un mago Zhentarim. Questa polverosa pietra ioun garantirà a chi la indossa la capacità di memorizzare un incantesimo extra di primo livello.
+
+STATISTICHE:
+
+Memorizza un incantesimo extra di primo livello
+
+Peso: 2
+~
+@505 =~Noto per il suo stile di vita accademico, Juzam Reghanna fu sempre restio all'idea di allontanarsi dalla sua biblioteca. Ciò nonostante, fece diversi viaggi nelle campagne di Amn allo scopo di cercare conoscenze perdute o dimenticate da aggiungere alla sua vasta collezione di sapere. Questo bastone lo aiutò a ritornare sano e salvo, confondendo più di una volta la sua tunica con i suoi poteri d'illusione e la capacità di oscurare la vista.
+
+STATISTICHE:
+
+Abilità:
+Lancia "Immagine Speculare" due volte al giorno
+Lancia "Cecità" due volte al giorno
+
+THAC0: Bonus +2
+Danno: 1D6 +2
+Tipo di Danno: Contundente
+Peso: 3
+Fattore Velocità: 3
+Tipo di Capacità: Bastone Ferrato
+Tipo: A due mani
+Richiede: Forza 5 e Intelligenza 9
+~
+@507 =~Khalvar Sagresshim era un famoso alteratore che trascorse la maggior parte della sua vita studiando le gorgoni. Infine raccolse abbastanza conoscenze per forgiare quella che è stata senza dubbio la sua ultima creazione, il Bastone della Gorgone.
+
+STATISTICHE:
+
+Abilità:
+Bonus +3 alla Classe Armatura
+Bonus +3 a tutti i tiri salvezza
+Protezione dalla Pietrificazione
+Immunità ai danni da acido
+Invisibilità
+
+Abilità Speciali:
+Lancia "Carne in Pietra" due volte al giorno
+Lancia "Freccia Acida di Melf" cinque volte al giorno
+
+Abilità in Combattimento:
+Dissolvi magie ad ogni colpo
+
+THAC0: Bonus +5
+Danno: 1d6 +5, +1d4 danni da acido
+Tipo di Danno: Contundente
+Peso: 4
+Fattore Velocità: 1
+Tipo di Competenza: Bastone Ferrato
+Tipo: A due mani
+Richiede: Intelligenza 17 e Costituzione 15
+~
+@509 =~Joorg è stato un capo bandito nelle terre che circondano le Dieci Cittadine. Per quasi quattro anni lui e la sua disparata banda di orchi, hobgoblin e ogre si appostarono sulle rotte commerciali seminando fuoco e terrore tra chiunque le attraversasse. Tutto questo durò fino a quando non assalirono la carovana su cui viaggiava la famiglia di Lord Maarsken, assalto che era stato ideato proprio per dar loro la caccia e porre fine alle loro scorrerie. Lord Maarsken donò quest'arma al capitano responsabile dell'inseguimento per assicurarsi che il bandito fosse consegnato alla giustizia.
+
+STATISTICHE:
+
+Abilità:
++1 Forza
++2 Costituzione
+-2 Destrezza
+Rigenera 2 punti ferita al round
+
+Abilità di combattimento:
+5% di possibilità di colpo vorpal
+
+THAC0: Bonus +4
+Danno: 2D6 +4
+Tipo di Danno: Da taglio
+Peso: 20
+Fattore Velocità: 6
+Tipo di Competenza: Ascia
+Tipo: A due mani
+Richiede: Forza 18
+~
+@511 =~Geirthan Agghadrais fu un seguace di Tempus nella zona circostante le Dieci Cittadine. Combattè numerose campagne in onore del suo dio, tanto al nord quanto nelle terre del sud. Nel corso di uno di questi scontri venne accusato di un empio crimine da un gruppo di abiuratori e, dopo un processo fin troppo breve, fu condannato ad essere imprigionato nelle viscere più profonde della terra. Diversi mesi dopo si scoprì che non aveva commesso alcun male e che, al contrario, era stato un necromante senza nome a compiere i misfatti a causa dei quali Geirthan era stato imprigionato. Tormentato dai rimorsi, Henstraadt, l'abiuratore che lo aveva imprigionato nelle profondità, lo liberò e creò per lui questa corazza che lo avrebbe protetto se si fosse imbattuto nuovamente in un simile destino. Impregnandola con un'immunità alle magie in cui era specializzato, si fece ricambiare alcuni favori per assicurarsi che, se Geirthan si fosse mai imbattuto nel necromante che era stato la causa del suo dolore, non sarebbe caduto vittima della magia della morte. Ciò che accadde a Geirthan o al necromante non è risaputo, ma Henstraadt venne assassinato dai suoi collaboratori pochi mesi dopo la creazione di un oggetto che temevano li avrebbe portati alla caduta.
+
+STATISTICHE:
+
+Abilità:
+Immunità alla magia della morte
+Immunità a una scuola d'incantesimo: Abiurazione
+Classe Armatura: -4
+Peso: 50
+Richiede: Forza 18
+~
+@513 =~Con la sua capacità di proteggere la persona che la brandisce dall'essere immobilizzato in qualsiasi modo, questa lama ha davvero guadagnato il suo nome. Forse la sua caratteristica migliore è che non impedisce ad un individuo di aumentare la sua mobilità: al contrario, lo aiuta addirittura in tale obiettivo.
+
+STATISTICHE:
+
+Abilità:
+Immunità alla maggior parte delle cose che alterano la mobilità
+Protezione dal Piano Negativo
+
+Abilità Speciali:
+Lancia "Velocità Potenziata" due volte al giorno
+
+THAC0: Bonus +5
+Damage: 2D4 +5
+Tipo di Danno: Da taglio
+Peso: 3
+Fattore Velocità: 0
+Tipo di Competenza: Spada Lunga
+Tipo: Una mano
+Richiede: Forza 9
+~

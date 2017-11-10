@@ -1,0 +1,13 @@
+Archer of Sylvanus: This type of druid is very unique in the way that they primarily use bows for their weapons. The only other melee weapon they can use is a club. These types of druid have the ability to do sever damage to a target. Also they can summon the spirits of animals, which are used usually in defense, because of their extreme weakness in melee combat. Only Elves and Half Elves can be an Archer of Sylvanus.
+
+Advantages:
+Summon Spirit Animal 2 times a day
+Called shot 3 times a day +1 every 5 levels
+Hide 2 times a day +1 every 5 levels
++15% Slashing, piercing, and crushing resistance
+Can be master in short bows, longbows, and Crossbows
+
+Disadvantages:
+Can only wear up to Studded Leather
+Can only be proficient with clubs
+Can only use clubs, bows, and crossbows

@@ -1,0 +1,5 @@
+This kit is under the fighter kits, and can only be human.
+
+Now please read the installation guid about how to install this kit
+
+Do note that all of the custom spells that are on this kit can be made into scrolls easily, and do contain text just like any other spell in BG2 would. You can use the Spell editor to view these

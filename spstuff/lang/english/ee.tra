@@ -1,0 +1,110 @@
+/////                                                  \\\\\
+///// EE descriptions                                  \\\\\
+/////                                                  \\\\\
+
+// since EE generates usabilities automatically, we have to cut them from the descript
+// otherwise these are identical to the descriptions in setup.tra
+ 
+@503 =~Legend tells us that this particular type of ioun stone is crafted with the enslaved soul of a Zhentarim mage.  This dusty rose ioun stone will grant the wearer the ability to memorize one extra level one spell.
+
+Memorize 1 bonus level 1 spell
+
+Weight: 2
+~
+@505 =~Noted for his scholarly lifestyle, Juzam Reghanna was ever loathe to depart from his library. Despite this, he made numerous trips around the Amnian countryside for the purpose of seeking lost or forgotten lore to add to his already vast collection of knowledge. This staff helped ensure he returned safely, more than once confounding would be robbers with its powers of illusion and the ability to cloud their sight.
+
+STATISTICS:
+
+Abilities:
+ Cast Mirror Image twice a day
+ Cast Blindness twice a day
+
+THAC0:  +2 bonus
+Damage:  1D6 + 2
+Damage type:  Crushing
+Weight: 3
+Speed Factor: 3
+Proficiency Type: Staff
+Type:  two handed
+Requires: 5 Strength & 9 Intelligence
+~
+@507 =~Khalvar Sagresshim was a famous Alterer who had spent most of his life on the study of gorgons. Eventually he gathered enough knowledge to craft what was undoubtedly his ultimate creation, the Staff of the Gorgon.
+
+STATISTICS:
+
+Equipped Abilities:
+ +3 AC Bonus
+ +3 to all saves
+ Protection from Petrification
+ Immune to Acid damage
+ Invisibility
+
+Special Abilities:
+ Cast Flesh to Stone 2 times/day
+ Cast Melf's Acid Arrow 5 times/day
+
+Combat Abilities:
+ Dispel Magic on each hit
+
+THAC0: +5
+Damage: 1d6 +5, +1d4 acid damage
+Damage Type: Crushing
+Weight: 4
+Speed Factor: 1
+Proficiency Type: Quarter Staff
+ Type: 2-handed
+Requires: 17 Intelligence & 15 Constitution
+~
+@509 =~Joorg was a bandit chief in the lands surrounding the Ten Towns. For nearly four years he and his motley band of orcs, hobgoblins and ogres stalked the trading routes bringing fire and terror where ever they passed. It wasn't until they ambushed the caravan on which the family of Lord Maarsken was traveling that a concerted effort was made to hunt them down and put an end to their depredations. Lord Maarsken gifted this weapon to the captain in charge of the hunt to ensure the bandit was brought to justice.
+
+STATISTICS:
+
+Equipped Abilities:
+ +1 Strength
+ +2 Constitution
+ -2 Dexterity
+ Regenerate 2 hp/round
+
+Combat Abilities:
+ 5% chance of vorpal hit
+
+THAC0:  +4 bonus
+Damage:  2D6 + 4
+Damage type:  slashing
+Weight: 20
+Speed Factor: 6
+Proficiency Type: Axe
+Type:  2-handed
+Requires: 18 Strength
+~
+@511 =~Geirthan Agghadrais was a follower of Tempus from the area surrounding the Ten Towns. In service to his god he fought in many campaigns both in the north and in the lands to the south. During one of these wars he was accused of a foul crime by a group of abjurers, and following an extremely short trial was condemned to being imprisoned in the very bowels of the earth. Some months later it came to light that he had not committed any wrong, indeed that it had been a nameless necromancer who had performed the deeds for which Geirthan had been imprisoned. In a show of the greatest remorse, Henstraadt, the abjurer who had cast him into the depths, freed him and created for him this armor which would protect him from such a terrible fate ever recurring. As well as imbuing it with an immunity to his own area of specialty, he called in several favors to ensure that should Geirthan ever run into the necromancer who was the cause of his sorrow, he would not fall to the mage's death magics. What became of Geirthan or the necromancer is unknown, but Henstraadt was assassinated by his own associates but a few months afterwards for creating something they feared could lead to their own downfall.
+
+STATISTICS:
+
+Abilities:
+ Immune to Death Magic
+ Immune to Spell School: Abjuration
+Armor Class: -4
+Weight: 50
+Requires: 18 Strength
+~
+@513 =~With its ability to prevent its wielder from being held by almost any means, this blade has truly earned its name. Perhaps the best thing about it is that it does not prevent one from improving ones mobility, indeed it can even aid in that goal.
+
+STATISTICS:
+
+Equipped Abilities:
+ Immune to most things that adversely affect mobility
+ Negative Plane Protection
+
+Special Abilities:
+ Cast Improved Haste 2 times/day
+
+THAC0: +5
+Damage:  2D4 +5
+Damage type:  slashing
+Weight: 3
+Speed Factor: 0
+Proficiency Type: Long Sword
+Type:  1-handed
+Requires: 9 Strength
+~

@@ -1,0 +1,13 @@
+Wushi Ninja: The Wushi Ninja are an evolved version of the regular ninjas. This happend along time ago, when ninjas were greatly exposed to magic. After time they began to gain the ability to cast spells. Like regular ninjas they have the ability to specialize in all weapons that a regular theif can use. They also are stronger than a regular theif, but cannot be as charming. The first Wushi Ninja was Nagura Firo
+
+Advantages
+-Get less THAC0 earlier then thieves , but balance out to the same as a regular thief.
+-Specialization of all theif weapons, including katanas.
+-Gain spell-like innate abilities at level 3
+- +1 to strength 
+- +1 to Intelligence
+
+Disadvantages:
+- -2 to Charisma
+-Can only wear leather or studed leather 
+- Can only be Human

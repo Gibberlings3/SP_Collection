@@ -1,0 +1,12 @@
+Blade Master: The Blade Master only uses bladed weapons, but he can do many things with them the regular fighter cannot. He gains many special abilities with using his blades, but he only wears very light armor.
+
+Advantages:
++2 to dexterity
++10% to slashing and piercing resistance
+Gains more attacks per round then a regular fighter
+Gets several different innate abilities dealing with the use of bladed weapons
+
+Disadvantages:
+-2 to strength
+Can only wear armor up to Studded Leather
+Cannot have proficiency in any non-bladed weapon

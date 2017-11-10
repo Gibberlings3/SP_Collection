@@ -1,0 +1,470 @@
+@1=~Cette etape peut prendre quelques instants...~
+@2=~Ce composant ne changera rien a votre jeu.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Sylvan Mystic kit                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@100=~Kit de Mystique Sylvain, par Polar Bear~
+@101=~mystique sylvain~
+@102=~ Mystique Sylvain~
+@103=~MYSTIQUE SYLVAIN : Les Mystiques Sylvains sont un ancien ordre d'elfes et de rôdeurs demi-elfes de Féérune. Ils se spécialisent dans la chasse des mages maléfiques et des illithids, et sont ainsi tenus d’entraîner leur mental autant que leur corps.
+
+Avantages :
+- Dissipation de la Magie
+- Vision Véritable
+- Ordres Chaotiques à partir du niveau 9
+- Peau de Fer au niveau 9
+- Aura de Feu au niveau 21
+- Convocation de Deva au niveau 23
+- Classe d’Armure : +1
+- Dégâts et TAC0 : +1
+- Facteur de vitesse : -1 tous les 5 niveaux
+
+Inconvénients :
+- Force : pénalité de -5
+- Constitution : pénalité de -4
+- Ne peut lancer Charme Animal
+- Seulement : arcs et épées
+- Ne peut porter d’armure supérieure à la cotte de mailles
+- Seulement : elfes et demi-elfes
+- Seulement : Loyal ou Neutre Bon~
+
+@104 =~Aura de Feu~
+@105 =~Convocation de Deva~
+@106 = ~Deva~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Blade Master kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@200=~Kit de Maitre-Lame, par Drizzt1180~
+@201=~ maître-lame~
+@202=~Maître-Lame~
+@203=~MAITRE-LAME : Le maître-lame n’utilise que des armes à lame, mais il maîtrise beaucoup de techniques inconnues des simples combattants. Il acquiert de nombreuses capacités spéciales en utilisant ses lames, mais ne peut porter que les armures légères. Le Maître-lame ne peut se focaliser que sur une seule de ses capacités innées à la fois.
+
+Avantages :
+- Dextérité : +2
+- Résistance contre les dégâts tranchants et perforants : 10 %
+- Acquiert la capacité Coup de Précision aux niveaux 4, 7 et 22. Cette capacité donne un bonus de +3 au TAC0 pendant trois rounds, inflige 1D10 de dégâts à la cible, et a 25 % de chance d’assommer la cible.
+- Acquiert la capacité Parade aux niveaux 7, 10 et 22. Procure une immunité virtuelle aux attaques physiques pour une durée de deux rounds.
+- Acquiert la capacité Contre-Attaque aux niveaux 10, 13 et 22. Procure une immunité virtuelle aux attaques physiques pendant un round et inflige 2D10 de dégâts à celui qui attaque.
+- Acquiert la capacité Désarmer aux niveaux 13, 16 et 22. A chaque coup, il y a 50 % de chances pour que l’adversaire lâche ses armes au sol.
+- Acquiert la capacité Feinte aux niveaux 16, 19 et 22. Donne l’Invisibilité et la Non-Détection pour une durée d’un round.
+- Acquiert la capacité Coup de Rapidité aux niveaux 19 et 22. Abaisse le facteur de vitesse de 2 points, permet une attaque supplémentaire, un bonus de +5 au TAC0 et une pénalité de –2 à la Classe d’Armure pendant deux rounds.
+- Acquiert une demi-attaque supplémentaire aux niveaux 11, 15 et 19.
+
+Inconvénients :
+- Force : pénalité de -2
+- Ne peut porter d’armure supérieure à l’Armure de Cuir Clouté~
+
+@210=~Attaque supplémentaire pour le Kit de Maître-Lame~
+@211=~Contre-Attaque~
+@212=~Désarmer~
+@213=~Feinte~
+@214=~Coup de Précision~
+@215=~Parade~
+@216=~Résistance aux Dégâts Inhérents~
+@217=~Coup de Rapidité~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Death Knight kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@300=~Kit du Chevalier de la Mort, par Drizzt1180~
+@301=~chevalier de la mort~
+@302=~Chevalier de la Mort~
+@303=~CHEVALIER DE LA MORT : Un Chevalier de la Mort apparaît lorsqu’un paladin meurt au combat. C’est un cas très rare de résurrection. Quand cela arrive, le récemment élevé Chevalier de la Mort deviendra Mauvais avec beaucoup de capacités maléfiques. Au lieu d’être mi-Clercs mi-Guerriers comme le sont les paladins, ils deviennent mi-Guerriers mi-Nécromanciens. Ils acquièrent alors des sorts de nécromancie innés au lieu de leurs habituels sorts de prêtres.
+
+Avantages :
+- Obtient le sort Absorption Mineure de Larloch aux niveaux 9 et 14.
+- Obtient le sort Toucher de la Goule aux niveaux 11 et 16.
+- Obtient le sort Toucher Vampirique aux niveaux 13, 16 et 17.
+- Obtient le sort Animation des Morts au niveau 19.
+- Obtient le sort Toucher du Mal au niveau 1. Toucher du Mal est une capacité de dégâts directs et infligera 2D10 points de dégâts +1 par niveau jusqu’au maximum de 2D10+20, avec un jet d’attaque réussi.
+- Obtient le sort Main d’Ebène au niveau 10. Ce sort confère un bonus de +1 au TAC0 +1 pour tous les 3 niveaux du lanceur jusqu’au maximum de +7. Ce sort dure 3 rounds plus un round par niveau jusqu’à un maximum de 24 rounds.
+- Obtient le sort Baiser des Tourments au niveau 15. Si le jet d’attaque réussit, ce sort inflige 4D6 points de dégâts et assomme la cible pour quatre rounds. Un JS réussi rabaisse la durée de ce deuxième effet à deux rounds.
+- Acquiert la capacité Dépérissement du Coeur au niveau 19. Ce sort tue instantanément la cible à moins qu’un JS contre la mort soit réussi ; dans ce cas, la cible sera assommée pour trois rounds et subira une pénalité de –2 en Dextérité pour 10 rounds. De plus, la cible devra effectuer un autre JS contre la mort avec –1 de pénalité ou perdre 25 % de ses points de vie. Un dernier jet pénalisé de –2 lui évitera 18 points de dégâts supplémentaires.
+
+Inconvénients :
+- N’a plus les capacités du paladin.
+- Ne peut se spécialiser que dans les armes.
+- Seulement : personnages d’alignement mauvais.~
+
+@310=~Main d’Ebène~
+@311=~Main d’Ebène
+Niveau : 1
+Portée : 0
+Durée : 3 rounds + 1 par niveau
+Temps d’incantation : 4
+Zone d’effet : lanceur
+Jets de sauvegarde : aucun
+
+Ce sort crée un rayonnement obscur autour des mains du lanceur. Ce rayonnement donne au lanceur un bonus de +1 au TAC0 ainsi que +1 tous les trois niveaux jusqu’au maximum de +7 au niveau 19, et après le niveau 20, la durée du sort est de 24 rounds. Ce sort est habituellement utilisé en association avec n’importe quel sort requérant un contact, comme Poigne Electrique ou Toucher Vampirique.~
+
+@312=~Toucher du Mal~
+@313=~Dépérissement du Coeur~
+@314=~Dépérissement du Coeur (Nécromancie)
+Niveau : 4
+Portée : 3 mètres
+Durée : spéciale
+Temps d’incantation : 7
+Zone d’effet : 1 créature
+Jet de sauvegarde : aucun
+
+Ce sort tue instantanément la cible à moins qu’un JS contre la mort soit réussi ; dans ce cas, la cible sera assommée pour trois rounds et subira une pénalité de –2 en Dextérité pour 10 rounds. De plus, la cible devra effectuer un autre JS contre la mort avec –1 de pénalité ou perdre 25 % de ses points de vie. Un dernier jet pénalisé de –2 lui évitera 18 points de dégâts supplémentaires.~
+
+@315=~Baiser des Tourments~
+@316=~Baiser des Tourments (Nécromancie)
+Niveau : 4
+Portée : Contact
+Durée : 3 rounds
+Temps d’incantation : 7
+Zone d’effet : créature touchée
+Jet de sauvegarde : contre les sorts
+
+Si le jet d’attaque est réussi, la cible subit 4d6 de dégâts et est assommée pendant 4 rounds. Un jet de sauvegarde réussi réduira la durée de ce deuxième effet de deux rounds.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Wushi Ninja kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@400=~Kit du Ninja Wushi, par Drizzt1180~
+@401=~ninja wushi~
+@402=~Ninja Wushi~
+@403=~NINJA WUSHI : Les Ninjas Wushi sont une version évoluée des ninjas classiques. Cela arriva il y a longtemps, quand les ninjas étaient très exposés à la magie. Après un certain temps ils acquirent la capacité de lancer des sorts. Comme des ninjas normaux, ils ont la possibilité de se spécialiser dans les mêmes armes que les voleurs normaux. Ils sont également plus forts qu’un voleur normal, mais moins charismatiques. Le premier ninja Wushi était Nagura Firo.
+
+Avantages :
+- Obtient le sort Projectiles Magiques en tant que capacité innée aux niveaux 3, 9 et 18
+- Obtient le sort Soins des Blessures Légères aux niveaux 4, 10 et 19
+- Obtient le sort Poigne Electrique aux niveaux 5, 11 et 20
+- Obtient le sort Incinérateur d’Agannazar aux niveaux 6 et 12
+- Obtient le sort Image Miroir aux niveaux 7 et 13
+- Obtient le sort Flou au niveau 14
+- Obtient le sort Renvoi des Sorts Mineurs au niveau 15
+- Obtient le sort Porte d’Ombre au niveau 16
+- Obtient le sort Brèche au niveau 17
+- Dans les premiers niveaux, le TAC0 évolue plus faiblement que chez les voleurs mais les deux correspondent dans les niveaux élevés.
+- Spécialisation dans toutes les armes de voleur, incluant les katanas
+- Force : +1
+- Intelligence : +1
+
+Inconvénients :
+- Charisme : -2
+- Uniquement : Armure de Cuir et Armure de Cuir Clouté
+- Uniquement : Humains
+- 20 points de voleur seulement à attribuer à chaque montée de niveau~
+
+@410=~Ajustement du TAC0~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Creslyn's BG2 Item Pack                          \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@500=~Pack d'Objets pour Baldur's Gate 2, par Creslyn~
+
+@501=~Ceci est une petite pierre qui lévite et tournoie autour de la tête de son possesseur. Equipez la pierre pour qu’elle évolue en lévitation. Ces pierres visiblement magiques possèdent différentes propriétés selon leur couleur.~
+@502=~Pierre Ionique d’Ivoire~
+@503=~Les légendes racontent qu’on fabrique ce genre de pierres ioniques en utilisant les âmes de Mages Zentharims. Cette pierre apportera au possesseur la possibilité de mémoriser un sort de niveau 1 en plus.
+
+Mémorise un sort supplémentaire de niveau 1
+
+Poids : 2
+Utilisable uniquement par :
+ Mage (monoclassé, à classes jumelées ou multiclassé)~
+
+@504=~Bâton de Juzam~
+@505=~Illustre pour son style de vie érudit, Juzam Reghanna avait horreur de quitter sa bibliothèque. Malgré cela, il mena de nombreux voyages à travers les campagnes Amniennes dans le but d’ajouter encore plus de connaissances à sa déjà vaste collection de savoir. Ce bâton a maintes fois contribué au retour sain et sauf de Juzam, déroutant plus d’une fois les brigands grâce à ses pouvoirs d’Illusion et sa capacité à embrumer leur vision.
+
+PARAMETRES :
+
+Capacités :
+Image Miroir, deux fois par jour
+Cécité, deux fois par jour
+
+TAC0 : +2
+Dégâts : 1D6 +2
+Type de dégâts : contondant
+Poids : 3
+Facteur de vitesse : 3
+Type de compétence : bâton
+Type : arme à 2 mains
+Force nécessaire : 5
+Intelligence nécessaire : 9
+Utilisable par :
+ Mage (monoclassé, à classes jumelées ou multiclassé)~
+
+@506=~Bâton de la Gorgone~
+@507=~Khalvar Sagresshim était un transmutateur très renommé qui avait consacré la quasi-totalité de sa vie à étudier les gorgones. Il a finalement accumulé suffisamment de connaissance pour créer ce qui est sans doute son ultime création, le Bâton de la Gorgone.
+
+PARAMETRES :
+
+Capacités d’Equipement :
+Classe d’armure : +3
+Jets de sauvegarde : +3
+Protection contre la Pétrification
+Immunité aux dégâts de type acide
+Invisibilité
+
+Capacités Spéciales :
+Transformation de la Chair en Pierre, deux fois par jour
+Flèches Acides de Melf, deux fois par jour
+
+Capacités de Combat :
+à chaque coup, Dissipation de la Magie
+
+TAC0 : +5
+Dégâts : 1D6 +5, +1D4 de dégâts d'acide
+Type de dégâts : contondant
+Poids : 4
+Facteur de vitesse : 1
+Type de compétence : bâton
+Type : arme à 2 mains
+Intelligence nécessaire : 17
+Constitution nécessaire : 15
+Utilisable par :
+ Mage (monoclassé seulement)~
+
+@508=~Mort de Joorg~
+@509=~Joorg était le chef d’une organisation de bandits opérant dans les environs des Dix Cités. Pendant près de quatre ans, lui et sa horde multiraciale d’orcs, de gobelins et d'ogres rôdaient le long des routes commerciales en semant feu et terreur partout sur leur chemin. Cela dura jusqu’à ce qu’ils aient tendu une embuscade à la caravane transportant la famille de Sir Maarksen ; cela provoqua un effort commun destiné à les traquer et à mettre fin à leurs activités. Sir Maarksen offrit cette arme au capitaine en charge de la chasse pour s’assurer que le bandit serait livré à la justice.
+
+PARAMETRES :
+
+Capacités d’equipement :
+Force : +1
+Constitution : +2
+Dextérité : -2
+Régénération : 2 pv par round
+
+Capacités de combat :
+5% de chance d’effectuer un coup vorpal
+
+TAC0 : +4
+Dégâts : 2D6 +4
+Type de dégâts : tranchant
+Poids : 20
+Facteur de vitesse : 6
+Type de compétence : hache
+Type : arme à 2 mains
+Force nécessaire : 18
+Non utilisable par :
+ Druide
+ Clerc
+ Mage
+ Voleur~
+
+@510=~Armure de Plates de Geirthan~
+@511=~Geirthan Agghadrais était un adorateur de Tempus originaire des alentours des Dix Cités. Pour servir son dieu, il mena de nombreuses campagnes aussi bien dans le Nord que dans les terres du Sud. Au cours de l’une de ces campagnes, il fut accusé d’un crime odieux par un groupe d’abjurateurs, et après un procès très succinct, fut condamné à l’emprisonnement dans les plus profondes entrailles de la Terre. Quelques mois après, il apparut qu’il n’avait commis aucun crime : en effet il s’avéra que le coupable des fautes pour lesquelles Geirthan avait été condamné était en fait un nécromancien sans nom. Dans un élan de remords, Henstraadt, l’abjurateur qui l’avait banni dans les profondeurs terrestres, le libéra et créa pour lui cette armure qui devait le protéger de ce genre d’injustice. Il conféra de même à l’armure une série d’immunités de son propre domaine de magie, s’assurant ainsi que si Geirthan parvenait un jour à retrouver le nécromancien coupable de sa tristesse, il ne tomberait pas devant la magie noire de son ennemi. Personne ne sait ce qu’il advint de Geirthan ni du nécromancien, mais Henstraadt fut assassiné par ses propres confrères a peine quelques mois après, pour avoir crée un objet susceptible de se retourner contre eux et de les mener à leur perte.
+
+PARAMETRES :
+
+Capacités spéciales :
+Immunité contre la magie noire
+Immunité à l’école de magie : Abjuration
+
+Classe d’Armure : -4
+Poids : 50
+Force nécessaire : 18
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur~
+
+@512=~Appel de la Liberté~
+@513=~De par le fait qu'elle immunise son porteur contre presque toute forme d’altération des mouvements, cette épée mérite largement son nom. La meilleure caractéristique de cette épée est probablement qu’elle n’empêche pas son porteur d'améliorer sa mobilité, mais peut même l'aider dans ce but.
+
+PARAMETRES :
+
+Capacités d’équipement :
+Immunité contre la presque totalité de ce qui peut diminuer la mobilité du porteur
+Protection contre le Plan Négatif
+
+Capacités spéciales :
+Lance Hâte Améliorée, deux fois par jour
+
+TAC0 : +5
+Dégâts : 2D4 +5
+Type de dégâts : tranchant
+Poids : 3
+Facteur de vitesse : 0
+Type de compétence : épée longue
+Type : arme à 1 main
+Force nécessaire : 9
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Archer of Sylvanus kit                           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@600=~Archer de Sylvanus, par Drizzt1180~
+@601=~archer de sylvanus~
+@602=~Archer de Sylvanus~
+@603=~ARCHER DE SYLVANUS : Ce genre de druides est très exceptionnel dans le sens où leurs principales armes sont les arcs. La seule autre arme, de mêlée, qu’ils peuvent manier est le gourdin. Ces druides ont la capacité d’infliger de lourdes blessures à leur cible. Il peuvent convoquer les esprits des animaux, exploités la plupart du temps en défense, pour pallier à leur grande faiblesse dans les combats au corps-à-corps. Seuls les demi-elfes ont la possibilité de devenir Archers de Sylvanus.
+
+Avantages :
+- TAC0 : +1 tous les 3 niveaux jusqu’au niveau 21 (armes de portée)
+- Convocation d’Esprit Animal, deux fois par jour
+- Coup Ajusté aux niveaux 4, 9, 14 et 19
+- Dissimulation, deux fois par jour plus un tous les cinq niveaux. Dissimulation est une combinaison d’Invisibilité et de Non-Détection qui dure dix rounds.
+- Résistance aux dégâts tranchants, perforants et écrasants : 15 %
+- Peut atteindre le niveau Maîtrise dans l’utilisation des arcs courts, arcs longs et arbalètes
+
+Inconvénients :
+- Ne peut porter d’armure supérieure à l’Armure de Cuir Cloutée
+- Ne peut utiliser que les gourdins, arcs et arbalètes~
+
+@610=~Dissimulation~
+@611=~Résistances de l’Archer de Sylvanus~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Arcane Fist kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@700=~Poing des Arcanes, par Drizzt1180~
+@701=~poing des arcanes~
+@702=~Poing des Arcanes~
+@703=~POING DES ARCANES : Les Poings des Arcanes sont un ordre ancien de sorciers en Féérune, et sont rarement aperçus. Ce ne sont ni les maîtres du combat à mains nues ni les maîtres des arts des arcanes, mais ils constituent de redoutables ennemis en combinant ces deux éléments. On leur apprend dès leur plus jeune âge les techniques nécessaires au combat à mains nues et à maîtriser également les puissances mystiques. Il sont généralement solitaires, ne s’associant qu’avec des membres de leur propre genre, où avec des étrangers en temps de grands dangers. Il existe trois sectes formant l'ordre des Poings des Arcanes : L’Ordre de Lumière, Le Pacte Bakur et la Loi Mortelle.
+
+Avantages :
+Dégâts (à mains nues) par niveau :
+
+1 – 3 : 1D5
+4 – 6 : 1D6
+7 – 9 : 1D7 (considéré comme une arme +1 pour toucher)
+10 – 12 : 1D9 (considéré comme une arme +2 pour toucher)
+13 – 15 : 1D10
+16+ : 1D12 (considéré comme une arme +3 pour toucher)
+
+La classe d’Armure baisse d’un point tous les trois niveaux jusqu’au niveau 21
+Jets de sauvegarde contre les Sorts : +1
+Spécial : Gagne 1 pv bonus maximum par niveau
+Meilleure progression du TAC0 :
+
+1 – 3 : 20
+4 – 7 : 18
+8 – 11 : 16
+12 – 15 : 14
+16 – 19 : 12
+20+ : 8
+
+Vitesse de mouvement : +2 au niveau 1, +1 tous les sept niveaux
+Deux attaques par round au niveau 12 et trois attaques par round au niveau 20
+Obtient la capacité Coup étourdissant au niveau 5 plus un tous les 5 niveaux, une fois par jour
+Immunité aux Maladies, Lenteur et Hâte au niveau 10
+Immunité aux Charmes au niveau 15
+Immunité aux Poisons au niveau 18
+Obtient la capacité Paume Tremblante au niveau 21
+
+Inconvénients :
+Ne peut pas porter d’armure, seulement des robes
+Ne peut pas porter de boucliers
+Ne peut pas utiliser d’armes
+Ne peut pas apprendre de sorts supérieurs au niveau 6
+Race : Humains uniquement
+Alignement : Loyal uniquement~
+
+@710=~Poing pour kit de Poing des Arcanes~
+@712=~Attaque supplémentaire~
+@713=~Désactive le bouton des compétences de voleur~
+@714=~Bonus au jet de sauvegarde contre les sorts~
+@715=~Progression du TAC0~
+@716=~Amélioration du poing~
+@717=~Annule les chants de Barde~
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :" 

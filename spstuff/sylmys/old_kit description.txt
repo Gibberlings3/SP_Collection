@@ -1,0 +1,18 @@
+Sylvan Mystic: The Sylvan Mystics are an ancient order of Elven and Half Elven Rangers in Faerun.  They specialize in hunting evil mages and mind flayers, and as such they must attune their mind inaddition to their body.
+Advantages:
+- Dispel Magic
+- True Sight
+- Chaotic Commands at lvl 9
+- Iron Skin at lvl 9
+- Aura of Flaming Death at lvl 21
+- Summon Deva at lvl 23
+- +1 AC
+- +1 DMG and Thac0
+- -1 Weapon Speed every 5 lvls
+Disadvantages:
+- Strength (-5) and Constitution (-4) Penalty
+- Cannot Charm Animals
+- Can only use bows and bladed weapons
+- Cannot wear armor heavier than chainmail 
+- Half-Elf or Elf kit only
+- Can only be lawful or neutral good

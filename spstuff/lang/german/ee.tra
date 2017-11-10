@@ -1,0 +1,110 @@
+/////                                                  \\\\\
+///// EE descriptions                                  \\\\\
+/////                                                  \\\\\
+
+// since EE generates usabilities automatically, we have to cut them from the descript
+// otherwise these are identical to the descriptions in setup.tra
+
+@503 =~Die Legende berichtet, das dieser spezielle Ionenstein mit der versklavten Seele eines Zhentarim Magiers hergestellt wurde.  Dieser blassrosa Ionenstein gewährt dem Träger die Fähigkeit, einen extra Zauber der ersten Stufe im Gedächtnis zu behalten.
+
+Gewährt 1 Bonuszauber der 1. Stufe
+
+Gewicht: 2
+~
+@505 =~Bekannt für seine Hingabe zur Wissenschaft, erfüllte es Juzam Reghanna immer mit grösstem Unbehagen, seine Bibliothek zu verlassen. Trotzdem unternahm er viele Reisen durch Amn, um verlorenes und vergessenes Wissen zu seiner bereits unbeschreiblichen Sammlung hinzuzufügen. Dieser Stab half ihm jedesmal, sicher zurückzukehren, indem er Räuber mit seinen Illusionskräften und seiner Fähigkeit, ihre Wahrnehmung zu trüben, verwirrte.
+
+STATISTIK:
+
+Fähigkeiten:
+ Zauber Spiegelbild 2x/Tag
+ Zauber Blindheit 2x/Tag
+
+ETW0:  +2 Bonus
+Schaden:  1D6 + 2
+Schaden Typ:  Schmetterwaffe
+Gewicht: 3
+Geschwindigkeit: 3
+Fertigkeitstyp: Stab
+Typ: zweihändig
+Voraussetzungen: 5 Stärke & 9 Intelligenz
+~
+@507 =~Khalvar Sagresshim war ein berühmter Wandler, der den grössten Teil seines Lebens mit dem Studium von Gorgonen zugebracht hatte. Am Ende hatte er genug Wissen angesammelt um seine unbestritten grösste Schöpfung hervorzubringen, den Gorgonenstab.
+
+STATISTIK:
+
+Fähigkeiten:
+ +3 Bonus auf Rüstungsklasse
+ +3 Bonus für alle Rettungswürfe
+ Schutz vor Versteinerung
+ Immunität gegen Säureschaden
+ Unsichtbarkeit
+
+Spezielle Fähigkeit
+ Zauber Fleisch zu Stein 2x/ Tag
+ Zauber Melfs Säurepfeil 5x/Tag
+
+Kampffähigkeiten
+ Magie bannen mit jedem Treffer
+
+ETW0: +5
+Schaden: 1d6 +5, +1d4 Säure Schaden
+Schaden Typ: Schmetterwaffe
+Gewicht: 4
+Geschwindigkeit: 1
+Fertigkeit Typ: Quarter Staff
+ Typ: 2-händig
+Voraussetzungen: 17 Intelligenz & 15 Konstitution
+~
+@509 =~Joorg war ein Räuberhauptmann in den Gegenden rund um die Zehnstädte. Für beinahe vier Jahre überfiel er zusammen mit seiner aus Orks, Hobgoblins aund Ogern zusammengewürfelten Truppe die Handelsrouten und barchte Feuer und Schrecken, wo immer er auftauchte. Erst als er die Karavane, in der die Familie von Fürst Maarsken reiste,in einen Hinterhalt lockte, wurde ein gemeinsamer Versuch unternommen, seinem Schrecken ein Ende zu setzen. Der Fürst schenkte dem für die Jagd zuständigen Kommandanten diese Waffe, um sicher zu gehen, dass der Bandit der Gerechtigkeit zugeführt würde.
+
+STATISTIK:
+
+Fähigkeiten:
+ +1 Stärke
+ +2 Konstitution
+ -2 Geschicklichkeit
+ Regeneriert 2 hp/Runde
+
+Kampffähigkeiten:
+ 5% Möglichkeit einen sofort tödlichen Treffer zu erzielen
+
+ETW0:  +4 bonus
+Schaden:  2D6 + 4
+Schaden Typ:  Hiebwaffe
+Gewicht: 20
+Geschwindigkeit: 6
+Fertigkeit Typ: Axt
+Typ:  2-händig
+Voraussetzungen: 18 Stärke
+~
+@511 =~Geirthan Agghadrais war ein Anhänger des Tempus in der Gegend der Zehnstädte. Im Dienste seines Gottes hat er viele Feldzüge im Norden und im Süden bestritten. Während eines dieser Feldzüge wurde von einer Gruppe von Bannwirkern eines üblen Verbrechens angeklagt und nach einem extrem kurzen Prozess zur Einkerkerung im Schoss der Erde verurteilt. Einige Monate später kam die Wahrheit ans Licht, dass er nichts verbrochen hatte, sondern ein unbekannter Nekromant. Als Zeichen seiner grössten Reue, befreite ihn Henstraadt, der Bannwirker, der ihn in die Tiefe verbannt hatte, und erschuf diese Rüstung, die ihn in Hinkunft vor diesem grausamen Schicksal bewahren sollte. Ebenso wie er sie mit Immunität gegen seine Zauberschule versah, so traf er Vorsorge, das Geirthan, sollte er jemals auf den für sein Unglück schuldigen Nekromanten treffen, vor seiner Todesmagie geschützt war. Was aus Geirthan oder dem Nekromanten wurde ist unbekannt, aber Henstraadt wurde von seinen eigenen Zauberkollegen ermordet dafür, dass er etwas geschaffen hatte, das ihren eigenen Untergang herbeiführen könnte.
+
+STATISTIK:
+
+Fähigkeiten:
+ Immunität gegen Todesmagie
+ Immunität gegen Bannzauber
+Rüstungsklasse: -4
+Gewicht: 50
+Voraussetzungen: 18 Stärke
+~
+@513 =~Durch seine Fähigkeit, seinen Träger unangreifbar gegen jede Form des Festhaltens zu machen, hat sich diese Klinge einen Namen gemacht. Vielleicht die beste Eigenschaft ist aber, dass es seinen Träger nicht davon abhält, seine Mobilität zu erhöhen, sondern das sogar fördert.
+
+STATISTIK:
+
+Fähigkeiten:
+ Immunität gegen alles, was die Beweglichkeit einschränkt
+ Schutz vor Negativer Energie
+
+Spezielle Fähigkeiten:
+ Zauber Verbesserte Hast 2x/Tag
+
+ETW0: +5
+Schaden:  2D4 +5
+Schadenstyp: Hiebwaffe
+Gewicht: 3
+Geschwindigkeit: 0
+Fertigkeitstyp: Langschwert
+Typ:  1-händig
+Voraussetzungen: 9 Stärke
+~

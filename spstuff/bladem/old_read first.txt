@@ -1,0 +1,3 @@
+The blade master kit can only be used by Humans, Half-Elves and Elves.
+
+Now go onto the text file entitled "Installation Guide" to install your kit.

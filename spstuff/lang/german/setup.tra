@@ -1,0 +1,350 @@
+@1   =~Dieser Vorgang kann einen Moment dauern...~
+@100 =~Mystiker des Waldes-Klasse, von Polar Bear~
+@101 =~ Mystiker des Waldes~
+@102 =~Mystiker des Waldes~
+@103 =~MYSTIKER DES WALDES: Die Mystiker des Waldes sind ein alter Orden von Halbelfen und Elfen in Faerun. Sie sind auf die Jagd auf böse Magier und Gedankenschinder spezialisiert, weshalb sie ihren Geist wie ihren Körper daran anpassen.
+
+Vorteile:
+- Magie bannen
+- Wahrer Blick
+- Chaotische Befehle auf der 9. Stufe
+- Eisenhaut auf der 9. Stufe
+- Aura des brennenden Todes auf der 21. Stufe
+- Deva beschwören auf der 23. Stufe
+- +1 Rüstungsklasse
+- +1 Schaden und ETW0
+- -1 Angriffsgeschwindigkeit jede 5. Stufe
+
+Nachteile:
+- Abzug auf Stärke (-5) und auf Konstitution (-4)
+- Kann keine Tiere bezaubern
+- Kann nur Bogen und Klingenwaffen verwenden
+- Kann keine Rüstung schwerer als ein Kettenhemd tragen 
+- Muss ein Halbelf oder ein Elf sein
+- Kann nur rechtschaffen oder neutral gut sein~
+
+@104 =~Aura des brennenden Todes~
+@105 =~Deva beschwören~
+@106 = ~Deva~
+
+@200 =~Schwertmeister-Klasse, von Drizzt1180~
+@201 =~ schwertmeister~
+@202 =~Schwertmeister~
+@203 =~SCHWERTMEISTER: Schwertmeister verwenden nur Klingenwaffen, aber sie übertreffen mit ihnen jeden normalen Kämpfer. Sie können nur leichte Rüstungen tragen, erhalten aber im Zusammenhang mit Klingenwaffen viele Spezialfähigkeiten. Allerdings können sie nur eine dieser Fähigkeiten zur selben Zeit aktiv haben.
+
+Vorteile:
+- +2 auf Geschicklichkeit
+- +10% Widerstandsfähigkeit gegen Hieb- und Stichwaffen
+- Erhält die Fähigkeit „Präzisionsschlag“ ab den Stufen 4, 7 und 22. Erhält einen +3 ETW0 Bonus für drei Runden, fügt dem Ziel 1W10 Schaden zu und hat eine Chance von 25%, es zu lähmen. 
+- Erhält die Fähigkeit „Parieren“ ab den Stufen 7, 10 und 22. Gewährt nahezu vollständige Immunität gegen physische Angriffe für zwei Runden.
+- Erhält die Fähigkeit „Gegenangriff“ ab den Stufen 10, 13 und 22. Gewährt nahezu vollständige Immunität gegen physische Angriffe für eine Runde und fügt dem Angreifer 2W10 Schaden zu.
+- Erhält die Fähigkeit „Entwaffnen“ ab den Stufen 13, 16 und 22. Es besteht eine Chance von 50%, den Gegner zu entwaffnen. 
+- Erhält die Fähigkeit „Finte“ ab den Stufen 16, 19 und 22. Gewährt Unsichtbarkeit und Unauffindbarkeit für eine Runde.
+- Erhält die Fähigkeit „Fliessender Schlag“ ab den Stufen 19 und 22. Veringert die Waffengeschwindigkeit um den Faktor 2, gewährt einen zusätzlichen Angriff sowie einen +5 ETW0 Bonus und einen Abzug von -2 auf die Rüstungsklasse für zwei Runden. 
+- Erhält einen zusätzlichen halben Angriff ab den Stufen 15, 19 und 23
+
+Nachteile:
+- Abzug auf Stärke (-2)
+- Kann nur ein beschlagenes Lederwams tragen
+- Kann keine Fertigkeiten in irgendeiner Nichtklingenwaffe oder zweihändigen Waffen erwerben~
+
+@210 =~Extra Angriff für Schwertmeisterklasse~
+@211 =~Gegenangriff~
+@212 =~Entwaffnen~
+@213 =~Finte~
+@214 =~Präzisionsschlag~
+@215 =~Parieren~
+@216 =~Schadensresistenz~
+@217 =~Fliessender Schlag~
+
+
+
+@300 =~Ritter des Todes-Klasse, von Drizzt1180~
+@301 =~ Ritter des Todes~
+@302 =~Ritter des Todes~
+@303 =~Ritter des Todes: Ein Ritter des Todes entsteht, wenn ein gefallener Paladin stirbt. Das Zustandekommen dieser Auferstehung ist sehr selten. Wenn es passiert, so ist der Todesritter von böser Gesinnung und erhält viele Fähigkeiten, die mit dem Bösen in Beziehung stehen. Statt zur einen Hälfte ein Krieger, zur anderen Hälfte ein Kleriker zu sein, wie ein Paladin, ist er eine Kombination aus einem Krieger und einem Nekromanten. Er erhält nekromantische Zauber als angeborene Fähigkeiten anstatt regulärer Priesterzauber.
+
+Vorteile:
+- Erhält Entzug von Lebenskraft ab den Stufen 9 und 14
+- Erhält Berührung des Ghul ab den Stufen 11 und 16
+- Erhält Vampirgriff ab den Stufen 13, 16 und 17
+- Erhält Tote beleben ab Stufe 19 
+- Erhält die Fähigkeit „Schadensgriff“ ab der 1.Stufe. Schadensgriff ist die Fähigkeit durch Berührung Schaden zuzufügen und verursacht 2W10 Schadenspunkte und einem Punkt/Stufe bis zu einem Maximum von 2W10+20 mit einem erfogreichen Trefferwurf.
+- Erhält die Fähigkeit „Hand aus Ebenholz“ ab der 10.Stufe. Der Zauber verbessert den ETW0 um +1 und einem zusätzlichen Bonus von +1 auf ETW0 für alle drei Stufen des Zaubernden bis zu einem Maximum von +7. Der Zauber hält 3 Runden und 1 Runde/Stufe des Zaubernden bis zu einem Maximum of 24 Runden an. 
+- Erhält die Fähigkeit „Kuss der Qualen“ ab der Stufe 15. Ein erfolgreicher Trefferwurf richtet 4W6 Punkte Schaden an und lähmt das Ziel für vier Runden. Ein erfolgreicher Rettungswurf veringert die Dauer der Lähmung auf zwei Runden. 
+- Erhält die Fähigkeit „Faulendes Herz“ ab der 19. Stufe Tötet Ziel augenblicklich, wenn es keinen erfolgreichen Rettungswurf gegen Tod besteht, sonst wird das Ziel nur für drei Runden gelähmt und erleidet einen Abzug von 2 aud seine Geschicklichkeit. Zusätzlich muss das Ziel einen weiteren Rettungswurf gegen Tod mit einem Malus von -1 machen oder 25% der Trefferpunkte verlieren und noch einen weiteren Rettungswurf gegen Tod bei -2 bestehen oder zusätzlich 18 TP Schaden nehmen. 
+
+Nachteile:
+- Keine Fähigkeiten eines Paladin
+- Kann sich nur einmal spezialisieren
+- Muss von böser Gesinnung sein~
+
+@310 =~Ebenholz-Hand~
+@311 =~Ebenholz-Hand
+Stufe: 1
+Reichweite: 0
+Dauer: 3 Rundes + 1 Runde/Stufe
+Zeitaufwand: 4
+Reichweite: Der Zaubernde
+Rettungswurf: Keiner
+
+Dieser Zauber erzeugt ein dunkles Glühen um die Hand des Zaubernden. Dieses Glühen verleiht dem Aubernden einen Bonus von +1 auf ETW0 plus einen zusätzlichen +1 Bonus für alle drei Stufen des Zaubernden bis zu einem Maximum von +7 auf der 19. Stufe und nach der Stufe 20, die Dauer beträgt 24 Runden.
+Dieser Zauber ist fast immer im Zusammenhang mit einem Zauber gebraucht, der eine Berührung des Opfers bedingt, um erfolgreich zu sein wie Schockgriff und Berührung des Vampirs.~
+
+@312 =~Verletzende Berührung~
+@313 =~Faulendes Herz~
+@314 =~Faulendes Herz (Nekromantie)
+Stufe: 4
+Reichweite: 3 Meter
+Dauer: speziell
+Zeitaufwand: 7
+Reichweite: ein Wesen
+Rettungswurf: negativ
+
+Tötet Ziel augenblicklich, wenn es keinen erfolgreichen Rettungswurf gegen Tod besteht, sonst wird das Ziel nur für drei Runden gelähmt und erleidet einen Abzug von 2 aud seine Geschicklichkeit. Zusätzlich muss das Ziel einen weiteren Rettungswurf gegen Tod mit einem Malus von -1 machen oder 25% der Trefferpunkte verlieren und noch einen weiteren Rettungswurf gegen Tod bei -2 oder zusätzlich 18 TP Schaden nehmen.~
+
+@315 =~Kuss der Qualen~
+@316 =~Kuss der Qualen (Nekromantie)
+Stufe: 4
+Reichweite: Berührung
+Dauer 3 Runden
+Zeitaufwand: 7
+Reichweite: Berührtes Wesen
+Rettungswurf: Rettungswurf gegen Zauber
+
+Ein erfolgreicher Trefferwurf erzeugt 4W6 Schadenspunkte und lähmt das Opfer für vier Runden. Ein erfoglreicher Rettungswurf reduziert die Lähmung auf 2 Runden.~
+
+
+@400 =~Wushi Ninja Klasse, by Drizzt1180~
+@401 =~ wushi ninja~
+@402 =~Wushi Ninja~
+@403 =~WUSHI NINJA: Wushi Ninjas sind besser ausgebildet als gewöhnliche Ninjas. Dies passierte vor langer Zeit als Ninjas starker Magie ausgesetzt wurden. Nach einer Weile erwarben sie die Fähigkeit, Zauber zu wirken. Wie gewöhnliche Ninjas können sie sich auf alle gewöhnlichen Waffen eines Diebes spezialisieren. Darüberhinaus sind sie stärker als, jedoch nicht so charismatisch wie andere Diebe. Der erste Wushi Ninja war Nagura Firo.
+
+
+Vorteile
+- Erhält Magisches Geschoss als an angeborene Fähigkeit ab den Stufen 3, 9, und 18
+- Erhält Leichte Wunden heilen ab den Stufen  4, 10, und 19
+- Erhält Schockgriff ab den Stufen 5, 11, und 20
+- Erhält Aganazzars Zauber ab den Stufen 6 und 12
+- Erhält Spiegelbild ab den Stufen 7 und 13
+- Erhält Verschwimmen ab der Stufe 14
+- Erhält Geringere Zauberumkehr ab der Stufe 15
+- Erhält Phantomtor ab der Stufe 16
+- Erhält Bresche ab der Stufe 17
+- In früheren Stufen ist der ETW0 nidriger als bei gewöhnlichen Dieben, aber er gleicht sich mit dem Aufstieg mehr und mehr an.
+- Spezialisierung auf alle Diebeswaffen einschliesslich Katanas
+- +1 auf Stärke 
+- +1 auf Intelligenz
+
+Nachteile:
+- -2 auf Charisma
+- Kann nur Lederrüstungen oder  ein beschlagenes Lederwams verwenden
+- Kann nur ein Mensch sein
+- Erhält nur 20 Fähigkeitspunkte als Dieb/ Stufe~
+
+@410 =~ETW0 Anpassung~
+
+
+
+@500 =~Creslyns Gegenstände für BG2 ~
+
+@501 =~Dieser kleine Stein schwebt rund um den Kopf seines Besitzers. Er muss einfach nur ausgerüstet werden. Diese offensichtlich magischen Steine haben unterschiedliche Eigenschaften abhängig von ihrer Farbe.~
+@502 =~Elfenbeinfarbener Ionenstein~
+@503 =~Die Legende berichtet, das dieser spezielle Ionenstein mit der versklavten Seele eines Zhentarim Magiers hergestellt wurde.  Dieser blassrosa Ionenstein gewährt dem Träger die Fähigkeit, einen extra Zauber der ersten Stufe im Gedächtnis zu behalten.
+
+Gewährt 1 Bonuszauber der 1. Stufe
+
+Gewicht: 2
+Kann verwendet werden von:
+ Magier (Einzel-, Klassenkombination-, und Multiklassen-)~
+@504 =~Juzams Krücke~
+@505 =~Bekannt für seine Hingabe zur Wissenschaft, erfüllte es Juzam Reghanna immer mit grösstem Unbehagen, seine Bibliothek zu verlassen. Trotzdem unternahm er viele Reisen durch Amn, um verlorenes und vergessenes Wissen zu seiner bereits unbeschreiblichen Sammlung hinzuzufügen. Dieser Stab half ihm jedesmal, sicher zurückzukehren, indem er Räuber mit seinen Illusionskräften und seiner Fähigkeit, ihre Wahrnehmung zu trüben, verwirrte.
+
+STATISTIK:
+
+Fähigkeiten:
+ Zauber Spiegelbild 2x/Tag
+ Zauber Blindheit 2x/Tag
+
+ETW0:  +2 Bonus
+Schaden:  1D6 + 2
+Schaden Typ:  Schmetterwaffe
+Gewicht: 3
+Geschwindigkeit: 3
+Fertigkeitstyp: Stab
+Typ: zweihändig
+Voraussetzungen: 5 Stärke & 9 Intelligenz
+Kann verwendet werden von:
+ Magier (Einzel-, Klassenkombination-, und Multiklassen-)~
+@506 =~Gorgonenstab~
+@507 =~Khalvar Sagresshim war ein berühmter Wandler, der den grössten Teil seines Lebens mit dem Studium von Gorgonen zugebracht hatte. Am Ende hatte er genug Wissen angesammelt um seine unbestritten grösste Schöpfung hervorzubringen, den Gorgonenstab.
+
+STATISTIK:
+
+Fähigkeiten:
+ +3 Bonus auf Rüstungsklasse
+ +3 Bonus für alle Rettungswürfe
+ Schutz vor Versteinerung
+ Immunität gegen Säureschaden
+ Unsichtbarkeit
+
+Spezielle Fähigkeit
+ Zauber Fleisch zu Stein 2x/ Tag
+ Zauber Melfs Säurepfeil 5x/Tag
+
+Kampffähigkeiten
+ Magie bannen mit jedem Treffer
+
+ETW0: +5
+Schaden: 1d6 +5, +1d4 Säure Schaden
+Schaden Typ: Schmetterwaffe
+Gewicht: 4
+Geschwindigkeit: 1
+Fertigkeit Typ: Quarter Staff
+ Typ: 2-händig
+Voraussetzungen: 17 Intelligenz & 15 Konstitution
+Kann verwendet werden von:
+ Magier (nur Einzelklasse)~
+@508 =~Joorgs Untergang ~
+@509 =~Joorg war ein Räuberhauptmann in den Gegenden rund um die Zehnstädte. Für beinahe vier Jahre überfiel er zusammen mit seiner aus Orks, Hobgoblins aund Ogern zusammengewürfelten Truppe die Handelsrouten und barchte Feuer und Schrecken, wo immer er auftauchte. Erst als er die Karavane, in der die Familie von Fürst Maarsken reiste,in einen Hinterhalt lockte, wurde ein gemeinsamer Versuch unternommen, seinem Schrecken ein Ende zu setzen. Der Fürst schenkte dem für die Jagd zuständigen Kommandanten diese Waffe, um sicher zu gehen, dass der Bandit der Gerechtigkeit zugeführt würde.
+
+STATISTIK:
+
+Fähigkeiten:
+ +1 Stärke
+ +2 Konstitution
+ -2 Geschicklichkeit
+ Regeneriert 2 hp/Runde
+
+Kampffähigkeiten:
+ 5% Möglichkeit einen sofort tödlichen Treffer zu erzielen
+
+ETW0:  +4 bonus
+Schaden:  2D6 + 4
+Schaden Typ:  Hiebwaffe
+Gewicht: 20
+Geschwindigkeit: 6
+Fertigkeit Typ: Axt
+Typ:  2-händig
+Voraussetzungen: 18 Stärke
+Kann nicht verwendet werden von:
+ Druiden
+ Kleriker
+ Magier
+ Dieb~
+@510 =~Geirthans Plattenpanzer~
+@511 =~Geirthan Agghadrais war ein Anhänger des Tempus in der Gegend der Zehnstädte. Im Dienste seines Gottes hat er viele Feldzüge im Norden und im Süden bestritten. Während eines dieser Feldzüge wurde von einer Gruppe von Bannwirkern eines üblen Verbrechens angeklagt und nach einem extrem kurzen Prozess zur Einkerkerung im Schoss der Erde verurteilt. Einige Monate später kam die Wahrheit ans Licht, dass er nichts verbrochen hatte, sondern ein unbekannter Nekromant. Als Zeichen seiner grössten Reue, befreite ihn Henstraadt, der Bannwirker, der ihn in die Tiefe verbannt hatte, und erschuf diese Rüstung, die ihn in Hinkunft vor diesem grausamen Schicksal bewahren sollte. Ebenso wie er sie mit Immunität gegen seine Zauberschule versah, so traf er Vorsorge, das Geirthan, sollte er jemals auf den für sein Unglück schuldigen Nekromanten treffen, vor seiner Todesmagie geschützt war. Was aus Geirthan oder dem Nekromanten wurde ist unbekannt, aber Henstraadt wurde von seinen eigenen Zauberkollegen ermordet dafür, dass er etwas geschaffen hatte, das ihren eigenen Untergang herbeiführen könnte.
+
+STATISTIK:
+
+Fähigkeiten:
+ Immunität gegen Todesmagie
+ Immunität gegen Bannzauber
+Rüstungsklasse: -4
+Gewicht: 50
+Voraussetzungen: 18 Stärke
+Kann nicht verwendet werden von:
+ Barden
+ Druiden
+ Magier
+ Dieb~
+@512 =~Ruf der Freiheit ~
+@513 =~Durch seine Fähigkeit, seinen Träger unangreifbar gegen jede Form des Festhaltens zu machen, hat sich diese Klinge einen Namen gemacht. Vielleicht die beste Eigenschaft ist aber, dass es seinen Träger nicht davon abhält, seine Mobilität zu erhöhen, sondern das sogar fördert.
+
+STATISTIK:
+
+Fähigkeiten:
+ Immunität gegen alles, was die Beweglichkeit einschränkt
+ Schutz vor Negativer Energie
+
+Spezielle Fähigkeiten:
+ Zauber Verbesserte Hast 2x/Tag
+
+ETW0: +5
+Schaden:  2D4 +5
+Schadenstyp: Hiebwaffe
+Gewicht: 3
+Geschwindigkeit: 0
+Fertigkeitstyp: Langschwert
+Typ:  1-händig
+Voraussetzungen: 9 Stärke
+Kann nicht verwendet werden von:
+ Druiden
+ Kleriker
+ Magier~
+
+
+@600 =~Bogenschütze des Sylvanus, von Drizzt1180~
+@601 =~ bogenschütze des sylvanus~
+@602 =~Bogenschütze des Sylvanus~
+@603 =~Bogenschütze des Sylvanus: Diese Art Druide ist insofern einzigartig als der Bogen ihre Hauptwaffe darstellt. Die einzige Nahkampfwaffe, die er benützen kann, ist eine Keule. Diese Art von Druiden können bei einem Gegner schwerste Schäden verursachen. Als Ausgleich für ihre Schwäche im Nahkampf können sie Tiergeister zur Verteidigung beschwören. Nur Halbelfen können Bogenschützen des Sylvanus werden.
+
+Vorteile:
+- Erhält +1 ETW0 mit Fernkampfwaffen jede dritte Stufe bis Sufe 21
+- Kann zweimal am Tag Tiergeister beschören
+- Gezielter Schuss ab den Stufen 4, 9, 14, und 19
+- „Verstecken” zweimal am Tag. Diese Fähigkeit erhöht sich um 1 alle fünf Stufen und ist eine Kombination aus Unsichtbarkeit und Unauffindbarkeit, die zehn Runden dauert.
+- +15% auf Widerstandsfähigkeit gegen Hieb-, Stich- und Schmetterwaffen
+- Kann Meisterschaft in Kurz- und Langbögen und Armbrüsten erwerben
+
+Nachteile:
+- Kann nur ein beschlagenes Lederwams tragen
+- Kann nur eine Fertigkeit mit Keulen haben
+- Kann nur Keulen, Bogen und Armbrüste verwenden~
+
+@610 =~Verstecken~
+@611 =~Bogenschütze des Sylvanus Widerstandsfähigkeiten~
+
+
+@700 =~Arkane Faust, von Drizzt1180~
+@701 =~ arkane faust~
+@702 =~Arkane Faust~
+@703 =~Arkane Faust: Die Arkanen Fäuste sind ein alter Magierorden in Faerun, und sind kaum. Sie sind weder Meister im Umgang mit mit dem Wafffenlosen kapmf noch der arkanen Kunste, der Magie, aber sie sind ein ernstzunehmender Gegner, weil sie beide Fähigkeiten kombinieren. Von Kindesbeinen an lernen sie mit magischen Fähigkeiten umzugehen und trainieren ihre Kunst des waffenlosen Kampfes. Zumeist sind sie Einzelgänger, die sich nur mit Ihresgleichen oder, in Zeiten grösster Not, mit „Aussenseitern“ zusammentun. Es existieren drei Sekten der Arkanen Faust: Orden des Lichts, Bakurs Bruderschaft und Das Gesetz des Todes
+
+Vorteile:
+- Faustschaden pro Stufe:
+
+      1 -  3  1W5
+      4 -  6  1W6
+      7 -  9  1W7  (magisch +1)
+     10 - 12  1D9  (magisch +2)
+     13 - 15  1W10 
+     16 -     1W12 (magisch +3)
+
+- Rüstungsklasse veringert sich um 1 alle 3 Stufen bis zur Stufe 21
+- +1 auf Rettungswurf gegen Zauber
+- Erhält 1 extra TP Maximum pro Stufe
+- Bessere ETW0 Progression
+
+      1 -  3   20
+      4 -  7   18
+      8 - 11   16
+     12 - 15   14
+     16 - 19   12
+     20 -       8
+
+- Verbesserte Angriffsgeschwindigkeit: +2 ab der ersten Stufe und zusätzlich +1 alle sieben Stufen
+- Zwei Angriffe pro Runde ab der 12. Stufe und drei Angriffe pro Runde ab der 20. Stufe
+- Erhält die Fähigkeit „Lähmender Schlag“ ab der 5. Stufe. Alle 5 Stufen erhöht sich diese Fähigkeit um 1 
+- Immunität gegen Krankheit, Verlangsamung und Hast ab der 10. Stufe
+- Immunität gegen Bezauberung ab der 15. Stufe
+- Immunität gegen Gift ab der 18. Stufe
+- Vibrierende Handfläche ab der 21. Stufe
+
+Nachteile:
+- Kann keine Rüstung ausser Roben tragen
+- Kann keine Schilder benutzen
+- Kann keine Waffen benutzen
+- Kann nur Zauber bis höchstens Stufe 6 erhalten
+- Muss ein Mensch sein
+- Kann nur eine rechtschaffene Gesinnung haben~
+
+@710 =~Faust für die Arkane Faust Klasse~
+@712 =~Extra Angriff~
+@713 =~Entfernt Felder für Diebesfähigkeiten~
+@714 =~Rettungswurfbonus gegen Zauber~
+@715 =~ETW0 Aufstieg~
+@716 =~Verbesserung der Faust ~
+@717 =~Entfernt Bardenlied~
+
+

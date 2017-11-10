@@ -1,0 +1,9 @@
+Death Knight: A Death Knight is created when a fallen paladin dies. This is a very rare occurrence of resurrection. When this happens the newly Death Knight will become evil with many evil related abilities. Instead of being half fighter and half cleric like a paladin, they become half fighter and half necromancer instead. They gain necromancy spells instead of their regular priest spells, but these new spells become innate.
+
+Advantages:
+-Gain several necromancy spells as innate abilities
+-Gain Harm Touch. This is a direct damage ability. This will do 2D10 points of damage +1 point per level for a maximum damage of 40 at level 20 (2D10+20). This can only be used once a day.
+
+Disadvantages:
+-Loose Turn Undead
+-Evil Alignment

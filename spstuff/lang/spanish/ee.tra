@@ -1,0 +1,110 @@
+/////                                                  \\\\\
+///// EE descriptions                                  \\\\\
+/////                                                  \\\\\
+
+// since EE generates usabilities automatically, we have to cut them from the descript
+// otherwise these are identical to the descriptions in setup.tra
+
+@503 =~Dicen las leyendas que dentro de esta piedra se encuentra el alma atrapada de un mago Zhentarim.  Esta piedra permite a quien la use memorizar un hechizo de nivel 1.
+
+Memoriza un hechizo extra de nivel 1
+
+Peso: 2
+~
+@505 =~Juzam Reghanna nunca salía de su biblioteca, aunque a pesar de esto hizo varios viajes dentro de Amn en busca de conocimientos perdidos. Este bastón le permitió volver sano y salvo mas de una vez.
+
+ESTADÍSTICAS:
+
+Habilidades:
+ Lanza Imagen Espejada dos veces al día
+ Lanza Blindness dos veces al día
+
+THAC0:  +2 bonus
+Daño:  1D6 + 2
+Tipo de Daño:  Aplastante
+Peso: 3
+Factor de Velocidad: 3
+Tipo de Talento: Bastón
+Tipo:  dos puños
+Requiere: 5 Fuerza y 9 inteligencia
+~
+@507 =~Khalvar Sagresshim era un gran Aterador quien se pasó la mayoría de la vida estudiando a los gorgons. Eventualmente ganó tanto conocimiento que pudo crear este gran bastón.
+
+ESTADÍSTICAS:
+
+Habilidades Equipadas:
+ +3 AC Bonus
+ +3 a todas las tiradas de salvación
+ Protección contra Petrificación
+ Inmune al daño Acido
+ Invisibilidad
+
+Habilidades Especiales:
+ Lanza De la Carne a la Piedra 2 veces al día
+ Lanza Flecha Acida de Melf 5 veces al día
+
+Habilidades de Combate:
+ Disipar Magia en cada golpe
+
+THAC0: +5
+Daño: 1d6 +5, +1d4 daño ácido
+Daño Tipo: Aplastante
+Peso: 4
+Factor de Velocidad: 1
+Tipo de Talento: Bastón
+ Tipo: 2-Puños
+Requiere: 17 inteligencia y 15 Constitución
+~
+@509 =~Joorg era un bandido en las tierras que rodean a los Diez Plueblos. Por casi cuatro años, él y su banda de orcos, hobgoblins y ogros sembraron el terror entre las vias comerciales y los pueblerinos. No fué hasta que asaltaron una caravana en la que viajaba la familia de Lord Maarsken que los aprendieron. Lord Maarsken le dió esta arma al capitán de la brigada despachada para asegurarse que trajera a los bandidos a la justicia.
+
+ESTADÍSTICAS:
+
+Habilidades Equipadas:
+ +1 Fuerza
+ +2 Constitución
+ -2 Destreza
+ Regenera 2 hp/turno
+
+Habilidades de Combate:
+ 5% de probabilidades de golpe vorpal
+
+THAC0:  +4 bonus
+Daño:  2D6 + 4
+Tipo de Daño:  cortante
+Peso: 20
+Factor de Velocidad: 6
+Tipo de Talento: Hacha
+Tipo:  2-Puños
+Requiere: 18 Fuerza
+~
+@511 =~Geirthan Agghadrais era seguidor de Tempus del área de los Diez Pueblos. Al servicio de su dios luchó en varias campañas. En una de ellas, fué acusado de un crimen por un grupo de abjuradores y luego de un muy corto juicio fué encarcelado en las entrañas de la tierra. Meses después se descubrió que no había hecho mal, y en con un gran sentimiento de culpa, Henstraadt, el abjurador que lo condenó, lo liberó y le dió esta armadura que no volvería a permitir que esto ocurriera nuevamente.
+
+ESTADÍSTICAS:
+
+Habilidades:
+ Inmune a Magia Muerta
+ Inmune a Escuela de Magia: Abjuración
+Clase de Armadura: -4
+Peso: 50
+Requiere: 18 Fuerza
+~
+@513 =~Como lo dice el nombre, esta espada le confiere a quien la usa el poder de nunca estar en situación de no poder moverse. 
+
+ESTADÍSTICAS:
+
+Habilidades Equipadas:
+ Inmune a casi todo lo que afecte la movilidad
+ Protección del Plano Negativo
+
+Habilidades Especiales:
+ Lanza Celeridad Mejorada 2 veces al día
+
+THAC0: +5
+Daño:  2D4 +5
+Tipo de Daño:  cortante
+Peso: 3
+Factor de Velocidad: 0
+Tipo de Talento: Espada Larga
+Tipo:  1-Puños
+Requiere: 9 Fuerza
+~

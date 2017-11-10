@@ -1,0 +1,5 @@
+This kit is a druid kit. They can use any of the bows and arrows in the game, but custom bows and arrows need to be set so that druids can use them so they will work with this class.
+
+
+Now go onto the text file entitled "Installation Guide" to install your kit.
+

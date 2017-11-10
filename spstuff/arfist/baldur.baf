@@ -1,0 +1,347 @@
+IF
+  Kit(Player1,CDArFist)
+  !HasItem("CDAFist1",Player1)
+  LevelLT(Player1,4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ApplySpellRES("CDAFFIS1",Player1)
+END
+
+IF
+  Kit(Player1,CDArFist)
+  !HasItem("CDAFist2",Player1)
+  LevelGT(Player1,3)
+  LevelLT(Player1,7)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ApplySpellRES("CDAFFIS2",Player1)
+END
+
+IF
+  Kit(Player1,CDArFist)
+  !HasItem("CDAFist3",Player1)
+  LevelGT(Player1,6)
+  LevelLT(Player1,10)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ApplySpellRES("CDAFFIS3",Player1))
+END
+
+IF
+  Kit(Player1,CDArFist)
+  !HasItem("CDAFist4",Player1)
+  LevelGT(Player1,9)
+  LevelLT(Player1,13)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ApplySpellRES("CDAFFIS4",Player1)
+END
+
+IF
+  Kit(Player1,CDArFist)
+  !HasItem("CDAFist5",Player1)
+  LevelGT(Player1,12)
+  LevelLT(Player1,16)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ApplySpellRES("CDAFFIS5",Player1)
+END
+
+IF
+  Kit(Player1,CDArFist)
+  !HasItem("CDAFist6",Player1)
+  LevelGT(Player1,15)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,ApplySpellRES("CDAFFIS6",Player1)
+END
+
+IF
+  Kit(Player2,CDArFist)
+  !HasItem("CDAFist1",Player2)
+  LevelLT(Player2,4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ApplySpellRES("CDAFFIS1",Player2)
+END
+
+IF
+  Kit(Player2,CDArFist)
+  !HasItem("CDAFist2",Player2)
+  LevelGT(Player2,3)
+  LevelLT(Player2,7)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ApplySpellRES("CDAFFIS2",Player2)
+END
+
+IF
+  Kit(Player2,CDArFist)
+  !HasItem("CDAFist3",Player2)
+  LevelGT(Player2,6)
+  LevelLT(Player2,10)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ApplySpellRES("CDAFFIS3",Player2)
+END
+
+IF
+  Kit(Player2,CDArFist)
+  !HasItem("CDAFist4",Player2)
+  LevelGT(Player2,9)
+  LevelLT(Player2,13)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ApplySpellRES("CDAFFIS4",Player2)
+END
+
+IF
+  Kit(Player2,CDArFist)
+  !HasItem("CDAFist5",Player2)
+  LevelGT(Player2,12)
+  LevelLT(Player2,16)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ApplySpellRES("CDAFFIS5",Player2)
+END
+
+IF
+  Kit(Player2,CDArFist)
+  !HasItem("CDAFist6",Player2)
+  LevelGT(Player2,15)
+THEN
+  RESPONSE #100
+    ActionOverride(Player2,ApplySpellRES("CDAFFIS6",Player2)
+END
+
+IF
+  Kit(Player3,CDArFist)
+  !HasItem("CDAFist1",Player3)
+  LevelLT(Player3,4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ApplySpellRES("CDAFFIS1",Player3)
+END
+
+IF
+  Kit(Player3,CDArFist)
+  !HasItem("CDAFist2",Player3)
+  LevelGT(Player3,3)
+  LevelLT(Player3,7)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ApplySpellRES("CDAFFIS2",Player3)
+END
+
+IF
+  Kit(Player3,CDArFist)
+  !HasItem("CDAFist3",Player3)
+  LevelGT(Player3,6)
+  LevelLT(Player3,10)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ApplySpellRES("CDAFFIS3",Player3)
+END
+
+IF
+  Kit(Player3,CDArFist)
+  !HasItem("CDAFist4",Player3)
+  LevelGT(Player3,9)
+  LevelLT(Player3,13)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ApplySpellRES("CDAFFIS4",Player3)
+END
+
+IF
+  Kit(Player3,CDArFist)
+  !HasItem("CDAFist5",Player3)
+  LevelGT(Player3,12)
+  LevelLT(Player3,16)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ApplySpellRES("CDAFFIS5",Player3)
+END
+
+IF
+  Kit(Player3,CDArFist)
+  !HasItem("CDAFist6",Player3)
+  LevelGT(Player3,15)
+THEN
+  RESPONSE #100
+    ActionOverride(Player3,ApplySpellRES("CDAFFIS6",Player3)
+END
+
+IF
+  Kit(Player4,CDArFist)
+  !HasItem("CDAFist1",Player4)
+  LevelLT(Player4,4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ApplySpellRES("CDAFFIS1",Player4)
+END
+
+IF
+  Kit(Player4,CDArFist)
+  !HasItem("CDAFist2",Player4)
+  LevelGT(Player4,3)
+  LevelLT(Player4,7)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ApplySpellRES("CDAFFIS2",Player4)
+END
+
+IF
+  Kit(Player4,CDArFist)
+  !HasItem("CDAFist3",Player4)
+  LevelGT(Player4,6)
+  LevelLT(Player4,10)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ApplySpellRES("CDAFFIS3",Player4)
+END
+
+IF
+  Kit(Player4,CDArFist)
+  !HasItem("CDAFist4",Player4)
+  LevelGT(Player4,9)
+  LevelLT(Player4,13)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ApplySpellRES("CDAFFIS4",Player4)
+END
+
+IF
+  Kit(Player4,CDArFist)
+  !HasItem("CDAFist5",Player4)
+  LevelGT(Player4,12)
+  LevelLT(Player4,16)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ApplySpellRES("CDAFFIS5",Player4)
+END
+
+IF
+  Kit(Player4,CDArFist)
+  !HasItem("CDAFist6",Player4)
+  LevelGT(Player4,15)
+THEN
+  RESPONSE #100
+    ActionOverride(Player4,ApplySpellRES("CDAFFIS6",Player4)
+END
+
+IF
+  Kit(Player5,CDArFist)
+  !HasItem("CDAFist1",Player5)
+  LevelLT(Player5,4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ApplySpellRES("CDAFFIS1",Player5)
+END
+
+IF
+  Kit(Player5,CDArFist)
+  !HasItem("CDAFist2",Player5)
+  LevelGT(Player5,3)
+  LevelLT(Player5,7)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ApplySpellRES("CDAFFIS2",Player5)
+END
+
+IF
+  Kit(Player5,CDArFist)
+  !HasItem("CDAFist3",Player5)
+  LevelGT(Player5,6)
+  LevelLT(Player5,10)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ApplySpellRES("CDAFFIS3",Player5)
+END
+
+IF
+  Kit(Player5,CDArFist)
+  !HasItem("CDAFist4",Player5)
+  LevelGT(Player5,9)
+  LevelLT(Player5,13)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ApplySpellRES("CDAFFIS4",Player5)
+END
+
+IF
+  Kit(Player5,CDArFist)
+  !HasItem("CDAFist5",Player5)
+  LevelGT(Player5,12)
+  LevelLT(Player5,16)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ApplySpellRES("CDAFFIS5",Player5)
+END
+
+IF
+  Kit(Player5,CDArFist)
+  !HasItem("CDAFist6",Player5)
+  LevelGT(Player5,15)
+THEN
+  RESPONSE #100
+    ActionOverride(Player5,ApplySpellRES("CDAFFIS6",Player5)
+END
+
+IF
+  Kit(Player6,CDArFist)
+  !HasItem("CDAFist1",Player6)
+  LevelLT(Player6,4)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ApplySpellRES("CDAFFIS1",Player6)
+END
+
+IF
+  Kit(Player6,CDArFist)
+  !HasItem("CDAFist2",Player6)
+  LevelGT(Player6,3)
+  LevelLT(Player6,7)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ApplySpellRES("CDAFFIS2",Player6)
+END
+
+IF
+  Kit(Player6,CDArFist)
+  !HasItem("CDAFist3",Player6)
+  LevelGT(Player6,6)
+  LevelLT(Player6,10)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ApplySpellRES("CDAFFIS3",Player6)
+END
+
+IF
+  Kit(Player6,CDArFist)
+  !HasItem("CDAFist4",Player6)
+  LevelGT(Player6,9)
+  LevelLT(Player6,13)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ApplySpellRES("CDAFFIS4",Player6)
+END
+
+IF
+  Kit(Player6,CDArFist)
+  !HasItem("CDAFist5",Player6)
+  LevelGT(Player6,12)
+  LevelLT(Player6,16)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ApplySpellRES("CDAFFIS5",Player6)
+END
+
+IF
+  Kit(Player6,CDArFist)
+  !HasItem("CDAFist6",Player6)
+  LevelGT(Player6,15)
+THEN
+  RESPONSE #100
+    ActionOverride(Player6,ApplySpellRES("CDAFFIS6",Player6)
+END

@@ -1,0 +1,15 @@
+This file holds some information about this kit.
+
+The Arcane Fist (monk/mage) is a bard kit, and would be in game where the other bard kits are. This is also a human only kit. The kit's thief abilities have been disabled, and the bard songs have been disabled. If you click the bard song button, it will start a bard song, but then stop it immediately. If this is pressed many times very fast, then there is a possibility that the bard song icon will appear on the party's portraits, but it will do nothing and go away in a few seconds.
+
+Make sure at character creation that you put the one availble proficiency point into to quarter staffs. Quarter staffs should be the only proficiency that you can put a point into. This is because the monk's fist weapons are technically Quarter staffs.
+
+At specific levels, the Arcane Fist will get a new fist. This fist is a weapon and must be placed into the first weapon slot. Its icon is a fist. It will be cursed so as not to be removed. Once your character reaches another level, the old fist will disappear, and a new one will be placed in the inventory. Do make sure that you put on the new fist, because since the regular fist that every character has looks the same as the fist weapon a monk gets, you may forget to equip the new one, and not hit as hard.
+
+Also the only robes that this kit can wear are the ones that already exist in the game. If you wish for him to wear a new robe, make that robe wearable by bards.
+
+Do note that this kit does use a custom script, so try not to use spells or items that also use custom scripts because this can cause problems with the kit.
+
+Now go onto the text file entitled "Installation Guide" to install your kit.
+
+

@@ -1,0 +1,113 @@
+/////                                                  \\\\\
+///// EE descriptions                                  \\\\\
+/////                                                  \\\\\
+
+// since EE generates usabilities automatically, we have to cut them from the descript
+// otherwise these are identical to the descriptions in setup.tra
+
+@503=~Les légendes racontent qu’on fabrique ce genre de pierres ioniques en utilisant les âmes de Mages Zentharims. Cette pierre apportera au possesseur la possibilité de mémoriser un sort de niveau 1 en plus.
+
+Mémorise un sort supplémentaire de niveau 1
+
+Poids : 2
+~
+@505=~Illustre pour son style de vie érudit, Juzam Reghanna avait horreur de quitter sa bibliothèque. Malgré cela, il mena de nombreux voyages à travers les campagnes Amniennes dans le but d’ajouter encore plus de connaissances à sa déjà vaste collection de savoir. Ce bâton a maintes fois contribué au retour sain et sauf de Juzam, déroutant plus d’une fois les brigands grâce à ses pouvoirs d’Illusion et sa capacité à embrumer leur vision.
+
+PARAMETRES :
+
+Capacités :
+Image Miroir, deux fois par jour
+Cécité, deux fois par jour
+
+TAC0 : +2
+Dégâts : 1D6 +2
+Type de dégâts : contondant
+Poids : 3
+Facteur de vitesse : 3
+Type de compétence : bâton
+Type : arme à 2 mains
+Force nécessaire : 5
+Intelligence nécessaire : 9
+~
+@507=~Khalvar Sagresshim était un transmutateur très renommé qui avait consacré la quasi-totalité de sa vie à étudier les gorgones. Il a finalement accumulé suffisamment de connaissance pour créer ce qui est sans doute son ultime création, le Bâton de la Gorgone.
+
+PARAMETRES :
+
+Capacités d’Equipement :
+Classe d’armure : +3
+Jets de sauvegarde : +3
+Protection contre la Pétrification
+Immunité aux dégâts de type acide
+Invisibilité
+
+Capacités Spéciales :
+Transformation de la Chair en Pierre, deux fois par jour
+Flèches Acides de Melf, deux fois par jour
+
+Capacités de Combat :
+à chaque coup, Dissipation de la Magie
+
+TAC0 : +5
+Dégâts : 1D6 +5, +1D4 de dégâts d'acide
+Type de dégâts : contondant
+Poids : 4
+Facteur de vitesse : 1
+Type de compétence : bâton
+Type : arme à 2 mains
+Intelligence nécessaire : 17
+Constitution nécessaire : 15
+~
+@509=~Joorg était le chef d’une organisation de bandits opérant dans les environs des Dix Cités. Pendant près de quatre ans, lui et sa horde multiraciale d’orcs, de gobelins et d'ogres rôdaient le long des routes commerciales en semant feu et terreur partout sur leur chemin. Cela dura jusqu’à ce qu’ils aient tendu une embuscade à la caravane transportant la famille de Sir Maarksen ; cela provoqua un effort commun destiné à les traquer et à mettre fin à leurs activités. Sir Maarksen offrit cette arme au capitaine en charge de la chasse pour s’assurer que le bandit serait livré à la justice.
+
+PARAMETRES :
+
+Capacités d’equipement :
+Force : +1
+Constitution : +2
+Dextérité : -2
+Régénération : 2 pv par round
+
+Capacités de combat :
+5% de chance d’effectuer un coup vorpal
+
+TAC0 : +4
+Dégâts : 2D6 +4
+Type de dégâts : tranchant
+Poids : 20
+Facteur de vitesse : 6
+Type de compétence : hache
+Type : arme à 2 mains
+Force nécessaire : 18
+~
+@511=~Geirthan Agghadrais était un adorateur de Tempus originaire des alentours des Dix Cités. Pour servir son dieu, il mena de nombreuses campagnes aussi bien dans le Nord que dans les terres du Sud. Au cours de l’une de ces campagnes, il fut accusé d’un crime odieux par un groupe d’abjurateurs, et après un procès très succinct, fut condamné à l’emprisonnement dans les plus profondes entrailles de la Terre. Quelques mois après, il apparut qu’il n’avait commis aucun crime : en effet il s’avéra que le coupable des fautes pour lesquelles Geirthan avait été condamné était en fait un nécromancien sans nom. Dans un élan de remords, Henstraadt, l’abjurateur qui l’avait banni dans les profondeurs terrestres, le libéra et créa pour lui cette armure qui devait le protéger de ce genre d’injustice. Il conféra de même à l’armure une série d’immunités de son propre domaine de magie, s’assurant ainsi que si Geirthan parvenait un jour à retrouver le nécromancien coupable de sa tristesse, il ne tomberait pas devant la magie noire de son ennemi. Personne ne sait ce qu’il advint de Geirthan ni du nécromancien, mais Henstraadt fut assassiné par ses propres confrères a peine quelques mois après, pour avoir crée un objet susceptible de se retourner contre eux et de les mener à leur perte.
+
+PARAMETRES :
+
+Capacités spéciales :
+Immunité contre la magie noire
+Immunité à l’école de magie : Abjuration
+
+Classe d’Armure : -4
+Poids : 50
+Force nécessaire : 18
+~
+@513=~De par le fait qu'elle immunise son porteur contre presque toute forme d’altération des mouvements, cette épée mérite largement son nom. La meilleure caractéristique de cette épée est probablement qu’elle n’empêche pas son porteur d'améliorer sa mobilité, mais peut même l'aider dans ce but.
+
+PARAMETRES :
+
+Capacités d’équipement :
+Immunité contre la presque totalité de ce qui peut diminuer la mobilité du porteur
+Protection contre le Plan Négatif
+
+Capacités spéciales :
+Lance Hâte Améliorée, deux fois par jour
+
+TAC0 : +5
+Dégâts : 2D4 +5
+Type de dégâts : tranchant
+Poids : 3
+Facteur de vitesse : 0
+Type de compétence : épée longue
+Type : arme à 1 main
+Force nécessaire : 9
+~

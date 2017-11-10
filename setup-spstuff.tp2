@@ -1,0 +1,933 @@
+BACKUP ~SPStuff/backup~ // location to store files for uninstall purposes
+
+AUTHOR ~pcamagna@yahoo.com~ // email address displayed if install fails
+
+VERSION ~v10~
+
+README ~spstuff/readme-spc.html~
+
+ALWAYS
+  INCLUDE ~SPStuff/lib/cd_ee_kit_appends.tph~
+END
+
+LANGUAGE ~English~ ~english~ 
+  ~SPStuff/lang/english/setup.tra~ // English
+LANGUAGE ~Deutsch (Übersetzung von Jester)~ ~german~  
+  ~SPStuff/lang/english/setup.tra~ 
+  ~SPStuff/lang/german/setup.tra~  // German
+LANGUAGE ~Spanish (traducido por Clan DLAN)~ ~spanish~ 
+  ~SPStuff/lang/english/setup.tra~
+  ~SPStuff/lang/spanish/setup.tra~ // Spanish
+LANGUAGE ~Czech (translation by Adam Stavárek)~ ~czech~ 
+  ~SPStuff/lang/english/setup.tra~ 
+  ~SPStuff/lang/czech/setup.tra~   // Czech
+LANGUAGE ~French (translation by Saiko from the D'Oghmatiques)~ ~french~ 
+  ~SPStuff/lang/english/setup.tra~ 
+  ~SPStuff/lang/french/setup.tra~  // French
+LANGUAGE ~Italian (translation by Giuseppe)~ ~italian~ 
+  ~SPStuff/lang/english/setup.tra~ 
+  ~SPStuff/lang/italian/setup.tra~  // Italian
+LANGUAGE ~Russian (translation by subzero400)~ ~russian~ 
+  ~SPStuff/lang/english/setup.tra~
+  ~SPStuff/lang/russian/setup.tra~  // Russian
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Sylvan Mystic kit                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @100 
+
+ADD_KIT ~CDSylMys~ 
+  ~CDSylMys                1           1           0           0           1           0           1           0~
+  ~CDSylMys 2 2 2 0 0 0 2 0 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~CDSylMys                8       14      10      14      14      0~
+  ~CDSylMys                -5      0       -4      0       0       0~
+  ~CDSylMys                8       14      10      14      14      0~
+  ~CDSylMys                8       14      10      14      14      0~
+  ~CDSylMys                1       0       0       1       0       0       0       0       0~
+  ~CDSylMys                0       0       0       0       0       0~
+  ~SPStuff/SylMys/CDsylmys.2da~
+  ~K_R_E   K_R_HE~
+  ~0x02004000 12~
+  ~Ra0~
+  ~LEAT14 * HELM16 BAG24 RING06 RING39 CLCK02 BOOT01 AMUL19 BRAC16 BELT07 * * * * * * * * *~
+  SAY @101
+  SAY @102
+  SAY @103
+
+// if DR > v3  is installed prior to spc
+ACTION_IF ((FILE_EXISTS_IN_GAME ~cdnegpp.spl~) AND (FILE_EXISTS ~Divine_Remix/lib/macro_reindex_clab.tph~)) THEN BEGIN
+
+  INCLUDE ~Divine_Remix/lib/macro_reindex_clab.tph~
+  INCLUDE ~Divine_Remix/lib/macro_add_ranger_spells.tph~
+  INCLUDE ~Divine_Remix/lib/macro_shift_ranger_spells.tph~
+  COPY_EXISTING ~CDsylmys.2da~ ~override~
+    LAUNCH_PATCH_MACRO ~add_ranger_spells~ // add generic cleric spells
+    LAUNCH_PATCH_MACRO ~shift_ranger_spells~ // shift generic ranger spells
+    LAUNCH_PATCH_MACRO ~reindex_clab~ // re-index lines
+    BUT_ONLY_IF_IT_CHANGES
+
+END
+
+//Unusability hacks
+//
+//Basically, making items unusable by a particular kit is a pain in the ass, unless it is the same as an existing kit.
+//
+//First, we're changing the Helm cleric kit to have the same restrictions as the base cleric class, since there are no items that are restricted to non-Helmites. We're going to use the Helm kit unusability flag to our advantage. Basically, the Sylvan Mystic will use the Helm kit unusability flag for its restrictions, in addition to items not usable by rangers.
+//
+//One of the many problems to this approach is that it causes unexpected values for mods which interact with the Helm kit, which in turn may cause incompatibilities.
+
+COPY_EXISTING ~kitlist.2da~ ~override~
+  REPLACE_TEXTUALLY ~0x02000000~ ~0x00004000~
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_SHORT 0x1C "type"
+    READ_BYTE  0x20 "ranger"
+    READ_BYTE  0x29 "kit"
+    PATCH_IF (("%type%" = 14) OR  //Bullets
+              ("%type%" = 17) OR  //Maces
+              ("%type%" = 18) OR  //Slings
+              ("%type%" = 21) OR  //Hammers
+              ("%type%" = 22) OR  //Morningstars
+              ("%type%" = 23) OR  //Flails
+              ("%type%" = 24) OR  //Darts
+              ("%type%" = 26) OR  //Staves
+              ("%type%" = 27) OR  //Crossbows
+              ("%type%" = 29) OR  //Spears
+              ("%type%" = 30) OR  //Halberds
+              ("%type%" = 31) OR  //Bolts
+              ("%type%" = 44) OR  //Clubs
+              (((("%ranger%" BOR 0b11011111) = 0b11111111) OR // if unusable by ranger
+                (("%kit%" BOR 0b10111111) = 0b11111111)) AND  // or by barbarian
+                (("%type%" = 2)  OR //Armor
+                 ("%type%" = 60) OR //Leather Armor
+                 ("%type%" = 61) OR //Studded Leather Armor
+                 ("%type%" = 62) OR //Chain Mail
+                 ("%type%" = 63) OR //Splint Mail
+                 ("%type%" = 64) OR //Half plate
+                 ("%type%" = 65) OR //Full plate
+                 ("%type%" = 66) OR //Hide armor
+                 ("%type%" = 67)))) BEGIN //Robes
+      WRITE_BYTE 0x29 ("%kit%" BOR 0b00000010) // flag unusable by Helm
+    END ELSE BEGIN // if not one of the forbidden items, removes redundant Helm flag if present
+      PATCH_IF (("%ranger%" BAND 0b00100000) = 0b00000000) BEGIN // usable by Ranger
+        WRITE_BYTE 0x29 ("%kit%" BAND 0b11111101)
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+INCLUDE ~SPStuff/lib/macro_spell_to_innate.tph~ // defines patch macro
+
+// Spells for Sylvan Mystic Kit
+COPY_EXISTING ~sppr506.spl~ ~override/CDsmisk.spl~ // iron skins innate
+              ~sppr508.spl~ ~override/CDsmchc.spl~ // chaotic commands innate
+  LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+
+ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN BEGIN // if ToB is installed
+
+  COPY_EXISTING ~sppr726.spl~ ~override/CDsmdva.spl~ // summon deva innate
+                ~sppr730.spl~ ~override/CDsmafd.spl~ // aura of flaming death innate
+    LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+
+END ELSE BEGIN
+
+  COPY ~SPStuff/SylMys/SoA_copy~ ~override~ // bams, sounds, vvcs
+  
+  COPY ~SPStuff/SylMys/CDsmafd.spl~  ~override/CDsmafd.spl~  // Aura of Flaming Death
+       ~SPStuff/SylMys/CDsmafdd.spl~ ~override/CDsmafdd.spl~ // Aura of Flaming Death backlash spell
+    SAY NAME1 @104
+    SAY NAME2 @104
+    SAY UNIDENTIFIED_DESC @104
+    SAY DESC @104
+
+  COPY ~SPStuff/SylMys/CDsmdva.spl~ ~override/CDsmdva.spl~ // Summon Deva
+    SAY NAME1 @105
+    SAY NAME2 @105
+    SAY UNIDENTIFIED_DESC @105
+    SAY DESC @105
+
+  COPY ~SPStuff/SylMys/devagood.cre~ ~override~ // Summon Deva
+    SAY NAME1 @106
+    SAY NAME2 @106
+    SAY UNIDENTIFIED_DESC @106
+    SAY DESC @106
+
+END
+
+// ee compatibility
+LAUNCH_ACTION_FUNCTION ee_kit_appends STR_VAR class = "RANGER" kitname = "CDSylMys" END
+//COPY_EXISTING ~thiefscl.2da~ ~override~
+//  PRETTY_PRINT_2DA
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Blade Master kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @200 
+
+ADD_KIT ~CDBladeM~ 
+  ~CDBladeM                1           1           0           0           0           0           0           0~
+  ~CDBladeM 5 5 0 0 0 0 5 0 5 5 5 5 0 5 5 5 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~CDBladeM                0       0       0       0       0       0~
+  ~CDBladeM               -2       2       0       0       0       0~
+  ~CDBladeM                0       0       0       0       0       0~
+  ~CDBladeM                0       0       0       0       0       0~
+  ~CDBladeM                1       1       1       1       1       1       1       1       1~
+  ~CDBladeM                0       1       1       1       1       0~
+  ~SPStuff/BladeM/CDbladem.2da~
+  ~K_F_H   K_F_E   K_F_HE~
+  ~0x00010000 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SW1H23 SW1H27 SW2H12~
+  SAY @201
+  SAY @202
+  SAY @203
+
+COPY ~SPStuff/BladeM/copy~ ~override~  // BAMs
+
+COPY ~SPStuff/BladeM/CDbmxat.spl~ ~override~  // Extra Attack
+  SAY NAME1 @210
+  SAY NAME2 @210
+  SAY UNIDENTIFIED_DESC @210
+  SAY DESC @210
+
+COPY ~SPStuff/BladeM/CDbmctr.spl~ ~override~  // Counter Attack
+  SAY NAME1 @211
+  SAY NAME2 @211
+  SAY UNIDENTIFIED_DESC @211
+  SAY DESC @211
+
+COPY ~SPStuff/BladeM/CDbmdrm.spl~ ~override~  // Disarm
+  SAY NAME1 @212
+  SAY NAME2 @212
+  SAY UNIDENTIFIED_DESC @212
+  SAY DESC @212
+
+COPY ~SPStuff/BladeM/CDbmfnt.spl~ ~override~  // Feint
+  SAY NAME1 @213
+  SAY NAME2 @213
+  SAY UNIDENTIFIED_DESC @213
+  SAY DESC @213
+
+COPY ~SPStuff/BladeM/CDbmpst.spl~ ~override~  // Precision Strike
+  SAY NAME1 @214
+  SAY NAME2 @214
+  SAY UNIDENTIFIED_DESC @214
+  SAY DESC @214
+
+COPY ~SPStuff/BladeM/CDbmpry.spl~ ~override~  // Parry
+  SAY NAME1 @215
+  SAY NAME2 @215
+  SAY UNIDENTIFIED_DESC @215
+  SAY DESC @215
+
+COPY ~SPStuff/BladeM/CDbmres.spl~ ~override~  // Inherent damage resistance
+  SAY NAME1 @216
+  SAY NAME2 @216
+  SAY UNIDENTIFIED_DESC @216
+  SAY DESC @216
+
+COPY ~SPStuff/BladeM/CDbmsws.spl~ ~override~  // Swift Strike
+  SAY NAME1 @217
+  SAY NAME2 @217
+  SAY UNIDENTIFIED_DESC @217
+  SAY DESC @217
+
+// ee compatibility
+LAUNCH_ACTION_FUNCTION ee_kit_appends STR_VAR class = "FIGHTER" kitname = "CDBladeM" END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Death Knight kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @300 
+
+ADD_KIT ~CDDeathK~ 
+  ~CDDeathK                1           1           1           1           1           1           1           1~
+  ~CDDeathK 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~CDDeathK               10       3       5      13       3       8~
+  ~CDDeathK                0       0       0       0       0       0~
+  ~CDDeathK               10       3       5      13       3       8~
+  ~CDDeathK               10       3       5      13       3       8~
+  ~CDDeathK                0       0       1       0       0       1       0       0       1~
+  ~CDDeathK                0       0       0       0       0       0~
+  ~SPStuff/DeathK/CDdeathk.2da~
+  ~K_F_H~
+  ~0x00000009 2~
+  ~Fi0~
+  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+  SAY @301
+  SAY @302
+  SAY @303
+
+INCLUDE ~SPStuff/lib/macro_spell_to_innate.tph~ // defines patch macro
+
+// Adding abilities for the Death Knight Kit
+COPY_EXISTING ~spwi501.spl~ ~override/CDdkand.spl~ // animate dead innate
+              ~spwi218.spl~ ~override/CDdkght.spl~ // ghoul touch innate
+              ~spwi119.spl~ ~override/CDdklmd.spl~ // larloch's minor drain innate
+              ~spwi314.spl~ ~override/CDdkvmt.spl~ // vampiric touch innate
+  LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+
+COPY ~SPStuff/DeathK/copy~ ~override~  // BAMs
+
+COPY ~SPStuff/DeathK/CDdkebh.spl~ ~override~  // Ebony Hands
+  SAY NAME1 @310
+  SAY NAME2 @310
+  SAY UNIDENTIFIED_DESC @311
+  SAY DESC @311
+
+COPY ~SPStuff/DeathK/CDdkhmt.spl~ ~override~  // Harm Touch
+  SAY NAME1 @312
+  SAY NAME2 @312
+  SAY UNIDENTIFIED_DESC @312
+  SAY DESC @312
+
+COPY ~SPStuff/DeathK/CDdkhbl.spl~ ~override~  // Heart Blight
+  SAY NAME1 @313
+  SAY NAME2 @313
+  SAY UNIDENTIFIED_DESC @314
+  SAY DESC @314
+
+COPY ~SPStuff/DeathK/CDdkiss.spl~ ~override~  // Kiss of Torment Spell
+  SAY NAME1 @315
+  SAY NAME2 @315
+  SAY UNIDENTIFIED_DESC @316
+  SAY DESC @316
+
+COPY ~SPStuff/DeathK/CDdkiss.itm~ ~override~  // Kiss of Torment Touch Item
+  SAY NAME1 @315
+  SAY NAME2 @315
+  SAY UNIDENTIFIED_DESC @315
+  SAY DESC @315
+
+// ee compatibility
+LAUNCH_ACTION_FUNCTION ee_kit_appends STR_VAR class = "FIGHTER" kitname = "CDDeathK" END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Wushi Ninja kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @400  
+
+ADD_KIT ~CDWushiN~
+  ~CDWushiN                1           1           1           1           1           0           0           0~
+  ~CDWushiN 0 2 0 0 2 0 0 2 0 2 2 0 0 2 0 2 0 2 0 0 0 0 0 2 0 2 2 2 1 1 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~CDWushiN                3       9       3       3       3       3~
+  ~CDWushiN                1       0       0       1       0      -2~
+  ~CDWushiN                3       9       3       3       3       3~
+  ~CDWushiN                3       9       3       3       3       3~
+  ~CDWushiN                0       1       1       1       1       1       1       1       1~
+  ~CDWushiN                1       1       1       0       0       0~
+  ~SPStuff/WushiN/CDwushin.2da~
+  ~K_T_H~
+  ~0x00080000 4~
+  ~Th0~
+  ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+  SAY @401
+  SAY @402
+  SAY @403
+// set dual-wielding pips to match generic thief
+// in case Rogue Rebalancing or other mods have changed it
+COPY_EXISTING ~weapprof.2da~ ~override~
+  COUNT_2DA_COLS col_num
+  READ_2DA_ENTRY 31 7             col_num dual
+  SET_2DA_ENTRY  31 (col_num - 1) col_num dual
+  BUT_ONLY_IF_IT_CHANGES
+
+INCLUDE ~SPStuff/lib/macro_spell_to_innate.tph~ // defines patch macro
+
+// Adding abilities for the Wushi Ninja Kit
+COPY_EXISTING ~spwi217.spl~ ~override/CDwnagn.spl~ // aganazzar's scorcher innate
+              ~spwi201.spl~ ~override/CDwnblr.spl~ // blur innate
+              ~sppr103.spl~ ~override/CDwnclw.spl~ // cure light wounds innate
+              ~spwi112.spl~ ~override/CDwnmgm.spl~ // magic missile innate
+              ~spwi212.spl~ ~override/CDwnmig.spl~ // mirror image innate
+              ~spwi115.spl~ ~override/CDwnshg.spl~ // shocking grasp innate
+              ~spwi513.spl~ ~override/CDwnbrc.spl~ // breach innate
+              ~spwi522.spl~ ~override/CDwnmst.spl~ // minor spell turning innate
+              ~spwi505.spl~ ~override/CDwnshd.spl~ // shadow door innate
+  LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+    
+COPY ~SPStuff/WushiN/CDwnt10.spl~ ~override~ // THAC0 Adjustment
+     ~SPStuff/WushiN/CDwnt11.spl~ ~override~ // THAC0 Adjustment
+     ~SPStuff/WushiN/CDwnt12.spl~ ~override~ // THAC0 Adjustment
+     ~SPStuff/WushiN/CDwnt13.spl~ ~override~ // THAC0 Adjustment
+     ~SPStuff/WushiN/CDwnt14.spl~ ~override~ // THAC0 Adjustment
+     ~SPStuff/WushiN/CDwnt15.spl~ ~override~ // THAC0 Adjustment
+     ~SPStuff/WushiN/CDwnt16.spl~ ~override~ // THAC0 Adjustment
+  SAY NAME1 @410
+  SAY NAME2 @410
+  SAY UNIDENTIFIED_DESC @410
+  SAY DESC @410
+
+// ee compatibility
+LAUNCH_ACTION_FUNCTION ee_kit_appends STR_VAR class = "THIEF" kitname = "CDWushiN" END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Creslyn's BG2 Item Pack                          \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @500
+REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME ~_sw1h01.itm~ @2 // non-Tutu
+REQUIRE_PREDICATE NOT FILE_EXISTS_IN_GAME ~oh9350.are~  @2 // non-BGEE
+
+ACTION_IF ((FILE_EXISTS_IN_GAME ~OH5000.are~) AND                     // bg2ee
+           (FILE_EXISTS ~spstuff/lang/%LANGUAGE%/ee.tra~)) THEN BEGIN // translation file exists
+  LOAD_TRA ~spstuff/lang/%LANGUAGE%/ee.tra~
+END
+
+COPY ~SPStuff/Creslyn/CDivory.itm~ ~override~  // Ivory Ioun Stone
+  SAY NAME1 @502
+  SAY NAME2 @502
+  SAY UNIDENTIFIED_DESC @501
+  SAY DESC @503
+
+COPY ~SPStuff/Creslyn/CDjuzstf.itm~ ~override~  // Juzam's Crutch
+  SAY NAME1 @504
+  SAY NAME2 @504
+  SAY UNIDENTIFIED_DESC @505
+  SAY DESC @505
+
+COPY ~SPStuff/Creslyn/CDgorstf.itm~ ~override~  // Gorgon Staff
+  SAY NAME1 @506
+  SAY NAME2 @506
+  SAY UNIDENTIFIED_DESC @507
+  SAY DESC @507
+
+COPY ~SPStuff/Creslyn/CDjoorg.itm~ ~override~  // Joorg's Demise
+  SAY NAME1 @508
+  SAY NAME2 @508
+  SAY UNIDENTIFIED_DESC @509
+  SAY DESC @509
+
+COPY ~SPStuff/Creslyn/CDgplate.itm~ ~override~  // Geirthan's Plate
+  SAY NAME1 @510
+  SAY NAME2 @510
+  SAY UNIDENTIFIED_DESC @511
+  SAY DESC @511
+
+COPY ~SPStuff/Creslyn/CDfrcall.itm~ ~override~  // Freedom's Call
+  SAY NAME1 @512
+  SAY NAME2 @512
+  SAY UNIDENTIFIED_DESC @513
+  SAY DESC @513
+
+COPY_EXISTING ~temlath.sto~ ~override~  // adds Juzam's Crutch to Temple of Lathander
+  READ_LONG 0x34 "sale_offset"
+  READ_LONG 0x38 "sale_num"
+  READ_LONG 0x2c "item_offset"
+  READ_LONG 0x4c "drink_offset"
+  READ_LONG 0x70 "cure_offset"
+  FOR (index = 0 ; index < sale_num ; index = index + 1) BEGIN
+    READ_ASCII ("%sale_offset%" +        ("%index%" * 0x1c)) "item"
+    PATCH_IF ("%item%" STRING_COMPARE_CASE "staf05" = 0) BEGIN // insert after staf05
+      INSERT_BYTES  ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) 28
+        WRITE_ASCII ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) ~CDJuzStf~
+        WRITE_SHORT ("%sale_offset%" + 0x0a + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_SHORT ("%sale_offset%" + 0x0c + (("%index%" + 1) * 0x1c)) 1 // quantity
+        WRITE_LONG  ("%sale_offset%" + 0x10 + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_LONG  ("%sale_offset%" + 0x14 + (("%index%" + 1) * 0x1c)) 1 // quantity
+      SET "index" = "%sale_num%" // kills loop
+      WRITE_LONG 0x38 ("%sale_num%" + 1)
+      PATCH_IF NOT ("%item_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x2c ("%item_offset%" + 0x1c)
+      END
+      PATCH_IF NOT ("%drink_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x4c ("%drink_offset%" + 0x1c)
+      END
+      PATCH_IF NOT ("%cure_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x70 ("%cure_offset%" + 0x1c)
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wmart1.sto~ ~override~  // adds Joorg's Demise to Joluv
+  READ_LONG 0x34 "sale_offset"
+  READ_LONG 0x38 "sale_num"
+  READ_LONG 0x2c "item_offset"
+  READ_LONG 0x4c "drink_offset"
+  READ_LONG 0x70 "cure_offset"
+  FOR (index = 0 ; index < sale_num ; index = index + 1) BEGIN
+    READ_ASCII ("%sale_offset%" +        ("%index%" * 0x1c)) "item"
+    PATCH_IF ("%item%" STRING_COMPARE_CASE "waaxe" = 0) BEGIN // insert after staf05
+      INSERT_BYTES  ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) 28
+        WRITE_ASCII ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) ~CDjoorg~
+        WRITE_SHORT ("%sale_offset%" + 0x0a + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_SHORT ("%sale_offset%" + 0x0c + (("%index%" + 1) * 0x1c)) 1 // quantity
+        WRITE_LONG  ("%sale_offset%" + 0x10 + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_LONG  ("%sale_offset%" + 0x14 + (("%index%" + 1) * 0x1c)) 1 // quantity
+      SET "index" = "%sale_num%" // kills loop
+      WRITE_LONG 0x38 ("%sale_num%" + 1)
+      PATCH_IF NOT ("%item_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x2c ("%item_offset%" + 0x1c)
+      END
+      PATCH_IF NOT ("%drink_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x4c ("%drink_offset%" + 0x1c)
+      END
+      PATCH_IF NOT ("%cure_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x70 ("%cure_offset%" + 0x1c)
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~udduer02.sto~ ~override~  // adds Gorgon's Staff to Duergar
+  READ_LONG 0x34 "sale_offset"
+  READ_LONG 0x38 "sale_num"
+  READ_LONG 0x2c "item_offset"
+  READ_LONG 0x4c "drink_offset"
+  READ_LONG 0x70 "cure_offset"
+  FOR (index = 0 ; index < sale_num ; index = index + 1) BEGIN
+    READ_ASCII ("%sale_offset%" +        ("%index%" * 0x1c)) "item"
+    PATCH_IF ("%item%" STRING_COMPARE_CASE "halb02" = 0) BEGIN // insert after staf05
+      INSERT_BYTES  ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) 28
+        WRITE_ASCII ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) ~CDgorstf~
+        WRITE_SHORT ("%sale_offset%" + 0x0a + (("%index%" + 1) * 0x1c)) 5 // identified
+        WRITE_SHORT ("%sale_offset%" + 0x0c + (("%index%" + 1) * 0x1c)) 2 // quantity
+        WRITE_LONG  ("%sale_offset%" + 0x10 + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_LONG  ("%sale_offset%" + 0x14 + (("%index%" + 1) * 0x1c)) 1 // quantity
+      SET "index" = "%sale_num%" // kills loop
+      WRITE_LONG 0x38 ("%sale_num%" + 1)
+      PATCH_IF NOT ("%item_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x2c ("%item_offset%" + 0x1c)
+      END
+      PATCH_IF NOT ("%drink_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x4c ("%drink_offset%" + 0x1c)
+      END
+      PATCH_IF NOT ("%cure_offset%" < "%sale_offset%") BEGIN
+        WRITE_LONG 0x70 ("%cure_offset%" + 0x1c)
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~wmart2.sto~ ~override~  // adds three items to Dierdre
+  READ_LONG 0x34 "sale_offset"
+  READ_LONG 0x38 "sale_num"
+  READ_LONG 0x2c "item_offset"
+  READ_LONG 0x4c "drink_offset"
+  READ_LONG 0x70 "cure_offset"
+  SET "delta" = 0
+  FOR (index = 0 ; (index + delta) < (sale_num + delta) ; index = index + 1) BEGIN
+    READ_ASCII ("%sale_offset%" +        ("%index%" * 0x1C)) "item"
+    PATCH_IF ("%item%" STRING_COMPARE_CASE "wa2plat" = 0) BEGIN // after Color Spray
+      INSERT_BYTES  ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) 28
+        WRITE_ASCII ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) ~CDgplate~ // spook
+        WRITE_LONG  ("%sale_offset%" + 0x10 + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_LONG  ("%sale_offset%" + 0x14 + (("%index%" + 1) * 0x1c)) 1 // quantity
+      SET "delta" = "%delta%" + 1
+    END ELSE
+    PATCH_IF ("%item%" STRING_COMPARE_CASE "wa2s1h" = 0) BEGIN // after Color Spray
+      INSERT_BYTES  ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) 28
+        WRITE_ASCII ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) ~CDfrcall~ // spook
+        WRITE_SHORT ("%sale_offset%" + 0x0a + (("%index%" + 1) * 0x1c)) 2 // identified
+        WRITE_LONG  ("%sale_offset%" + 0x10 + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_LONG  ("%sale_offset%" + 0x14 + (("%index%" + 1) * 0x1c)) 1 // quantity
+      SET "delta" = "%delta%" + 1
+    END ELSE
+    PATCH_IF ("%item%" STRING_COMPARE_CASE "wa2helm" = 0) BEGIN // after Color Spray
+      INSERT_BYTES  ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) 28
+        WRITE_ASCII ("%sale_offset%" +        (("%index%" + 1) * 0x1c)) ~CDivory~ // spook
+        WRITE_LONG  ("%sale_offset%" + 0x10 + (("%index%" + 1) * 0x1c)) 1 // identified
+        WRITE_LONG  ("%sale_offset%" + 0x14 + (("%index%" + 1) * 0x1c)) 1 // quantity
+      SET "delta" = "%delta%" + 1
+    END
+  END
+  PATCH_IF ("%delta%" > 0) BEGIN
+    WRITE_LONG 0x38 ("%sale_num%" + "%delta%")
+    PATCH_IF NOT ("%item_offset%" < "%sale_offset%") BEGIN
+      WRITE_LONG 0x2c ("%item_offset%" + ("%delta%" * 0x1c))
+    END
+    PATCH_IF NOT ("%drink_offset%" < "%sale_offset%") BEGIN
+      WRITE_LONG 0x4c ("%drink_offset%" + ("%delta%" * 0x1c))
+    END
+    PATCH_IF NOT ("%cure_offset%" < "%sale_offset%") BEGIN
+      WRITE_LONG 0x70 ("%cure_offset%" + ("%delta%" * 0x1c))
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+// in case the item pack is installed after the kits, this restricts the items properly
+ACTION_IF FILE_EXISTS_IN_GAME ~CDsylmys.2da~ THEN BEGIN
+
+  COPY_EXISTING ~CDjoorg.itm~  ~override~
+                ~CDgplate.itm~ ~override~
+    READ_BYTE  0x29 "kit"
+    WRITE_BYTE 0x29 ("%kit%" BOR 0b00000010) // flag unusable by Talos
+
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~CDarcsyl.2da~ THEN BEGIN
+
+  COPY_EXISTING ~CDjuzstf.itm~ ~override~
+                ~CDgorstf.itm~ ~override~
+                ~CDjoorg.itm~  ~override~
+                ~CDgplate.itm~ ~override~
+                ~CDfrcall.itm~ ~override~
+    READ_BYTE  0x2f "udh"
+    WRITE_BYTE 0x2f ("%udh%" BOR "0b00100000") // makes unusable by UD hunters
+
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~CDarfist.2da~ THEN BEGIN
+
+  COPY_EXISTING ~CDjuzstf.itm~ ~override~
+                ~CDgorstf.itm~ ~override~
+                ~CDjoorg.itm~  ~override~
+                ~CDgplate.itm~ ~override~
+                ~CDfrcall.itm~ ~override~
+    READ_BYTE  0x29 "kit"
+    WRITE_BYTE 0x29 ("%kit%" BOR 0b00000001)
+
+END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Archer of Sylvanus kit                           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @600
+
+ADD_KIT ~CDArcSyl~ 
+  ~CDArcSyl                0           0           1           0           1           0           0           0~
+  ~CDArcSyl 0 0 3 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 3 3 3 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~CDArcSyl                3       3       3       3      12      15~
+  ~CDArcSyl                0       0       0       0       0       0~
+  ~CDArcSyl                3       3       3       3      12      15~
+  ~CDArcSyl                3       3       3       3      12      15~
+  ~CDArcSyl                0       0       0       0       1       0       0       0       0~
+  ~CDArcSyl                0       0       0       0       0       0~
+  ~SPStuff/ArcSyl/CDarcsyl.2da~
+  ~K_D_HE~
+  ~0x00004020 11~
+  ~Dr0~
+  ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 * * *~
+  SAY @601
+  SAY @602
+  SAY @603
+
+// if DR > v3  is installed prior to spc
+ACTION_IF ((FILE_EXISTS_IN_GAME ~cdnegpp.spl~) AND (FILE_EXISTS ~Divine_Remix/lib/macro_reindex_clab.tph~)) THEN BEGIN
+
+  INCLUDE ~Divine_Remix/lib/macro_reindex_clab.tph~
+  INCLUDE ~Divine_Remix/lib/macro_add_druid_spells.tph~
+  COPY_EXISTING ~CDarcsyl.2da~ ~override~
+    LAUNCH_PATCH_MACRO ~add_druid_spells~ // add generic cleric spells
+    LAUNCH_PATCH_MACRO ~reindex_clab~ // re-index lines
+    BUT_ONLY_IF_IT_CHANGES
+
+END
+
+// Unusability hacks
+//
+//Basically, making items unusable by a particular kit is a pain in the ass, unless it is the same as an existing kit.
+//
+//First, we're changing the Undead Hunter paladin kit to have the same restrictions as the base paladin class, since there are no items that are restricted to non-Undead Hunters. We're going to use the Undead Hunter kit unusability flag to our advantage. Basically, the Archer of Sylvanus will have the same restrictions as a druid plus Undead Hunter-kit restrictions, which we're going to set in non-allowed items. To allow the kit to use bows, we also need to make them available to the base class.
+//
+//One of the many problems to this approach is that it causes unexpected values for mods which interact with the Undead Hunter kit, which in turn may cause incompatibilities.
+
+
+COPY_EXISTING ~kitlist.2da~ ~override~
+  REPLACE_TEXTUALLY ~0x00000020~ ~0x00004000~
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_SHORT 0x1C "type"
+    READ_BYTE  0x20 "ranger"
+    READ_BYTE  0x21 "druid"
+    READ_BYTE  0x2B "stalker"
+    READ_BYTE  0x2f "udh"
+    READ_BYTE  0x31 "prof"
+    PATCH_IF (((("%type%" = 17) AND NOT ("%prof%" = 115)) OR // Maces excluding clubs
+             ("%type%" = 16) OR  // Daggers
+             ("%type%" = 18) OR  // Slings
+             ("%type%" = 19) OR  // Short Swords
+             ("%type%" = 20) OR  // Long Swords
+             ("%type%" = 21) OR  // Hammers
+             ("%type%" = 22) OR  // Morningstars
+             ("%type%" = 23) OR  // Flails
+             ("%type%" = 24) OR  // Darts
+             ("%type%" = 25) OR  // Axes
+             ("%type%" = 26) OR  // Staves
+             ("%type%" = 29) OR  // Spears
+             ("%type%" = 30) OR  // Halberds
+             ("%type%" = 57) OR  // Great swords
+             ("%type%" = 69)) OR // Bastard swords
+             ((("%type%" = 2)  OR   // Armor
+               ("%type%" = 60) OR   // Leather Armor
+               ("%type%" = 61) OR   // Studded Leather Armor
+               ("%type%" = 62) OR   // Chain Mail
+               ("%type%" = 63) OR   // Splint Mail
+               ("%type%" = 64) OR   // Half plate
+               ("%type%" = 65) OR   // Full plate
+               ("%type%" = 66) OR   // Hide armor
+               ("%type%" = 67)) AND // Robes
+              (("%stalker%" BAND 0b00000001) = 0b00000001))) BEGIN
+      WRITE_BYTE 0x2f ("%udh%" BOR 0b00100000) // makes unusable by UD hunters
+    END
+    PATCH_IF ((("%ranger%" BOR 0b11011111) = 0b11011111) AND // if usable by rangers and is one of the following four item types
+           (("%type%" = 5)   OR  // arrows
+            ("%type%" = 15)  OR  // bows
+            ("%type%" = 27)  OR  // xbows
+            ("%type%" = 31))) BEGIN // bolts
+      WRITE_BYTE 0x21 ("%druid%" BAND 0b10111111) // makes usable by druids
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY ~SPStuff/ArcSyl/copy~ ~override~  // BAMs
+
+// Adding abilities for the Archer of Sylvanus Kit
+COPY ~SPStuff/ArcSyl/CDashid.spl~ ~override~  // Hide
+  SAY NAME1 @610
+  SAY NAME2 @610
+  SAY UNIDENTIFIED_DESC @610
+  SAY DESC @610
+
+COPY ~SPStuff/ArcSyl/CDasres.spl~ ~override~  // Resistances
+  SAY NAME1 @611
+  SAY NAME2 @611
+  SAY UNIDENTIFIED_DESC @611
+  SAY DESC @611
+
+// ee compatibility
+LAUNCH_ACTION_FUNCTION ee_kit_appends STR_VAR class = "DRUID" kitname = "CDArcSyl" END
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Arcane Fist kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @700
+
+ADD_KIT ~CDArFist~ // Arcane Fist
+  ~CDArFist                0           0           0           0           0           0           0           0~
+  ~CDArFist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  ~CDArFist                3       3       3       9       3       3~
+  ~CDArFist                0       0       0       0       0       0~
+  ~CDArFist                3       3       3       9       3       3~
+  ~CDArFist                3       3       3       9       3       3~
+  ~CDArFist                1       1       1       0       0       0       0       0       0~
+  ~CDArFist                0       0       0       0       0       0~
+  ~SPStuff/ArFist/cdarfist.2da~
+  ~K_B_H~
+  ~0x01004000 5~
+  ~Mo0~
+  ~* * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 * * * POTN52,5 POTN04,2 POTN14,5 * * *~
+  SAY @701
+  SAY @702
+  SAY @703
+
+//Unusability hacks
+//
+//Basically, making items unusable by a particular kit is a pain in the ass, unless it is the same as an existing kit.
+//
+//First, we're changing the Talos cleric kit to have the same restrictions as the base cleric class, since there are no items that are restricted to non-Talosians. We're going to use the Talos kit unusability flag to our advantage. Basically, the Arcane Fist will have the same restrictions as a bard plus Talos-kit restrictions, which we're going to set in non-allowed items.
+//
+//One of the many problems to this approach is that it causes unexpected values for mods which interact with the Talos kit, which in turn may cause incompatibilities. Also, because of the hard-coded restrictions the only way to allow the Arcane Fist to wear robes is to allow all bards to wear robes.
+
+COPY_EXISTING ~kitlist.2da~ ~override~
+  REPLACE_TEXTUALLY ~0x01000000~ ~0x00004000~
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_SHORT 0x1C "type"
+    READ_BYTE  0x1E "bard"
+    READ_BYTE  0x1F "mage"
+    READ_BYTE  0x20 "mage1"
+    READ_BYTE  0x29 "kit"
+    PATCH_IF ((("%mage1%" BAND 0b00000100) = 0b00000000) AND // if usable by mages
+          (("%type%" = 67) OR                            // and is a robe
+          ("%type%" = 2))) BEGIN                              // or armor
+      WRITE_BYTE 0x1E ("%bard%" BAND 0b10111111)   // make usable by bards
+    END
+    PATCH_IF ((((("%type%" = 2) OR ("%type%" = 67)) AND (("%mage%" BAND 0b00000100) = 0b00000000)) OR
+        ("%type%" = 5)  OR //Arrows
+        ("%type%" = 7)  OR //Headgear
+        ("%type%" = 12) OR //Shields
+        ("%type%" = 14) OR //Bullets
+        ("%type%" = 15) OR //Bows
+        ("%type%" = 16) OR //Daggers
+        ("%type%" = 17) OR //Maces
+        ("%type%" = 18) OR //Slings
+        ("%type%" = 19) OR //Short Swords
+        ("%type%" = 20) OR //Long Swords
+        ("%type%" = 21) OR //Hammers
+        ("%type%" = 22) OR //Morningstars
+        ("%type%" = 23) OR //Flails
+        ("%type%" = 24) OR //Darts
+        ("%type%" = 25) OR //Axes
+        ("%type%" = 26) OR //Staves
+        ("%type%" = 27) OR //Crossbows
+        ("%type%" = 29) OR //Spears
+        ("%type%" = 30) OR //Halberds
+        ("%type%" = 31) OR //Bolts
+        ("%type%" = 41) OR //Bucklers
+        ("%type%" = 44) OR //Clubs
+        ("%type%" = 47) OR //Large Shields
+        ("%type%" = 49) OR //Medium Shields
+        ("%type%" = 53) OR //Small Shields
+        ("%type%" = 57) OR //Great swords
+        ("%type%" = 60) OR //Leather Armor
+        ("%type%" = 61) OR //Studded Leather Armor
+        ("%type%" = 62) OR //Chain Mail
+        ("%type%" = 63) OR //Splint Mail
+        ("%type%" = 64) OR //Half plate
+        ("%type%" = 65) OR //Full plate
+        ("%type%" = 66) OR //Hide armor
+        ("%type%" = 69))) BEGIN   //Bastard swords
+      WRITE_BYTE 0x29 ("%kit%" BOR 0b00000001)  
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+// adding all ToB actions to action.ids unless already present
+APPEND ~action.ids~ ~31 SpellRES(S:RES*,O:Target*)~
+             UNLESS ~31 SpellRES(S:RES\*,O:Target\*)~
+APPEND ~action.ids~ ~95 SpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~95 SpellPointRES(S:RES\*,P:Target\*)~
+APPEND ~action.ids~ ~113 ForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~113 ForceSpellRES(S:RES\*,O:Target)~
+APPEND ~action.ids~ ~114 ForceSpellPointRES(S:RES*,P:Target)~
+             UNLESS ~114 ForceSpellPointRES(S:RES\*,P:Target)~
+APPEND ~action.ids~ ~147 RemoveSpellRES(S:Spell*)~
+             UNLESS ~147 RemoveSpellRES(S:Spell\*)~
+APPEND ~action.ids~ ~160 ApplySpellRES(S:RES*,O:Target)~
+             UNLESS ~160 ApplySpellRES(S:RES\*,O:Target)~
+APPEND ~action.ids~ ~181 ReallyForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~181 ReallyForceSpellRES(S:RES\*,O:Target)~
+APPEND ~action.ids~ ~191 SpellNoDecRES(S:RES*,O:Target*)~
+             UNLESS ~191 SpellNoDecRES(S:RES\*,O:Target\*)~
+APPEND ~action.ids~ ~192 SpellPointNoDecRES(S:RES*,P:Target*)~
+             UNLESS ~192 SpellPointNoDecRES(S:RES\*,P:Target\*)~
+APPEND ~action.ids~ ~240 ReallyForceSpellDeadRES(S:RES*,O:Target)~
+             UNLESS ~240 ReallyForceSpellDeadRES(S:RES\*,O:Target)~
+APPEND ~action.ids~ ~318 ForceSpellRangeRES(S:RES*,O:Target)~
+             UNLESS ~318 ForceSpellRangeRES(S:RES\*,O:Target)~
+APPEND ~action.ids~ ~319 ForceSpellPointRangeRES(S:RES*,P:Target)~
+             UNLESS ~319 ForceSpellPointRangeRES(S:RES\*,P:Target)~
+APPEND ~action.ids~ ~337 ReallyForceSpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~337 ReallyForceSpellPointRES(S:RES\*,P:Target\*)~
+COPY_EXISTING ~action.ids~ ~override~
+  REPLACE_TEXTUALLY ~^106 Shout(.*$~ ~106 Shout(I:ID*SHOUTIDS)~
+  BUT_ONLY_IF_IT_CHANGES
+
+// additional ToB triggers for SoA
+APPEND ~trigger.ids~ ~0x00A1 SpellCastOnMeRES(S:Spell*,O:Caster*)~
+              UNLESS ~0x00A1 SpellCastOnMeRES(S:Spell\*,O:Caster\*)~
+APPEND ~trigger.ids~ ~0x0091 SpellCastRES(S:Spell*,O:Object*)~
+              UNLESS ~0x0091 SpellCastRES(S:Spell\*,O:Object\*)~
+APPEND ~trigger.ids~ ~0x00A6 SpellCastPriestRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A6 SpellCastPriestRES(S:Spell\*,O:Object\*)~
+APPEND ~trigger.ids~ ~0x00A7 SpellCastInnateRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A7 SpellCastInnateRES(S:Spell\*,O:Object\*)~
+APPEND ~trigger.ids~ ~0x4031 HaveSpellRES(S:Spell*)~
+              UNLESS ~0x4031 HaveSpellRES(S:Spell\*)~
+APPEND ~trigger.ids~ ~0x40D5 ActuallyInCombat()~
+              UNLESS ~0x40D5 ActuallyInCombat()~
+COPY_EXISTING ~trigger.ids~ ~override~
+  REPLACE_TEXTUALLY ~\bHeard(O:Object\*,I:ID\*)~
+                    ~Heard(O:Object*,I:ID*SHOUTIDS)~
+  BUT_ONLY_IF_IT_CHANGES
+
+// since fists are not saved, need to add scripting to baldur.bcs that will restore the fists after a reload
+EXTEND_TOP ~baldur.bcs~ ~SPStuff/ArFist/baldur.baf~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
+
+  EXTEND_TOP ~baldur25.bcs~ ~SPStuff/ArFist/baldur.baf~
+
+END
+
+// Adding abilities and items for the Arcane Fist Kit
+COPY ~SPStuff/ArFist/CDafist1.itm~ ~override~  // Fist lvl 1-3
+     ~SPStuff/ArFist/CDafist2.itm~ ~override~  // Fist lvl 4-6
+     ~SPStuff/ArFist/CDafist3.itm~ ~override~  // Fist lvl 7-9
+     ~SPStuff/ArFist/CDafist4.itm~ ~override~  // Fist lvl 10-12
+     ~SPStuff/ArFist/CDafist5.itm~ ~override~  // Fist lvl 13-15
+     ~SPStuff/ArFist/CDafist6.itm~ ~override~  // Fist lvl 16+
+  SAY NAME1 @710
+  SAY NAME2 @710
+  SAY UNIDENTIFIED_DESC @710
+  SAY DESC @710
+
+COPY ~SPStuff/ArFist/CDafats.spl~ ~override~  // Extra Attack
+  SAY NAME1 @712
+  SAY NAME2 @712
+  SAY UNIDENTIFIED_DESC @712
+  SAY DESC @712
+
+COPY ~SPStuff/ArFist/CDafdist.spl~ ~override~  // Disable Pickpocket Button
+  SAY NAME1 @713
+  SAY NAME2 @713
+  SAY UNIDENTIFIED_DESC @713
+  SAY DESC @713
+
+COPY ~SPStuff/ArFist/CDafsas.spl~ ~override~  // +1 bonus to save vs spells
+  SAY NAME1 @714
+  SAY NAME2 @714
+  SAY UNIDENTIFIED_DESC @714
+  SAY DESC @714
+
+COPY ~SPStuff/ArFist/CDaft08.spl~ ~override~  // THAC0 Progression
+     ~SPStuff/ArFist/CDaft12.spl~ ~override~  // THAC0 Progression
+     ~SPStuff/ArFist/CDaft14.spl~ ~override~  // THAC0 Progression
+     ~SPStuff/ArFist/CDaft16.spl~ ~override~  // THAC0 Progression
+     ~SPStuff/ArFist/CDaft18.spl~ ~override~  // THAC0 Progression
+  SAY NAME1 @715
+  SAY NAME2 @715
+  SAY UNIDENTIFIED_DESC @715
+  SAY DESC @715
+
+COPY ~SPStuff/ArFist/CDaffis1.spl~ ~override~  // Fist Upgrade
+     ~SPStuff/ArFist/CDaffis2.spl~ ~override~  // Fist Upgrade
+     ~SPStuff/ArFist/CDaffis3.spl~ ~override~  // Fist Upgrade
+     ~SPStuff/ArFist/CDaffis4.spl~ ~override~  // Fist Upgrade
+     ~SPStuff/ArFist/CDaffis5.spl~ ~override~  // Fist Upgrade
+     ~SPStuff/ArFist/CDaffis6.spl~ ~override~  // Fist Upgrade
+  SAY NAME1 @716
+  SAY NAME2 @716
+  SAY UNIDENTIFIED_DESC @716
+  SAY DESC @716
+
+COPY ~SPStuff/ArFist/CDafnotb.spl~ ~override~  // Disable Bard Song
+  SAY NAME1 @717
+  SAY NAME2 @717
+  SAY UNIDENTIFIED_DESC @717
+  SAY DESC @717
+
+// ee compatibility
+LAUNCH_ACTION_FUNCTION ee_kit_appends STR_VAR class = "BARD" kitname = "CDArFist" END

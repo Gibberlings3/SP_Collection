@@ -1,0 +1,26 @@
+Note: Using this method you can only have one custom kit installed at a time.
+For this installation you will need the Infinity Engine Editor Pro from www.teambg.com
+
+Installation Instructions
+1) Copy all non text files to your override directory.
+2) For the next step you need to open Kitlist.2da with notepad. Scroll to the bottom and 
+you should see the following:
+32   Sylvan_Mysttic ***** ***** ***** CLABRN09  53           0x40000000	12
+(Note I mispelled Mystic in the installation but it won't show up in the game so it isn't a big deal)
+Now the next step is to run Infinity Engine Editor Pro, clicking on the Dialog.TLK Editor.
+Type in Sylvan Mystic into the reference text field. Click on the write radio button, and then click
+the write button. The program will give you a reference number.  Write that number down and 
+replace the first two ***** under Sylvan_Mysttic with that number.  Here is an example what it might
+look like:
+32   Sylvan_Mysttic 74111 74111 ***** CLABRN09  53           0x40000000	12
+Now use the Dialog.TLK Editor again but this time paste the contents of Kit Description.txt into the 
+reference text field. Click on the write radio button, and then clickthe write button. The program 
+will give you a reference number. Write that number down and replace the last ***** under 
+Sylvan_Mysttic with that number.  Here is an example what it might look like:
+32   Sylvan_Mysttic 74111 74111 74112 CLABRN09  53           0x40000000	12
+Save the file and you are done.
+3) This is a ranger kit and should appear under the Ranger class.  Also only Elves and Half Elves
+can be Sylvan Mystics.
+4) Enjoy the kit, if you have any questions email me at dburson@uplink.net
+
+Kit Created by PolarBear

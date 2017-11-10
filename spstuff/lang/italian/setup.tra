@@ -1,0 +1,395 @@
+@1   =~Questa fase potrebbe richiedere qualche momento...~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Sylvan Mystic kit                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@100 =~Kit Mistico del Bosco, by Polar Bear~
+@101 =~mistico del bosco~
+@102 =~Mistico del Bosco~
+@103 =~MISTICO DEL BOSCO: I Mistici dei Boschi sono un antico ordine di elfi e mezzelfi ranger nel Faerun. Sono specializzati nel cacciare i maghi malvagi e i mind flayer e, per questo motivo, devono armonizzare la loro mente oltre al loro corpo.
+
+Vantaggi:
+- Dissolvi Magie.
+- Vera Vista.
+- Comandi Caotici al livello 9.
+- Pelle di Pietra al livello 9.
+- Aura di Morte Infernale al livello 21.
+- Evoca Deva al livello 23.
+- +1 alla Classe Armatura.
+- +1 al Danno e alla THAC0.
+- -1 alla velocità dell'arma ogni 5 livelli.
+
+Svantaggi:
+- Penalità alla Forza (-5) e alla Costituzione (-4).
+- Non può charmare gli animali.
+- Può usare solo archi e armi con la lama.
+- Non può indossare armature più pesanti della cotta di maglia.
+- Kit disponibile solo per Elfi e Mezzelfi.
+- Può essere solo di allineamento Legale Buono o Neutrale Buono.~
+@104 = ~Aura di Morte Infernale~
+@105 = ~Evoca Deva~
+@106 = ~Deva~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Blade Master kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@200 =~Maestro Spadaccino Kit, by Drizzt1180~
+@201 =~maestro spadaccino~
+@202 =~Maestro Spadaccino~
+@203 =~MAESTRO SPADACCINO: Il Maestro Spadaccino usa solo armi con la lama, ma con esse può compiere diverse cose di cui un normale guerriero non è capace. Usando le sue lame ottiene diverse abilità speciali, ma è in grado di servirsene solo utilizzando armature molto leggere. Il Maestro Spadaccino può attivare solo un'abilità alla volta. 
+
+Vantaggi:
+- +2 alla Destrezza.
+- +10% alla resistenza ai danni da taglio e perforanti.
+- Ottiene l'abilità "Colpo Preciso" al livello 4, 7 e 22. Garantisce un bonus +3 alla THAC0 per tre round, arreca 1d10 danni al bersaglio e ha il 25% di possibilità di stordirlo. 
+- Ottiene l'abilità "Parata" al livello 7, 10 e 22. Garantisce l'immunità effettiva agli attacchi fisici per due round.
+- Ottiene l'abilità "Contrattacco" al livello 10, 13 e 22. Garantisce l'immunità effettiva agli attacchi fisici per un round e arreca 2d10 danni all'attaccante.
+- Ottiene l'abilità "Disarmare" al livello 13, 16 e 22. Ha il 50% di possibilità di far cadere l'arma dell'avversario. 
+- Ottiene l'abilità "Finta" al livello 16, 19 e 22. Garantisce Invisibilità e Anti-Individuazione per un round.
+- Ottiene l'abilità "Colpo Rapido" al livello 19 e 22. Diminuisce la velocità dell'arma di 2, aggiunge un attacco extra, un bonus +5 alla THAC0 e una penalità di -2 alla Classe Armatura per due round. 
+- Ottiene mezzo attacco extra al livello 11, 15 e 19.
+
+Svantaggi:
+- -2 alla Forza.
+- Può indossare solo armature di cuoio torchiato.
+- Non può essere competente in qualsiasi arma a due mani o priva di lama.~
+
+@210 =~Attacco Extra per Maestro Spadaccino Kit~
+@211 =~Contrattacco~
+@212 =~Disarmare~
+@213 =~Finta~
+@214 =~Colpo Preciso~
+@215 =~Parata~
+@216 =~Resistenza innata ai danni~
+@217 =~Colpo Rapido~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Death Knight kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@300 =~Kit Cavaliere della Morte, by Drizzt1180~
+@301 =~cavaliere della morte~
+@302 =~Cavaliere della Morte~
+@303 =~CAVALIERE DELLA MORTE: Un Cavaliere della Morte viene creato non appena un paladino muore. Questo è un caso molto raro di resurrezione. Quando ciò accade, l'appena risorto Cavaliere della Morte diventerà un essere malvagio con diverse abilità diaboliche. Invece di essere un mezzo-guerriero e un mezzo-chierico come il paladino, diventa un mezzo-guerriero e un mezzo-necromante. Ottiene degli incantesimi da necromante come abilità innate al posto delle magie da sacerdote.
+
+Vantaggi:
+- Ottiene "Risucchio Minore di Larloch" al livello 9 e 14.
+- Ottiene "Tocco del Ghoul" al livello 11 e 16.
+- Ottiene "Tocco del Vampiro" al livello 13, 16 e 17. 
+- Ottiene "Animare i Morti" al livello 19.
+- Ottiene l'abilità "Tocco del Dolore" al livello 1. Tocco del Dolore è un'abilità dal danno diretto; arreca 2D10 danni +1 un punto per ogni livello fino a un massimo di 2d10+20 con un colpo portato a segno.
+- Ottiene l'abilità "Mano d'Ebano" al livello 10. Questo incantesimo garantisce un bonus +1 alla THAC0 più un altro bonus +1 alla THAC0 per ogni tre livelli del lanciatore fino a un massimo di +7. L'incantesimo dura per 3 round più un round per livello fino a un massimo di 24 round. 
+- Ottiene l'abilità "Bacio del Tormento" al livello 15. Con un tiro per colpire riuscito, arreca 4d6 danni e stordisce il bersaglio per quattro round. Un tiro salvezza superato ridurrà lo stordimento a due round. 
+- Ottiene l'abilità "Cuore Avvizzito" al livello 19. Questo incantesimo ucciderà il bersaglio a meno che non venga superato un tiro salvezza contro la morte; con un tiro salvezza riuscito, il bersaglio rimane comunque stordito per tre round e subisce una penalità di -2 alla Destrezza per dieci round. Il bersaglio, inoltre, deve superare un altro tiro salvezza contro la morte con penalità -1 o perdere il 25% dei suoi punti ferita ed effettuare con successo un altro tiro salvezza contro la morte con penalità -2 o subire altri 18 danni. 
+
+Svantaggi:
+- Nessuna abilità da paladino.
+- Può solo specializzarsi nelle armi.
+- Dev'essere di allineamento malvagio.~
+
+@310 =~Mano d'Ebano~
+@311 =~Mano d'Ebano
+Livello: 1
+Raggio: 0
+Durata: 3 round + 1 round per livello
+Tempo di Lancio: 4
+Area d'effetto: Il lanciatore
+Tiro Salvezza: Nessuno
+
+Questo incantesimo crea un bagliore nerastro sulle mani del lanciatore. Questo bagliore conferisce un bonus +1 alla THAC0 più un altro bonus +1 alla THAC0 per ogni tre livelli del lanciatore fino a un massimo di +7 al livello 19 e, dopo il ventesimo livello, la durata dell'incantesimo si ferma a 24 round. Questo incantesimo è quasi sempre usato in associazione ad una qualsiasi delle magie che richiedono al lanciatore di toccare il bersaglio per completare l'effetto dell'incantesimo, come Scarica Elettrica e Tocco del Vampiro.~
+@312 =~Tocco del Dolore~
+@313 =~Cuore Avvizzito~
+@314 =~Cuore Avvizzito (Necromazia)
+Livello: 4
+Raggio: 10 piedi
+Durata: Speciale
+Tempo di Lancio: 7
+Area d'effetto: Una creatura
+Tiro Salvezza: Nega gli effetti
+
+Questo incantesimo ucciderà il bersaglio a meno che non venga superato un tiro salvezza contro la morte; con un tiro salvezza riuscito, il bersaglio rimane comunque stordito per tre round e subisce una penalità di -2 alla Destrezza per dieci round. Il bersaglio, inoltre, deve superare un altro tiro salvezza contro la morte con penalità -1 o perdere il 25% dei suoi punti ferita ed effettuare con successo un altro tiro salvezza contro la morte con penalità -2 o subire altri 18 danni.~
+@315 =~Bacio del Tormento~
+@316 =~Bacio del Tormento (Necromanzia)
+Livello: 4
+Raggio: Contatto
+Durata: 3 round
+Tempo di Lancio: 7
+Area d'effetto: Creatura toccata
+Tiro Salvezza: Tiro salvezza contro incantesimi
+
+Con un tiro per colpire riuscito, arreca 4d6 danni e stordisce il bersaglio per quattro round. Un tiro salvezza superato ridurrà lo stordimento a due round.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Wushi Ninja kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@400 =~Kit Wushi Ninja, by Drizzt1180~
+@401 =~wushi ninja~
+@402 =~Wushi Ninja~
+@403 =~WUSHI NINJA: I Wushi Ninja sono una versione evoluta dei normali ninja. Questo cambiamento ebbe luogo molto tempo fa, quando i ninja erano notevolmente esposti alla magia. Col passare del tempo iniziarono ad acquisire l'abilità di lanciare incantesimi. Come i normali ninja, sono capaci di specializzarsi in tutte le armi che un ladro può usare. Sono anche più forti di un ladro, ma non altrettanto accattivanti. Il primo Wushi Ninja fu Nagura Firo.
+
+Vantaggi:
+- Ottiene "Dardo Incantato" come abilità innata al livello 3, 9, e 18.
+- Ottiene "Cura Ferite Leggere" al livello 4, 10, e 19.
+- Ottiene "Scarica Elettrica" al livello 5, 11 e 20.
+- Ottiene "Vampa di Aganazzar" al livello 6 e 12.
+- Ottiene "Immagine Speculare" al livello 7 e 13.
+- Ottiene "Sfocatura" al livello 14.
+- Ottiene "Defletti Incantesimo Minore" al livello 15.
+- Ottiene "Portale d'Ombra" al livello 16.
+- Ottiene "Breccia" al livello 17.
+- Ai livelli inferiori la THAC0 è più bassa rispetto al normale avanzamento di quella del ladro, ma ai livelli superiori diventa uguale.
+- Specializzazione in tutte le armi da ladro, incluse le katane.
+- +1 alla Forza.
+- +1 all'Intelligenza.
+
+Svantaggi:
+- -2 al Carisma.
+- Può indossare solo armature di cuoio o di cuoio torchiato.
+- Può essere solo Umano.
+- Ha a disposizione solo 20 punti da distribuire tra le abilità da ladro.~
+
+@410 =~Aggiustamenti alla THAC0~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Creslyn's BG2 Item Pack                          \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@500 =~Creslyn's BG2 Item Pack~
+
+@501 =~Questa è una piccola pietra che sta sospesa intorno alla testa del suo possessore. E' sufficiente equipaggiarla perchè entri in orbita. Queste pietre magiche, ovviamente, hanno proprietà diverse a seconda del colore.~
+@502 =~Pietra Ioun d'avorio~
+@503 =~Una leggenda racconta che questo particolare tipo di pietra Ioun venne forgiata con l'anima imprigionata di un mago Zhentarim. Questa polverosa pietra ioun garantirà a chi la indossa la capacità di memorizzare un incantesimo extra di primo livello.
+
+STATISTICHE:
+
+Memorizza un incantesimo extra di primo livello
+
+Peso: 2
+Utilizzabile Da:
+Mago (singolo, duale e multiclasse)~
+@504 =~Sostegno di Juzam~
+@505 =~Noto per il suo stile di vita accademico, Juzam Reghanna fu sempre restio all'idea di allontanarsi dalla sua biblioteca. Ciò nonostante, fece diversi viaggi nelle campagne di Amn allo scopo di cercare conoscenze perdute o dimenticate da aggiungere alla sua vasta collezione di sapere. Questo bastone lo aiutò a ritornare sano e salvo, confondendo più di una volta la sua tunica con i suoi poteri d'illusione e la capacità di oscurare la vista.
+
+STATISTICHE:
+
+Abilità:
+Lancia "Immagine Speculare" due volte al giorno
+Lancia "Cecità" due volte al giorno
+
+THAC0: Bonus +2
+Danno: 1D6 +2
+Tipo di Danno: Contundente
+Peso: 3
+Fattore Velocità: 3
+Tipo di Capacità: Bastone Ferrato
+Tipo: A due mani
+Richiede: Forza 5 e Intelligenza 9
+Utilizzabile Da:
+Mago (singolo, duale e multiclasse)~
+@506 =~Bastone della Gorgone~
+@507 =~Khalvar Sagresshim era un famoso alteratore che trascorse la maggior parte della sua vita studiando le gorgoni. Infine raccolse abbastanza conoscenze per forgiare quella che è stata senza dubbio la sua ultima creazione, il Bastone della Gorgone.
+
+STATISTICHE:
+
+Abilità:
+Bonus +3 alla Classe Armatura
+Bonus +3 a tutti i tiri salvezza
+Protezione dalla Pietrificazione
+Immunità ai danni da acido
+Invisibilità
+
+Abilità Speciali:
+Lancia "Carne in Pietra" due volte al giorno
+Lancia "Freccia Acida di Melf" cinque volte al giorno
+
+Abilità in Combattimento:
+Dissolvi magie ad ogni colpo
+
+THAC0: Bonus +5
+Danno: 1d6 +5, +1d4 danni da acido
+Tipo di Danno: Contundente
+Peso: 4
+Fattore Velocità: 1
+Tipo di Competenza: Bastone Ferrato
+Tipo: A due mani
+Richiede: Intelligenza 17 e Costituzione 15
+Utilizzabile Da:
+Mago (Solo classe singola)~
+@508 =~Morte di Joorg~
+@509 =~Joorg è stato un capo bandito nelle terre che circondano le Dieci Cittadine. Per quasi quattro anni lui e la sua disparata banda di orchi, hobgoblin e ogre si appostarono sulle rotte commerciali seminando fuoco e terrore tra chiunque le attraversasse. Tutto questo durò fino a quando non assalirono la carovana su cui viaggiava la famiglia di Lord Maarsken, assalto che era stato ideato proprio per dar loro la caccia e porre fine alle loro scorrerie. Lord Maarsken donò quest'arma al capitano responsabile dell'inseguimento per assicurarsi che il bandito fosse consegnato alla giustizia.
+
+STATISTICHE:
+
+Abilità:
++1 Forza
++2 Costituzione
+-2 Destrezza
+Rigenera 2 punti ferita al round
+
+Abilità di combattimento:
+5% di possibilità di colpo vorpal
+
+THAC0: Bonus +4
+Danno: 2D6 +4
+Tipo di Danno: Da taglio
+Peso: 20
+Fattore Velocità: 6
+Tipo di Competenza: Ascia
+Tipo: A due mani
+Richiede: Forza 18
+Non Utilizzabile Da:
+Druido
+Chierico
+Mago
+Ladro~
+@510 =~Armatura di Geirthan~
+@511 =~Geirthan Agghadrais fu un seguace di Tempus nella zona circostante le Dieci Cittadine. Combattè numerose campagne in onore del suo dio, tanto al nord quanto nelle terre del sud. Nel corso di uno di questi scontri venne accusato di un empio crimine da un gruppo di abiuratori e, dopo un processo fin troppo breve, fu condannato ad essere imprigionato nelle viscere più profonde della terra. Diversi mesi dopo si scoprì che non aveva commesso alcun male e che, al contrario, era stato un necromante senza nome a compiere i misfatti a causa dei quali Geirthan era stato imprigionato. Tormentato dai rimorsi, Henstraadt, l'abiuratore che lo aveva imprigionato nelle profondità, lo liberò e creò per lui questa corazza che lo avrebbe protetto se si fosse imbattuto nuovamente in un simile destino. Impregnandola con un'immunità alle magie in cui era specializzato, si fece ricambiare alcuni favori per assicurarsi che, se Geirthan si fosse mai imbattuto nel necromante che era stato la causa del suo dolore, non sarebbe caduto vittima della magia della morte. Ciò che accadde a Geirthan o al necromante non è risaputo, ma Henstraadt venne assassinato dai suoi collaboratori pochi mesi dopo la creazione di un oggetto che temevano li avrebbe portati alla caduta.
+
+STATISTICHE:
+
+Abilità:
+Immunità alla magia della morte
+Immunità a una scuola d'incantesimo: Abiurazione
+Classe Armatura: -4
+Peso: 50
+Richiede: Forza 18
+Non Utilizzabile Da:
+Bardo
+Druido
+Mago
+Ladro~
+@512 =~Chiamata della Libertà~
+@513 =~Con la sua capacità di proteggere la persona che la brandisce dall'essere immobilizzato in qualsiasi modo, questa lama ha davvero guadagnato il suo nome. Forse la sua caratteristica migliore è che non impedisce ad un individuo di aumentare la sua mobilità: al contrario, lo aiuta addirittura in tale obiettivo.
+
+STATISTICHE:
+
+Abilità:
+Immunità alla maggior parte delle cose che alterano la mobilità
+Protezione dal Piano Negativo
+
+Abilità Speciali:
+Lancia "Velocità Potenziata" due volte al giorno
+
+THAC0: Bonus +5
+Damage: 2D4 +5
+Tipo di Danno: Da taglio
+Peso: 3
+Fattore Velocità: 0
+Tipo di Competenza: Spada Lunga
+Tipo: Una mano
+Richiede: Forza 9
+Non Utilizzabile Da:
+Druido
+Chierico
+Mago~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Archer of Sylvanus kit                           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@600 =~Kit Arciere di Sylvanus, by Drizzt1180~
+@601 =~arciere di Sylvanus~
+@602 =~Arciere di Sylvanus~
+@603 =~ARCIERE DI SYLVANUS: Questi druidi sono molto singolari dal momento che, in primo luogo, usano gli archi come loro arma. L'altra unica arma di cui possono servirsi è la clava. Questo genere di druidi ha la capacità di arrecare gravi danni al bersaglio. Sono in grado di evocare gli spiriti degli animali, a cui ricorrono solitamente per difesa, a causa della loro estrema debolezza nel combattimento in mischia. Solo i mezzelfi possono essere Arcieri di Silvanus.
+
+Vantaggi:
+- Ottiene +1 alla THAC0 con le armi a distanza ogni tre livelli fino al 21.
+- Invoca "Spirito Animale" due volte al giorno.
+- "Colpo Mirato" al livello 4, 9, 14 e 19.
+- Nascondersi due volte al giorno più una volta al giorno ogni cinque livelli. Nascondersi è una combinazione di Invisibilità e di Anti-Individuazione che dura per 10 round.
+- +15% alla resistenza ai danni da taglio, perforanti e contundenti.
+- Può ottenere la maestria superiore negli archi corti, negli archi lunghi e nelle balestre.
+
+Svantaggi:
+- Non può indossare armature più pesanti del cuoio torchiato.
+- Può essere solo competente nelle clave.
+- Può usare solo clave, archi e balestre.~
+
+@610 =~Nascondersi~
+@611 =~Resistenze dell'Arciere di Sylvanus~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Arcane Fist kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@700 =~Kit Pugno Arcano, by Drizzt1180~
+@701 =~pugno arcano~
+@702 =~Pugno Arcano~
+@703 =~PUGNO ARCANO: Il Pugno Arcano è un antico ordine di maghi nel Faerun e non vengono visti quasi mai. Non sono dei veri e propri maestri nel combattimento senz'armi, come non sono degli esperti nelle arti acrane, ma diventano dei nemici terribili con la combinazione di entrambe le capacità. In età precoce vengono loro insegnate le competenze necessarie per lottare senz'armi e imparano anche a servirsi di poteri mistici. In genere sono solitari: si uniscono solamente ad aggregazioni a loro affini o, in tempi di pericolo, a gruppi "esterni". Esistono tre sette del Pugno Arcano: l'Ordine della Luce, la Fratellanza di Bakur e la Legge della Morte.
+
+Vantaggi:
+- Danno coi pugni per livello:
+
+      1 -  3  1D5
+      4 -  6  1D6
+      7 -  9  1D7  (Considerati +1 per colpire)
+     10 - 12  1D9  (Considerati +2 per colpire)
+     13 - 15  1D10 
+     16 -     1D12 (Considerati +3 per colpire)
+
+- La Classe Armatura diminuisce di 1 ogni tre livelli fino al 21.
+- +1 ai tiri salvezza contro incantesimi.
+- Ottiene 1 Punto Ferita extra per livello.
+- Migliore avanzamento della THAC0:
+
+      1 -  3   20
+      4 -  7   18
+      8 - 11   16
+     12 - 15   14
+     16 - 19   12
+     20 -       8
+
+- Aumenta la velocità di movimento: +2 al primo livello e +1 ogni sette livelli.
+- Due attacchi per round al livello 12 e tre attacchi ogni round al livello 20.
+- Ottiene "Colpo Stordente" al livello 5 e un ulteriore uso al giorno ogni cinque livelli. 
+- Immunità alla malattia, alla lentezza e alla velocità al livello 10.
+- Immunità allo charme al livello 15.
+- Immunità al veleno al livello 18.
+- "Palmo Tremante" al livello 21.
+
+Svantaggi:
+- Non può indossare armature, tranne le tuniche.
+- Non può servirsi di scudi.
+- Non può servirsi di armi.
+- Può ottenere incantesimi fino al sesto livello.
+- Kit disponibile solo agli Umani.
+- Può essere solo di allineamento legale.~
+
+@710 =~Pugno per il Kit Pugno Arcano~
+@712 =~Attacco Extra~
+@713 =~Disabilita pulsante abilità da ladro~
+@714 =~Bonus al tiro salvezza contro gli incantesimi~
+@715 =~Avanzamento della THAC0~
+@716 =~Potenziamento Pugni~
+@717 =~Rimuovi Canzone del Bardo~

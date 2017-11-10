@@ -1,0 +1,72 @@
+Installation Guide for Kits
+by Drizzt1180 
+
+Thank you for downloading this guide! This will teach you how to install custom kits downloaded from my site, or kits made by other people. Be sure to read the after notes section as well. There are some important tips and warnings.
+
+Tools you will need:
+
+Infinity Engine Editor from TeamBG.com  (the "Players" download section)
+
+Contents:
+ 1. Intro
+ 2. Managing Your Kits
+ 3. Installation (the real nitty gritty)
+ 4. After Install and Misc
+ 5. After Notes
+
+----------------------------
+1. Intro
+----------------------------
+Note By Gyzer: Just to let everyone know, these instructions were made by Drizzt to be simple so that anyone could install them. This is why that following these instructions will only alow you to have one "cutom" kit installed at a time. I do stress that you need to always keep the kits that you download in a different folder.
+
+Hello and welcome. I am Drizzt1180. In this tutorial you will find out how to install kits as well as other helpful information concerning kits. This will be needed to go along with my Kit Tutorial as well, so you can send this to people who recieve your kits :)
+
+Now lets get started.
+
+----------------------------
+2. Managing Your Kits
+----------------------------
+
+When you recieve kits, they will more than likely be in a folder, as my Kit Tutorial suggests. You will need to unzip this to some location and remember it. This should preferrably go somewhere near your BGII-SoA dirctory (i.e. Black Isle folder for example)
+
+Now it is very important keeping all of the files that come in a folder inside of it. When installing your kit, use the COPY option instead of CUT (this will be explained in the next section)
+
+Usually a kit, or a set of kits depending on how the maker did them, cannot be used more than one at a time. You cannot add multiple kits at the same time by different people to your game without editing the actual 2da files.
+
+On to the next section!
+
+-----------------------------
+3. Installation
+-----------------------------
+
+Alright kiddies, pop your knuckles and loosen up, you're about to install your kit!
+
+Alright first thing is to get your kit Managed, as the section above describes. Once you're situated, you need to open the kit folder and highlight all of the files within. (Note that if there are any .iap files or .tbg files within this folder, you need to install those using the Infinity Engine Editor)
+
+After highlighting the files, COPY them, then paste them into your overrides folder, which is located in the BGII-SoA directory.
+
+Now comes the tricky part. After your files are in the overrides folder, find the file called KitList.2da and open it with WordPad. There will be a column with kit names, 3 columns with some strange looking numbers*, a column that will say CLAB-something next to each kit, and so on. We're concerned about the 3 strange looking number columns next to the kit name. 
+
+these are actually references to your Dialog.tlk. The first 2 means Kit Name (what appears on the buttons and character sheet and etc in the game) and the next is the Kit Description (the description you see when you highlight a kit on character creation)
+
+Now what you'll need to do is open up Infinity Engine Editor and bring up its TLK Editor. 
+
+First, set it ti "Write" and enter your kit's name and nothing more. Then click the Write button. It will give you a number. In Kitlist.2da, replace the first two numbers beside your kit with this new number. Now you need to enter the kit description. My kits always come with a kit description in TXT file format so you can just copy and paste into the TLK editor. When it spits out a number at you, replace the 3rd one with this new number. (If the kit you are installing doesn't come with a description, just use one of the numbers from another kit for this column)
+
+*Note by Gyzer: In my kits these will be replaced with an asterisk (*). If you do not see these numbers for the kit you just downloaded, do look for some sort of other place holder. 
+
+-----------------------------
+4. After Install and Misc
+-----------------------------
+
+Alright so you've got your kit installed. Well whats the use if you don't try it! Go into a game and create a new character with your kit. When created, use him, and make sure all of his abilities and everything are exactly according to the kit description. If there are any problems or something is not right, you should contact the maker. Now your kit should be compatible with the game. Take him thru it and enjoy!
+
+-----------------------------
+5. After Notes
+-----------------------------
+
+NOTE: Kits are NOT usable in multiplayer unless the other person has the kit as well. You can play multiplayer as normal if other members don't have it, but you won't be able to use any characters that are using your kit.
+
+CAUTION: It is strongly advised that you do not change any of the files that are in the kit folder you recieve. Any changes should be saved directly to your overrides folder. This is for backup reasons.
+
+WARNING: When downloading kits, be aware that if you download an expansion for BG2, there is a very good chance your kits will be erased, so as I said before, keep your kit folder intact.

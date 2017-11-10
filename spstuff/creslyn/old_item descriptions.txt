@@ -1,0 +1,25 @@
+To use these items, once they are unzipped import them into your game with the Infinity Engine Editor (IEEP-get it at www.teambg.com, look in the tools section). Refer to the help files with IEEP on how to do this. All of them replace items in the game, some can be purchased (mostly at the bonus merchants), others will be found in the game.
+
+1. A useful little weapon for any sword wielding fighter. 
+*Freedom's Call - +5 longsword. Grants wielder immunity to MOST things that hinder movement while still allowing the effects of haste. Negative plane protection. Casts Improved Haste on wielder 2/day.
+NOTE: This sword replaces the Harmonium Halberd on sale by the bonus merchant in the Adventurers Mart (wa2halb)
+
+2. Powerful armor with some good protections built into it, but with the rather large drawback of being immune to just about every protective spell in the game.
+*Geirthan's Plate +5: -4 AC. Immune to death magic. Immune to Spell School: Abjuration.
+NOTE: This armor replaces Balduran's Plate on sale by the bonus merchant in the Adventurers Mart (wa2plat)
+
+3. A powerful weapon that is a variation on the Staff of the Magi, but restricted to single class mages.
+*Staff of the Gorgon - +3 AC bonus. +3 to all saving throws. +1d4 acid damage. Dispel magic on each hit. Invisibility. Protection from Petrification. Immune to acid. Casts Flesh to stone (save vs. petrify/polymorph -4) 2/day. Casts Melf's Acid Arrow 5/day. Requires 17 int and 15 con. Single class mage only.
+NOTE: This staff replaces the Staff of Command that is found in the Illithid City in the Underdark (staf09)
+
+4. Nothing more fun than running around lopping peoples heads off with a massive 2 handed axe. (no 2hand axe pics or animations so just used halberds ones).
+*Joorg's Demise - +4 2-handed axe. +1 strength. +2 constitution. -2 dexterity. regenerate 2hp/round. 5% chance of vorpal hit.
+NOTE: This axe replaces Hrothgar's Axe on sale by the bonus merchant in the Copper Coronet (waaxe)
+
+5. A useful though not overly powerful staff for a low level mage or sorcerer.
+*Juzam's Crutch is a +2 staff that can cast Mirror Image and Blindness twice a day (Usable only by mages)
+NOTE: Juzam's Crutch replaces the Staff of Striking and can be purchased in the temple of Lathander in the church district (staf05).
+
+6. Another useful, but again not overly powerful, item for a mage or sorcerer.
+*Dusty Rose Ioun Stone has been altered to allow one extra level 1 spell to be memorised (mages).
+NOTE: Replaces original Dusty Rose Ioun Stone which gave +1 AC (helm19).
