@@ -1,5 +1,5 @@
   @1 =~Questa fase potrebbe richiedere qualche momento...~
-  @2 =~Questa componente non farÃ  nulla nel tuo gioco.~
+  @2 =~Questa componente non farà nulla nel tuo gioco.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -12,24 +12,24 @@
 @100 =~Sottoclasse Mistico del Bosco, di Polar Bear~
 @101 =~mistico del bosco~
 @102 =~Mistico del Bosco~
-@103 =~MISTICO DEL BOSCO: I mistici dei boschi sono un antico ordine di ranger elfi e mezzelfi di FaerÃ»n. Si specializzano nel cacciare maghi malvagi e mind flayer e, per questo motivo, devono armonizzare la loro mente oltre al loro corpo.
+@103 =~MISTICO DEL BOSCO: I mistici dei boschi sono un antico ordine di ranger elfi e mezzelfi di Faerûn. Si specializzano nel cacciare maghi malvagi e mind flayer e, per questo motivo, devono armonizzare la loro mente oltre al loro corpo.
 
 Vantaggi:
-- PuÃ² lanciare gli incantesimi Dissolvi Magie e Vera Vista.
-- PuÃ² lanciare gli incantesimi Comandi Caotici e Pelle di Pietra a partire dal 9Â° livello.
-- PuÃ² utilizzare l'abilitÃ  Aura di Morte Fiammeggiante a partire dal 21Â° livello.
-- PuÃ² utilizzare l'abilitÃ  Evocare Deva a partire dal 23Â° livello.
+- Può lanciare gli incantesimi Dissolvi Magie e Vera Vista.
+- Può lanciare gli incantesimi Comandi Caotici e Pelle di Pietra a partire dal 9° livello.
+- Può utilizzare l'abilità Aura di Morte Fiammeggiante a partire dal 21° livello.
+- Può utilizzare l'abilità Evocare Deva a partire dal 23° livello.
 - Bonus pari a +1 alla Classe Armatura.
 - Bonus pari a +1 al danno e al THAC0.
-- Bonus pari a -1 alla velocitÃ  dell'arma ogni 5 livelli.
+- Bonus pari a -1 alla velocità dell'arma ogni 5 livelli.
 
 Svantaggi:
-- Incorre in una penalitÃ  alla Forza (-5) e alla Costituzione (-4).
-- PuÃ² usare solo archi e armi con la lama.
-- Non puÃ² indossare armature piÃ¹ pesanti della cotta di maglia.
-- Non puÃ² utilizzare l'abilitÃ  Charmare Animali.
-- PuÃ² essere soltanto di razza elfica e mezzelfica.
-- PuÃ² essere soltanto di allineamento Legale Buono o Neutrale Buono.~
+- Incorre in una penalità alla Forza (-5) e alla Costituzione (-4).
+- Può usare solo archi e armi con la lama.
+- Non può indossare armature più pesanti della cotta di maglia.
+- Non può utilizzare l'abilità Charmare Animali.
+- Può essere soltanto di razza elfica e mezzelfica.
+- Può essere soltanto di allineamento Legale Buono o Neutrale Buono.~
 @104 = ~Aura di Morte Fiammeggiante~
 @105 = ~Evocare Deva~
 @106 = ~Deva~
@@ -45,41 +45,41 @@ Svantaggi:
 @200 =~Sottoclasse Maestro Spadaccino, di Drizzt1180~
 @201 =~maestro spadaccino~
 @202 =~Maestro Spadaccino~
-@203 =~MAESTRO SPADACCINO: Il maestro spadaccino usa solo armi con la lama, ma con esse puÃ² compiere molte cose di cui un normale guerriero non Ã¨ capace. Usando le sue lame, ottiene diverse abilitÃ  speciali, ma Ã¨ in grado di servirsene solo indossando armature molto leggere. Il maestro spadaccino puÃ² attivare solo un'abilitÃ  innata alla volta. 
+@203 =~MAESTRO SPADACCINO: Il maestro spadaccino usa solo armi con la lama, ma con esse può compiere molte cose di cui un normale guerriero non è capace. Usando le sue lame, ottiene diverse abilità speciali, ma è in grado di servirsene solo indossando armature molto leggere. Il maestro spadaccino può attivare solo un'abilità innata alla volta. 
 
 Vantaggi:
 - Ottiene un bonus pari a +2 alla Destrezza.
 - Ottiene il 10% di resistenza al danno tagliente e perforante.
-- Ottiene l'abilitÃ  Colpo Preciso al 4Â°, 7Â° e 22Â° livello.
+- Ottiene l'abilità Colpo Preciso al 4°, 7° e 22° livello.
 
-COLPO PRECISO: Questa abilitÃ  garantisce un bonus pari a +3 al THAC0 per 3 round, arreca 1d10 punti di danno al bersaglio e ha il 25% di possibilitÃ  di stordirlo.
+COLPO PRECISO: Questa abilità garantisce un bonus pari a +3 al THAC0 per 3 round, arreca 1d10 punti di danno al bersaglio e ha il 25% di possibilità di stordirlo.
 
-- Ottiene l'abilitÃ  Parata al 7Â°, 10Â° e 22Â° livello.
+- Ottiene l'abilità Parata al 7°, 10° e 22° livello.
 
-PARATA: Questa abilitÃ  garantisce al personaggio l'immunitÃ  effettiva agli attacchi fisici per 2 round.
+PARATA: Questa abilità garantisce al personaggio l'immunità effettiva agli attacchi fisici per 2 round.
 
-- Ottiene l'abilitÃ  Contrattacco al 10Â°, 13Â° e 22Â° livello.
+- Ottiene l'abilità Contrattacco al 10°, 13° e 22° livello.
 
-CONTRATTACCO: Questa abilitÃ  garantisce al personaggio l'immunitÃ  effettiva agli attacchi fisici per 1 round e arreca 2d10 punti di danno all'attaccante.
+CONTRATTACCO: Questa abilità garantisce al personaggio l'immunità effettiva agli attacchi fisici per 1 round e arreca 2d10 punti di danno all'attaccante.
 
-- Ottiene l'abilitÃ  Disarmare al 13Â°, 16Â° e 22Â° livello.
+- Ottiene l'abilità Disarmare al 13°, 16° e 22° livello.
 
-DISARMARE: Utilizzando questa abilitÃ , il personaggio ha il 50% di possibilitÃ  di far cadere l'arma dell'avversario. 
+DISARMARE: Utilizzando questa abilità, il personaggio ha il 50% di possibilità di far cadere l'arma dell'avversario. 
 
-- Ottiene l'abilitÃ  Finta al 16Â°, 19Â° e 22Â° livello.
+- Ottiene l'abilità Finta al 16°, 19° e 22° livello.
 
-FINTA: Questa abilitÃ  garantisce InvisibilitÃ  e Anti-individuazione per 1 round.
+FINTA: Questa abilità garantisce Invisibilità e Anti-individuazione per 1 round.
 
-- Ottiene l'abilitÃ  Colpo Rapido al 19Â° e 22Â° livello.
+- Ottiene l'abilità Colpo Rapido al 19° e 22° livello.
 
-COLPO RAPIDO: Questa abilitÃ  diminuisce la velocitÃ  dell'arma di 2, aggiunge un attacco addizionale, garantisce un bonus pari a +5 al THAC0 e una penalitÃ  pari a -2 alla Classe Armatura per 2 round. 
+COLPO RAPIDO: Questa abilità diminuisce la velocità dell'arma di 2, aggiunge un attacco addizionale, garantisce un bonus pari a +5 al THAC0 e una penalità pari a -2 alla Classe Armatura per 2 round. 
 
-- Ottiene 1/2 attacco addizionale all'11Â°, 15 e 19Â° livello.
+- Ottiene 1/2 attacco addizionale all'11°, 15 e 19° livello.
 
 Svantaggi:
-- Incorre in una penalitÃ  pari a -2 alla Forza.
-- Non puÃ² indossare armature piÃ¹ pesanti del cuoio borchiato.
-- Non puÃ² essere Competente in qualsiasi arma a due mani o priva di lama.~
+- Incorre in una penalità pari a -2 alla Forza.
+- Non può indossare armature più pesanti del cuoio borchiato.
+- Non può essere Competente in qualsiasi arma a due mani o priva di lama.~
 
 @210 =~Attacco Addizionale per la Sottoclasse Maestro Spadaccino~
 @211 =~Contrattacco~
@@ -101,33 +101,33 @@ Svantaggi:
 @300 =~Sottoclasse Cavaliere della Morte, di Drizzt1180~
 @301 =~cavaliere della morte~
 @302 =~Cavaliere della Morte~
-@303 =~CAVALIERE DELLA MORTE: Un cavaliere della morte viene creato non appena un paladino decaduto muore. Questo Ã¨ un caso molto raro di resurrezione. Quando ciÃ² accade, l'appena risorto cavaliere della morte diventerÃ  un essere malvagio con abilitÃ  diaboliche. AnzichÃ© essere un mezzo-guerriero e un mezzo-chierico come il paladino, diventa un mezzo-guerriero e un mezzo-necromante. Ottiene incantesimi da necromante come abilitÃ  innate al posto delle magie da sacerdote.
+@303 =~CAVALIERE DELLA MORTE: Un cavaliere della morte viene creato non appena un paladino decaduto muore. Questo è un caso molto raro di resurrezione. Quando ciò accade, l'appena risorto cavaliere della morte diventerà un essere malvagio con abilità diaboliche. Anziché essere un mezzo-guerriero e un mezzo-chierico come il paladino, diventa un mezzo-guerriero e un mezzo-necromante. Ottiene incantesimi da necromante come abilità innate al posto delle magie da sacerdote.
 
 Vantaggi:
-- PuÃ² lanciare l'incantesimo Risucchio Minore di Larloch a partire dal 1Â° livello. Ottiene un ulteriore uso al 14Â° livello.
-- PuÃ² lanciare l'incantesimo Tocco del Ghoul a partire dall'11Â° livello. Ottiene un ulteriore uso al 16Â° livello.
-- PuÃ² lanciare l'incantesimo Tocco del Vampiro a partire dal 13Â° livello. Ottiene un ulteriore uso al 16Â° e 17Â° livello.
-- PuÃ² lanciare l'incantesimo Animare Morti a partire dal 19Â° livello.
-- PuÃ² utilizzare l'abilitÃ  Tocco del Dolore una volta al giorno a partire dal 1Â° livello.
+- Può lanciare l'incantesimo Risucchio Minore di Larloch a partire dal 1° livello. Ottiene un ulteriore uso al 14° livello.
+- Può lanciare l'incantesimo Tocco del Ghoul a partire dall'11° livello. Ottiene un ulteriore uso al 16° livello.
+- Può lanciare l'incantesimo Tocco del Vampiro a partire dal 13° livello. Ottiene un ulteriore uso al 16° e 17° livello.
+- Può lanciare l'incantesimo Animare Morti a partire dal 19° livello.
+- Può utilizzare l'abilità Tocco del Dolore una volta al giorno a partire dal 1° livello.
 
-TOCCO DEL DOLORE: Tocco del Dolore Ã¨ un'abilitÃ  dal danno diretto; arreca 2d10 punti di danno piÃ¹ 1 punto per livello fino a un massimo di 2d10+20 con un colpo messo a segno.
+TOCCO DEL DOLORE: Tocco del Dolore è un'abilità dal danno diretto; arreca 2d10 punti di danno più 1 punto per livello fino a un massimo di 2d10+20 con un colpo messo a segno.
 
-- PuÃ² utilizzare l'abilitÃ  Mano d'Ebano una volta al giorno a partire dal 10Â° livello.
+- Può utilizzare l'abilità Mano d'Ebano una volta al giorno a partire dal 10° livello.
 
-MANO D'EBANO: Questa abilitÃ  garantisce un bonus pari a +1 al THAC0 piÃ¹ 1 ogni tre livelli del personaggio fino a un massimo di +7. Dura 3 round piÃ¹ 1 round per livello fino a un massimo di 24 round.
+MANO D'EBANO: Questa abilità garantisce un bonus pari a +1 al THAC0 più 1 ogni tre livelli del personaggio fino a un massimo di +7. Dura 3 round più 1 round per livello fino a un massimo di 24 round.
 
-- PuÃ² utilizzare l'abilitÃ  Bacio del Tormento una volta al giorno a partire dal 15Â° livello.
+- Può utilizzare l'abilità Bacio del Tormento una volta al giorno a partire dal 15° livello.
 
-BACIO DEL TORMENTO: Con un colpo messo a segno, arreca 4d6 punti di danno e stordisce il bersaglio per 4 round. Un tiro-salvezza effettuato con successo ridurrÃ  lo stordimento a 2 round. 
+BACIO DEL TORMENTO: Con un colpo messo a segno, arreca 4d6 punti di danno e stordisce il bersaglio per 4 round. Un tiro-salvezza effettuato con successo ridurrà lo stordimento a 2 round. 
 
-- PuÃ² utilizzare l'abilitÃ  Cuore Avvizzito una volta al giorno a partire dal 19Â° livello.
+- Può utilizzare l'abilità Cuore Avvizzito una volta al giorno a partire dal 19° livello.
 
-CUORE AVVIZZITO: Questa abilitÃ  ucciderÃ  il bersaglio a meno che non effettui con successo un tiro-salvezza contro Morte; in tal caso, il bersaglio rimane comunque stordito per 3 round e subisce una penalitÃ  pari a -2 alla Destrezza per 10 round. In aggiunta a ciÃ², il bersaglio deve effettuare con successo un altro tiro-salvezza contro Morte con una penalitÃ  pari a -1 o perdere il 25% dei suoi Punti Ferita; segue un altro tiro-salvezza contro Morte con penalitÃ  pari a -2 per non subire altri 18 punti di danno. 
+CUORE AVVIZZITO: Questa abilità ucciderà il bersaglio a meno che non effettui con successo un tiro-salvezza contro Morte; in tal caso, il bersaglio rimane comunque stordito per 3 round e subisce una penalità pari a -2 alla Destrezza per 10 round. In aggiunta a ciò, il bersaglio deve effettuare con successo un altro tiro-salvezza contro Morte con una penalità pari a -1 o perdere il 25% dei suoi Punti Ferita; segue un altro tiro-salvezza contro Morte con penalità pari a -2 per non subire altri 18 punti di danno. 
 
 Svantaggi:
-- Non ottiene nessuna delle abilitÃ  da paladino.
-- PuÃ² diventare soltanto Specializzato in qualsiasi classe di armi.
-- PuÃ² essere soltanto di allineamento Legale Malvagio, Neutrale Malvagio e Caotico Malvagio.~
+- Non ottiene nessuna delle abilità da paladino.
+- Può diventare soltanto Specializzato in qualsiasi classe di armi.
+- Può essere soltanto di allineamento Legale Malvagio, Neutrale Malvagio e Caotico Malvagio.~
 
 @310 =~Mano d'Ebano~
 @311 =~Mano d'Ebano
@@ -139,7 +139,7 @@ Tempo di lancio: 4
 Area d'effetto: Il lanciatore
 Tiro-salvezza: Nessuno
 
-Questo incantesimo crea un bagliore nerastro sulle mani del lanciatore. Questo bagliore conferisce un bonus +1 alla THAC0 piÃ¹ un altro bonus +1 alla THAC0 per ogni tre livelli del lanciatore fino a un massimo di +7 al livello 19 e, dopo il ventesimo livello, la durata dell'incantesimo si ferma a 24 round. Questo incantesimo Ã¨ quasi sempre usato in associazione ad una qualsiasi delle magie che richiedono al lanciatore di toccare il bersaglio per completare l'effetto dell'incantesimo, come Scarica Elettrica e Tocco del Vampiro.~
+Questo incantesimo crea un bagliore nerastro sulle mani del lanciatore. Questo bagliore conferisce un bonus +1 alla THAC0 più un altro bonus +1 alla THAC0 per ogni tre livelli del lanciatore fino a un massimo di +7 al livello 19 e, dopo il ventesimo livello, la durata dell'incantesimo si ferma a 24 round. Questo incantesimo è quasi sempre usato in associazione ad una qualsiasi delle magie che richiedono al lanciatore di toccare il bersaglio per completare l'effetto dell'incantesimo, come Scarica Elettrica e Tocco del Vampiro.~
 @312 =~Tocco del Dolore~
 @313 =~Cuore Avvizzito~
 @314 =~Cuore Avvizzito
@@ -151,7 +151,7 @@ Tempo di lancio: 7
 Area d'effetto: 1 creatura
 Tiro-salvezza: Neg.
 
-Questo incantesimo ucciderÃ  il bersaglio a meno che non venga superato un tiro salvezza contro la morte; con un tiro salvezza riuscito, il bersaglio rimane comunque stordito per tre round e subisce una penalitÃ  di -2 alla Destrezza per dieci round. Il bersaglio, inoltre, deve superare un altro tiro salvezza contro la morte con penalitÃ  -1 o perdere il 25% dei suoi punti ferita ed effettuare con successo un altro tiro salvezza contro la morte con penalitÃ  -2 o subire altri 18 danni.~
+Questo incantesimo ucciderà il bersaglio a meno che non venga superato un tiro salvezza contro la morte; con un tiro salvezza riuscito, il bersaglio rimane comunque stordito per tre round e subisce una penalità di -2 alla Destrezza per dieci round. Il bersaglio, inoltre, deve superare un altro tiro salvezza contro la morte con penalità -1 o perdere il 25% dei suoi punti ferita ed effettuare con successo un altro tiro salvezza contro la morte con penalità -2 o subire altri 18 danni.~
 @315 =~Bacio del Tormento~
 @316 =~Bacio del Tormento
 (Necromanzia)
@@ -162,7 +162,7 @@ Tempo di lancio: 7
 Area d'effetto: 1 creatura
 Tiro-salvezza: Speciale
 
-Con un tiro per colpire riuscito, arreca 4d6 danni e stordisce il bersaglio per quattro round. Un tiro salvezza superato ridurrÃ  lo stordimento a due round.~
+Con un tiro per colpire riuscito, arreca 4d6 danni e stordisce il bersaglio per quattro round. Un tiro salvezza superato ridurrà lo stordimento a due round.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -175,28 +175,28 @@ Con un tiro per colpire riuscito, arreca 4d6 danni e stordisce il bersaglio per 
 @400 =~Sottoclasse Wushi Ninja, di Drizzt1180~
 @401 =~wushi ninja~
 @402 =~Wushi Ninja~
-@403 =~WUSHI NINJA: Il wushi ninja Ã¨ una versione evoluta del normale ninja. Questo cambiamento ebbe luogo molto tempo fa, quando i ninja erano notevolmente esposti alla magia. Col passare del tempo, iniziarono ad acquisire l'abilitÃ  di lanciare incantesimi. Come i normali ninja, Ã¨ capace di specializzarsi in tutte le armi che un ladro puÃ² usare. Sono anche piÃ¹ forti di un normale ladro, ma non altrettanto accattivanti. Il primo Wushi Ninja fu Nagura Firo.
+@403 =~WUSHI NINJA: Il wushi ninja è una versione evoluta del normale ninja. Questo cambiamento ebbe luogo molto tempo fa, quando i ninja erano notevolmente esposti alla magia. Col passare del tempo, iniziarono ad acquisire l'abilità di lanciare incantesimi. Come i normali ninja, è capace di specializzarsi in tutte le armi che un ladro può usare. Sono anche più forti di un normale ladro, ma non altrettanto accattivanti. Il primo Wushi Ninja fu Nagura Firo.
 
 Vantaggi:
-- PuÃ² lanciare l'incantesimo Dardo Incantato a partire dal 3Â° livello. Ottiene un ulteriore uso al 9Â° e 18Â° livello.
-- PuÃ² lanciare l'incantesimo Cura Ferite Leggere a partire dal 4Â° livello. Ottiene un ulteriore uso al 10Â° e 19Â° livello.
-- PuÃ² lanciare l'incantesimo Scarica Elettrica a partire dal 5Â° livello. Ottiene un ulteriore uso all'11Â° e 20Â° livello.
-- PuÃ² lanciare l'incantesimo Vampa di Aganazzar a partire dal 6Â° livello. Ottiene un ulteriore uso al 12Â° livello.
-- PuÃ² lanciare l'incantesimo Immagini Illusorie a partire dal 7Â° livello. Ottiene un ulteriore uso al 13Â° livello.
-- PuÃ² lanciare l'incantesimo Sfocatura a partire dal 14Â° livello.
-- PuÃ² lanciare l'incantesimo Defletti Incantesimo Minore a partire dal 15Â° livello.
-- PuÃ² lanciare l'incantesimo Portale d'Ombra a partire dal 16Â° livello.
-- PuÃ² lanciare l'incantesimo Breccia a partire dal 17Â° livello.
-- PuÃ² diventare Specializzato (due punti) in qualsiasi arma disponibile per i ladri, incluse le katane.
+- Può lanciare l'incantesimo Dardo Incantato a partire dal 3° livello. Ottiene un ulteriore uso al 9° e 18° livello.
+- Può lanciare l'incantesimo Cura Ferite Leggere a partire dal 4° livello. Ottiene un ulteriore uso al 10° e 19° livello.
+- Può lanciare l'incantesimo Scarica Elettrica a partire dal 5° livello. Ottiene un ulteriore uso all'11° e 20° livello.
+- Può lanciare l'incantesimo Vampa di Aganazzar a partire dal 6° livello. Ottiene un ulteriore uso al 12° livello.
+- Può lanciare l'incantesimo Immagini Illusorie a partire dal 7° livello. Ottiene un ulteriore uso al 13° livello.
+- Può lanciare l'incantesimo Sfocatura a partire dal 14° livello.
+- Può lanciare l'incantesimo Defletti Incantesimo Minore a partire dal 15° livello.
+- Può lanciare l'incantesimo Portale d'Ombra a partire dal 16° livello.
+- Può lanciare l'incantesimo Breccia a partire dal 17° livello.
+- Può diventare Specializzato (due punti) in qualsiasi arma disponibile per i ladri, incluse le katane.
 - Riceve un bonus pari a +1 alla Forza.
 - Riceve un bonus pari a +1 all'Intelligenza.
 
 Svantaggi:
-- Incorre in una penalitÃ  pari a -2 al Carisma.
-- Non puÃ² indossare armature piÃ¹ pesanti del cuoio borchiato.
-- Ai primi livelli, l'avanzamento del THAC0 Ã¨ piÃ¹ basso rispetto a quello del ladro, ma a livelli piÃ¹ alti si riallinea.
-- PuÃ² essere soltanto di razza umana.
-- PuÃ² distribuire soltanto 20 punti per livello tra le abilitÃ  da ladro.~
+- Incorre in una penalità pari a -2 al Carisma.
+- Non può indossare armature più pesanti del cuoio borchiato.
+- Ai primi livelli, l'avanzamento del THAC0 è più basso rispetto a quello del ladro, ma a livelli più alti si riallinea.
+- Può essere soltanto di razza umana.
+- Può distribuire soltanto 20 punti per livello tra le abilità da ladro.~
 
 @410 =~Aggiustamenti al THAC0~
 
@@ -210,34 +210,34 @@ Svantaggi:
 
 @500 =~Pacchetto Oggetti di Creslyn per BG2~
 
-@501 =~Questa Ã¨ una piccola pietra che fluttua intorno alla testa del suo possessore. Ãˆ sufficiente equipaggiarla perchÃ© entri in orbita. Queste pietre magiche, ovviamente, hanno proprietÃ  diverse a seconda del colore.
+@501 =~Questa è una piccola pietra che fluttua intorno alla testa del suo possessore. È sufficiente equipaggiarla perché entri in orbita. Queste pietre magiche, ovviamente, hanno proprietà diverse a seconda del colore.
 
 STATISTICHE:
 
 Peso: 0~
 @502 =~Pietra Ioun d'Avorio~
-@503 =~Una leggenda racconta che questo particolare tipo di pietra ioun viene forgiata con l'anima imprigionata di un mago Zhentarim. Questa pietra ioun color rosa antico garantirÃ  a chi la porta la capacitÃ  di memorizzare un incantesimo addizionale di primo livello.
+@503 =~Una leggenda racconta che questo particolare tipo di pietra ioun viene forgiata con l'anima imprigionata di un mago Zhentarim. Questa pietra ioun color rosa antico garantirà a chi la porta la capacità di memorizzare un incantesimo addizionale di primo livello.
 
 STATISTICHE:
 
-AbilitÃ  durante l'uso:
-- Il portatore puÃ² memorizzare un incantesimo addizionale di 1Â° livello
+Abilità durante l'uso:
+- Il portatore può memorizzare un incantesimo addizionale di 1° livello
 
 Peso: 2
 Utilizzabile da:
 Mago (singolo, biclasse e multiclasse)~
 @504 =~Sostegno di Juzam~
-@505 =~Noto per il suo stile di vita accademico, Juzam Reghanna fu sempre restio all'idea di allontanarsi dalla sua biblioteca. CiÃ² nonostante, fece numerosi viaggi nella campagna dell'Amn allo scopo di cercare conoscenze perdute o dimenticate da aggiungere alla sua vasta collezione di sapere. Questo bastone lo aiutÃ² a ritornare sano e salvo, confondendo piÃ¹ di una volta potenziali rapinatori con i suoi poteri d'illusione e con la capacitÃ  di annebbiare la vista.
+@505 =~Noto per il suo stile di vita accademico, Juzam Reghanna fu sempre restio all'idea di allontanarsi dalla sua biblioteca. Ciò nonostante, fece numerosi viaggi nella campagna dell'Amn allo scopo di cercare conoscenze perdute o dimenticate da aggiungere alla sua vasta collezione di sapere. Questo bastone lo aiutò a ritornare sano e salvo, confondendo più di una volta potenziali rapinatori con i suoi poteri d'illusione e con la capacità di annebbiare la vista.
 
 STATISTICHE:
 
-AbilitÃ  attivabili:
+Abilità attivabili:
 - Lancia Immagini Illusorie due volte al giorno
 - Lancia Accecare due volte al giorno
 
 THAC0: +2
 Danno: 1d6+2 (contundente)
-Fattore-velocitÃ : 3
+Fattore-velocità: 3
 Tipo di Competenza: Bastone Rinforzato
 Tipo: A due mani
 
@@ -249,28 +249,28 @@ Peso: 3
 Utilizzabile da:
 Mago (singolo, biclasse e multiclasse)~
 @506 =~Bastone della Gorgone~
-@507 =~Khalvar Sagresshim era un famoso alteratore che trascorse la maggior parte della sua vita studiando le gorgoni. Alla fine, raccolse abbastanza conoscenze da forgiare quella che Ã¨ stata senza dubbio la sua migliore creazione, il Bastone della Gorgone.
+@507 =~Khalvar Sagresshim era un famoso alteratore che trascorse la maggior parte della sua vita studiando le gorgoni. Alla fine, raccolse abbastanza conoscenze da forgiare quella che è stata senza dubbio la sua migliore creazione, il Bastone della Gorgone.
 
 STATISTICHE:
 
-AbilitÃ  durante l'uso:
+Abilità durante l'uso:
 - Classe Armatura: +3
 - Tiri-salvezza: +3
 - Protezione dalla Pietrificazione
-- ImmunitÃ  ai danni da acido
-- InvisibilitÃ 
+- Immunità ai danni da acido
+- Invisibilità
 
-AbilitÃ  attivabili:
+Abilità attivabili:
 - Lancia Carne in Pietra due volte al giorno
 - Lancia Freccia Acida di Melf cinque volte al giorno
 
-AbilitÃ  in combattimento:
+Abilità in combattimento:
 - Dissolvi magie ad ogni colpo messo a segno
 
 THAC0: +5
 Danno: 1d6+5, +1d4 punti di danno da acido
 Tipo di Danno: Contundente
-Fattore-velocitÃ : 1
+Fattore-velocità: 1
 Tipo di Competenza: Bastone Rinforzato
 Tipo: A due mani
 
@@ -282,22 +282,22 @@ Peso: 4
 Utilizzabile da:
 Mago (solo classe singola)~
 @508 =~La Rovina di Joorg~
-@509 =~Joorg Ã¨ stato un capo bandito nelle terre che circondano le Dieci CittÃ . Per quasi quattro anni, lui e la sua disparata banda di orchi, hobgoblin e ogre si appostarono sulle rotte commerciali, seminando fuoco e terrore tra ovunque passassero. Tutto questo durÃ² fino a quando non assalirono la carovana dove viaggiava la famiglia di Lord Maarsken: venne fatto uno sforzo congiunto per dar loro la caccia e porre fine alle loro scorrerie. Lord Maarsken donÃ² quest'arma al capitano responsabile dell'inseguimento per assicurarsi che il bandito fosse consegnato alla giustizia.
+@509 =~Joorg è stato un capo bandito nelle terre che circondano le Dieci Città. Per quasi quattro anni, lui e la sua disparata banda di orchi, hobgoblin e ogre si appostarono sulle rotte commerciali, seminando fuoco e terrore tra ovunque passassero. Tutto questo durò fino a quando non assalirono la carovana dove viaggiava la famiglia di Lord Maarsken: venne fatto uno sforzo congiunto per dar loro la caccia e porre fine alle loro scorrerie. Lord Maarsken donò quest'arma al capitano responsabile dell'inseguimento per assicurarsi che il bandito fosse consegnato alla giustizia.
 
 STATISTICHE:
 
-AbilitÃ :
+Abilità:
 - Forza: +1
 - Costituzione: +2
 - Destrezza: -2
 - Rigenera 2 Punti Ferita per round
 
-AbilitÃ  di combattimento:
-- 5% di possibilitÃ  di colpo vorpal
+Abilità di combattimento:
+- 5% di possibilità di colpo vorpal
 
 THAC0: +4
 Danno: 2d6+4 (tagliente)
-Fattore-velocitÃ : 6
+Fattore-velocità: 6
 Tipo di Competenza: Ascia
 Tipo: A due mani
 
@@ -311,14 +311,14 @@ Chierico
 Mago
 Ladro~
 @510 =~Piastre di Geirthan~
-@511 =~Geirthan Agghadrais fu un seguace di Tempus proveniente dalla zona circostante le Dieci CittÃ . CombattÃ© numerose campagne in onore del suo dio, sia nel nord sia nelle terre del sud. Durante uno di questi scontri, venne accusato di un empio crimine da un gruppo di scongiuratori e, dopo un processo fin troppo breve, fu condannato ad essere imprigionato nelle viscere piÃ¹ profonde della terra. Alcuni mesi dopo, si scoprÃ¬ che non aveva commesso alcun male e che, al contrario, era stato un necromante senza nome a compiere i misfatti per i quali Geirthan era stato imprigionato. Tormentato dai rimorsi, lo scongiuratore che lo aveva scagliato nelle profonditÃ , Henstraadt, lo liberÃ² e creÃ² per lui quest'armatura che lo avrebbe protetto se un simile fatto si fosse mai ripresentato. Oltre a permearla con l'immunitÃ  alle magie in cui era specializzato, si fece ricambiare alcuni favori per assicurarsi che, se Geirthan si fosse mai imbattuto nel necromante che era stato la causa del suo dolore, non sarebbe caduto vittima degli incantesimi della morte. CiÃ² che accadde a Geirthan o al necromante non Ã¨ noto, ma Henstraadt venne assassinato dai suoi collaboratori pochi mesi dopo per avere creato un oggetto che temevano potesse portare alla loro stessa rovina.
+@511 =~Geirthan Agghadrais fu un seguace di Tempus proveniente dalla zona circostante le Dieci Città. Combatté numerose campagne in onore del suo dio, sia nel nord sia nelle terre del sud. Durante uno di questi scontri, venne accusato di un empio crimine da un gruppo di scongiuratori e, dopo un processo fin troppo breve, fu condannato ad essere imprigionato nelle viscere più profonde della terra. Alcuni mesi dopo, si scoprì che non aveva commesso alcun male e che, al contrario, era stato un necromante senza nome a compiere i misfatti per i quali Geirthan era stato imprigionato. Tormentato dai rimorsi, lo scongiuratore che lo aveva scagliato nelle profondità, Henstraadt, lo liberò e creò per lui quest'armatura che lo avrebbe protetto se un simile fatto si fosse mai ripresentato. Oltre a permearla con l'immunità alle magie in cui era specializzato, si fece ricambiare alcuni favori per assicurarsi che, se Geirthan si fosse mai imbattuto nel necromante che era stato la causa del suo dolore, non sarebbe caduto vittima degli incantesimi della morte. Ciò che accadde a Geirthan o al necromante non è noto, ma Henstraadt venne assassinato dai suoi collaboratori pochi mesi dopo per avere creato un oggetto che temevano potesse portare alla loro stessa rovina.
 
 STATISTICHE:
 
-AbilitÃ  durante l'uso:
+Abilità durante l'uso:
 - Classe Armatura: -4
-- ImmunitÃ  alla magia della morte
-- ImmunitÃ  a una scuola di magia: Scongiurazione
+- Immunità alla magia della morte
+- Immunità a una scuola di magia: Scongiurazione
 
 Richiede:
 Forza 18
@@ -329,21 +329,21 @@ Bardo
 Druido
 Mago
 Ladro~
-@512 =~Richiamo della LibertÃ ~
-@513 =~Con la sua capacitÃ  di proteggere chi la brandisce dall'essere immobilizzato da quasi ogni mezzo, questa lama ha davvero guadagnato il suo nome. Forse la sua caratteristica migliore Ã¨ che non impedisce ad un individuo di aumentare la sua mobilitÃ : al contrario, lo aiuta addirittura a tale scopo.
+@512 =~Richiamo della Libertà~
+@513 =~Con la sua capacità di proteggere chi la brandisce dall'essere immobilizzato da quasi ogni mezzo, questa lama ha davvero guadagnato il suo nome. Forse la sua caratteristica migliore è che non impedisce ad un individuo di aumentare la sua mobilità: al contrario, lo aiuta addirittura a tale scopo.
 
 STATISTICHE:
 
-AbilitÃ  durante l'uso:
-- ImmunitÃ  alla maggior parte degli effetti che alterano la mobilitÃ 
+Abilità durante l'uso:
+- Immunità alla maggior parte degli effetti che alterano la mobilità
 - Protezione dal Piano Negativo
 
-AbilitÃ  attivabili:
-- Lancia VelocitÃ  Potenziata due volte al giorno
+Abilità attivabili:
+- Lancia Velocità Potenziata due volte al giorno
 
 THAC0: +5
 Danni: 2d4+5 (tagliente)
-Fattore-velocitÃ : 0
+Fattore-velocità: 0
 Tipo di Competenza: Spada Lunga
 Tipo: A una mano
 
@@ -367,30 +367,30 @@ Mago~
 @600 =~Sottoclasse Arciere di Silvanus, di Drizzt1180~
 @601 =~arciere di Silvanus~
 @602 =~Arciere di Silvanus~
-@603 =~ARCIERE DI SILVANUS: Questo tipo di druido Ã¨ molto singolare, visto che usa soprattutto gli archi come arma. L'unica altra arma di cui puÃ² servirsi Ã¨ la clava. L'arciere di Silvanus ha la capacitÃ  di arrecare gravi danni al bersaglio. Ãˆ in grado di evocare gli spiriti degli animali, a cui ricorre solitamente per difesa a causa della sua estrema debolezza nel combattimento in mischia.
+@603 =~ARCIERE DI SILVANUS: Questo tipo di druido è molto singolare, visto che usa soprattutto gli archi come arma. L'unica altra arma di cui può servirsi è la clava. L'arciere di Silvanus ha la capacità di arrecare gravi danni al bersaglio. È in grado di evocare gli spiriti degli animali, a cui ricorre solitamente per difesa a causa della sua estrema debolezza nel combattimento in mischia.
 
 Vantaggi:
 - Ottiene il 15% di resistenza ai danni taglienti, perforanti e contundenti.
-- Bonus pari a +1 al THAC0 con le armi a distanza ogni 3 livelli fino al 21Â° livello.
-- PuÃ² diventare Maestro (tre punti) con gli archi corti, archi lunghi e balestre.
-- PuÃ² utilizzare l'abilitÃ  Spirito Animale due volte al giorno.
-- PuÃ² utilizzare l'abilitÃ  Colpo Mirato una volta al giorno (inizia al 4Â° livello con un uso). Ottiene un ulteriore uso al 9Â°, 14Â° e 19Â° livello.
+- Bonus pari a +1 al THAC0 con le armi a distanza ogni 3 livelli fino al 21° livello.
+- Può diventare Maestro (tre punti) con gli archi corti, archi lunghi e balestre.
+- Può utilizzare l'abilità Spirito Animale due volte al giorno.
+- Può utilizzare l'abilità Colpo Mirato una volta al giorno (inizia al 4° livello con un uso). Ottiene un ulteriore uso al 9°, 14° e 19° livello.
 
 COLPO MIRATO: Tutti gli attacchi a distanza messi a segno nei successivi 10 secondi, oltre ad infliggere un normale danno, hanno i seguenti effetti cumulativi a seconda del livello:
 
-4Â° Livello: PenalitÃ  pari a -1 al THAC0 del bersaglio.
-8Â° Livello: PenalitÃ  pari a -1 ai tiri-salvezza contro Incantesimi del bersaglio.
-12Â° Livello: PenalitÃ  pari a -1 alla Forza del bersaglio.
-16Â° Livello: Bonus pari a +2 al danno."Colpo Mirato" al livello 4, 9, 14 e 19.
+4° Livello: Penalità pari a -1 al THAC0 del bersaglio.
+8° Livello: Penalità pari a -1 ai tiri-salvezza contro Incantesimi del bersaglio.
+12° Livello: Penalità pari a -1 alla Forza del bersaglio.
+16° Livello: Bonus pari a +2 al danno."Colpo Mirato" al livello 4, 9, 14 e 19.
 
-- PuÃ² utilizzare l'abilitÃ  Nascondersi (inizia al 1Â° livello con due usi). Ottiene un ulteriore uso ogni cinque livelli.
+- Può utilizzare l'abilità Nascondersi (inizia al 1° livello con due usi). Ottiene un ulteriore uso ogni cinque livelli.
 
-NASCONDERSI: Nascondersi Ã¨ una combinazione di InvisibilitÃ  e di Anti-individuazione che dura per 10 round.
+NASCONDERSI: Nascondersi è una combinazione di Invisibilità e di Anti-individuazione che dura per 10 round.
 
 Svantaggi:
-- Non puÃ² indossare armature piÃ¹ pesanti del cuoio borchiato.
-- PuÃ² utilizzare soltanto le seguenti armi: clave, archi e balestre.
-- PuÃ² essere soltanto di razza mezzelfica.~
+- Non può indossare armature più pesanti del cuoio borchiato.
+- Può utilizzare soltanto le seguenti armi: clave, archi e balestre.
+- Può essere soltanto di razza mezzelfica.~
 
 @610 =~Nascondersi~
 @611 =~Resistenze dell'Arciere di Silvanus~
@@ -406,7 +406,7 @@ Svantaggi:
 @700 =~Sottoclasse Pugno Arcano, di Drizzt1180~
 @701 =~pugno arcano~
 @702 =~Pugno Arcano~
-@703 =~PUGNO ARCANO: Il Pugno Arcano Ã¨ un antico ordine di maghi nel FaerÃ»n che non viene visto quasi mai. Ogni suo membro non Ã¨ un vero e proprio maestro nel combattimento senz'armi o nelle arti arcane, ma diventa un nemico terribile con la combinazione di entrambe le capacitÃ . In tenera etÃ , apprende le competenze necessarie per lottare senz'armi e per servirsi di poteri mistici. In genere Ã¨ solitario: si unisce in gruppi solo con suoi simili o, in tempi di grande pericolo, con "estranei". Esistono tre sette del Pugno Arcano: l'Ordine della Luce, la Fratellanza di Bakur e la Legge della Morte.
+@703 =~PUGNO ARCANO: Il Pugno Arcano è un antico ordine di maghi nel Faerûn che non viene visto quasi mai. Ogni suo membro non è un vero e proprio maestro nel combattimento senz'armi o nelle arti arcane, ma diventa un nemico terribile con la combinazione di entrambe le capacità. In tenera età, apprende le competenze necessarie per lottare senz'armi e per servirsi di poteri mistici. In genere è solitario: si unisce in gruppi solo con suoi simili o, in tempi di grande pericolo, con "estranei". Esistono tre sette del Pugno Arcano: l'Ordine della Luce, la Fratellanza di Bakur e la Legge della Morte.
 
 Vantaggi:
 - Danno coi pugni per livello:
@@ -418,7 +418,7 @@ Vantaggi:
   Livello 13-15: 1d10
   Livello 16 e oltre: 1d12 (considerati armi +3 per colpire)
   
-- Ottiene un bonus pari a +1 alla Classe Armatura ogni 3 livelli fino al 21Â° livello.
+- Ottiene un bonus pari a +1 alla Classe Armatura ogni 3 livelli fino al 21° livello.
 - Ottiene un bonus pari a +1 ai tiri-salvezza contro Incantesimi.
 - Ottiene 1 Punto Ferita addizionale per livello.
 - Migliore avanzamento del THAC0:
@@ -430,30 +430,30 @@ Vantaggi:
   Livello 16-19: 12
   Livello 20 e oltre: 8
 
-- Si muove piÃ¹ velocemente degli altri personaggi di 2 punti. Il Fattore-movimento migliora ulteriormente di 1 punto ogni 7 livelli.
-- Ottiene due attacchi per round al 12Â° livello e tre attacchi per round al 20Â° livello.
-- PuÃ² utilizzare l'abilitÃ  Colpo Stordente una volta al giorno ogni 5 livelli (inizia al 1Â° livello con un uso).
+- Si muove più velocemente degli altri personaggi di 2 punti. Il Fattore-movimento migliora ulteriormente di 1 punto ogni 7 livelli.
+- Ottiene due attacchi per round al 12° livello e tre attacchi per round al 20° livello.
+- Può utilizzare l'abilità Colpo Stordente una volta al giorno ogni 5 livelli (inizia al 1° livello con un uso).
 
-COLPO STORDENTE: Tutti gli attacchi messi a segno nel successivo round costringono la vittima ad effettuare con successo un tiro-salvezza contro Incantesimi o restare stordita. Questa abilitÃ  speciale modifica automaticamente i normali attacchi; non c'Ã¨ quindi bisogno di selezionare un bersaglio.
+COLPO STORDENTE: Tutti gli attacchi messi a segno nel successivo round costringono la vittima ad effettuare con successo un tiro-salvezza contro Incantesimi o restare stordita. Questa abilità speciale modifica automaticamente i normali attacchi; non c'è quindi bisogno di selezionare un bersaglio.
 
-- Diventa immune a Malattia, Lentezza e VelocitÃ  a partire dal 10Â° livello.
-- Diventa immune allo Charme a partire dal 15Â° livello.
-- Diventa immune al Veleno a partire dal 18Â° livello.
-- PuÃ² utilizzare l'abilitÃ  Palmo Tremante una volta al giorno a partire dal 21Â° livello.
+- Diventa immune a Malattia, Lentezza e Velocità a partire dal 10° livello.
+- Diventa immune allo Charme a partire dal 15° livello.
+- Diventa immune al Veleno a partire dal 18° livello.
+- Può utilizzare l'abilità Palmo Tremante una volta al giorno a partire dal 21° livello.
 
-PALMO TREMANTE: Tutti gli attacchi messi a segno nel successivo round costringono il nemico ad effettuare con successo un tiro-salvezza contro Incantesimi o a morire. Questa abilitÃ  speciale modifica automaticamente i normali attacchi; non c'Ã¨ quindi bisogno di selezionare un bersaglio.
+PALMO TREMANTE: Tutti gli attacchi messi a segno nel successivo round costringono il nemico ad effettuare con successo un tiro-salvezza contro Incantesimi o a morire. Questa abilità speciale modifica automaticamente i normali attacchi; non c'è quindi bisogno di selezionare un bersaglio.
 
 Svantaggi:
-- Non puÃ² indossare armature, tranne le tuniche.
-- Non puÃ² equipaggiare scudi.
-- Non puÃ² utilizzare armi.
-- PuÃ² ottenere incantesimi arcani soltanto fino al 6Â° livello.
-- PuÃ² essere soltanto di razza umana.
-- PuÃ² essere soltanto di allineamento Legale Buono, Legale Neutrale, Legale Malvagio.~
+- Non può indossare armature, tranne le tuniche.
+- Non può equipaggiare scudi.
+- Non può utilizzare armi.
+- Può ottenere incantesimi arcani soltanto fino al 6° livello.
+- Può essere soltanto di razza umana.
+- Può essere soltanto di allineamento Legale Buono, Legale Neutrale, Legale Malvagio.~
 
 @710 =~Pugno per la Sottoclasse Pugno Arcano~
 @712 =~Attacco Addizionale~
-@713 =~Disabilita pulsante abilitÃ  da ladro~
+@713 =~Disabilita pulsante abilità da ladro~
 @714 =~Bonus al tiro-salvezza contro Incantesimi~
 @715 =~Avanzamento del THAC0~
 @716 =~Potenziamento Pugno~

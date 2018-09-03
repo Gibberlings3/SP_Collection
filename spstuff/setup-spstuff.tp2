@@ -1,6 +1,5 @@
 BACKUP ~SPStuff/backup~ // location to store files for uninstall purposes
-
-AUTHOR ~pcamagna@yahoo.com~ // email address displayed if install fails
+SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=28~ // email address displayed if install fails
 
 VERSION ~v11~
 
@@ -46,7 +45,7 @@ LANGUAGE ~Czech (translation by Adam Stavárek)~ ~czech~
 LANGUAGE ~French (translation by Saiko from the D'Oghmatiques)~ ~french~ 
   ~SPStuff/lang/english/setup.tra~ 
   ~SPStuff/lang/french/setup.tra~  // French
-LANGUAGE ~Italian (translation by Giuseppe)~ ~italian~ 
+LANGUAGE ~Italian (translation by Aedan)~ ~italian~ 
   ~SPStuff/lang/english/setup.tra~ 
   ~SPStuff/lang/italian/setup.tra~  // Italian
 LANGUAGE ~Russian (translation by subzero400)~ ~russian~
@@ -159,17 +158,17 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   BUT_ONLY
 
 // Spells for Sylvan Mystic Kit
-COPY_EXISTING ~sppr506.spl~ ~override/CDsmisk.spl~ // iron skins innate
-              ~sppr508.spl~ ~override/CDsmchc.spl~ // chaotic commands innate
-  LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr506 destination = ~CDsmisk~ END // iron skins innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr508 destination = ~CDsmchc~ END // chaotic commands innate
 
-ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN BEGIN // if ToB is installed
+OUTER_SET aura = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_AURA_OF_FLAMING_DEATH~)) - 1000)
+OUTER_SET deva = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_SUMMON_DEVA~)) - 1000)
 
-  COPY_EXISTING ~sppr726.spl~ ~override/CDsmdva.spl~ // summon deva innate
-                ~sppr730.spl~ ~override/CDsmafd.spl~ // aura of flaming death innate
-    LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+ACTION_IF ((aura > 0) AND (FILE_EXISTS_IN_GAME ~sppr%aura%.spl~)) THEN BEGIN // if spell present
+  
+  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~CDsmdva~ END // summon deva innate
 
-END ELSE BEGIN
+END ELSE BEGIN   
 
   COPY ~SPStuff/SylMys/SoA_copy~ ~override~ // bams, sounds, vvcs
   
@@ -180,19 +179,23 @@ END ELSE BEGIN
     SAY UNIDENTIFIED_DESC @104
     SAY DESC @104
 
-  COPY ~SPStuff/SylMys/CDsmdva.spl~ ~override/CDsmdva.spl~ // Summon Deva
-    SAY NAME1 @105
-    SAY NAME2 @105
-    SAY UNIDENTIFIED_DESC @105
-    SAY DESC @105
+END 
 
-  COPY ~SPStuff/SylMys/devagood.cre~ ~override~ // Summon Deva
-    SAY NAME1 @106
-    SAY NAME2 @106
-    SAY UNIDENTIFIED_DESC @106
-    SAY DESC @106
+ACTION_IF ((deva > 0) AND (FILE_EXISTS_IN_GAME ~sppr%deva%.spl~)) THEN BEGIN // if spell present
+  
+  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~CDsmdva~ END // summon deva innate
 
-END
+END ELSE BEGIN  
+
+  OUTER_SET string = RESOLVE_STR_REF (@104)    
+	
+  ACTION_GET_STRREF string ~description~ // remove line about summon deva, then update string
+  OUTER_PATCH_SAVE ~description~ ~%description%~ BEGIN
+    REPLACE_TEXTUALLY ~^.*23.*[ %TAB%%LNL%%MNL%%WNL%]+~
+  END
+  STRING_SET_EVALUATED string ~%description%~
+  
+END	
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -302,14 +305,11 @@ ADD_KIT ~CDDeathK~
   SAY @303
 LAF fl#add_kit_ee STR_VAR kit_name = CDDeathK END
 
-INCLUDE ~SPStuff/lib/macro_spell_to_innate.tph~ // defines patch macro
-
 // Adding abilities for the Death Knight Kit
-COPY_EXISTING ~spwi501.spl~ ~override/CDdkand.spl~ // animate dead innate
-              ~spwi218.spl~ ~override/CDdkght.spl~ // ghoul touch innate
-              ~spwi119.spl~ ~override/CDdklmd.spl~ // larloch's minor drain innate
-              ~spwi314.spl~ ~override/CDdkvmt.spl~ // vampiric touch innate
-  LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi501 destination = ~CDdkand~ END // animate dead innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi218 destination = ~CDdkght~ END // ghoul touch innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi119 destination = ~CDdklmd~ END // larloch's minor drain innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi314 destination = ~CDdkvmt~ END // vampiric touch innate
 
 COPY ~SPStuff/DeathK/copy~ ~override~  // BAMs
 
@@ -381,19 +381,16 @@ COPY_EXISTING ~weapprof.2da~ ~override~
   SET_2DA_ENTRY  31 (col_num - 1) col_num dual
   BUT_ONLY
 
-INCLUDE ~SPStuff/lib/macro_spell_to_innate.tph~ // defines patch macro
-
 // Adding abilities for the Wushi Ninja Kit
-COPY_EXISTING ~spwi217.spl~ ~override/CDwnagn.spl~ // aganazzar's scorcher innate
-              ~spwi201.spl~ ~override/CDwnblr.spl~ // blur innate
-              ~sppr103.spl~ ~override/CDwnclw.spl~ // cure light wounds innate
-              ~spwi112.spl~ ~override/CDwnmgm.spl~ // magic missile innate
-              ~spwi212.spl~ ~override/CDwnmig.spl~ // mirror image innate
-              ~spwi115.spl~ ~override/CDwnshg.spl~ // shocking grasp innate
-              ~spwi513.spl~ ~override/CDwnbrc.spl~ // breach innate
-              ~spwi522.spl~ ~override/CDwnmst.spl~ // minor spell turning innate
-              ~spwi505.spl~ ~override/CDwnshd.spl~ // shadow door innate
-  LAUNCH_PATCH_MACRO ~spell_to_innate~ // change to innate spell
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi217 destination = ~CDwnagn~ END // aganazzar's scorcher innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi201 destination = ~CDwnblr~ END // blur innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr103 destination = ~CDwnclw~ END // cure light wounds innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi112 destination = ~CDwnmgm~ END // magic missile innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi212 destination = ~CDwnmig~ END // mirror image innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi115 destination = ~CDwnshg~ END // shocking grasp innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi513 destination = ~CDwnbrc~ END // breach innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi522 destination = ~CDwnmst~ END // minor spell turning innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi505 destination = ~CDwnshd~ END // shadow door innate
     
 COPY ~SPStuff/WushiN/CDwnt10.spl~ ~override~ // THAC0 Adjustment
      ~SPStuff/WushiN/CDwnt11.spl~ ~override~ // THAC0 Adjustment
