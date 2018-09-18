@@ -23,6 +23,10 @@ ALWAYS
   
     END ELSE BEGIN
 
+      ACTION_FOR_EACH file IN iplot01k.itm iplot04g.itm iplot04h.itm iplot04i.itm xr2400.are xr2600.are BEGIN
+        DISABLE_FROM_KEY "%file%"
+      END
+
       OUTER_SET cd_game_is = 1 // just do this once per install, 1 = non-ee game
       
     END
@@ -187,13 +191,24 @@ ACTION_IF ((deva > 0) AND (FILE_EXISTS_IN_GAME ~sppr%deva%.spl~)) THEN BEGIN // 
 
 END ELSE BEGIN  
 
-  OUTER_SET string = RESOLVE_STR_REF (@104)    
-	
-  ACTION_GET_STRREF string ~description~ // remove line about summon deva, then update string
-  OUTER_PATCH_SAVE ~description~ ~%description%~ BEGIN
-    REPLACE_TEXTUALLY ~^.*23.*[ %TAB%%LNL%%MNL%%WNL%]+~
-  END
-  STRING_SET_EVALUATED string ~%description%~
+  COPY_EXISTING ~cdsylmys.2da~ ~override~
+    REPLACE_TEXTUALLY ~GA_CDSMDVA~ ~****      ~ // remove from table
+	BUT_ONLY
+
+  OUTER_SET string = 0 
+  COPY_EXISTING ~kitlist.2da~ ~override~ // fetch kit description 
+    REPLACE_EVALUATE ~^\([0-9]+[ %TAB%]+CDSylMys[ %TAB%]+[0-9]+[ %TAB%]+[0-9]+[ %TAB%]+\)\([0-9]+\)~ BEGIN
+      SET string = ~%MATCH2%~
+    END ~%MATCH1%%MATCH2%~
+    BUT_ONLY
+  
+  ACTION_IF string THEN BEGIN // if zero, it means the R_E above didn't work for some reason 
+    ACTION_GET_STRREF string description // remove line about summon deva, then update string
+    OUTER_PATCH_SAVE ~description~ ~%description%~ BEGIN
+      REPLACE_TEXTUALLY ~[ %TAB%%LNL%%MNL%%WNL%].*23.*+$~ ~~
+    END
+    STRING_SET_EVALUATE string ~%description%~  
+  END	
   
 END	
 
@@ -421,7 +436,7 @@ END
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 BEGIN @500
-REQUIRE_PREDICATE GAME_IS ~soa tob bg2ee eet~ @2 // non-BGEE, non-Tutu
+REQUIRE_PREDICATE GAME_IS ~soa tob bg2ee eet bgt~ @2 // exclude bgee, iwdee, tutu
 
 COPY ~SPStuff/Creslyn/CDivory.itm~ ~override~  // Ivory Ioun Stone
   SAY NAME1 @502
