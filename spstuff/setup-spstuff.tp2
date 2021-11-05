@@ -231,7 +231,7 @@ ADD_KIT ~CDBladeM~
   ~CDBladeM                0       0       0       0       0       0~
   ~CDBladeM                1       1       1       1       1       1       1       1       1~
   ~CDBladeM                0       1       1       1       1       0~
-  ~spstuff/bladem/cdbladem.2da~
+  ~SPStuff/BladeM/cdbladem.2da~
   ~K_F_H   K_F_E   K_F_HE~
   ~0x00010000 2~
   ~Fi0~
