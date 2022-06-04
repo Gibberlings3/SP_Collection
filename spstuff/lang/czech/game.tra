@@ -1,0 +1,384 @@
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Sylvan Mystic kit                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@101 =~ sylvanin mystik~
+@102 =~Sylvanin mystik~
+@103 =~SYLVANIN MYSTIK: Sylvanini mystici jsou strarovìký øád Elfích a Polo-Elfích Rangerù ve Faerunu.  Specializují se na lov zlých mágù a mozkožroutù, a na to musí sladit mysl se svým tìlem .
+
+Výhody:
+- Rozptyl magie
+- Pravdivé vidìní
+- Zmazené pøíkazy na 9. úrovni
+- Kamenná kùže na 9. úrovni
+- Aura plamenné smrti na 21 .úrovni
+- Vyvolání Dévy na 23. úrovni
+- +1 AC
+- +1 Zranìní a THAC0
+- -1 Rychlost zbranì každých 5 úrovní
+
+Nevýhody:
+- Penalizace na sílu (-5) a odolnost (-4) 
+- Nemùže zmámit zvíøe
+-Mùže používat pouze luky a seèné zbranì
+- Mùže nosit maximálnì kroužkovou zbroj 
+- Pouze Elf nebo Pùl-Elf
+- Mùže být pouze zákonnì nebo neutrálnì dobrý~
+@104 =~Aura plamenné smrti~
+@105 =~Vyvolání Dévy~
+@106 = ~Dévy~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Blade Master kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@201 =~ mistr èepele~
+@202 =~Mistr èepele~
+@203 =~MISTR ÈEPELE: Mistr èepele smí používat pouze seèné zbranì, ale mùže s nìmi dìlat spoustu vìcí, které obyèejný bojovník nemùže. Používáním svých èepelí získává mnoho speciálních schopností, ale mùže nosit pouze lehké zbroje. Mistr èepele mùže aktivovat pouze jednu pøirozenou schopnost v jeden moment . 
+
+Výhody:
+- +2 obratnost
+- +10% resistence na seèné a bodné zbranì
+- Na 4., 7. a 22. úrovni získává Pøesný úder.Pøidává +3 THAC0 bonus na 3 kola, udìlí 1k10 zranìí do cílet a je 25% šance na ochromení cíle. 
+- Na 7., 10. a 22. úrovni získává Krytí. Na 2 kola dává imunitu na psychické útoky.
+- Na 10., 13. a 22.úrovn získává Protiútok . Na 1 kolo dává imunitu na psychické útoky a dává 2k10 zranìní útoènikovi.
+- Na 13., 16. a 22. úrovni získává Odzbrojení .  50% šance, že protivník odhodí zbraò. 
+- Na 16., 19. a 22. úrovni získává Lest . Dává neviditelnost a anti-detekci na 1 kolo.
+- Na 19. a 22. úrovni získává Pohotový útok. Snižuje rychlost zbranì o 2, pøidává extra útok,  +5 THAC0 bonus a  -2 AC penalizaci na 2 kola. 
+- Na 11., 15. a 19. úrovni získává extra pùl-útok
+
+Nevýhody:
+- -2 síla
+- Mùže nosit maximálne pokovanou koženou zbroj
+- Nemùže se specializovat v ne-seèných a oubouruèních zbraních~
+
+@210 =~Extra útok pro Blade Master Kit~
+@211 =~Protiútok~
+@212 =~Odzbrojení~
+@213 =~Lest~
+@214 =~Pøesný úder~
+@215 =~Krytí~
+@216 =~Pøirozená rezistence zranìní~
+@217 =~Pohotový útok~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Death Knight kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@301 =~ temný rytíø~
+@302 =~Temný rytíø~
+@303 =~TEMNY RYTIR: Temný rytíø vzniká když padlý paladin umírá. Je to velice vzácný pøípad resurekce. Když se to stane novì povstalý Temný rytíø pøichází zlý s mnoha temnými schopnostmi.Místo toho aby byl polo-váleèník a polo-klerik jako paladin, stává se polo-váleèníkem a polo-nekromantem. Získává nekromantská kouzla jako pøirozené schopnosti namísto jeho obvyklých knìských kouzel.
+
+Výhody:
+- Na 9. a 14. úrovni získává Larchovovo menší vysátí.
+- Na 11. a 16. úrovni získává Dotyk Ghúla.
+- Na 13.,16. a 17. úrovni získává Upíøí dotyk. 
+- Na 19. úrovni získává Oživ nemrtvé. 
+- Na 1. úrovni získává Zraòující dotyk. Zraòující dotyk zpùsobuje pøíme zranìní a udìlí 2K10 bodù zranìní +1 bod každou úroveò až do maxima of 2k10+20 s úspìšným hodem na zranìní.
+- Na 10. úrovni získává Ebenovou ruku. Tohle kouzlo vytvoøí naèernálý žár okolo sesíletalovy ruky. Tento žár dává sesílateli +1 THAC0 plus další +1 THAC0 za každé tøí úrovnì sesílatele až do maxima +7 na 19. úrovni, a po 20. úrovni trvání kouzla zùstává 24 kol. Tohle kouzlo se nejèastìji používá spoleènì s kouzly, které zpùsobují nìjaký magicky efekt dotykem, jako Dotyk Ghúla nebo Upíøí dotyk.
+- Na 15. úrovni získává Polibek utrpení. S úspìšným hodem na zranìní, udìlí 4k6 bodù zranìní a ochromí cíl na 4 kola. Pøi úspìšném záchranném hodu trvá ochromení 2 kola. 
+- Na 19. úrovni získává Zahubení duše. Zabije cíl pokud neuspìje v záchranném hodu proti smrti; pokud cíl v hodu uspìje je ochromen na 3 kola a má penalizaci -2 na obratnost po dobu 10 kol. Navíc musí uspìt v dalším hodu proti smrti s postihem -1 nebo ztrácí 25% jeho životù a hází si na další zachránný hod proti smrti s penalizací -2 nebo utrpí 18 zranìní. 
+
+Nevýhody:
+- Žádné paladinovy schopnosti
+- Mùže se specializovat pouze ve zbraních
+- Musí být zlého pøesvìdèení~
+
+@310 =~Ebenová ruka~
+@311 =~Ebenová ruka
+Úroveòl: 1
+Dosah: 0
+Trvání: 3 kola + 1kolo/úroveò
+Doba seslání: 4
+Oblast pùsobení: Sesílatel
+Záchraný hod: Žádný
+
+Tohle kouzlo vytvoøí naèernálý žár okolo sesíletalovy ruky. Tento žár dává sesílateli +1 THAC0 plus další +1 THAC0 za každé tøí úrovnì sesílatele až do maxima +7 na 19. úrovni, a po 20. úrovni trvání kouzla zùstává 24 kol. Tohle kouzlo se nejèastìji používá spoleènì s kouzly, které zpùsobují nìjaký magicky efekt dotykem, jako Dotyk Ghúla nebo Upíøí dotyk.~
+@312 =~Zraòující dotyk~
+@313 =~Zahubení duše~
+@314 =~Zahubení duše (Nekromancie)
+Úroveò: 4
+Dosah: 10 stop
+Trvání: speiálníl
+Doba seslání: 7
+Oblast pùsobení: Jedna bytost
+Záchranný hod: zrušení
+
+Zabije cíl pokud neuspìje v záchranném hodu proti smrti; pokud cíl v hodu uspìje je ochromen na 3 kola a má penalizaci -2 na obratnost po dobu 10 kol. Navíc musí uspìt v dalším hodu proti smrti s postihem -1 nebo ztrácí 25% jeho životù a hází si na další zachránný hod proti smrti s penalizací -2 nebo utrpí 18 zranìní.~
+@315 =~Polibek utrpení~
+@316 =~Polibek utrpení (Nekromancie)
+Úroveò: 4
+Dosah: Dotyk
+Trvání: 3 kola
+Doba seslání: 7
+Oblast pùsobení: Cílová bytost
+Záchranný hod: Záchranna proti kouzlu
+
+S úspìšným hodem na zranìní, udìlí 4k6 bodù zranìní a ochromí cíl na 4 kola. Pøi úspìšném záchranném hodu trvá ochromení 2 kola.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Wushi Ninja kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@401 =~ wushi ninja~
+@402 =~Wushi Ninja~
+@403 =~WUSHI NINJA: Ninjové Wushi jsou vylepšenou verzí obyèejných ninjù. Vznikly pøed mnoha lety, kdy byly velmi vystavováni magii. Po èase získaly schopnost sesílat kouzla. Jako obyèejní ninjové se specializují ve všech zbraních, které mùže obyèejný zlodìj používat. Jsou rovnìž silnìjší než obyèejný zlodìj a nemùžou být zmámeni. První Wushi Ninja byl Nagura Firo.
+
+Výhody:
+- Na 3., 9. a 18. úrovni získává Magickou støelu jako pøirozenou schopnost 
+- Na 4., 10. a 19. úrovni získává Vyléè lehká zranìní ability 
+- Na 5., 11. a 20. úrovni získává Dìsivé sevøení 
+- Na 6. a 12. úrovni získává Agannazarùv žár 
+- Na 7. a 13. úrovni získává Zrcadlový obraz 
+- Na 14. úrovni získává Rozmazání
+- Na 15. úrovni získává Slabší odvracení kouzla
+- Na 16. úrovni získává Stínové dveøe
+- Na 17. úrovni získává Zlom
+- Na nízkých úrovních je THAC0 nižší než u obyèejného zlodìje, ale na vyšších úrovních se to vyrovnává. 
+- Specializuje se ve všech zlodìjových zbraních, pøedevším v katanách
+- +1 síla 
+- +1 inteligence
+
+Nevýhody:
+- -2 charisma
+- Mùže nosit pouze koženou a pokovanou koženou zbroj 
+- Musí být èlovìk
+- Na každé úrovni dostane jen 20% k rozdìlení mezi zlodìjské schopnosti~
+
+@410 =~THAC0 sníženo~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Creslyn's BG2 Item Pack                          \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+
+@501 =~Je to malý kámen, který levituje po dráze kolem vlastníkovy hlavy. Kámen se do své dráhy dává jednoduše. Vlastnosti tìchto kamenù závisí na jejich barvì.~
+@502 =~Bledý iounský kámen~
+@503 =~Legendy vyprávìjí, že tento typ iounského kamene je skout se zotroèenou duší  Zhentarimského mága. Tento zaprášený iounský kámen dává nositeli schopnost memorizovat kouzlo první úrovné navíc.
+
+Memorizuje 1 kouzlo 1.úrovnì navíc
+
+Váha: 2
+Mùže používat:
+ Mág (obyejné, dvoj i multi povolání)~
+@504 =~Juzamova berle~
+@505 =~Známý pro jeho vìdecký životní styl, Juzam Reghanna vždycky nerad opouštìl svou knihovnu. Pøesto èasto podnikal výlety Amnskou pøírodou k vùli hledání ztracených nebo zapomenutých uèení aby zvìtšil už tak velkou zásobu vìdomostí. Tato hùl mu pomáhala se bezpeènì vrátit, více než jednou zmátl lupièe silou jeho iluzí a schopností oslepit jejich zrak.
+
+VLASTNOSTI:
+
+Vlastnosti:
+ Dvakrát dennì sesilá Zrcadlený obraz
+ Dvakrát dennì sesílá Slepotu
+
+THAC0:  +2 bonus
+Zranìní:  1k6 + 2
+Druh zranìní:  Drtivé
+Váhat: 3
+Rychlost: 3
+Druh dovednosti: Hùl
+Druh:  obouruèní
+Vyžaduje: 5 síla a 9 inteligence
+Mùže používat:
+ Mág (obyejné, dvoj i multi povolání)~
+@506 =~Hùl Gorgon~
+@507 =~Khalvar Sagresshim byl slavný mìnitel, který vìnoval vìtšinu svého života studií gorgon. Eventuálnì shromažïoval dostateèné množství znalostí aby vyrobil jeho unikátní dílo, Hùl Gorgon.
+
+VLASTNOSTI:
+
+Pøi použití:
+ +3 AC bonus
+ +3 záchranné hody
+ Protekce na zkamenìní
+ Imunta na jed
+ Neviditelnost
+
+Speciální schopnosti:
+ Sesílá Maso na kámen 2 krát/den
+ Sesílá Melfùv kyselinový šíp 5 krát/den
+
+Schopnosti v boji:
+ Rozpyt magii každým zásahem
+
+THAC0: +5
+Zranìí: 1k6 +5, +1k4 zranìní jedem
+Druh zranìní: Drtivé
+Váha: 4
+Rychlost: 1
+Druh dovednosti: Hùl
+ Druh: obouruèní
+Vyžaduje: 17 inteligence a 15 odolnost
+Mùže používat:
+ Mág (pouze obyèejné povolání)~
+@508 =~Joorgova zkáza~
+@509 =~Joorg byl šéf banditù v zemích obklopujících Deset Mìst. Témìø ètyøi roky on a jeho banda orkù, hobgoblinù a ogrù loupili na obchodních stezkách, vypalovi a terotizovali kde jen mohli.Tak to pokraèovalo dokud nenapadli karavanu, kterou cestovala rodina Lorda Maarskena, té dalo námahu zabít je a ukonèit jejich drancování. Lord Maarsken daroval tuto zbraò kapitánovi, aby zajistil pøedáni bandity spravedlnosti.
+
+VLASTNOSTI:
+
+Pøi použití:
+ +1 síla
+ +2 odolnost
+ -2 obratnost
+ Regeneruje 2 životy/kolo
+
+Schopnosti v boji:
+ 5% šance na smrtící zásah
+
+THAC0:  +4 bonus
+Zranìní:  2K6 + 4
+Druh zranìní:  seèné
+Váha: 20
+Rychlost: 6
+Druh dovednosti: Sekera
+Druh:  obouruèní
+Vyžaduje: 18 síla
+Nemùže používat:
+ Druid
+ Klerik
+ Mág
+ Zlodìj~
+@510 =~Geirthanùv plát~
+@511 =~Geirthan Agghadrais byl následovník Tempuse z oblasti okolo Deseti Mìst. Ve službì ke svému bohu bojoval v mnoha bitvách jak na severu, tak i v zemích na jihu. Bìhem jedné z tìchto bitev byl skupinou ochráncù obvinìn ze zloèinu a po následujícím extrémì krátkém soudu byl odsouzen k uvìzenìní v útrobách zemì. O nìkolik mìsícù pozdìji se pøišlo na to , že nic neudìlal a doopravdy to byl neznámý nekromant kdo spáchal zloèin za který byl Geirthan odsouzen. K vùli výèitkám svìdomí, Henstraadt, ochránce, jež ho uvrhl do hlubin, ho osvobodil a vytvoøil pro nìj tuto zbroj, která ho má chránit od podobnì strašného osudu. Stejnì tak ji naplnil imuntou na jeho školu magie, zaklel nìkolik výhod, aby se ujistil, že pokud Geirthan znovu narazí na onoho nekromanta, který byl pøíèinou jeho utrpení, nepadne pod jeho zlovolnou magií. Jak skonèil Geirthan nebo onen nekromant není známo, ale Henstraadt byl zavraždìn svými vlastnímy spoleèníky pár mìsícù poté co stvoøil nìco, co mohlo zpùsobit jejich pád .
+
+VLASTNOSTI:
+
+Schopnosti:
+ Imunita na magii smrti
+ Imunita na školu magie: Ochranná
+Obr. èíslo: -4
+Váha: 50
+Vyžaduje: 18 síla
+Nemùže používat:
+ Bard
+ Druid
+ Mág
+ Zlodìj~
+@512 =~Volání svobdy~
+@513 =~Právì svou schopností uchránit nositele od jakékoliv formy zadržení, si tato zbraò vysloužila své jméno. Možná ta nejlepší vìc na tom všem je, že nebrání ve vylepšení pohyblivosti, dokonce mùže pomoci.
+
+VLASTNOSTI:
+
+Pøi použití:
+ Imunita na vìtšinu vìcí, které ovlivòují pohyblivost
+ Protekce na negativní sféru
+
+Speciální schopnosti:
+ Sesílá vylepšený spìch 2 krát/den
+
+THAC0: +5
+Zranìní:  2K4 +5
+Druh zranìní:  seèné
+Váha: 3
+Rychlost: 0
+Druh dovednosti: Dlouhý meè
+Druh: jednoruèní
+Vyžaduje: 9 síla
+Nemùžou používat:
+ Druid
+ Klerik
+ Mág~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Archer of Sylvanus kit                           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@601 =~ sylvanský luèištník~
+@602 =~Sylvanský luèištník~
+@603 =~SYLVANSKY LUÈIŠTNÍK: Tento typ druida je velmi unikátní pøedevším v tom, že jako zbranì používají hlavnì luky. Jediná zbraò na blízko, kterou mohou používat je kyj. Tento typ druida má schpopnost dát hrozné zranìní cíli. Mohou vyvolávat duše zvíøat, které jsou užívány pøedevším k obranì, protože jsou velmi slabí v souboji na blízko. Pouze pùl-elfové mohou být Sylvanští luèištníci.
+
+Výhody:
+- získává +1 THAC0 každé tøi úrovnì se zbranìmi na dálku až do 21.úrovnì
+- Vyvolej Ducha zvíøete dvakrát dennì
+- Na 4., 9., 14. a 19. úrovni Speciální šíp 
+- Schování dvakrát dennì plus jednou za každých pìt úrovní. Schování je kombinace nevisitelnosti a anto-detekování, které trvá deset kol
+- +15% rezistence na seèné,drtivé a bodné zranìní
+- Mùže získat mistroství v krátkém luku, dlouhém luku a v kuši
+
+Nevýhody:
+- Mùže nosit maximálnì pokovanou koženou zbroj
+- Ze zbraní na blízko se mùže specializovat pouze na kyje
+- Mùže používat pouze kyje, luky a kuše~
+
+@610 =~Schování~
+@611 =~Rezistence Sylvanského luèištníka~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Arcane Fist kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@701 =~ mystická pìst~
+@702 =~Mystická pìst~
+@703 =~MYSTICKA PÌST: Mystické pìsti jsou starovìký øád èarodìju ve Faerunu a jsou žøídkakdy vidìni. Nejsou úplní mistøi boje beze zbranì ani mistøi mystických dovedností, ale kombinací obojího se z nich stávají hrùzostrašní nepøátelé. Již od ranného mládi se uèí bojovat beze zbranì a ovládad mystické síly. Jsou typiètí samotáøi, v družinách jsou pouze se svými dìtmi nebo v nebezpeèných èasech. Jsou tøi sekty Mystických pìstí: Øád svìtla, Bakurovo bratrstvo a Mrtvé právo.
+
+Výhody:
+- Pìst zranìní za úrovìò:
+
+      1 -  3  1K5
+      4 -  6  1K6
+      7 -  9  1K7  (Považuje se jako +1 zásah)
+     10 - 12  1K9  (Považuje se jako +2 zásah)
+     13 - 15  1K10 
+     16 -     1K12 (Považuje se jako +3 zásah)
+
+- AC se snižuje o 1 každé 3 úrovnì až do 21. úrovnì
+- +1 záchranný hod proti kouzlùm
+- Získává 1 extra život každou úroveò
+- Lepší rùst THAC0 
+
+      1 -  3   20
+      4 -  7   18
+      8 - 11   16
+     12 - 15   14
+     16 - 19   12
+     20 -       8
+
+- Zvýšení rycholsti pohybu: +2 na první úrovni a další +1 každých sedm úrovní
+- Dva útoky za kolo na 12. úrovni a tøi útoky za kolo na 20. úrovni
+- Na 5. úrovni získává Ochromující ránu a každou 5. úroveò jednu navíc dennì
+- Na 10. úrovni imunita na nemoc, zpomalení a zrychlení
+- Na 15. úrovni imunita na zmámení
+- Na 18. úrovni imunita na jed
+- Na 21. úrovni Chvìjící se dlaò
+
+Nevýhody:
+- Nemùže nosit zbroj pouze róbu
+- Nemùže používat štít
+- Nemùže používat zbranì
+- Mùže se nauèit kouzla maximálnì 6. úrovnì
+- Musí být èlovìk
+- Musí bát zakonného pøesvìdèení~
+
+@710 =~Pìst pro kit Mystická pìst~
+@712 =~Extra útok~
+@713 =~Vyøazení tlaèítka Zlodìjovy schopnosti~
+@714 =~Záchranný hod proti kouzlùm~
+@715 =~THAC0 rùst~
+@716 =~Vylepšení Pìsti~
+@717 =~Odstranìní Bardovy písnì~

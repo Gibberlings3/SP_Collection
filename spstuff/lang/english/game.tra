@@ -1,0 +1,410 @@
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Sylvan Mystic kit                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@101 =~sylvan mystic~
+@102 =~Sylvan Mystic~
+@103 =~SYLVAN MYSTIC: The Sylvan Mystics are an ancient order of Elven and Half-Elven Rangers in Faerun. They specialize in hunting evil mages and mind flayers, and as such they must attune their mind in addition to their body.
+
+Advantages:
+- Gains a +1 bonus to Armor Class, damage and THAC0 at 1st level.
+- Gains a -1 Weapon Speed every 5 levels.
+- May cast Dispel Magic and True Sight as innate abilities.
+- May cast Chaotic Commands and Iron Skin as innate abilities. Gains one use at level at level 9.
+- May cast Aura of Flaming Death as innate ability. Gains one use at level at level 21.
+- May cast Summon Deva as innate ability. Gains one use at level at level 23.
+
+Disadvantages:
+- Incurs a penalty to Strength (-5) and Constitution (-4).
+- May not use the Charm Animal ability.
+- May only use bows and bladed weapons.
+- May not wear armor heavier than chain mail.
+- Race restricted to half-elf or elf.
+- Alignment restricted to lawful or neutral good.~
+@104 = ~Aura of Flaming Death~
+@105 = ~Summon Deva~
+@106 = ~Deva~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Blade Master kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@201 =~blade master~
+@202 =~Blade Master~
+@203 =~BLADE MASTER: The Blade Master only uses bladed weapons, but he can do many things with them that the regular fighter cannot. He gains many special abilities using his blades, but he can only wear very light armor. The Blade Master can only activate one innate ability at a time. 
+
+Advantages:
+- +2 to dexterity.
+- +10% to slashing and piercing resistance.
+- Gains Precision Strike ability at levels 4, 7 and 22. Grants a +3 THAC0 bonus for three rounds, does 1d10 damage to target and has a 25% chance to stun target. 
+- Gains Parry ability at levels 7, 10 and 22. Grants virtual immunity to physical attacks for two rounds.
+- Gains Counter Attack ability at levels 10, 13 and 22. Grants virtual immunity to physical attacks for one round and does 2d10 of damage to attacker.
+- Gains Disarm ability at levels 13, 16 and 22. Has a 50% chance to make opponent drop their weapon. 
+- Gains Feint ability at levels 16, 19 and 22. Grants Invisibility and Non-Detection for one round.
+- Gains Swift Strike ability at levels 19 and 22. Decreases weapon speed by 2, adds an extra attack, a +5 THAC0 bonus and a -2 Armor Class penalty for two rounds. 
+- Gains extra one-half attack at levels 11, 15 and 19.
+
+Disadvantages:
+- Incurs a -2 penalty to Strength.
+- May not wear armor heavier than studded leather.
+- May not become Proficient (one slot) in any non-bladed weapon or two-handed weapons.~
+
+@210 =~Extra Attack for Blade Master Kit~
+@211 =~Counter Attack~
+@212 =~Disarm~
+@213 =~Feint~
+@214 =~Precision Strike~
+@215 =~Parry~
+@216 =~Inherent damage resistance~
+@217 =~Swift Strike~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Death Knight kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@301 =~death knight~
+@302 =~Death Knight~
+@303 =~DEATH KNIGHT: A Death Knight is created when a fallen paladin dies. This is a very rare occurrence of resurrection. When this happens the newly risen Death Knight will become evil with many evil related abilities. Instead of being half-fighter and half-cleric like a paladin, they become half-fighter and half-necromancer instead. They gain necromancy spells as innate abilities in place of their regular priest spells.
+
+Advantages:
+- May cast Larloch's Minor Drain as an innate ability. Gains one use at level 9 and an additional use at level 14.
+- May cast Ghoul Touch as an innate ability. Gains one use at level 11 and an additional use at level 16.
+- May cast Vampiric Touch as an innate ability. Gains one use at level 13 and an additional use at levels 16 and 17. 
+- May cast Animate Dead as an innate ability. Gains one use at level 19. 
+- May use Harm Touch ability. Gains one use at level 1. Harm Touch is a direct damage ability and will do 2d10 points of damage +1 point per level up to a maximum of 2d10+20 with a successful to-hit roll.
+- May use Ebony Hand ability. Gains one use at level 10. The spell adds +1 THAC0 plus an additional +1 THAC0 for every three levels of the caster up to a maximum of +7. The spell lasts for 3 rounds plus 1 round/level up to a maximum of 24 rounds. 
+- May use Kiss of Torment ability. Gains one use at level 15. With a successful to-hit roll, does 4d6 points of damage and stuns target for four rounds. A successful save will reduce the stun effect to two rounds. 
+- May use Heart Blight ability. Gains one use at level 19. Will slay the target unless a save vs. death is made; with a successful save the target is still stunned for three rounds and suffers a -2 Dexterity penalty for ten rounds. Additionally the target must make another save vs. Death at -1 or lose 25% of their Hit Points and yet another save vs. Death at -2 or suffer another 18 damage. 
+
+Disadvantages:
+- May not gain the Paladin abilities
+- May not exceed Specialization (two slots) in any weapon.
+- Alignment restricted to evil.~
+
+@310 =~Ebony Hand~
+@311 =~Ebony Hand
+Level: 1
+Range: 0
+Duration: 3 rounds + 1 round/level
+Casting Time: 4
+Area of Effect: The caster
+Saving Throw: None
+
+This spell creates a blackish glow around the caster's hands. This glow gives the caster a +1 THAC0 plus an additional +1 THAC0 for every three levels of the caster up to a maximum of +7 at level 19. After level 20, the spell's duration stays at 24 rounds. This spell is almost always used in association with any of the spells that cause the caster to touch the target to complete the spell effect, like Shocking Grasp and Vampiric Touch.~
+@312 =~Harm Touch~
+@313 =~Heart Blight~
+@314 =~Heart Blight
+(Necromancy)
+
+Level: 4
+Range: 10 ft
+Duration: Special
+Casting Time: 7
+Area of Effect: 1 creature
+Saving Throw: negative
+
+This spell will slay the target unless a save vs. Death is made; with a successful save, the target is still stunned for three rounds and suffers a -2 Dexterity penalty for ten rounds. Additionally, the target must make another save vs. Death at -1 or lose 25% of their Hit Points and yet another save vs. Death at -2 or suffer another 18 damage.~
+@315 =~Kiss of Torment~
+@316 =~Kiss of Torment
+(Necromancy)
+
+Level: 4
+Range: Touch
+Duration 3 rounds
+Casting Time: 7
+Area of Effect: 1 creature
+Saving Throw: Special
+
+With a successful to-hit roll, it does 4d6 points of damage and stuns target for four rounds. A successful save will reduce the stun effect to two rounds.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Wushi Ninja kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@401 =~wushi ninja~
+@402 =~Wushi Ninja~
+@403 =~WUSHI NINJA: The Wushi Ninjas are an evolved version of the regular ninjas. This happened along time ago, when ninjas were greatly exposed to magic. After time they began to gain the ability to cast spells. Like regular ninjas they have the ability to specialize in all weapons that a regular thief can use. They also are stronger than a regular thief, but cannot be as charming. The first Wushi Ninja was Nagura Firo.
+
+Advantages:
+- May cast Magic Missile as an innate ability. Gains one use at level 3 and an additional use at levels 9 and 18.
+- May cast Cure Light Wounds as an innate ability. Gains one use at level 4 and an additional use at levels 10 and 19.
+- May cast Shocking Grasp ability as an innate ability. Gains one use at level 5 and an additional use at levels 11 and 20.
+- May cast Aganazzar's Scorcher as an innate ability. Gains one use at level 6 and an additional use at level 12.
+- May cast Mirror Image as an innate ability. Gains one use at level 7 and an additional use at level 13.
+- May cast Blur as an innate ability. Gains one use at level 14.
+- May cast Minor Spell Turning as an innate ability. Gains one use at level 15.
+- May cast Shadow Door as an innate ability. Gains one use at level 16.
+- May cast Breach as an innate ability. Gains one use at level 17.
+- In early levels, THAC0 is lower then a regular thief's progression but matches in later levels. 
+- May Specialize (two slots) in any weapon available to Thieves.
+- Gains a +1 bonus to Strength and Intelligence.
+
+Disadvantages:
+- Incurs a -2 penalty to Charisma.
+- May not wear armor heavier than studded leather.
+- Race restricted to human.
+- May only distribute 20 skill points per level among thieving skills.~
+
+@410 =~THAC0 Adjustment~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Creslyn's BG2 Item Pack                          \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+
+@501 =~This is a small stone that floats in an orbit around the owner's head. Simply equip the stone to set it in its orbit. These obviously magical stones have different properties depending on their color.~
+@502 =~Ivory Ioun Stone~
+@503 =~Legend tells us that this particular type of ioun stone is crafted with the enslaved soul of a Zhentarim mage.  This dusty rose ioun stone will grant the wearer the ability to memorize one extra level one spell.
+
+STATISTICS:
+
+Equipped abilities:
+- Can memorize one extra 1st-level wizard spell
+
+Weight: 2
+Usable By:
+Mage (single, dual and multi-class)~
+@504 =~Juzam's Crutch~
+@505 =~Noted for his scholarly lifestyle, Juzam Reghanna was ever loathe to depart from his library. Despite this, he made numerous trips around the Amnian countryside for the purpose of seeking lost or forgotten lore to add to his already vast collection of knowledge. This staff helped ensure he returned safely, more than once confounding would be robbers with its powers of illusion and the ability to cloud their sight.
+
+STATISTICS:
+
+Charge abilities:
+- Cast Mirror Image twice a day
+- Cast Blindness twice a day
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+5 Strength
+9 Intelligence
+
+Weight: 3
+Usable By:
+Mage (single, dual and multi-class)~
+@506 =~Staff of the Gorgon~
+@507 =~Khalvar Sagresshim was a famous Alterer who had spent most of his life on the study of gorgons. Eventually he gathered enough knowledge to craft what was undoubtedly his ultimate creation, the Staff of the Gorgon.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+- Saving Throws: +3
+- Protection from Petrification
+- Immune to Acid damage
+- Invisibility
+
+Charge abilities:
+- Cast Flesh to Stone twice per day
+- Cast Melf's Acid Arrow five times day
+
+Combat abilities:
+- Dispel Magic on each hit
+
+THAC0: +5
+Damage: 1d6+5, +1d4 acid damage
+Damage Type: Crushing
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+17 Intelligence
+15 Costitution
+
+Weight: 4
+Usable By:
+Mage (single class only)~
+@508 =~Joorg's Demise~
+@509 =~Joorg was a bandit chief in the lands surrounding the Ten Towns. For nearly four years he and his motley band of orcs, hobgoblins and ogres stalked the trading routes bringing fire and terror where ever they passed. It wasn't until they ambushed the caravan on which the family of Lord Maarsken was traveling that a concerted effort was made to hunt them down and put an end to their depredations. Lord Maarsken gifted this weapon to the captain in charge of the hunt to ensure the bandit was brought to justice.
+
+STATISTICS:
+
+Equipped abilities:
+- Strength: +1
+- Constitution: +2
+- Dexterity: -2
+- Regenerate 2 HP/round
+
+Combat abilities:
+- 5% chance of vorpal hit
+
+THAC0: +4
+Damage: 2d6+4 (slashing)
+Speed Factor: 6
+Proficiency Type: Axe
+Type: Two-handed
+Requires:
+18 Strength
+
+Weight: 20
+Not Usable By:
+Druid
+Cleric
+Mage
+Thief~
+@510 =~Geirthan's Plate~
+@511 =~Geirthan Agghadrais was a follower of Tempus from the area surrounding the Ten Towns. In service to his god he fought in many campaigns both in the north and in the lands to the south. During one of these wars he was accused of a foul crime by a group of abjurers, and following an extremely short trial was condemned to being imprisoned in the very bowels of the earth. Some months later it came to light that he had not committed any wrong, indeed that it had been a nameless necromancer who had performed the deeds for which Geirthan had been imprisoned. In a show of the greatest remorse, Henstraadt, the abjurer who had cast him into the depths, freed him and created for him this armor which would protect him from such a terrible fate ever recurring. As well as imbuing it with an immunity to his own area of specialty, he called in several favors to ensure that should Geirthan ever run into the necromancer who was the cause of his sorrow, he would not fall to the mage's death magics. What became of Geirthan or the necromancer is unknown, but Henstraadt was assassinated by his own associates but a few months afterwards for creating something they feared could lead to their own downfall.
+
+Equipped abilities:
+- Armor Class: -4
+- Immune to Death Magic
+- Immune to Spell School: Abjuration
+
+Requires:
+18 Strength
+
+Weight: 50
+Not Usable By:
+Bard
+Druid
+Mage
+Thief~
+@512 =~Freedom's Call~
+@513 =~With its ability to prevent its wielder from being held by almost any means, this blade has truly earned its name. Perhaps the best thing about it is that it does not prevent one from improving ones mobility, indeed it can even aid in that goal.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to most things that adversely affect mobility
+- Negative Plane Protection
+
+Charge abilities:
+- Cast Improved Haste twice per day
+
+THAC0: +5
+Damage: 2d4+5 (slashing)
+Speed Factor: 0
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+9 Strength
+
+Weight: 3
+Not Usable By:
+Druid
+Cleric
+Mage~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Archer of Sylvanus kit                           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@601 =~archer of sylvanus~
+@602 =~Archer of Sylvanus~
+@603 =~ARCHER OF SYLVANUS: This type of druid is very unique in the way that they primarily use bows for their weapons. The only other melee weapon they can use is a club. These types of druid have the ability to do severe damage to a target. They can summon the spirits of animals, which are used usually in defense, because of their extreme weakness in melee combat. Only Half-Elves can be an Archer of Sylvanus.
+
+Advantages:
+- May become Master (three points) in short bows, longbows and crossbows.
+- Gains a +1 bonus to THAC0 with ranged weapons every three levels up to level 21.
+- Gains 15% resistance to crushing, slashing and piercing damage.
+- May use the Summon Spirit Animal ability twice per day.
+- May use the Called Shot ability once per day. Gains one use at level 4 and an additional use at levels 9, 14 and 19.
+
+CALLED SHOT: All successful ranged attacks within the next 10 seconds have the following cumulative effects besides normal damage, according to the level of the Archer :
+4th level: -1 penalty to target's THAC0.
+8th level: -1 penalty to target's Saving Throws vs. Spell.
+12th level: -1 penalty to the target's Strength score.
+16th level: +2 bonus to damage roll.
+
+- May use the Hide ability twice per day. Gains one use at level 1 and an additional use every five levels.
+
+HIDE: Hide is a combination Invisibility and Non-detection that lasts for ten rounds.
+
+Disadvantages:
+- May not wear armor heavier than studded leather.
+- May only become Proficient (one slot) with clubs.
+- May only use clubs, bows and crossbows.~
+
+@610 =~Hide~
+@611 =~Archer of Sylvanus Resistances~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Arcane Fist kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@701 =~arcane fist~
+@702 =~Arcane Fist~
+@703 =~ARCANE FIST: The Arcane Fists are an ancient order of wizards in Faerun, and are seldom ever seen. They are not quite the masters of unarmed combat nor are they the masters of the arcane arts, but they become a fearsome foe with the combination of both. They are taught at an early age the skills required for unarmed combat and also learn to wield mystical powers. They are typically loners, only assembling in groups with their own kind, or in times of great danger they will group up with "outsiders". There are three sects of The Arcane Fist: The Order of Light, Bakur's Brotherhood, and Death's Law.
+
+Advantages:
+- Fist damage per level:
+
+  Level 1-3: 1d5
+  Level 4-6: 1d6
+  Level 7-9: 1d7 (considered +1 to hit)
+  Level 10-12: 1d9 (considered +2 to hit)
+  Level 13-15: 1d10
+  Level 16+: 1d12 (considered +3 to hit)
+
+- Starts with an Armor Class of 9 at 1st level and gains an additional +1 bonus every 3 levels up to level 21.
+- Receives a +1 bonus to Saving Throws vs. Spell.
+- Gains 1 extra HP maximum per level.
+- Better THAC0 Progression:
+
+  Level 1-3: 20
+  Level 4-7: 18
+  Level 8-11: 16
+  Level 12-15: 14
+  Level 16-19: 12
+  Level 20+: 8
+
+- Moves 2 points faster than other characters. Movement rate further improves by 1 every 7 levels.
+- 5th level: May use the Stunning Blow ability once per day. Gains an additional use every 5 levels thereafter.
+
+STUNNING BLOW: All successful attacks within the next round force the victim to save vs. Spell or be stunned. This special ability automatically modifies normal attacks; no targeting needs to be done.
+
+- 10th level: Becomes immune to disease, slow and haste.
+- 12th level: Two attacks per round.
+- 15th level: Becomes immune to charm.
+- 18th level: Becomes immune to poison.
+- 20th level: Three attacks per round.
+- 21st level: May use the Quivering Palm ability once per day.
+
+QUIVERING PALM: The next successful attack forces the opponent to save vs. Spell or die. This special ability automatically modifies normal attacks; no targeting needs to be done.
+
+Disadvantages:
+- May not wear any armor, except robes.
+- May not equip shields.
+- May not use weapons.
+- May only gain spells up to level 6.
+- Race restricted to human.
+- Alignment restricted to lawful.~
+
+@710 =~Fist for Arcane Fist Kit~
+@712 =~Extra Attack~
+@713 =~Disables Thieving Skills Button~
+@714 =~Save bonus vs. Spells~
+@715 =~THAC0 Progression~
+@716 =~Fist Upgrade~
+@717 =~Remove Bard Song~

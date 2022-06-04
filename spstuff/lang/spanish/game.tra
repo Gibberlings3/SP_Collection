@@ -1,0 +1,385 @@
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// kit Silvano Místico                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@101 =~Silvano Místico~
+@102 =~Silvano Místico~
+@103 =~Silvano Místico: Los Silvanos Místicos son parte de una antigua órden de exploradores élfica y medio-élfica.  Se especializan en cazar magos, por lo cual deben entrenar su mente ademas de su cuerpo.
+
+Ventajas:
+- Disipar Magia
+- Visión Verdadera
+- Comandos Caóticos a nivel 9
+- Piel Férrea a nivel 9
+- Aura de Muerte Flameante a nivel 21
+- Convocar Deva a nivel 23
+- +1 a la Clase de Armadura
+- +1 al Daño y THAC0
+- -1 a la Velocidad del Arma cada 5 niveles
+
+Desventajas:
+- Penalización Fuerza (-5) y Constitución (-4)
+- No puede Charm Animals
+- Solo puede usar arcos y armas cortantes
+- No puede usar armaduras pesadas 
+- Kit solo para Medio-elfos o Elfos
+- Solo pueden ser Legales Buenos o Neutrales Buenos~
+
+@104 =~Aura de Muerte Flameante~
+@105 =~Convocar Deva~
+@106 = ~Deva~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// kit Maestro de la Espada                         \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@201 =~ maestro de la espada~
+@202 =~Maestro de la Espada~
+@203 =~Maestro de la Espada: El Maestro de la Espada solo usa armas cortantes, pero puede hacer muchas cosas con ellas que un guerrero normal no puede. Gana muchas habilidades especiales usando sus espadas, pero solo puede usar armaduras ligeras. El Maestro de la Espada solo puede activar una habilidad innata una a una. 
+
+Ventajas:
+- +2 a la destreza
+- +10% a la resistencia cortante y punzante
+- Gana Ataque de Presición a los niveles 4, 7 y 22. Gana a +3 THAC0 por 3 turnos, hace 1d10 puntos de daño, y tiene 25% de posibilidades de atontar al objetivo. 
+- Gana Parry a los niveles 7, 10 y 22. Gana inmunidad virtual a los ataques por 2 turnos.
+- Gana Contraataque a los niveles 10, 13 y 22. Gana inmunidad virtual a los ataques por 1 turno y hace 2d10 de daño al atacante.
+- Gana Desarmar a los niveles 13, 16 y 22. Tiene un 50% de probabilidades de hacer que el atacante tire el arma. 
+- Gana Feint a los niveles 16, 19 y 22. Gana Invisibilidad y No-Detección por un turno.
+- Gana Swift Strike a los niveles 19 y 22. enlentece la velocidad del arma por por 2, da un ataque extra, +5 THAC0 y -2 a la Clase de Armadura por 2 turnos. 
+- Gana extra un ataque y medio a los niveles 11, 15 y 19
+
+Desventajas:
+- -2 a la fuerza
+- Solo puede usar armaduras de cuero
+- No puede usar armas que no sean de hoja o de dos manos~
+
+@210 =~Ataque Extra para el Maestro de la Espada~
+@211 =~Contraataque~
+@212 =~Desarmar~
+@213 =~Feint~
+@214 =~Ataque de Presición~
+@215 =~Parry~
+@216 =~Resistencia al daño~
+@217 =~Swift Strike~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Caballero de la Muerte kit                                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@301 =~ caballero de la muerte~
+@302 =~Caballero de la Muerte~
+@303 =~Caballero de la Muerte: Un Caballero de la Muerte se crea cuando muere un paladín caído. Esta resurrección es algo muy raro. Cuando ocurre, el nuevo Caballero de la Muerte se vuelve malvado. En vez de hacerse mitad luchador y mitad clérigo como un paladín normal, se haran mitad luchador y mitad nigromante. En vez de ganar hechizos y habilidades de clérigo, lo harán de nigromante.
+
+Ventajas:
+- Gana Drenaje menor de Lalorch a los niveles 9 y 14.
+- Gana Toque de Ghoul a los niveles 11 y 16.
+- Gana Toque Vampírico a los niveles 13, 16 y 17. 
+- Gana Animar a los Muertos a nivel 19. 
+- Gana Toque Hiriente a nivel 1. Toque Hiriente hace daño directo y hará 2D10 puntos de daño +1 punto por subida de nivel hasta un máximo de 2d10+20.
+- Gana Mano de Ébano a nivel 10. El hechizo da +1 THAC0 mas un +1 THAC0 adicional por cada 3 niveles del lanzador hasta un máximo de +7. El hechizo dura 3 turnos mas 1 turno/subida de nivel hasta un máximo de 24 turnos. 
+- Gana Beso del Tormento a nivel 15. Hace 4d6 puntos de daño y atonta al oponente por 4 turnos. Una tirada de salvación lo reduce a 2 turnos. 
+- Gana Arruinar Corazón a nivel 19. Matará al oponente a menos que salve contra la muerte; si salva, igual quedará atontado por tres turnos, sufre un -2 a la destreza por 10 turnos. Adicionalmente el objetivo también deberá salvar contra la muerte a -1 o perder 25% de sus puntos de golpe, y volver a salvar a -2 o sufrir 18 de daño. 
+
+Desventajas:
+- No tiene habilidades de paladín
+- Solo se puede especializar en armas
+- Debe tener alineación Malvada~
+
+@310 =~Mano de Ébano~
+@311 =~Mano de Ébano
+Nivel: 1
+Rango: 0
+Duración: 3 turnos + 1 turno/level
+Tiempo de Lanzamiento: 4
+Área de Efecto: Caster
+Tirada de Salvación: Ninguna
+
+Este hechizo crea un aura negra alrededor de las manos del lanzador. Esto le da al lanzador +1 THAC0 mas un +1 THAC0 adicional cada 3 niveles hasta un máximo de +7 a nivel 19, y luego del nivel 20, the hechizo durará 24 turnos. Este hechizo se usa casi siempre en conjunto con otros hechizos que causen que el lanzador deba tocar a su victima como el Toque Vampírico.~
+@312 =~Toque Hiriente~
+@313 =~Arruinar Corazón~
+@314 =~Arruinar Corazón (Nigromancia)
+Nivel: 4
+Rango: 10 pies
+Duración: especial
+Tiempo de Lanzamiento: 7
+Área de Efecto: Una criatura
+Tirada de Salvación: negativa
+
+Este hechizo matará al objetivo a menos que salve contra la muerte; si salva, igual quedará atontado por tres turnos, sufre un -2 a la destreza por 10 turnos. Adicionalmente el objetivo también deberá salvar contra la muerte a -1 o perder 25% de sus puntos de golpe, y volver a salvar a -2 o sufrir 18 de daño.~
+@315 =~Beso del Tormento~
+@316 =~Beso del Tormento (Nigromancia)
+Nivel: 4
+Rango: Toque
+Duración 3 turnos
+Tiempo de Lanzamiento: 7
+Área de Efecto: criatura tocada
+Tirada de Salvación: Salvar contra conjuros
+
+Hace 4d6 puntos de daño y atonta al objetivo por 4 turnos. Si salva entonces se reducirá el efecto a 2 turnos.~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Wushi Ninja kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@401 =~ wushi ninja~
+@402 =~Wushi Ninja~
+@403 =~WUSHI NINJA: El Wushi Ninja es una versión mejorada de los ninjas normales. Esto sucedió hace mucho tiempo, cuando los ninjas estaban muy expuestos a la magia. Con el tiempo, comenzaron a lanzar hechizos. Como los ninjas, pueden usar las armas normales de un ladrón, aunque son mas fuertes que estos últimos. El primero de estos ninjas fué Nagura Firo.
+
+Ventajas
+- Gana Misil Mágico a los niveles 3, 9, y 18
+- Gana Curar Heridas Leves a los niveles 4, 10, y 19
+- Gana Toque Electrizante a los niveles 5, 11, y 20
+- Gana Aganazzar's Scorcher a los niveles 6 y 12
+- Gana Imagen Espejada a los niveles 7 y 13
+- Gana Contorno Borroso a nivel 14
+- Gana Retorno de Conjuros Menor a nivel 15
+- Gana Puerta de las Sombras a nivel 16
+- Gana Breach a nivel 17
+- A niveles tempranos, el THAC0 es menor que el de un ladrón normal, pero se normaliza al subir de nivel. 
+- Especialización en todas las armas que usan los ladrones
+- +1 a fuerza 
+- +1 a inteligencia
+
+Desventajas:
+- -2 a Carisma
+- Sólo puede usar armaduras de cuero o cuero tachonado
+- Sólo puede ser Humano
+- Sólo tiene 20 puntos de habilidad para distribuír al subir nivel~
+
+@410 =~Ajuste de THAC0~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Creslyn's BG2 Item Pack                          \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+
+@501 =~Esta es una pequeña piedra que sobrevuela la cabeza de quien la lleva. Estas piedras tienen diferentes propiedades dependiendo del color.~
+@502 =~Piedra Ioun Marfil~
+@503 =~Dicen las leyendas que dentro de esta piedra se encuentra el alma atrapada de un mago Zhentarim.  Esta piedra permite a quien la use memorizar un hechizo de nivel 1.  
+
+Memoriza un hechizo extra de nivel 1
+
+Peso: 2
+Usable Por:
+ Mago (simple-, dual-, y multi-clase)~
+@504 =~Juzam's Crutch~
+@505 =~Juzam Reghanna nunca salía de su biblioteca, aunque a pesar de esto hizo varios viajes dentro de Amn en busca de conocimientos perdidos. Este bastón le permitió volver sano y salvo mas de una vez.
+
+ESTADÍSTICAS:
+
+Habilidades:
+ Lanza Imagen Espejada dos veces al día
+ Lanza Blindness dos veces al día
+
+THAC0:  +2 bonus
+Daño:  1D6 + 2
+Tipo de Daño:  Aplastante
+Peso: 3
+Factor de Velocidad: 3
+Tipo de Talento: Bastón
+Tipo:  dos puños
+Requiere: 5 Fuerza y 9 inteligencia
+Usable Por:
+ Mago (simple-, dual-, y multi-clase)~
+@506 =~Bastón del Gorgon~
+@507 =~Khalvar Sagresshim era un gran Aterador quien se pasó la mayoría de la vida estudiando a los gorgons. Eventualmente ganó tanto conocimiento que pudo crear este gran bastón.
+
+ESTADÍSTICAS:
+
+Habilidades Equipadas:
+ +3 AC Bonus
+ +3 a todas las tiradas de salvación
+ Protección contra Petrificación
+ Inmune al daño Acido
+ Invisibilidad
+
+Habilidades Especiales:
+ Lanza De la Carne a la Piedra 2 veces al día
+ Lanza Flecha Acida de Melf 5 veces al día
+
+Habilidades de Combate:
+ Disipar Magia en cada golpe
+
+THAC0: +5
+Daño: 1d6 +5, +1d4 daño ácido
+Daño Tipo: Aplastante
+Peso: 4
+Factor de Velocidad: 1
+Tipo de Talento: Bastón
+ Tipo: 2-Puños
+Requiere: 17 inteligencia y 15 Constitución
+Usable Por:
+ Mago (simple-clase only)~
+@508 =~Perdición de Joorg~
+@509 =~Joorg era un bandido en las tierras que rodean a los Diez Plueblos. Por casi cuatro años, él y su banda de orcos, hobgoblins y ogros sembraron el terror entre las vias comerciales y los pueblerinos. No fué hasta que asaltaron una caravana en la que viajaba la familia de Lord Maarsken que los aprendieron. Lord Maarsken le dió esta arma al capitán de la brigada despachada para asegurarse que trajera a los bandidos a la justicia.
+
+ESTADÍSTICAS:
+
+Habilidades Equipadas:
+ +1 Fuerza
+ +2 Constitución
+ -2 Destreza
+ Regenera 2 hp/turno
+
+Habilidades de Combate:
+ 5% de probabilidades de golpe vorpal
+
+THAC0:  +4 bonus
+Daño:  2D6 + 4
+Tipo de Daño:  cortante
+Peso: 20
+Factor de Velocidad: 6
+Tipo de Talento: Hacha
+Tipo:  2-Puños
+Requiere: 18 Fuerza
+Not Usable Por:
+ Druida
+ Clérigo
+ Mago
+ Ladrón~
+@510 =~Armadura de Placas de Geirthan~
+@511 =~Geirthan Agghadrais era seguidor de Tempus del área de los Diez Pueblos. Al servicio de su dios luchó en varias campañas. En una de ellas, fué acusado de un crimen por un grupo de abjuradores y luego de un muy corto juicio fué encarcelado en las entrañas de la tierra. Meses después se descubrió que no había hecho mal, y en con un gran sentimiento de culpa, Henstraadt, el abjurador que lo condenó, lo liberó y le dió esta armadura que no volvería a permitir que esto ocurriera nuevamente.
+
+ESTADÍSTICAS:
+
+Habilidades:
+ Inmune a Magia Muerta
+ Inmune a Escuela de Magia: Abjuración
+Clase de Armadura: -4
+Peso: 50
+Requiere: 18 Fuerza
+Not Usable Por:
+ Bardo
+ Druida
+ Mago
+ Ladrón~
+@512 =~Llamada de la Libertad~
+@513 =~Como lo dice el nombre, esta espada le confiere a quien la usa el poder de nunca estar en situación de no poder moverse. 
+
+ESTADÍSTICAS:
+
+Habilidades Equipadas:
+ Inmune a casi todo lo que afecte la movilidad
+ Protección del Plano Negativo
+
+Habilidades Especiales:
+ Lanza Celeridad Mejorada 2 veces al día
+
+THAC0: +5
+Daño:  2D4 +5
+Tipo de Daño:  cortante
+Peso: 3
+Factor de Velocidad: 0
+Tipo de Talento: Espada Larga
+Tipo:  1-Puños
+Requiere: 9 Fuerza
+Not Usable Por:
+ Druida
+ Clérigo
+ Mago~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Arquero de Sylvanus kit                           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@601 =~ Arquero de sylvanus~
+@602 =~Arquero de Sylvanus~
+@603 =~ARQUERO DE SYLVANUS: Este tipo de druidas usa su arco como arma principal y solo puede usar palos como armas melee. Tienen la habilidad de hacer un gran daño a los oponentes. Pueden convocar espíritus de animales. Solo pueden ser Medio-Elfos.
+
+Ventajas:
+- Gana +1 THAC0 con armas de largo alcance cada tres niveles hasta nivel 21
+- Convocar Espíritu Animal dos veces al día
+- Called Shot a los niveles 4, 9, 14, y 19
+- Esconderse 2 veces al día mas uno adicional cada 5 niveles. Esconderse es una combinación entre invisibilidad y no detección que dura 10 turnos
+- +15% a la resistencia cortante, punzante, y aplastante
+- Pueden ganar maestría en arcos cortos, largos y ballestas
+
+Desventajas:
+- Solo pueden usar armadura de cuero tachonado
+- Solo pueden usar palos
+- Solo pueden usar arcos y ballestas~
+
+@610 =~Esconderse~
+@611 =~Resistencias de Arquero de Sylvanus~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Puño Arcano kit                                  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+@701 =~ puño arcano~
+@702 =~Puño Arcano~
+@703 =~PUÑO ARCANO: Los Puños Arcanos son una antigua raza de magos de Faerun. De pequeños se les entrena en el combate sin armas y en los poderes místicos. En su mayoría son solitarios, solo se juntan en grupos de su propia clase o en tiempos de gran peligro. Hay 3 sectas de Puño Arcano: Orden de la Luz, Hermandad de Bakur y Ley de Muerte.
+
+Ventajas:
+- Daño por nivel:
+
+      1 -  3  1D5
+      4 -  6  1D6
+      7 -  9  1D7  (Considerado un golpe +1)
+     10 - 12  1D9  (Considerado un golpe +2)
+     13 - 15  1D10 
+     16 -     1D12 (Considerado un golpe +3)
+
+- La clase de armadura decrece un punto cada 3 niveles hasta nivel 21
+- +1 a salvar contra conjuros
+- Gana 1 extra HP por nivel
+- Mejor progresión de THAC0
+
+      1 -  3   20
+      4 -  7   18
+      8 - 11   16
+     12 - 15   14
+     16 - 19   12
+     20 -       8
+
+- Movimiento rápido: +2 a nivel 1 y un +1 cada adicional cada 7 niveles
+- 2 ataques por turno a nivel 12 y 3 ataques por turno a nivel 20
+- Gana Stunning Blow a nivel 5 y un una vez al día adicional cada 5 niveles 
+- Inmunidad a Enfermedad, enlentecer, y celeridad a nivel 10
+- Inmunidad a Hechizar a nivel 15
+- Inmune al veneno a nivel 18
+- Quivering Palm a nivel 21
+
+Desventajas:
+- No puede usar otra armadura que no sea túnica
+- No puede usar escudos
+- No puede usar armas
+- Solo pueden ganar hechizos hasta nivel 6
+- Solo Humanos
+- Solo pueden ser alineaciones Legales~
+
+@710 =~Puño para kit de Puño Arcano~
+@712 =~Ataque Extra~
+@713 =~Deshabilitar el botón de habilidades de ladrón~
+@714 =~Salvación contra conjuros~
+@715 =~Progresión de THAC0~
+@716 =~Mejora del Puño~
+@717 =~Remover Canción Bárdica~
