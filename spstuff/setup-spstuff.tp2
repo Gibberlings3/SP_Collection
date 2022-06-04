@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/spstuff/backup~ // location to store files for uninstall purposes
 SUPPORT ~https://www.gibberlings3.net/forum/28-miscellaneous-released-mods/~ // email address displayed if install fails
 
-VERSION ~v12~
+VERSION ~v13~
 
 README ~spstuff/lang/%LANGUAGE%/readme-spstuff.html~ ~spstuff/readme-spstuff.html~
 
