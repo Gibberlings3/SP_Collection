@@ -83,7 +83,7 @@ LANGUAGE ~Russian (translation by subzero400)~ ~russian~
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @100
+BEGIN @100 DESIGNATED 0
 LABEL ~cd_spc_sylvan_mystic~
 
 ADD_KIT ~CDSylMys~ 
@@ -240,7 +240,7 @@ END
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @200
+BEGIN @200 DESIGNATED 1
 LABEL ~cd_spc_blade_master~
 
 ADD_KIT ~CDBladeM~ 
@@ -320,7 +320,7 @@ COPY ~spstuff/BladeM/CDbmsws.spl~ ~override~  // Swift Strike
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @300 
+BEGIN @300 DESIGNATED 2 
 LABEL ~cd_spc_death_knight~
 
 ADD_KIT ~CDDeathK~ 
@@ -388,7 +388,7 @@ COPY ~spstuff/DeathK/CDdkiss.itm~ ~override~  // Kiss of Torment Touch Item
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @400  
+BEGIN @400 DESIGNATED 3
 LABEL ~cd_spc_wushi_ninja~
 
 ADD_KIT ~CDWushiN~
@@ -458,41 +458,41 @@ END
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @500
+BEGIN @500 DESIGNATED 4
 REQUIRE_PREDICATE GAME_IS ~soa tob bg2ee eet bgt~ @2 // exclude bgee, iwdee, tutu
 LABEL ~cd_spc_creslyn_item_pack~
 
-COPY ~spstuff/Creslyn/CDivory.itm~ ~override~  // Ivory Ioun Stone
+COPY ~spstuff/creslyn/cdivory.itm~ ~override~  // Ivory Ioun Stone
   SAY NAME1 @502
   SAY NAME2 @502
   SAY UNIDENTIFIED_DESC @501
   SAY DESC @503
 
-COPY ~spstuff/Creslyn/CDjuzstf.itm~ ~override~  // Juzam's Crutch
+COPY ~spstuff/creslyn/cdjuzstf.itm~ ~override~  // Juzam's Crutch
   SAY NAME1 @504
   SAY NAME2 @504
   SAY UNIDENTIFIED_DESC @505
   SAY DESC @505
 
-COPY ~spstuff/Creslyn/CDgorstf.itm~ ~override~  // Gorgon Staff
+COPY ~spstuff/creslyn/cdgorstf.itm~ ~override~  // Gorgon Staff
   SAY NAME1 @506
   SAY NAME2 @506
   SAY UNIDENTIFIED_DESC @507
   SAY DESC @507
 
-COPY ~spstuff/Creslyn/CDjoorg.itm~ ~override~  // Joorg's Demise
+COPY ~spstuff/creslyn/cdjoorg.itm~ ~override~  // Joorg's Demise
   SAY NAME1 @508
   SAY NAME2 @508
   SAY UNIDENTIFIED_DESC @509
   SAY DESC @509
 
-COPY ~spstuff/Creslyn/CDgplate.itm~ ~override~  // Geirthan's Plate
+COPY ~spstuff/creslyn/cdgplate.itm~ ~override~  // Geirthan's Plate
   SAY NAME1 @510
   SAY NAME2 @510
   SAY UNIDENTIFIED_DESC @511
   SAY DESC @511
 
-COPY ~spstuff/Creslyn/CDfrcall.itm~ ~override~  // Freedom's Call
+COPY ~spstuff/creslyn/cdfrcall.itm~ ~override~  // Freedom's Call
   SAY NAME1 @512
   SAY NAME2 @512
   SAY UNIDENTIFIED_DESC @513
@@ -515,36 +515,137 @@ COPY_EXISTING ~wmart2.sto~ ~override~  // adds three items to Dierdre
   ADD_STORE_ITEM CDfrcall AFTER wa2s1h  #0 #2 #0 ~IDENTIFIED~ #1
   ADD_STORE_ITEM CDivory  AFTER wa2helm #0 #0 #0 ~IDENTIFIED~ #1
   BUT_ONLY
+  
+/////                                                  \\\\\
+///// usability adjustments                            \\\\\
+/////                                                  \\\\\
 
 // in case the item pack is installed after the kits, this restricts the items properly
 ACTION_IF FILE_EXISTS_IN_GAME ~CDsylmys.2da~ THEN BEGIN
 
-  COPY_EXISTING ~CDjoorg.itm~  ~override~
-                ~CDgplate.itm~ ~override~
-    WRITE_BYTE 0x29 (THIS BOR BIT1) // adds helm unusability flag
+  ACTION_IF !enhanced_edition THEN BEGIN
+
+    COPY_EXISTING ~cdjoorg.itm~  ~override~
+                  ~cdgplate.itm~ ~override~
+      WRITE_BYTE 0x29 (THIS BOR BIT1) // adds helm unusability flag
+  
+  END ELSE BEGIN  
+
+    OUTER_SET name = RESOLVE_STR_REF (@102)    
+    OUTER_SET kitno = IDS_OF_SYMBOL (~kit~ ~CDSylMys~)
+
+    COPY_EXISTING ~cdjoorg.itm~  ~override~
+                  ~cdgplate.itm~ ~override~
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 parameter1 = kitno parameter2 = 9 timing = 2 special = name END
+
+  END
 
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~CDarcsyl.2da~ THEN BEGIN
 
-  COPY_EXISTING ~CDjuzstf.itm~ ~override~
-                ~CDgorstf.itm~ ~override~
-                ~CDjoorg.itm~  ~override~
-                ~CDgplate.itm~ ~override~
-                ~CDfrcall.itm~ ~override~
-    WRITE_BYTE 0x2f (THIS BOR BIT5) // makes unusable by UD hunters
+  ACTION_IF !enhanced_edition THEN BEGIN
+
+    COPY_EXISTING ~cdjuzstf.itm~ ~override~
+                  ~cdgorstf.itm~ ~override~
+                  ~cdjoorg.itm~  ~override~
+                  ~cdgplate.itm~ ~override~
+                  ~cdfrcall.itm~ ~override~
+      WRITE_BYTE 0x2f (THIS BOR BIT5) // makes unusable by UD hunters
+  
+  END ELSE BEGIN  
+
+    OUTER_SET name = RESOLVE_STR_REF (@602)    
+    OUTER_SET kitno = IDS_OF_SYMBOL (~kit~ ~CDarcsyl~)
+
+    COPY_EXISTING ~cdjuzstf.itm~ ~override~
+                  ~cdgorstf.itm~ ~override~
+                  ~cdjoorg.itm~  ~override~
+                  ~cdgplate.itm~ ~override~
+                  ~cdfrcall.itm~ ~override~
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 parameter1 = kitno parameter2 = 9 timing = 2 special = name END
+
+  END
 
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~CDarfist.2da~ THEN BEGIN
 
-  COPY_EXISTING ~CDjuzstf.itm~ ~override~
-                ~CDgorstf.itm~ ~override~
-                ~CDjoorg.itm~  ~override~
-                ~CDgplate.itm~ ~override~
-                ~CDfrcall.itm~ ~override~
-    WRITE_BYTE 0x29 (THIS BOR BIT0) // makes unusable by talos
+  ACTION_IF !enhanced_edition THEN BEGIN
 
+    COPY_EXISTING ~cdjuzstf.itm~ ~override~
+                  ~cdgorstf.itm~ ~override~
+                  ~cdjoorg.itm~  ~override~
+                  ~cdgplate.itm~ ~override~
+                  ~cdfrcall.itm~ ~override~
+      WRITE_BYTE 0x29 (THIS BOR BIT0) // makes unusable by talos
+  
+  END ELSE BEGIN  
+
+    OUTER_SET name = RESOLVE_STR_REF (@702)    
+    OUTER_SET kitno = IDS_OF_SYMBOL (~kit~ ~CDarfist~)
+
+    COPY_EXISTING ~cdjuzstf.itm~ ~override~
+                  ~cdgorstf.itm~ ~override~
+                  ~cdjoorg.itm~  ~override~
+                  ~cdgplate.itm~ ~override~
+                  ~cdfrcall.itm~ ~override~
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 parameter1 = kitno parameter2 = 9 timing = 2 special = name END
+
+  END
+
+END
+  
+/////                                                  \\\\\
+///// ee fixpack-style immunities                      \\\\\
+/////                                                  \\\\\
+  
+ACTION_IF enhanced_edition BEGIN
+
+  OUTER_SET death_immunity        = IDS_OF_SYMBOL (~splstate~ ~DEATH_IMMUNITY~)  
+  OUTER_SET disintegrate_immunity = IDS_OF_SYMBOL (~splstate~ ~DISINTEGRATE_IMMUNITY~)   
+  OUTER_SET entangle_immunity     = IDS_OF_SYMBOL (~splstate~ ~ENTANGLE_IMMUNITY~)  
+  OUTER_SET hold_immunity         = IDS_OF_SYMBOL (~splstate~ ~HOLD_IMMUNITY~)   
+  OUTER_SET petrify_immunity      = IDS_OF_SYMBOL (~splstate~ ~PETRIFY_IMMUNITY~) 
+  OUTER_SET slow_immunity         = IDS_OF_SYMBOL (~splstate~ ~SLOW_IMMUNITY~)  
+  OUTER_SET web_immunity          = IDS_OF_SYMBOL (~splstate~ ~WEB_IMMUNITY~)    
+  
+  COPY_EXISTING ~cdfrcall.itm~ ~override~  // Freedom's Call (free action but allows haste)
+    PATCH_IF (entangle_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 154 opcode = 328 parameter2 = entangle_immunity special = 1 STR_VAR insert = first END // clone immunity to entangle into set spell state
+    END  
+    PATCH_IF (hold_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 175 opcode = 328 parameter2 = hold_immunity special = 1 STR_VAR insert = first END // clone immunity to hold into set spell state
+    END  
+    PATCH_IF (slow_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 40 opcode = 328 parameter2 = slow_immunity special = 1 STR_VAR insert = first END // clone immunity to slow into set spell state
+    END  
+    PATCH_IF (web_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 157 opcode = 328 parameter2 = web_immunity special = 1 STR_VAR insert = first END // clone immunity to web into set spell state
+    END  
+    BUT_ONLY
+  
+  COPY_EXISTING ~cdgorstf.itm~ ~override~  // Gorgon Staff (immune to petrification)
+    PATCH_IF (petrify_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 134 opcode = 328 parameter2 = petrify_immunity special = 1 STR_VAR insert = first END // clone immunity to petrify into set spell state
+    END  
+    BUT_ONLY
+  
+  COPY_EXISTING ~cdjoorg.itm~ ~override~  // Joorg's Demise (5% vorpal hit)
+    PATCH_IF (death_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 13 opcode = 324 parameter1 = death_immunity parameter2 = 110 timing = 0 duration = 0 resist_dispel = 0 savingthrow = 0 STR_VAR insert = first resource = EVAL ~%SOURCE_RES%~ END
+    END  
+    BUT_ONLY
+  
+  COPY_EXISTING ~cdgplate.itm~ ~override~  // Geirthan's Plate (death & disintegrate imunity)
+    PATCH_IF (death_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 13 opcode = 328 parameter2 = death_immunity special = 1 STR_VAR insert = first END // clone immunity to death magic into set spell state
+    END  
+    PATCH_IF (disintegrate_immunity > 0) BEGIN
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 238 opcode = 328 parameter2 = disintegrate_immunity special = 1 STR_VAR insert = first END // clone immunity to disintegrate into set spell state
+    END  
+    BUT_ONLY
+  
 END
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -555,7 +656,7 @@ END
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @600
+BEGIN @600 DESIGNATED 5
 LABEL ~cd_spc_archer_of_sylvanus~
 
 ADD_KIT ~CDArcSyl~ 
@@ -690,7 +791,7 @@ COPY ~spstuff/ArcSyl/CDasres.spl~ ~override~  // Resistances
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
-BEGIN @700
+BEGIN @700 DESIGNATED 6
 LABEL ~cd_spc_arcane_fist~
 
 ADD_KIT ~CDArFist~ // Arcane Fist
