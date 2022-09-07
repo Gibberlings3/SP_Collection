@@ -939,7 +939,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~cdarfist.2da~ THEN BEGIN
 END
   
 /////                                                  \\\\\
-///// ee fixpack-style immunities                      \\\\\
+///// ee fixpack-style immunities, cures               \\\\\
 /////                                                  \\\\\
   
 ACTION_IF enhanced_edition BEGIN
@@ -987,5 +987,29 @@ ACTION_IF enhanced_edition BEGIN
       LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 match_parameter2 = 238 opcode = 328 parameter2 = disintegrate_immunity special = 1 STR_VAR insert = first END // clone immunity to disintegrate into set spell state
     END  
     BUT_ONLY
+ 
+  ACTION_IF ((FILE_EXISTS_IN_GAME ~#curehol.spl~) OR (FILE_EXISTS_IN_GAME ~#curestn.spl~)) BEGIN // EEFP's cure stun/hold setup
+
+    COPY_EXISTING ~cdfrcall.itm~ ~override~  // Freedom's Call (free action but allows haste)
+      PATCH_IF FILE_EXISTS_IN_GAME ~#curehol.spl~ BEGIN // EEFP's cure hold setup
+        LPF ALTER_EFFECT INT_VAR match_opcode = 162 opcode = 146 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~#curehol~ END   
+        LPF DELETE_EFFECT INT_VAR match_opcode = 240 match_parameter2 = 13 END // remove hold icon      
+      END  
+      PATCH_IF FILE_EXISTS_IN_GAME ~#curestn.spl~ BEGIN // EEFP's cure stun setup
+        LPF ALTER_EFFECT INT_VAR match_opcode = 46 opcode = 146 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~#curestn~ END 
+        LPF DELETE_EFFECT INT_VAR match_opcode = 240 match_parameter2 = 55 END // remove stun icon      
+      END  
+      BUT_ONLY
+      
+  END
+  
+  ACTION_IF FILE_EXISTS_IN_GAME ~#curefbm.spl~ BEGIN // EEFP's cure feeblemind setup
+  
+    COPY_EXISTING ~cdgorstf.itm~ ~override~  // Gorgon Staff (immune to petrification)
+      LPF ALTER_EFFECT INT_VAR match_opcode = 77 opcode = 146 parameter1 = 0 parameter2 = 2 STR_VAR resource = ~#curefbm~ END   
+      LPF DELETE_EFFECT INT_VAR match_opcode = 240 match_parameter2 = 48 END // remove feeblemind icon      
+      BUT_ONLY
+      
+  END
   
 END
