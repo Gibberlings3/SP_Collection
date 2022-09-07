@@ -9,7 +9,7 @@ ALWAYS
 
   ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @3 END // DLC Merger check
   ACTION_IF NOT VARIABLE_IS_SET enhanced_edition THEN BEGIN // check to make this happen only once per install
-    INCLUDE ~spstuff/lib/fl#add_kit_ee.tpa~         // ee kit stuff
+    INCLUDE ~spstuff/lib/a7#add_kit_ex.tpa~         // ee kit stuff
     INCLUDE ~spstuff/lib/macro_spell_to_innate.tph~ // macro for innate conversion
   
     ACTION_IF GAME_IS ~eet bgee bg2ee iwdee~ THEN BEGIN // ee game
@@ -86,24 +86,29 @@ LANGUAGE ~Russian (translation by subzero400)~ ~russian~
 BEGIN @100 DESIGNATED 0
 LABEL ~cd_spc_sylvan_mystic~
 
-ADD_KIT ~CDSylMys~ 
-  ~CDSylMys                1           1           0           0           1           0           1           0~
-  ~CDSylMys 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~CDSylMys                8       14      10      14      14      0~
-  ~CDSylMys                -5      0       -4      0       0       0~
-  ~CDSylMys                8       14      10      14      14      0~
-  ~CDSylMys                8       14      10      14      14      0~
-  ~CDSylMys                1       0       0       1       0       0       0       0       0~
-  ~CDSylMys                0       0       0       0       0       0~
-  ~spstuff/sylmys/cdsylmys.2da~
-  ~K_R_E   K_R_HE~
-  ~0x00004000 12~
-  ~Ra0~
-  ~LEAT14 * HELM16 BAG24 RING06 RING39 CLCK02 BOOT01 AMUL19 BRAC16 BELT07 * * * * * * * * *~
-  SAY @101
-  SAY @102
-  SAY @103
-LAF fl#add_kit_ee STR_VAR kit_name = CDSylMys END
+LAF ADD_KIT_EX 
+  INT_VAR
+    kit_class = 12
+    mixed     = RESOLVE_STR_REF(@102)
+    lower     = RESOLVE_STR_REF(@101)
+    help      = RESOLVE_STR_REF(@103)
+  STR_VAR
+    kit_name  = ~CDSylMys~
+    unusable  = ~0x00004000~
+    clasweap  = ~1 1 0 0 1 0 1 0~
+    weapprof  = ~0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+    abclasrq  = ~8 14 10 14 14 0~
+    abclsmod  = ~-5 0 -4 0 0 0~
+    abdcdsrq  = ~8 14 10 14 14 0~
+    abdcscrq  = ~8 14 10 14 14 0~
+    alignmnt  = ~1 0 0 1 0 0 0 0 0~
+    dualclas  = ~0 0 0 0 0 0~
+    luabbr    = ~Ra0~
+    stweap    = ~LEAT14 * HELM16 BAG24 RING06 RING39 CLCK02 BOOT01 AMUL19 BRAC16 BELT07 * * * * * * * * *~
+    clab_path = ~spstuff/sylmys/cdsylmys.2da~
+    kittable  = ~K_R_E   K_R_HE~
+  RET CDSylMys = kit_id
+END
 
 // if DR > v3  is installed prior to spc
 ACTION_IF ((FILE_EXISTS_IN_GAME ~cdnegpp.spl~) AND (FILE_EXISTS ~Divine_Remix/lib/macro_reindex_clab.tph~)) THEN BEGIN
@@ -182,22 +187,22 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   BUT_ONLY
 
 // Spells for Sylvan Mystic Kit
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr506 destination = ~CDsmisk~ END // iron skins innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr508 destination = ~CDsmchc~ END // chaotic commands innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr506 destination = ~cdsmisk~ END // iron skins innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr508 destination = ~cdsmchc~ END // chaotic commands innate
 
 OUTER_SET aura = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_AURA_OF_FLAMING_DEATH~)) - 1000)
 OUTER_SET deva = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_SUMMON_DEVA~)) - 1000)
 
 ACTION_IF ((aura > 0) AND (FILE_EXISTS_IN_GAME ~sppr%aura%.spl~)) THEN BEGIN // if spell present
   
-  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~CDsmdva~ END // summon deva innate
+  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~cdsmdva~ END // summon deva innate
 
 END ELSE BEGIN   
 
   COPY ~spstuff/SylMys/SoA_copy~ ~override~ // bams, sounds, vvcs
   
-  COPY ~spstuff/SylMys/CDsmafd.spl~  ~override/CDsmafd.spl~  // Aura of Flaming Death
-       ~spstuff/SylMys/CDsmafdd.spl~ ~override/CDsmafdd.spl~ // Aura of Flaming Death backlash spell
+  COPY ~spstuff/sylmys/cdsmafd.spl~  ~override/cdsmafd.spl~  // Aura of Flaming Death
+       ~spstuff/sylmys/cdsmafdd.spl~ ~override/cdsmafdd.spl~ // Aura of Flaming Death backlash spell
     SAY NAME1 @104
     SAY NAME2 @104
     SAY UNIDENTIFIED_DESC @104
@@ -207,7 +212,7 @@ END
 
 ACTION_IF ((deva > 0) AND (FILE_EXISTS_IN_GAME ~sppr%deva%.spl~)) THEN BEGIN // if spell present
   
-  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~CDsmdva~ END // summon deva innate
+  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~cdsmdva~ END // summon deva innate
 
 END ELSE BEGIN  
 
@@ -243,70 +248,75 @@ END
 BEGIN @200 DESIGNATED 1
 LABEL ~cd_spc_blade_master~
 
-ADD_KIT ~CDBladeM~ 
-  ~CDBladeM                1           1           0           0           0           0           0           0~
-  ~CDBladeM 0 0 0 0 0 0 0 0 5 5 5 5 0 5 5 5 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~CDBladeM                0       0       0       0       0       0~
-  ~CDBladeM               -2       2       0       0       0       0~
-  ~CDBladeM                0       0       0       0       0       0~
-  ~CDBladeM                0       0       0       0       0       0~
-  ~CDBladeM                1       1       1       1       1       1       1       1       1~
-  ~CDBladeM                0       1       1       1       1       0~
-  ~spstuff/BladeM/cdbladem.2da~
-  ~K_F_H   K_F_E   K_F_HE~
-  ~0x00010000 2~
-  ~Fi0~
-  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SW1H23 SW1H27 SW2H12~
-  SAY @201
-  SAY @202
-  SAY @203
-LAF fl#add_kit_ee STR_VAR kit_name = CDBladeM END
+LAF ADD_KIT_EX 
+  INT_VAR
+    kit_class = 2
+    mixed     = RESOLVE_STR_REF(@202)
+    lower     = RESOLVE_STR_REF(@201)
+    help      = RESOLVE_STR_REF(@203)
+  STR_VAR
+    kit_name  = ~CDBladeM~
+    unusable  = ~0x00010000~
+    clasweap  = ~1 1 0 0 0 0 0 0~
+    weapprof  = ~0 0 0 0 0 0 0 0 5 5 5 5 0 5 5 5 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+    abclasrq  = ~0 0 0 0 0 0~
+    abclsmod  = ~-2 2 0 0 0 0~
+    abdcdsrq  = ~0 0 0 0 0 0~
+    abdcscrq  = ~0 0 0 0 0 0~
+    alignmnt  = ~1 1 1 1 1 1 1 1 1~
+    dualclas  = ~0 1 1 1 1 0~
+    luabbr    = ~Fi0~
+    stweap    = ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 SW1H23 SW1H27 SW2H12~
+    clab_path = ~spstuff/BladeM/cdbladem.2da~
+    kittable  = ~K_F_H K_F_E K_F_HE~
+  RET CDBladeM = kit_id
+END
 
 COPY ~spstuff/BladeM/copy~ ~override~  // BAMs
 
-COPY ~spstuff/BladeM/CDbmxat.spl~ ~override~  // Extra Attack
+COPY ~spstuff/bladem/cdbmxat.spl~ ~override~  // Extra Attack
   SAY NAME1 @210
   SAY NAME2 @210
   SAY UNIDENTIFIED_DESC @210
   SAY DESC @210
 
-COPY ~spstuff/BladeM/CDbmctr.spl~ ~override~  // Counter Attack
+COPY ~spstuff/bladem/cdbmctr.spl~ ~override~  // Counter Attack
   SAY NAME1 @211
   SAY NAME2 @211
   SAY UNIDENTIFIED_DESC @211
   SAY DESC @211
 
-COPY ~spstuff/BladeM/CDbmdrm.spl~ ~override~  // Disarm
+COPY ~spstuff/bladem/cdbmdrm.spl~ ~override~  // Disarm
   SAY NAME1 @212
   SAY NAME2 @212
   SAY UNIDENTIFIED_DESC @212
   SAY DESC @212
 
-COPY ~spstuff/BladeM/CDbmfnt.spl~ ~override~  // Feint
+COPY ~spstuff/bladem/cdbmfnt.spl~ ~override~  // Feint
   SAY NAME1 @213
   SAY NAME2 @213
   SAY UNIDENTIFIED_DESC @213
   SAY DESC @213
 
-COPY ~spstuff/BladeM/CDbmpst.spl~ ~override~  // Precision Strike
+COPY ~spstuff/bladem/cdbmpst.spl~ ~override~  // Precision Strike
   SAY NAME1 @214
   SAY NAME2 @214
   SAY UNIDENTIFIED_DESC @214
   SAY DESC @214
 
-COPY ~spstuff/BladeM/CDbmpry.spl~ ~override~  // Parry
+COPY ~spstuff/bladem/cdbmpry.spl~ ~override~  // Parry
   SAY NAME1 @215
   SAY NAME2 @215
   SAY UNIDENTIFIED_DESC @215
   SAY DESC @215
 
-COPY ~spstuff/BladeM/CDbmres.spl~ ~override~  // Inherent damage resistance
+COPY ~spstuff/bladem/cdbmres.spl~ ~override~  // Inherent damage resistance
   SAY NAME1 @216
   SAY NAME2 @216
   SAY UNIDENTIFIED_DESC @216
   SAY DESC @216
 
-COPY ~spstuff/BladeM/CDbmsws.spl~ ~override~  // Swift Strike
+COPY ~spstuff/bladem/cdbmsws.spl~ ~override~  // Swift Strike
   SAY NAME1 @217
   SAY NAME2 @217
   SAY UNIDENTIFIED_DESC @217
@@ -323,58 +333,63 @@ COPY ~spstuff/BladeM/CDbmsws.spl~ ~override~  // Swift Strike
 BEGIN @300 DESIGNATED 2 
 LABEL ~cd_spc_death_knight~
 
-ADD_KIT ~CDDeathK~ 
-  ~CDDeathK                1           1           1           1           1           1           1           1~
-  ~CDDeathK 0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~CDDeathK               10       3       5      13       3       8~
-  ~CDDeathK                0       0       0       0       0       0~
-  ~CDDeathK               10       3       5      13       3       8~
-  ~CDDeathK               10       3       5      13       3       8~
-  ~CDDeathK                0       0       1       0       0       1       0       0       1~
-  ~CDDeathK                0       0       0       0       0       0~
-  ~spstuff/DeathK/CDdeathk.2da~
-  ~K_F_H~
-  ~0x00000009 2~
-  ~Fi0~
-  ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
-  SAY @301
-  SAY @302
-  SAY @303
-LAF fl#add_kit_ee STR_VAR kit_name = CDDeathK END
+LAF ADD_KIT_EX 
+  INT_VAR
+    kit_class = 2
+    mixed     = RESOLVE_STR_REF(@302)
+    lower     = RESOLVE_STR_REF(@301)
+    help      = RESOLVE_STR_REF(@303)
+  STR_VAR
+    kit_name  = ~CDDeathK~
+    unusable  = ~0x00000009~
+    clasweap  = ~1 1 1 1 1 1 1 1~
+    weapprof  = ~0 0 0 0 0 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+    abclasrq  = ~10 3 5 13 3 8~
+    abclsmod  = ~0 0 0 0 0 0~
+    abdcdsrq  = ~10 3 5 13 3 8~
+    abdcscrq  = ~10 3 5 13 3 8~
+    alignmnt  = ~0 0 1 0 0 1 0 0 1~
+    dualclas  = ~0 0 0 0 0 0~
+    luabbr    = ~Fi0~
+    stweap    = ~CHAN09 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 STAF08~
+    clab_path = ~spstuff/DeathK/CDdeathk.2da~
+    kittable  = ~K_F_H~
+  RET CDDeathK = kit_id
+END
 
 // Adding abilities for the Death Knight Kit
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi501 destination = ~CDdkand~ END // animate dead innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi218 destination = ~CDdkght~ END // ghoul touch innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi119 destination = ~CDdklmd~ END // larloch's minor drain innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi314 destination = ~CDdkvmt~ END // vampiric touch innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi501 destination = ~cddkand~ END // animate dead innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi218 destination = ~cddkght~ END // ghoul touch innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi119 destination = ~cddklmd~ END // larloch's minor drain innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi314 destination = ~cddkvmt~ END // vampiric touch innate
 
-COPY ~spstuff/DeathK/copy~ ~override~  // BAMs
+COPY ~spstuff/deathk/copy~ ~override~  // BAMs
 
-COPY ~spstuff/DeathK/CDdkebh.spl~ ~override~  // Ebony Hands
+COPY ~spstuff/deathk/cddkebh.spl~ ~override~  // Ebony Hands
   SAY NAME1 @310
   SAY NAME2 @310
   SAY UNIDENTIFIED_DESC @311
   SAY DESC @311
 
-COPY ~spstuff/DeathK/CDdkhmt.spl~ ~override~  // Harm Touch
+COPY ~spstuff/deathk/cddkhmt.spl~ ~override~  // Harm Touch
   SAY NAME1 @312
   SAY NAME2 @312
   SAY UNIDENTIFIED_DESC @312
   SAY DESC @312
 
-COPY ~spstuff/DeathK/CDdkhbl.spl~ ~override~  // Heart Blight
+COPY ~spstuff/deathk/cddkhbl.spl~ ~override~  // Heart Blight
   SAY NAME1 @313
   SAY NAME2 @313
   SAY UNIDENTIFIED_DESC @314
   SAY DESC @314
 
-COPY ~spstuff/DeathK/CDdkiss.spl~ ~override~  // Kiss of Torment Spell
+COPY ~spstuff/deathk/cddkiss.spl~ ~override~  // Kiss of Torment Spell
   SAY NAME1 @315
   SAY NAME2 @315
   SAY UNIDENTIFIED_DESC @316
   SAY DESC @316
 
-COPY ~spstuff/DeathK/CDdkiss.itm~ ~override~  // Kiss of Torment Touch Item
+COPY ~spstuff/deathk/cddkiss.itm~ ~override~  // Kiss of Torment Touch Item
   SAY NAME1 @315
   SAY NAME2 @315
   SAY UNIDENTIFIED_DESC @315
@@ -391,25 +406,30 @@ COPY ~spstuff/DeathK/CDdkiss.itm~ ~override~  // Kiss of Torment Touch Item
 BEGIN @400 DESIGNATED 3
 LABEL ~cd_spc_wushi_ninja~
 
-ADD_KIT ~CDWushiN~
-  ~CDWushiN                1           1           1           1           1           0           0           0~
-  ~CDWushiN 0 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 0 2 0 0 0 0 2 2 0 2 2 2 1 1 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~CDWushiN                3       9       3       3       3       3~
-  ~CDWushiN                1       0       0       1       0      -2~
-  ~CDWushiN                3       9       3       3       3       3~
-  ~CDWushiN                3       9       3       3       3       3~
-  ~CDWushiN                0       1       1       1       1       1       1       1       1~
-  ~CDWushiN                1       1       1       0       0       0~
-  ~spstuff/WushiN/CDwushin.2da~
-  ~K_T_H~
-  ~0x00004000 4~
-  ~Th0~
-  ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
-  SAY @401
-  SAY @402
-  SAY @403
-LAF fl#add_kit_ee STR_VAR kit_name = CDWushiN 
-                          thiefskl = ~CDWushiN 40 20~ END
+LAF ADD_KIT_EX 
+  INT_VAR
+    kit_class = 4
+    mixed     = RESOLVE_STR_REF(@402)
+    lower     = RESOLVE_STR_REF(@401)
+    help      = RESOLVE_STR_REF(@403)
+  STR_VAR
+    kit_name  = ~CDWushiN~
+    unusable  = ~0x00004000~
+    clasweap  = ~1 1 1 1 1 0 0 0~
+    weapprof  = ~0 0 0 0 0 0 0 0 0 2 2 0 0 2 2 2 0 2 0 0 0 0 2 2 0 2 2 2 1 1 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+    abclasrq  = ~3 9 3 3 3 3~
+    abclsmod  = ~1 0 0 1 0 -2~
+    abdcdsrq  = ~3 9 3 3 3 3~
+    abdcscrq  = ~3 9 3 3 3 3~
+    alignmnt  = ~0 1 1 1 1 1 1 1 1~
+    dualclas  = ~1 1 1 0 0 0~
+    luabbr    = ~Th0~
+    stweap    = ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 DAGG12 SW1H28 STAF08~
+    clab_path = ~spstuff/wushin/cdwushin.2da~
+    kittable  = ~K_T_H~
+    thiefskl  = ~40 20~
+  RET CDWushiN = kit_id
+END
 
 // set dual-wielding pips to match generic thief
 // in case Rogue Rebalancing or other mods have changed it
@@ -420,23 +440,23 @@ COPY_EXISTING ~weapprof.2da~ ~override~
   BUT_ONLY
 
 // Adding abilities for the Wushi Ninja Kit
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi217 destination = ~CDwnagn~ END // aganazzar's scorcher innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi201 destination = ~CDwnblr~ END // blur innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr103 destination = ~CDwnclw~ END // cure light wounds innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi112 destination = ~CDwnmgm~ END // magic missile innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi212 destination = ~CDwnmig~ END // mirror image innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi115 destination = ~CDwnshg~ END // shocking grasp innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi513 destination = ~CDwnbrc~ END // breach innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi522 destination = ~CDwnmst~ END // minor spell turning innate
-LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi505 destination = ~CDwnshd~ END // shadow door innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi217 destination = ~cdwnagn~ END // aganazzar's scorcher innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi201 destination = ~cdwnblr~ END // blur innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr103 destination = ~cdwnclw~ END // cure light wounds innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi112 destination = ~cdwnmgm~ END // magic missile innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi212 destination = ~cdwnmig~ END // mirror image innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi115 destination = ~cdwnshg~ END // shocking grasp innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi513 destination = ~cdwnbrc~ END // breach innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi522 destination = ~cdwnmst~ END // minor spell turning innate
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi505 destination = ~cdwnshd~ END // shadow door innate
     
-COPY ~spstuff/WushiN/CDwnt10.spl~ ~override~ // THAC0 Adjustment
-     ~spstuff/WushiN/CDwnt11.spl~ ~override~ // THAC0 Adjustment
-     ~spstuff/WushiN/CDwnt12.spl~ ~override~ // THAC0 Adjustment
-     ~spstuff/WushiN/CDwnt13.spl~ ~override~ // THAC0 Adjustment
-     ~spstuff/WushiN/CDwnt14.spl~ ~override~ // THAC0 Adjustment
-     ~spstuff/WushiN/CDwnt15.spl~ ~override~ // THAC0 Adjustment
-     ~spstuff/WushiN/CDwnt16.spl~ ~override~ // THAC0 Adjustment
+COPY ~spstuff/wushin/cdwnt10.spl~ ~override~ // THAC0 Adjustment
+     ~spstuff/wushin/cdwnt11.spl~ ~override~ // THAC0 Adjustment
+     ~spstuff/wushin/cdwnt12.spl~ ~override~ // THAC0 Adjustment
+     ~spstuff/wushin/cdwnt13.spl~ ~override~ // THAC0 Adjustment
+     ~spstuff/wushin/cdwnt14.spl~ ~override~ // THAC0 Adjustment
+     ~spstuff/wushin/cdwnt15.spl~ ~override~ // THAC0 Adjustment
+     ~spstuff/wushin/cdwnt16.spl~ ~override~ // THAC0 Adjustment
   SAY NAME1 @410
   SAY NAME2 @410
   SAY UNIDENTIFIED_DESC @410
@@ -461,31 +481,36 @@ END
 BEGIN @600 DESIGNATED 5
 LABEL ~cd_spc_archer_of_sylvanus~
 
-ADD_KIT ~CDArcSyl~ 
-  ~CDArcSyl                0           0           1           0           1           0           0           0~
-  ~CDArcSyl 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 3 3 3 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~CDArcSyl                3       3       3       3      12      15~
-  ~CDArcSyl                0       0       0       0       0       0~
-  ~CDArcSyl                3       3       3       3      12      15~
-  ~CDArcSyl                3       3       3       3      12      15~
-  ~CDArcSyl                0       0       0       0       1       0       0       0       0~
-  ~CDArcSyl                0       0       0       0       0       0~
-  ~spstuff/ArcSyl/CDarcsyl.2da~
-  ~K_D_HE~
-  ~0x00004000 11~
-  ~Dr0~
-  ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 * * *~
-  SAY @601
-  SAY @602
-  SAY @603
-LAF fl#add_kit_ee STR_VAR kit_name = CDArcSyl END
+LAF ADD_KIT_EX 
+  INT_VAR
+    kit_class = 11
+    mixed     = RESOLVE_STR_REF(@602)
+    lower     = RESOLVE_STR_REF(@601)
+    help      = RESOLVE_STR_REF(@603)
+  STR_VAR
+    kit_name  = ~CDArcSyl~
+    unusable  = ~0x00004000~
+    clasweap  = ~0 0 1 0 1 0 0 0~
+    weapprof  = ~0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 3 3 3 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+    abclasrq  = ~3 3 3 3 12 15~
+    abclsmod  = ~0 0 0 0 0 0~
+    abdcdsrq  = ~3 3 3 3 12 15~
+    abdcscrq  = ~3 3 3 3 12 15~
+    alignmnt  = ~0 0 0 0 1 0 0 0 0~
+    dualclas  = ~0 0 0 0 0 0~
+    luabbr    = ~Dr0~
+    stweap    = ~LEAT14 * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 * * *~
+    clab_path = ~spstuff/arcsyl/cdarcsyl.2da~
+    kittable  = ~K_D_HE~
+  RET CDArcSyl = kit_id
+END
 
 // if DR > v3  is installed prior to spc
 ACTION_IF ((FILE_EXISTS_IN_GAME ~cdnegpp.spl~) AND (FILE_EXISTS ~Divine_Remix/lib/macro_reindex_clab.tph~)) THEN BEGIN
 
   INCLUDE ~Divine_Remix/lib/macro_reindex_clab.tph~
   INCLUDE ~Divine_Remix/lib/macro_add_druid_spells.tph~
-  COPY_EXISTING ~CDarcsyl.2da~ ~override~
+  COPY_EXISTING ~cdarcsyl.2da~ ~override~
     LAUNCH_PATCH_MACRO ~add_druid_spells~ // add generic cleric spells
     LAUNCH_PATCH_MACRO ~reindex_clab~ // re-index lines
     BUT_ONLY
@@ -570,16 +595,16 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
   END
   BUT_ONLY
 
-COPY ~spstuff/ArcSyl/copy~ ~override~  // BAMs
+COPY ~spstuff/arcsyl/copy~ ~override~  // BAMs
 
 // Adding abilities for the Archer of Sylvanus Kit
-COPY ~spstuff/ArcSyl/CDashid.spl~ ~override~  // Hide
+COPY ~spstuff/arcsyl/cdashid.spl~ ~override~  // Hide
   SAY NAME1 @610
   SAY NAME2 @610
   SAY UNIDENTIFIED_DESC @610
   SAY DESC @610
 
-COPY ~spstuff/ArcSyl/CDasres.spl~ ~override~  // Resistances
+COPY ~spstuff/arcsyl/cdasres.spl~ ~override~  // Resistances
   SAY NAME1 @611
   SAY NAME2 @611
   SAY UNIDENTIFIED_DESC @611
@@ -596,24 +621,29 @@ COPY ~spstuff/ArcSyl/CDasres.spl~ ~override~  // Resistances
 BEGIN @700 DESIGNATED 6
 LABEL ~cd_spc_arcane_fist~
 
-ADD_KIT ~CDArFist~ // Arcane Fist
-  ~CDArFist                0           0           0           0           0           0           0           0~
-  ~CDArFist 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
-  ~CDArFist                3       3       3       9       3       3~
-  ~CDArFist                0       0       0       0       0       0~
-  ~CDArFist                3       3       3       9       3       3~
-  ~CDArFist                3       3       3       9       3       3~
-  ~CDArFist                1       1       1       0       0       0       0       0       0~
-  ~CDArFist                0       0       0       0       0       0~
-  ~spstuff/ArFist/cdarfist.2da~
-  ~K_B_H~
-  ~0x00004000 5~
-  ~Mo0~
-  ~* * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 * * * POTN52,5 POTN04,2 POTN14,5 * * *~
-  SAY @701
-  SAY @702
-  SAY @703
-LAF fl#add_kit_ee STR_VAR kit_name = CDArFist END
+LAF ADD_KIT_EX 
+  INT_VAR
+    kit_class = 5
+    mixed     = RESOLVE_STR_REF(@702)
+    lower     = RESOLVE_STR_REF(@701)
+    help      = RESOLVE_STR_REF(@703)
+  STR_VAR
+    kit_name  = ~CDArFist~
+    unusable  = ~0x00004000~
+    clasweap  = ~0 0 0 0 0 0 0 0~
+    weapprof  = ~0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+    abclasrq  = ~3 3 3 9 3 3~
+    abclsmod  = ~0 0 0 0 0 0~
+    abdcdsrq  = ~3 3 3 9 3 3~
+    abdcscrq  = ~3 3 3 9 3 3~
+    alignmnt  = ~1 1 1 0 0 0 0 0 0~
+    dualclas  = ~0 0 0 0 0 0~
+    luabbr    = ~Mo0~
+    stweap    = ~* * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 * * * POTN52,5 POTN04,2 POTN14,5 * * *~
+    clab_path = ~spstuff/arfist/cdarfist.2da~
+    kittable  = ~K_B_H~
+  RET ~CDArFist~ = kit_id
+END
 
 //Unusability hacks
 //
@@ -691,66 +721,68 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
 INCLUDE ~spstuff/lib/tob2soa.tph~ // adding all ToB stuff to SoA unless already present
 
 // since fists are not saved, need to add scripting to baldur.bcs that will restore the fists after a reload
-EXTEND_TOP ~baldur.bcs~ ~spstuff/ArFist/baldur.baf~
+ACTION_FOR_EACH script IN baldur baldur25 bdbaldur BEGIN
 
-ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ THEN BEGIN
 
-  EXTEND_TOP ~baldur25.bcs~ ~spstuff/ArFist/baldur.baf~
+    EXTEND_TOP ~%script%.bcs~ ~spstuff/arfist/baldur.baf~
+
+  END
 
 END
 
 // Adding abilities and items for the Arcane Fist Kit
-COPY ~spstuff/ArFist/CDafist1.itm~ ~override~  // Fist lvl 1-3
-     ~spstuff/ArFist/CDafist2.itm~ ~override~  // Fist lvl 4-6
-     ~spstuff/ArFist/CDafist3.itm~ ~override~  // Fist lvl 7-9
-     ~spstuff/ArFist/CDafist4.itm~ ~override~  // Fist lvl 10-12
-     ~spstuff/ArFist/CDafist5.itm~ ~override~  // Fist lvl 13-15
-     ~spstuff/ArFist/CDafist6.itm~ ~override~  // Fist lvl 16+
+COPY ~spstuff/arfist/cdafist1.itm~ ~override~  // Fist lvl 1-3
+     ~spstuff/arfist/cdafist2.itm~ ~override~  // Fist lvl 4-6
+     ~spstuff/arfist/cdafist3.itm~ ~override~  // Fist lvl 7-9
+     ~spstuff/arfist/cdafist4.itm~ ~override~  // Fist lvl 10-12
+     ~spstuff/arfist/cdafist5.itm~ ~override~  // Fist lvl 13-15
+     ~spstuff/arfist/cdafist6.itm~ ~override~  // Fist lvl 16+
   SAY NAME1 @710
   SAY NAME2 @710
   SAY UNIDENTIFIED_DESC @710
   SAY DESC @710
 
-COPY ~spstuff/ArFist/CDafats.spl~ ~override~  // Extra Attack
+COPY ~spstuff/arfist/cdafats.spl~ ~override~  // Extra Attack
   SAY NAME1 @712
   SAY NAME2 @712
   SAY UNIDENTIFIED_DESC @712
   SAY DESC @712
 
-COPY ~spstuff/ArFist/CDafdist.spl~ ~override~  // Disable Pickpocket Button
+COPY ~spstuff/arfist/cdafdist.spl~ ~override~  // Disable Pickpocket Button
   SAY NAME1 @713
   SAY NAME2 @713
   SAY UNIDENTIFIED_DESC @713
   SAY DESC @713
 
-COPY ~spstuff/ArFist/CDafsas.spl~ ~override~  // +1 bonus to save vs spells
+COPY ~spstuff/arfist/cdafsas.spl~ ~override~  // +1 bonus to save vs spells
   SAY NAME1 @714
   SAY NAME2 @714
   SAY UNIDENTIFIED_DESC @714
   SAY DESC @714
 
-COPY ~spstuff/ArFist/CDaft08.spl~ ~override~  // THAC0 Progression
-     ~spstuff/ArFist/CDaft12.spl~ ~override~  // THAC0 Progression
-     ~spstuff/ArFist/CDaft14.spl~ ~override~  // THAC0 Progression
-     ~spstuff/ArFist/CDaft16.spl~ ~override~  // THAC0 Progression
-     ~spstuff/ArFist/CDaft18.spl~ ~override~  // THAC0 Progression
+COPY ~spstuff/arfist/cdaft08.spl~ ~override~  // THAC0 Progression
+     ~spstuff/arfist/cdaft12.spl~ ~override~  // THAC0 Progression
+     ~spstuff/arfist/cdaft14.spl~ ~override~  // THAC0 Progression
+     ~spstuff/arfist/cdaft16.spl~ ~override~  // THAC0 Progression
+     ~spstuff/arfist/cdaft18.spl~ ~override~  // THAC0 Progression
   SAY NAME1 @715
   SAY NAME2 @715
   SAY UNIDENTIFIED_DESC @715
   SAY DESC @715
 
-COPY ~spstuff/ArFist/CDaffis1.spl~ ~override~  // Fist Upgrade
-     ~spstuff/ArFist/CDaffis2.spl~ ~override~  // Fist Upgrade
-     ~spstuff/ArFist/CDaffis3.spl~ ~override~  // Fist Upgrade
-     ~spstuff/ArFist/CDaffis4.spl~ ~override~  // Fist Upgrade
-     ~spstuff/ArFist/CDaffis5.spl~ ~override~  // Fist Upgrade
-     ~spstuff/ArFist/CDaffis6.spl~ ~override~  // Fist Upgrade
+COPY ~spstuff/arfist/cdaffis1.spl~ ~override~  // Fist Upgrade
+     ~spstuff/arfist/cdaffis2.spl~ ~override~  // Fist Upgrade
+     ~spstuff/arfist/cdaffis3.spl~ ~override~  // Fist Upgrade
+     ~spstuff/arfist/cdaffis4.spl~ ~override~  // Fist Upgrade
+     ~spstuff/arfist/cdaffis5.spl~ ~override~  // Fist Upgrade
+     ~spstuff/arfist/cdaffis6.spl~ ~override~  // Fist Upgrade
   SAY NAME1 @716
   SAY NAME2 @716
   SAY UNIDENTIFIED_DESC @716
   SAY DESC @716
 
-COPY ~spstuff/ArFist/CDafnotb.spl~ ~override~  // Disable Bard Song
+COPY ~spstuff/arfist/cdafnotb.spl~ ~override~  // Disable Bard Song
   SAY NAME1 @717
   SAY NAME2 @717
   SAY UNIDENTIFIED_DESC @717
@@ -791,6 +823,10 @@ COPY ~spstuff/creslyn/cdjoorg.itm~ ~override~  // Joorg's Demise
   SAY NAME2 @508
   SAY UNIDENTIFIED_DESC @509
   SAY DESC @509
+  PATCH_IF enhanced_edition BEGIN // allow for use by shamans
+    WRITE_LONG 0x1e (THIS BAND `BIT30) // removes druid flag, add restriction back as a 319:
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 319 target = 1 parameter1 = 11 parameter2 = 5 timing = 2 special = 1080 END
+  END  
 
 COPY ~spstuff/creslyn/cdgplate.itm~ ~override~  // Geirthan's Plate
   SAY NAME1 @510
@@ -805,21 +841,21 @@ COPY ~spstuff/creslyn/cdfrcall.itm~ ~override~  // Freedom's Call
   SAY DESC @513
 
 COPY_EXISTING ~temlath.sto~ ~override~  // adds Juzam's Crutch to Temple of Lathander
-  ADD_STORE_ITEM CDJuzStf AFTER staf05 #0 #2 #2 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM cdjuzstf AFTER staf05 #0 #2 #2 ~IDENTIFIED~ #1
   BUT_ONLY
 
 COPY_EXISTING ~wmart1.sto~ ~override~  // adds Joorg's Demise to Joluv
-  ADD_STORE_ITEM CDjoorg AFTER waaxe #0 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM cdjoorg AFTER waaxe #0 #0 #0 ~IDENTIFIED~ #1
   BUT_ONLY
 
 COPY_EXISTING ~udduer02.sto~ ~override~  // adds Gorgon's Staff to Duergar
-  ADD_STORE_ITEM CDgorstf AFTER halb02 #0 #2 #5 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM cdgorstf AFTER halb02 #0 #2 #5 ~IDENTIFIED~ #1
   BUT_ONLY
 
 COPY_EXISTING ~wmart2.sto~ ~override~  // adds three items to Dierdre
-  ADD_STORE_ITEM CDgplate AFTER wa2plat #0 #0 #0 ~IDENTIFIED~ #1
-  ADD_STORE_ITEM CDfrcall AFTER wa2s1h  #0 #2 #0 ~IDENTIFIED~ #1
-  ADD_STORE_ITEM CDivory  AFTER wa2helm #0 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM cdgplate AFTER wa2plat #0 #0 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM cdfrcall AFTER wa2s1h  #0 #2 #0 ~IDENTIFIED~ #1
+  ADD_STORE_ITEM cdivory  AFTER wa2helm #0 #0 #0 ~IDENTIFIED~ #1
   BUT_ONLY
   
 /////                                                  \\\\\
@@ -827,7 +863,7 @@ COPY_EXISTING ~wmart2.sto~ ~override~  // adds three items to Dierdre
 /////                                                  \\\\\
 
 // in case the item pack is installed after the kits, this restricts the items properly
-ACTION_IF FILE_EXISTS_IN_GAME ~CDsylmys.2da~ THEN BEGIN
+ACTION_IF FILE_EXISTS_IN_GAME ~cdsylmys.2da~ THEN BEGIN
 
   ACTION_IF !enhanced_edition THEN BEGIN
 
@@ -848,7 +884,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~CDsylmys.2da~ THEN BEGIN
 
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~CDarcsyl.2da~ THEN BEGIN
+ACTION_IF FILE_EXISTS_IN_GAME ~cdarcsyl.2da~ THEN BEGIN
 
   ACTION_IF !enhanced_edition THEN BEGIN
 
@@ -875,7 +911,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~CDarcsyl.2da~ THEN BEGIN
 
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~CDarfist.2da~ THEN BEGIN
+ACTION_IF FILE_EXISTS_IN_GAME ~cdarfist.2da~ THEN BEGIN
 
   ACTION_IF !enhanced_edition THEN BEGIN
 
