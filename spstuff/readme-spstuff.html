@@ -31,7 +31,7 @@
       <p><strong><a href="https://www.gibberlings3.net/">A Gibberlings Three Mod</a><br />
         Authors: </strong>Original material by Creslyn, Drizzt1180, and Polar Bear. Modernized and maintained by <a href="https://www.gibberlings3.net/profile/8-camdawg/">CamDawg</a><strong><br />
 On the web: </strong><a href="https://www.gibberlings3.net/mods/kits/spc/">Home            page</a> and <a href="https://www.gibberlings3.net/forum/28-miscellaneous-released-mods/">discussion              forum</a><a href="https://www.gibberlings3.net/forum/28-miscellaneous-released-mods/"></a></p>
-      <p><strong> Version 14</strong><br />
+      <p><strong> Version 15</strong><br />
         <strong>Languages:</strong> Czech, English, French, German, Italian, Russian, and Spanish<br />
         <strong>Platforms: </strong>Windows, macOS, Linux<br />
       <strong>GitHub: </strong><a href="https://github.com/Gibberlings3/SP_Collection">Gibberlings3/SP_Collection</a></p>
@@ -192,7 +192,7 @@ On the web: </strong><a href="https://www.gibberlings3.net/mods/kits/spc/">Home 
           - Can only use clubs, bows, and crossbows</p>
       </div>
       <p><strong>Arcane Fist Bardic Kit, by Drizzt1180 <br />
-      </strong>Please see the compatibility notes at the top of this   document in regards to this kit. The only way to make this kit was to           compromise and modify a bard kit. Unfortunately, the bard song   and pick pocketing bonuses are hard-coded. The thieving button is           disabled, though the character record will show pick pocketing   ability, and the bard song button is enabled though the bard song           has no effect. </p>
+      </strong>Please see the compatibility notes at the top of this   document in regards to this kit. The only way to make this kit was to           compromise and modify a bard kit. On the EEs the bard song and thieving abilities buttons are disabled, and the kit receives no pickpocketing points, nor is it shown on the record screen. Unfortunately, the original engine is a lot less flexible: the thieving button is           disabled, though the character record will show pick pocketing   ability, and the bard song button remains enabled even though the  song           has no effect. </p>
       <div class="kit_description">
         <p>ARCANE FIST: The Arcane Fists are an ancient order of wizards   in Faerun, and are seldom ever seen. They are not quite the masters of   unarmed             combat nor are they the masters of the arcane arts, but they   become a fearsome foe with the combination of both. They are taught at             an early age the skills required for unarmed combat and also   learn to wield mystical powers. They are typically loners, only             assembling in groups with their own kind, or in times of great   danger they will group up with &quot;outsiders&quot;. There are three             sects of The Arcane Fist: The Order of Light, Bakur's   Brotherhood, and Death's Law.</p>
         <p>Advantages:<br />
@@ -286,6 +286,22 @@ On the web: </strong><a href="https://www.gibberlings3.net/mods/kits/spc/">Home 
     <div class="ribbon_triangle_h2-l"></div>
     <div class="ribbon_triangle_h2-r"></div>
     <div class="section">
+<p><strong>Version 15 - February 15, 2025</strong></p>
+<ul>
+  <li>Innate abilities now have descriptions, since these are visible on EE games</li>
+  <li>Innate abilities created from existing spells now get a more thorough treatment</li>
+  <li>Multiple abilities that stunned targets were not setting portrait icons or giving feedback in the combat log</li>
+  <li>Fixed minor errors with percentages; e.g. if an ability stated it had a 10% chance to do something it was really doing it at 11%</li>
+  <li>Updated divine casters to match Divine Remix's upcoming v9 sphere system</li>
+  <li>Fixed bug with Sylvan Mystic copying the wrong spells for some of its innates</li>
+  <li>Blade Master's Parry and Counter Attack now better protect from physical damage</li>
+  <li>Blade Master's Counter Attack now works more like a Fire Shield ability</li>
+  <li>Blade Master's Precision Strike could stun the Blade Master instead of its target</li>
+  <li>Death Knight's Heart Blight ability was not doing the right damage for the 25% damage ability</li>
+  <li>Listed duration for the Death Knight's Ebony Hand was off by a round</li>
+  <li>Death Knight's Harm Touch will now scale fo level 30 for IWDEE games</li>
+  <li>Arcane Fist will now properly disable the Bard Song button on EE games</li>
+</ul>
 <p><strong>Version 14 - September 7, 2022</strong></p>
 <ul>
   <li>On EEs, the Wushi Ninja was not properly getting its thieving skills (thanks to M4RT and polyopte for reporting and fixing)</li>
