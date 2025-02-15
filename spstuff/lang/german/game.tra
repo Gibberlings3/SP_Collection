@@ -54,6 +54,18 @@ Nachteile:
 @215 =~Parieren~
 @216 =~Schadensresistenz~
 @217 =~Fliessender Schlag~
+@218 = ~„Präzisionsschlag“
+Erhält einen +3 ETW0 Bonus für drei Runden, fügt dem Ziel 1W10 Schaden zu und hat eine Chance von 25%, es zu lähmen. ~
+@219 = ~„Parieren“
+Gewährt nahezu vollständige Immunität gegen physische Angriffe für zwei Runden.~
+@220 = ~„Gegenangriff“
+Gewährt nahezu vollständige Immunität gegen physische Angriffe für eine Runde und fügt dem Angreifer 2W10 Schaden zu.~
+@221 = ~„Entwaffnen“
+Es besteht eine Chance von 50%, den Gegner zu entwaffnen. ~
+@222 = ~„Finte“
+Gewährt Unsichtbarkeit und Unauffindbarkeit für eine Runde.~
+@223 = ~„Fliessender Schlag“
+Veringert die Waffengeschwindigkeit um den Faktor 2, gewährt einen zusätzlichen Angriff sowie einen +5 ETW0 Bonus und einen Abzug von -2 auf die Rüstungsklasse für zwei Runden. ~
 
 
 

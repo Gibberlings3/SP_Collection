@@ -70,6 +70,18 @@ Inconvénients :
 @215=~Parade~
 @216=~Résistance aux Dégâts Inhérents~
 @217=~Coup de Rapidité~
+@218 = ~Coup de Précision
+Cette capacité donne un bonus de +3 au TAC0 pendant trois rounds, inflige 1D10 de dégâts à la cible, et a 25 % de chance d’assommer la cible.~
+@219 = ~Parade
+Procure une immunité virtuelle aux attaques physiques pour une durée de deux rounds.~
+@220 = ~Contre-Attaque
+Procure une immunité virtuelle aux attaques physiques pendant un round et inflige 2D10 de dégâts à celui qui attaque.~
+@221 = ~Désarmer
+A chaque coup, il y a 50 % de chances pour que l’adversaire lâche ses armes au sol.~
+@222 = ~Feinte
+Donne l’Invisibilité et la Non-Détection pour une durée d’un round.~
+@223 = ~Coup de Rapidité
+Abaisse le facteur de vitesse de 2 points, permet une attaque supplémentaire, un bonus de +5 au TAC0 et une pénalité de –2 à la Classe d’Armure pendant deux rounds.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

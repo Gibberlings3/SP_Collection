@@ -66,6 +66,18 @@ Disadvantages:
 @215 =~Parry~
 @216 =~Inherent damage resistance~
 @217 =~Swift Strike~
+@218 = ~Precision Strike
+Grants a +3 THAC0 bonus for three rounds, does 1d10 damage to target and has a 25% chance to stun target. ~
+@219 = ~Parry ability
+Grants virtual immunity to physical attacks for two rounds.~
+@220 = ~Counter Attack
+Grants virtual immunity to physical attacks for one round and does 2d10 of damage to attacker.~
+@221 = ~Disarm
+Has a 50% chance to make opponent drop their weapon.~
+@222 = ~Feint
+Grants Invisibility and Non-Detection for one round.~
+@223 = ~Swift Strike
+Decreases weapon speed by 2, adds an extra attack, a +5 THAC0 bonus and a -2 Armor Class penalty for two rounds.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

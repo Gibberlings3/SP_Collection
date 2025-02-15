@@ -283,35 +283,36 @@ COPY ~spstuff/bladem/cdbmxat.spl~ ~override~  // Extra Attack
   SAY UNIDENTIFIED_DESC @210
   SAY DESC @210
 
-COPY ~spstuff/bladem/cdbmctr.spl~ ~override~  // Counter Attack
+COPY ~spstuff/bladem/cdbmctr.spl~  ~override~  // Counter Attack
+     ~spstuff/bladem/cdbmctr0.spl~ ~override~  // Counter Attack (retaliation effect)
   SAY NAME1 @211
   SAY NAME2 @211
-  SAY UNIDENTIFIED_DESC @211
-  SAY DESC @211
+  SAY UNIDENTIFIED_DESC @220
+  SAY DESC @220
 
 COPY ~spstuff/bladem/cdbmdrm.spl~ ~override~  // Disarm
   SAY NAME1 @212
   SAY NAME2 @212
-  SAY UNIDENTIFIED_DESC @212
-  SAY DESC @212
+  SAY UNIDENTIFIED_DESC @221
+  SAY DESC @221
 
 COPY ~spstuff/bladem/cdbmfnt.spl~ ~override~  // Feint
   SAY NAME1 @213
   SAY NAME2 @213
-  SAY UNIDENTIFIED_DESC @213
-  SAY DESC @213
+  SAY UNIDENTIFIED_DESC @222
+  SAY DESC @222
 
 COPY ~spstuff/bladem/cdbmpst.spl~ ~override~  // Precision Strike
   SAY NAME1 @214
   SAY NAME2 @214
-  SAY UNIDENTIFIED_DESC @214
-  SAY DESC @214
+  SAY UNIDENTIFIED_DESC @218
+  SAY DESC @218
 
 COPY ~spstuff/bladem/cdbmpry.spl~ ~override~  // Parry
   SAY NAME1 @215
   SAY NAME2 @215
-  SAY UNIDENTIFIED_DESC @215
-  SAY DESC @215
+  SAY UNIDENTIFIED_DESC @219
+  SAY DESC @219
 
 COPY ~spstuff/bladem/cdbmres.spl~ ~override~  // Inherent damage resistance
   SAY NAME1 @216
@@ -322,8 +323,8 @@ COPY ~spstuff/bladem/cdbmres.spl~ ~override~  // Inherent damage resistance
 COPY ~spstuff/bladem/cdbmsws.spl~ ~override~  // Swift Strike
   SAY NAME1 @217
   SAY NAME2 @217
-  SAY UNIDENTIFIED_DESC @217
-  SAY DESC @217
+  SAY UNIDENTIFIED_DESC @223
+  SAY DESC @223
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

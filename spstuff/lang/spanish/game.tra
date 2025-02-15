@@ -70,6 +70,18 @@ Desventajas:
 @215 =~Parry~
 @216 =~Resistencia al daño~
 @217 =~Swift Strike~
+@218 = ~Ataque de Presición
+Gana a +3 THAC0 por 3 turnos, hace 1d10 puntos de daño, y tiene 25% de posibilidades de atontar al objetivo. ~
+@219 = ~Parry
+Gana inmunidad virtual a los ataques por 2 turnos.~
+@220 = ~Contraataque
+Gana inmunidad virtual a los ataques por 1 turno y hace 2d10 de daño al atacante.~
+@221 = ~Desarmar
+Tiene un 50% de probabilidades de hacer que el atacante tire el arma. ~
+@222 = ~Feint
+Gana Invisibilidad y No-Detección por un turno.~
+@223 = ~Swift Strike
+enlentece la velocidad del arma por por 2, da un ataque extra, +5 THAC0 y -2 a la Clase de Armadura por 2 turnos. ~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

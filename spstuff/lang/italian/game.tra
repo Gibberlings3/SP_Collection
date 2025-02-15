@@ -85,6 +85,18 @@ Svantaggi:
 @215 =~Parata~
 @216 =~Resistenza innata al danno~
 @217 =~Colpo Rapido~
+@218 = ~Colpo Preciso
+Questa abilità garantisce un bonus pari a +3 al THAC0 per 3 round, arreca 1d10 punti di danno al bersaglio e ha il 25% di possibilità di stordirlo.~
+@219 = ~Parata
+Questa abilità garantisce al personaggio l'immunità effettiva agli attacchi fisici per 2 round.~
+@220 = ~Contrattacco
+Questa abilità garantisce al personaggio l'immunità effettiva agli attacchi fisici per 1 round e arreca 2d10 punti di danno all'attaccante.~
+@221 = ~Disarmare
+Utilizzando questa abilità, il personaggio ha il 50% di possibilità di far cadere l'arma dell'avversario.~
+@222 = ~Finta
+Questa abilità garantisce Invisibilità e Anti-individuazione per 1 round.~
+@223 = ~Colpo Rapido
+Questa abilità diminuisce la velocità dell'arma di 2, aggiunge un attacco addizionale, garantisce un bonus pari a +5 al THAC0 e una penalità pari a -2 alla Classe Armatura per 2 round.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

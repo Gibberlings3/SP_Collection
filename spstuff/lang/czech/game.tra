@@ -69,6 +69,18 @@ Nevýhody:
 @215 =~Krytí~
 @216 =~Pøirozená rezistence zranìní~
 @217 =~Pohotový útok~
+@218 = ~Pøesný úder.Pøidává 
++3 THAC0 bonus na 3 kola, udìlí 1k10 zranìí do cílet a je 25% šance na ochromení cíle. ~
+@219 = ~Krytí
+Na 2 kola dává imunitu na psychické útoky.~
+@220 = ~Protiútok
+Na 1 kolo dává imunitu na psychické útoky a dává 2k10 zranìní útoènikovi.~
+@221 = ~Odzbrojení
+50% šance, že protivník odhodí zbraò. ~
+@222 = ~Lest
+Dává neviditelnost a anti-detekci na 1 kolo.~
+@223 = ~Pohotový útok
+Snižuje rychlost zbranì o 2, pøidává extra útok,  +5 THAC0 bonus a  -2 AC penalizaci na 2 kola. ~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
