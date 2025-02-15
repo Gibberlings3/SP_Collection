@@ -96,7 +96,7 @@ Advantages:
 - May cast Ghoul Touch as an innate ability. Gains one use at level 11 and an additional use at level 16.
 - May cast Vampiric Touch as an innate ability. Gains one use at level 13 and an additional use at levels 16 and 17. 
 - May cast Animate Dead as an innate ability. Gains one use at level 19. 
-- May use Harm Touch ability. Gains one use at level 1. Harm Touch is a direct damage ability and will do 2d10 points of damage +1 point per level up to a maximum of 2d10+20 with a successful to-hit roll.
+- May use Harm Touch ability. Gains one use at level 1. Harm Touch is a direct damage ability and will do 2d10 points of damage +1 point per level up to a maximum of 2d10+%spc_level_cap% with a successful to-hit roll.
 - May use Ebony Hand ability. Gains one use at level 10. The spell adds +1 THAC0 plus an additional +1 THAC0 for every three levels of the caster up to a maximum of +7. The spell lasts for 3 rounds plus 1 round/level up to a maximum of 24 rounds. 
 - May use Kiss of Torment ability. Gains one use at level 15. With a successful to-hit roll, does 4d6 points of damage and stuns target for four rounds. A successful save will reduce the stun effect to two rounds. 
 - May use Heart Blight ability. Gains one use at level 19. Will slay the target unless a save vs. death is made; with a successful save the target is still stunned for three rounds and suffers a -2 Dexterity penalty for ten rounds. Additionally the target must make another save vs. Death at -1 or lose 25% of their Hit Points and yet another save vs. Death at -2 or suffer another 18 damage. 
@@ -110,7 +110,7 @@ Disadvantages:
 @311 =~Ebony Hand
 Level: 1
 Range: 0
-Duration: 3 rounds + 1 round/level
+Duration: 4 rounds + 1 round/level
 Casting Time: 4
 Area of Effect: The caster
 Saving Throw: None
@@ -141,6 +141,8 @@ Area of Effect: 1 creature
 Saving Throw: Special
 
 With a successful to-hit roll, it does 4d6 points of damage and stuns target for four rounds. A successful save will reduce the stun effect to two rounds.~
+@317 = ~Harm Touch
+Harm Touch is a direct damage ability and will do 2d10 points of damage +1 point per level up to a maximum of 2d10+%spc_level_cap% with a successful to-hit roll.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

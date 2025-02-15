@@ -99,7 +99,7 @@ Výhody:
 - Na 11. a 16. úrovni získává Dotyk Ghúla.
 - Na 13.,16. a 17. úrovni získává Upíøí dotyk. 
 - Na 19. úrovni získává Oživ nemrtvé. 
-- Na 1. úrovni získává Zraòující dotyk. Zraòující dotyk zpùsobuje pøíme zranìní a udìlí 2K10 bodù zranìní +1 bod každou úroveò až do maxima of 2k10+20 s úspìšným hodem na zranìní.
+- Na 1. úrovni získává Zraòující dotyk. Zraòující dotyk zpùsobuje pøíme zranìní a udìlí 2K10 bodù zranìní +1 bod každou úroveò až do maxima of 2k10+%spc_level_cap% s úspìšným hodem na zranìní.
 - Na 10. úrovni získává Ebenovou ruku. Tohle kouzlo vytvoøí naèernálý žár okolo sesíletalovy ruky. Tento žár dává sesílateli +1 THAC0 plus další +1 THAC0 za každé tøí úrovnì sesílatele až do maxima +7 na 19. úrovni, a po 20. úrovni trvání kouzla zùstává 24 kol. Tohle kouzlo se nejèastìji používá spoleènì s kouzly, které zpùsobují nìjaký magicky efekt dotykem, jako Dotyk Ghúla nebo Upíøí dotyk.
 - Na 15. úrovni získává Polibek utrpení. S úspìšným hodem na zranìní, udìlí 4k6 bodù zranìní a ochromí cíl na 4 kola. Pøi úspìšném záchranném hodu trvá ochromení 2 kola. 
 - Na 19. úrovni získává Zahubení duše. Zabije cíl pokud neuspìje v záchranném hodu proti smrti; pokud cíl v hodu uspìje je ochromen na 3 kola a má penalizaci -2 na obratnost po dobu 10 kol. Navíc musí uspìt v dalším hodu proti smrti s postihem -1 nebo ztrácí 25% jeho životù a hází si na další zachránný hod proti smrti s penalizací -2 nebo utrpí 18 zranìní. 
@@ -113,7 +113,7 @@ Nevýhody:
 @311 =~Ebenová ruka
 Úroveòl: 1
 Dosah: 0
-Trvání: 3 kola + 1kolo/úroveò
+Trvání: 4 kola + 1kolo/úroveò
 Doba seslání: 4
 Oblast pùsobení: Sesílatel
 Záchraný hod: Žádný
@@ -140,6 +140,8 @@ Oblast pùsobení: Cílová bytost
 Záchranný hod: Záchranna proti kouzlu
 
 S úspìšným hodem na zranìní, udìlí 4k6 bodù zranìní a ochromí cíl na 4 kola. Pøi úspìšném záchranném hodu trvá ochromení 2 kola.~
+@317 = ~Zraòující dotyk
+Zraòující dotyk zpùsobuje pøíme zranìní a udìlí 2K10 bodù zranìní +1 bod každou úroveò až do maxima of 2k10+%spc_level_cap% s úspìšným hodem na zranìní.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

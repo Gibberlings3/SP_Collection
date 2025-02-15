@@ -117,7 +117,7 @@ Vantaggi:
 - Può lanciare l'incantesimo Animare Morti a partire dal 19° livello.
 - Può utilizzare l'abilità Tocco del Dolore una volta al giorno a partire dal 1° livello.
 
-TOCCO DEL DOLORE: Tocco del Dolore è un'abilità dal danno diretto; arreca 2d10 punti di danno più 1 punto per livello fino a un massimo di 2d10+20 con un colpo messo a segno.
+TOCCO DEL DOLORE: Tocco del Dolore è un'abilità dal danno diretto; arreca 2d10 punti di danno più 1 punto per livello fino a un massimo di 2d10+%spc_level_cap% con un colpo messo a segno.
 
 - Può utilizzare l'abilità Mano d'Ebano una volta al giorno a partire dal 10° livello.
 
@@ -141,7 +141,7 @@ Svantaggi:
 (Necromanzia)
 Livello: 1
 Raggio: 0
-Durata: 3 round + 1 round per livello
+Durata: 4 round + 1 round per livello
 Tempo di lancio: 4
 Area d'effetto: Il lanciatore
 Tiro-salvezza: Nessuno
@@ -170,6 +170,8 @@ Area d'effetto: 1 creatura
 Tiro-salvezza: Speciale
 
 Con un tiro per colpire riuscito, arreca 4d6 danni e stordisce il bersaglio per quattro round. Un tiro salvezza superato ridurrà lo stordimento a due round.~
+@317 = ~Tocco del Dolore
+Tocco del Dolore è un'abilità dal danno diretto; arreca 2d10 punti di danno più 1 punto per livello fino a un massimo di 2d10+%spc_level_cap% con un colpo messo a segno.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

@@ -100,7 +100,7 @@ Avantages :
 - Obtient le sort Toucher de la Goule aux niveaux 11 et 16.
 - Obtient le sort Toucher Vampirique aux niveaux 13, 16 et 17.
 - Obtient le sort Animation des Morts au niveau 19.
-- Obtient le sort Toucher du Mal au niveau 1. Toucher du Mal est une capacité de dégâts directs et infligera 2D10 points de dégâts +1 par niveau jusqu’au maximum de 2D10+20, avec un jet d’attaque réussi.
+- Obtient le sort Toucher du Mal au niveau 1. Toucher du Mal est une capacité de dégâts directs et infligera 2D10 points de dégâts +1 par niveau jusqu’au maximum de 2D10+%spc_level_cap%, avec un jet d’attaque réussi.
 - Obtient le sort Main d’Ebène au niveau 10. Ce sort confère un bonus de +1 au TAC0 +1 pour tous les 3 niveaux du lanceur jusqu’au maximum de +7. Ce sort dure 3 rounds plus un round par niveau jusqu’à un maximum de 24 rounds.
 - Obtient le sort Baiser des Tourments au niveau 15. Si le jet d’attaque réussit, ce sort inflige 4D6 points de dégâts et assomme la cible pour quatre rounds. Un JS réussi rabaisse la durée de ce deuxième effet à deux rounds.
 - Acquiert la capacité Dépérissement du Coeur au niveau 19. Ce sort tue instantanément la cible à moins qu’un JS contre la mort soit réussi ; dans ce cas, la cible sera assommée pour trois rounds et subira une pénalité de –2 en Dextérité pour 10 rounds. De plus, la cible devra effectuer un autre JS contre la mort avec –1 de pénalité ou perdre 25 % de ses points de vie. Un dernier jet pénalisé de –2 lui évitera 18 points de dégâts supplémentaires.
@@ -114,7 +114,7 @@ Inconvénients :
 @311=~Main d’Ebène
 Niveau : 1
 Portée : 0
-Durée : 3 rounds + 1 par niveau
+Durée : 4 rounds + 1 par niveau
 Temps d’incantation : 4
 Zone d’effet : lanceur
 Jets de sauvegarde : aucun
@@ -143,6 +143,8 @@ Zone d’effet : créature touchée
 Jet de sauvegarde : contre les sorts
 
 Si le jet d’attaque est réussi, la cible subit 4d6 de dégâts et est assommée pendant 4 rounds. Un jet de sauvegarde réussi réduira la durée de ce deuxième effet de deux rounds.~
+@317 = ~Toucher du Mal
+Toucher du Mal est une capacité de dégâts directs et infligera 2D10 points de dégâts +1 par niveau jusqu’au maximum de 2D10+%spc_level_cap%, avec un jet d’attaque réussi.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

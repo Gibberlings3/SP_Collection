@@ -100,7 +100,7 @@ Ventajas:
 - Gana Toque de Ghoul a los niveles 11 y 16.
 - Gana Toque Vampírico a los niveles 13, 16 y 17. 
 - Gana Animar a los Muertos a nivel 19. 
-- Gana Toque Hiriente a nivel 1. Toque Hiriente hace daño directo y hará 2D10 puntos de daño +1 punto por subida de nivel hasta un máximo de 2d10+20.
+- Gana Toque Hiriente a nivel 1. Toque Hiriente hace daño directo y hará 2D10 puntos de daño +1 punto por subida de nivel hasta un máximo de 2d10+%spc_level_cap%.
 - Gana Mano de Ébano a nivel 10. El hechizo da +1 THAC0 mas un +1 THAC0 adicional por cada 3 niveles del lanzador hasta un máximo de +7. El hechizo dura 3 turnos mas 1 turno/subida de nivel hasta un máximo de 24 turnos. 
 - Gana Beso del Tormento a nivel 15. Hace 4d6 puntos de daño y atonta al oponente por 4 turnos. Una tirada de salvación lo reduce a 2 turnos. 
 - Gana Arruinar Corazón a nivel 19. Matará al oponente a menos que salve contra la muerte; si salva, igual quedará atontado por tres turnos, sufre un -2 a la destreza por 10 turnos. Adicionalmente el objetivo también deberá salvar contra la muerte a -1 o perder 25% de sus puntos de golpe, y volver a salvar a -2 o sufrir 18 de daño. 
@@ -114,7 +114,7 @@ Desventajas:
 @311 =~Mano de Ébano
 Nivel: 1
 Rango: 0
-Duración: 3 turnos + 1 turno/level
+Duración: 4 turnos + 1 turno/level
 Tiempo de Lanzamiento: 4
 Área de Efecto: Caster
 Tirada de Salvación: Ninguna
@@ -141,6 +141,8 @@ Tiempo de Lanzamiento: 7
 Tirada de Salvación: Salvar contra conjuros
 
 Hace 4d6 puntos de daño y atonta al objetivo por 4 turnos. Si salva entonces se reducirá el efecto a 2 turnos.~
+@317 = ~Toque Hiriente
+Toque Hiriente hace daño directo y hará 2D10 puntos de daño +1 punto por subida de nivel hasta un máximo de 2d10+%spc_level_cap%.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

@@ -378,8 +378,9 @@ COPY ~spstuff/deathk/cddkebh.spl~ ~override~  // Ebony Hands
 COPY ~spstuff/deathk/cddkhmt.spl~ ~override~  // Harm Touch
   SAY NAME1 @312
   SAY NAME2 @312
-  SAY UNIDENTIFIED_DESC @312
-  SAY DESC @312
+  SAY UNIDENTIFIED_DESC @317
+  SAY DESC @317
+  LPF CD_EXTEND-O-MATIC INT_VAR step_size = 1 base_dur = 0 step_dur = 0 level_cap = spc_level_cap base_dmg_rolls = 2 damage_fixed   = 1 END // 2d10 + 1/level
 
 COPY ~spstuff/deathk/cddkhbl.spl~ ~override~  // Heart Blight
   SAY NAME1 @313
@@ -388,16 +389,11 @@ COPY ~spstuff/deathk/cddkhbl.spl~ ~override~  // Heart Blight
   SAY DESC @314
 
 COPY ~spstuff/deathk/cddkiss.spl~ ~override~  // Kiss of Torment Spell
+     ~spstuff/deathk/cddkiss.itm~ ~override~  // Kiss of Torment Touch Item
   SAY NAME1 @315
   SAY NAME2 @315
   SAY UNIDENTIFIED_DESC @316
   SAY DESC @316
-
-COPY ~spstuff/deathk/cddkiss.itm~ ~override~  // Kiss of Torment Touch Item
-  SAY NAME1 @315
-  SAY NAME2 @315
-  SAY UNIDENTIFIED_DESC @315
-  SAY DESC @315
 
 PRINT @1
 INCLUDE ~spstuff/lib/cd_clone_spell_bulk_last.tpa~

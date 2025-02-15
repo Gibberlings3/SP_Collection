@@ -78,7 +78,7 @@ Vorteile:
 - Erhält Berührung des Ghul ab den Stufen 11 und 16
 - Erhält Vampirgriff ab den Stufen 13, 16 und 17
 - Erhält Tote beleben ab Stufe 19 
-- Erhält die Fähigkeit „Schadensgriff“ ab der 1.Stufe. Schadensgriff ist die Fähigkeit durch Berührung Schaden zuzufügen und verursacht 2W10 Schadenspunkte und einem Punkt/Stufe bis zu einem Maximum von 2W10+20 mit einem erfogreichen Trefferwurf.
+- Erhält die Fähigkeit „Schadensgriff“ ab der 1.Stufe. Schadensgriff ist die Fähigkeit durch Berührung Schaden zuzufügen und verursacht 2W10 Schadenspunkte und einem Punkt/Stufe bis zu einem Maximum von 2W10+%spc_level_cap% mit einem erfogreichen Trefferwurf.
 - Erhält die Fähigkeit „Hand aus Ebenholz“ ab der 10.Stufe. Der Zauber verbessert den ETW0 um +1 und einem zusätzlichen Bonus von +1 auf ETW0 für alle drei Stufen des Zaubernden bis zu einem Maximum von +7. Der Zauber hält 3 Runden und 1 Runde/Stufe des Zaubernden bis zu einem Maximum of 24 Runden an. 
 - Erhält die Fähigkeit „Kuss der Qualen“ ab der Stufe 15. Ein erfolgreicher Trefferwurf richtet 4W6 Punkte Schaden an und lähmt das Ziel für vier Runden. Ein erfolgreicher Rettungswurf veringert die Dauer der Lähmung auf zwei Runden. 
 - Erhält die Fähigkeit „Faulendes Herz“ ab der 19. Stufe Tötet Ziel augenblicklich, wenn es keinen erfolgreichen Rettungswurf gegen Tod besteht, sonst wird das Ziel nur für drei Runden gelähmt und erleidet einen Abzug von 2 aud seine Geschicklichkeit. Zusätzlich muss das Ziel einen weiteren Rettungswurf gegen Tod mit einem Malus von -1 machen oder 25% der Trefferpunkte verlieren und noch einen weiteren Rettungswurf gegen Tod bei -2 bestehen oder zusätzlich 18 TP Schaden nehmen. 
@@ -92,7 +92,7 @@ Nachteile:
 @311 =~Ebenholz-Hand
 Stufe: 1
 Reichweite: 0
-Dauer: 3 Rundes + 1 Runde/Stufe
+Dauer: 4 Rundes + 1 Runde/Stufe
 Zeitaufwand: 4
 Reichweite: Der Zaubernde
 Rettungswurf: Keiner
@@ -122,7 +122,8 @@ Reichweite: Berührtes Wesen
 Rettungswurf: Rettungswurf gegen Zauber
 
 Ein erfolgreicher Trefferwurf erzeugt 4W6 Schadenspunkte und lähmt das Opfer für vier Runden. Ein erfoglreicher Rettungswurf reduziert die Lähmung auf 2 Runden.~
-
+@317 = ~Verletzende Berührung
+Schadensgriff ist die Fähigkeit durch Berührung Schaden zuzufügen und verursacht 2W10 Schadenspunkte und einem Punkt/Stufe bis zu einem Maximum von 2W10+%spc_level_cap% mit einem erfogreichen Trefferwurf.~
 
 @401 =~ wushi ninja~
 @402 =~Wushi Ninja~
