@@ -195,7 +195,7 @@ OUTER_SET deva = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_SUMMON_DEVA~)) - 1000)
 
 ACTION_IF ((aura > 0) AND (FILE_EXISTS_IN_GAME ~sppr%aura%.spl~)) THEN BEGIN // if spell present
   
-  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~cdsmdva~ END // summon deva innate
+  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~cdsmafd~ END // summon deva innate
 
 END ELSE BEGIN   
 
@@ -212,7 +212,7 @@ END
 
 ACTION_IF ((deva > 0) AND (FILE_EXISTS_IN_GAME ~sppr%deva%.spl~)) THEN BEGIN // if spell present
   
-  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~cdsmdva~ END // summon deva innate
+  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%deva%~ destination = ~cdsmdva~ END // summon deva innate
 
 END ELSE BEGIN  
 
