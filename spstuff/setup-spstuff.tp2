@@ -622,8 +622,8 @@ COPY ~spstuff/arcsyl/copy~ ~override~  // BAMs
 COPY ~spstuff/arcsyl/cdashid.spl~ ~override~  // Hide
   SAY NAME1 @610
   SAY NAME2 @610
-  SAY UNIDENTIFIED_DESC @610
-  SAY DESC @610
+  SAY UNIDENTIFIED_DESC @612
+  SAY DESC @612
 
 COPY ~spstuff/arcsyl/cdasres.spl~ ~override~  // Resistances
   SAY NAME1 @611
