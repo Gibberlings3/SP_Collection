@@ -110,17 +110,24 @@ LAF ADD_KIT_EX
   RET CDSylMys = kit_id
 END
 
-// if DR > v3  is installed prior to spc
-ACTION_IF ((FILE_EXISTS_IN_GAME ~cdnegpp.spl~) AND (FILE_EXISTS ~Divine_Remix/lib/macro_reindex_clab.tph~)) THEN BEGIN
-
-  INCLUDE ~Divine_Remix/lib/macro_reindex_clab.tph~
-  INCLUDE ~Divine_Remix/lib/macro_add_ranger_spells.tph~
-  INCLUDE ~Divine_Remix/lib/macro_shift_ranger_spells.tph~
-  COPY_EXISTING ~CDsylmys.2da~ ~override~
-    LAUNCH_PATCH_MACRO ~add_ranger_spells~ // add generic cleric spells
-    LAUNCH_PATCH_MACRO ~shift_ranger_spells~ // shift generic ranger spells
-    LAUNCH_PATCH_MACRO ~reindex_clab~ // re-index lines
-    BUT_ONLY
+// if DR v9+  is installed prior to spc
+ACTION_IF ((MOD_IS_INSTALLED ~divine_remix.tp2~ ~1000~) AND         // check if the spheres system is installed 
+           (FILE_EXISTS ~divine_remix/lib/modder_tools.tpa~)) BEGIN // this library from v9+ is present (previous versions won't have this file)
+       
+  INCLUDE ~divine_remix/lib/modder_tools.tpa~ // this file contains all of the functions and code you'll need
+  
+  LAUNCH_ACTION_FUNCTION cd_kit_sphere_v9
+    INT_VAR 
+      string                  = RESOLVE_STR_REF(@103) // set this to the 'help' (description) of your kit; sphere information will be added automatically. 
+    STR_VAR
+      table                   = cdsylmys // your kit's ability table. spells are added by applying a series of spells via the ability table. 
+      class                   = ranger
+      all                     = major
+      animal                  = major
+      healing                 = major
+      plant                   = major
+      weather                 = major
+  END
 
 END
 
@@ -505,15 +512,30 @@ LAF ADD_KIT_EX
   RET CDArcSyl = kit_id
 END
 
-// if DR > v3  is installed prior to spc
-ACTION_IF ((FILE_EXISTS_IN_GAME ~cdnegpp.spl~) AND (FILE_EXISTS ~Divine_Remix/lib/macro_reindex_clab.tph~)) THEN BEGIN
-
-  INCLUDE ~Divine_Remix/lib/macro_reindex_clab.tph~
-  INCLUDE ~Divine_Remix/lib/macro_add_druid_spells.tph~
-  COPY_EXISTING ~cdarcsyl.2da~ ~override~
-    LAUNCH_PATCH_MACRO ~add_druid_spells~ // add generic cleric spells
-    LAUNCH_PATCH_MACRO ~reindex_clab~ // re-index lines
-    BUT_ONLY
+// if DR v9+  is installed prior to spc
+ACTION_IF ((MOD_IS_INSTALLED ~divine_remix.tp2~ ~1000~) AND         // check if the spheres system is installed 
+           (FILE_EXISTS ~divine_remix/lib/modder_tools.tpa~)) BEGIN // this library from v9+ is present (previous versions won't have this file)
+       
+  INCLUDE ~divine_remix/lib/modder_tools.tpa~ // this file contains all of the functions and code you'll need
+  
+  LAUNCH_ACTION_FUNCTION cd_kit_sphere_v9
+    INT_VAR 
+      string                  = RESOLVE_STR_REF(@603) // set this to the 'help' (description) of your kit; sphere information will be added automatically. 
+    STR_VAR
+      table                   = cdarcsyl // your kit's ability table. spells are added by applying a series of spells via the ability table. 
+      class                   = druid
+      all                     = major
+      animal                  = major
+      elemental               = major
+      elemental_air           = major
+      elemental_earth         = major
+      elemental_fire          = major
+      elemental_water         = major
+      healing                 = major
+      plant                   = major
+      sun                     = major
+      weather                 = major
+  END
 
 END
 
