@@ -745,8 +745,10 @@ INCLUDE ~spstuff/lib/tob2soa.tph~ // adding all ToB stuff to SoA unless already 
 ACTION_FOR_EACH script IN baldur baldur25 bdbaldur BEGIN
 
   ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ THEN BEGIN
-
-    EXTEND_TOP ~%script%.bcs~ ~spstuff/arfist/baldur.baf~
+    
+    OUTER_FOR (index = 1 ; index < 7 ; ++index) BEGIN
+      EXTEND_BOTTOM ~%script%.bcs~ ~spstuff/arfist/baldur.baf~ EVALUATE_BUFFER
+    END  
 
   END
 
@@ -808,6 +810,9 @@ COPY ~spstuff/arfist/cdafnotb.spl~ ~override~  // Disable Bard Song
   SAY NAME2 @717
   SAY UNIDENTIFIED_DESC @717
   SAY DESC @717
+  PATCH_IF enhanced_edition BEGIN
+    LPF ADD_SPELL_EFFECT INT_VAR opcode = 144 target = 1 parameter2 = 10 timing = 1 END // disables bard song button
+  END  
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
