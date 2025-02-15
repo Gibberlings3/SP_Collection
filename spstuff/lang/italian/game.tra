@@ -13,8 +13,7 @@
 Vantaggi:
 - Può lanciare gli incantesimi Dissolvi Magie e Vera Vista.
 - Può lanciare gli incantesimi Comandi Caotici e Pelle di Pietra a partire dal 9° livello.
-- Può utilizzare l'abilità Aura di Morte Fiammeggiante a partire dal 21° livello.
-- Può utilizzare l'abilità Evocare Deva a partire dal 23° livello.
+- Può utilizzare l'abilità Aura di Morte Fiammeggiante a partire dal 21° livello.%smdeva%
 - Bonus pari a +1 alla Classe Armatura.
 - Bonus pari a +1 al danno e al THAC0.
 - Bonus pari a -1 alla velocità dell'arma ogni 5 livelli.
@@ -29,6 +28,8 @@ Svantaggi:
 @104 = ~Aura di Morte Fiammeggiante~
 @105 = ~Evocare Deva~
 @106 = ~Deva~
+@107 = ~
+- Può utilizzare l'abilità Evocare Deva a partire dal 23° livello.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

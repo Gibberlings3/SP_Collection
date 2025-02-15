@@ -7,8 +7,7 @@ Vorteile:
 - Wahrer Blick
 - Chaotische Befehle auf der 9. Stufe
 - Eisenhaut auf der 9. Stufe
-- Aura des brennenden Todes auf der 21. Stufe
-- Deva beschwören auf der 23. Stufe
+- Aura des brennenden Todes auf der 21. Stufe%smdeva%
 - +1 Rüstungsklasse
 - +1 Schaden und ETW0
 - -1 Angriffsgeschwindigkeit jede 5. Stufe
@@ -24,6 +23,8 @@ Nachteile:
 @104 =~Aura des brennenden Todes~
 @105 =~Deva beschwören~
 @106 = ~Deva~
+@107 = ~
+- Deva beschwören auf der 23. Stufe~
 
 @201 =~ schwertmeister~
 @202 =~Schwertmeister~

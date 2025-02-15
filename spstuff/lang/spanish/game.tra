@@ -15,8 +15,7 @@ Ventajas:
 - Visión Verdadera
 - Comandos Caóticos a nivel 9
 - Piel Férrea a nivel 9
-- Aura de Muerte Flameante a nivel 21
-- Convocar Deva a nivel 23
+- Aura de Muerte Flameante a nivel 21%smdeva%
 - +1 a la Clase de Armadura
 - +1 al Daño y THAC0
 - -1 a la Velocidad del Arma cada 5 niveles
@@ -32,6 +31,8 @@ Desventajas:
 @104 =~Aura de Muerte Flameante~
 @105 =~Convocar Deva~
 @106 = ~Deva~
+@107 = ~
+- Convocar Deva a nivel 23~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

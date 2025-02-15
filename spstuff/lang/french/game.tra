@@ -15,8 +15,7 @@ Avantages :
 - Vision Véritable
 - Ordres Chaotiques à partir du niveau 9
 - Peau de Fer au niveau 9
-- Aura de Feu au niveau 21
-- Convocation de Deva au niveau 23
+- Aura de Feu au niveau 21%smdeva%
 - Classe d’Armure : +1
 - Dégâts et TAC0 : +1
 - Facteur de vitesse : -1 tous les 5 niveaux
@@ -33,6 +32,8 @@ Inconvénients :
 @104 =~Aura de Feu~
 @105 =~Convocation de Deva~
 @106 = ~Deva~
+@107 = ~
+- Convocation de Deva au niveau 23~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

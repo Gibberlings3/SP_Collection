@@ -15,8 +15,7 @@ Výhody:
 - Pravdivé vidìní
 - Zmazené pøíkazy na 9. úrovni
 - Kamenná kùže na 9. úrovni
-- Aura plamenné smrti na 21 .úrovni
-- Vyvolání Dévy na 23. úrovni
+- Aura plamenné smrti na 21 .úrovni%smdeva%
 - +1 AC
 - +1 Zranìní a THAC0
 - -1 Rychlost zbranì každých 5 úrovní
@@ -31,6 +30,8 @@ Nevýhody:
 @104 =~Aura plamenné smrti~
 @105 =~Vyvolání Dévy~
 @106 = ~Dévy~
+@107 = ~
+- Vyvolání Dévy na 23. úrovni~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

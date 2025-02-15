@@ -15,8 +15,7 @@ Advantages:
 - Gains a -1 Weapon Speed every 5 levels.
 - May cast Dispel Magic and True Sight as innate abilities.
 - May cast Chaotic Commands and Iron Skin as innate abilities. Gains one use at level at level 9.
-- May cast Aura of Flaming Death as innate ability. Gains one use at level at level 21.
-- May cast Summon Deva as innate ability. Gains one use at level at level 23.
+- May cast Aura of Flaming Death as innate ability. Gains one use at level at level 21.%smdeva%
 
 Disadvantages:
 - Incurs a penalty to Strength (-5) and Constitution (-4).
@@ -28,6 +27,8 @@ Disadvantages:
 @104 = ~Aura of Flaming Death~
 @105 = ~Summon Deva~
 @106 = ~Deva~
+@107 = ~
+- May cast Summon Deva as innate ability. Gains one use at level at level 23.~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

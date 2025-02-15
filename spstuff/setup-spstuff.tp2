@@ -13,7 +13,10 @@ ALWAYS
     
     INCLUDE ~spstuff/lib/game_checks.tpa~               // sets game vars
     INCLUDE ~spstuff/lib/a7#add_kit_ex.tpa~             // ee kit stuff
-    INCLUDE ~spstuff/lib/cd_clone_spell_bulk_first.tph~ // macro for innate conversion
+    INCLUDE ~spstuff/lib/cd_clone_spell_bulk_first.tpa~ // macro for innate conversion
+    OUTER_SET round = 6
+    ACTION_IF game_is_iwdee BEGIN OUTER_SET spc_level_cap = 30 END ELSE BEGIN OUTER_SET spc_level_cap = 20 END
+    INCLUDE ~spstuff/lib/cd_level_select-o-matic.tpa~   // macro for innate conversion
   
     ACTION_IF GAME_IS ~eet bgee bg2ee iwdee~ THEN BEGIN // ee game
       
@@ -84,6 +87,23 @@ LANGUAGE ~Russian (translation by subzero400)~ ~russian~
 
 BEGIN @100 DESIGNATED 0
 LABEL ~cd_spc_sylvan_mystic~
+
+// do this first because if there's a deva spell will affect the description
+LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = CLERIC_SUMMON_DEVA           RET deva = spell_num devaspl = spell_res END 
+ACTION_IF ((deva > 0) AND (FILE_EXISTS_IN_GAME ~%devaspl%.spl~)) THEN BEGIN // if spell present
+  
+  LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = EVAL ~%devaspl%~ destination = ~cdsmdva~ RET_ARRAY cd_clone_spell_array END // summon deva innate
+  OUTER_SPRINT smdeva @107
+
+END ELSE BEGIN  
+
+  COPY_EXISTING ~cdsylmys.2da~ ~override~
+    REPLACE_TEXTUALLY ~GA_CDSMDVA~ ~****      ~ // remove from table
+	  BUT_ONLY
+  
+  OUTER_SPRINT smdeva ~~
+  
+END	
 
 LAF ADD_KIT_EX 
   INT_VAR
@@ -196,12 +216,10 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
 LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = sppr506 destination = ~cdsmisk~ RET_ARRAY cd_clone_spell_array END // iron skins innate
 LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = sppr508 destination = ~cdsmchc~ RET_ARRAY cd_clone_spell_array END // chaotic commands innate
 
-OUTER_SET aura = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_AURA_OF_FLAMING_DEATH~)) - 1000)
-OUTER_SET deva = ((IDS_OF_SYMBOL (~spell~ ~CLERIC_SUMMON_DEVA~)) - 1000)
-
-ACTION_IF ((aura > 0) AND (FILE_EXISTS_IN_GAME ~sppr%aura%.spl~)) THEN BEGIN // if spell present
+LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = CLERIC_AURA_OF_FLAMING_DEATH RET aura = spell_num auraspl = spell_res END 
+ACTION_IF ((aura > 0) AND (FILE_EXISTS_IN_GAME ~%auraspl%.spl~)) THEN BEGIN // if spell present
   
-  LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%aura%~ destination = ~cdsmafd~ RET_ARRAY cd_clone_spell_array END // summon deva innate
+  LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = EVAL ~%auraspl%~ destination = ~cdsmafd~ RET_ARRAY cd_clone_spell_array END // summon deva innate
 
 END ELSE BEGIN   
 
@@ -213,38 +231,14 @@ END ELSE BEGIN
     SAY NAME2 @104
     SAY UNIDENTIFIED_DESC @104
     SAY DESC @104
+  
+  COPY_EXISTING ~cdsmafd.spl~  ~override~ // Aura of Flaming Death
+    LPF CD_EXTEND-O-MATIC INT_VAR step_size = 2 dur_special = 1 step_dur = 6 level_cap = spc_level_cap min_lev_alt = 14 END // 1 round/2 levels
 
 END 
 
-ACTION_IF ((deva > 0) AND (FILE_EXISTS_IN_GAME ~sppr%deva%.spl~)) THEN BEGIN // if spell present
-  
-  LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = EVAL ~sppr%deva%~ destination = ~cdsmdva~ RET_ARRAY cd_clone_spell_array END // summon deva innate
-
-END ELSE BEGIN  
-
-  COPY_EXISTING ~cdsylmys.2da~ ~override~
-    REPLACE_TEXTUALLY ~GA_CDSMDVA~ ~****      ~ // remove from table
-	BUT_ONLY
-
-  OUTER_SET string = 0 
-  COPY_EXISTING ~kitlist.2da~ ~override~ // fetch kit description 
-    REPLACE_EVALUATE ~^\([0-9]+[ %TAB%]+CDSylMys[ %TAB%]+[0-9]+[ %TAB%]+[0-9]+[ %TAB%]+\)\([0-9]+\)~ BEGIN
-      SET string = ~%MATCH2%~
-    END ~%MATCH1%%MATCH2%~
-    BUT_ONLY
-  
-  ACTION_IF string THEN BEGIN // if zero, it means the R_E above didn't work for some reason 
-    ACTION_GET_STRREF string description // remove line about summon deva, then update string
-    OUTER_PATCH_SAVE ~description~ ~%description%~ BEGIN
-      REPLACE_TEXTUALLY ~[ %TAB%%LNL%%MNL%%WNL%].*23.*+$~ ~~
-    END
-    STRING_SET_EVALUATE string ~%description%~  
-  END	
-  
-END	
-
 PRINT @1
-INCLUDE ~sword_and_fist/lib/cd_clone_spell_bulk_last.tpa~
+INCLUDE ~spstuff/lib/cd_clone_spell_bulk_last.tpa~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -405,7 +399,7 @@ COPY ~spstuff/deathk/cddkiss.itm~ ~override~  // Kiss of Torment Touch Item
   SAY DESC @315
 
 PRINT @1
-INCLUDE ~sword_and_fist/lib/cd_clone_spell_bulk_last.tpa~
+INCLUDE ~spstuff/lib/cd_clone_spell_bulk_last.tpa~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
@@ -483,7 +477,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~thiefskl.2da~ THEN BEGIN // EE game with bett
 END
 
 PRINT @1
-INCLUDE ~sword_and_fist/lib/cd_clone_spell_bulk_last.tpa~
+INCLUDE ~spstuff/lib/cd_clone_spell_bulk_last.tpa~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
