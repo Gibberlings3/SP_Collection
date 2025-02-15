@@ -663,6 +663,8 @@ LAF ADD_KIT_EX
     stweap    = ~* * * BAG28 RING06 RING05,10 * BOOT02 AMUL19 BRAC16 BELT06 * * * POTN52,5 POTN04,2 POTN14,5 * * *~
     clab_path = ~spstuff/arfist/cdarfist.2da~
     kittable  = ~K_B_H~
+    clasiskl    = ~0 0 0 0 0 0 0~
+    thiefscl    = ~0 0 0 0 0 0 0 0~
   RET ~CDArFist~ = kit_id
 END
 
