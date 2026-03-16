@@ -76,6 +76,11 @@ LANGUAGE ~Russian (translation by subzero400)~ ~russian~
   ~spstuff/lang/english/game.tra~ 
   ~spstuff/lang/russian/weidu.tra~  // Russian
   ~spstuff/lang/russian/game.tra~
+LANGUAGE ~Polish (translation by Aristo)~ ~polish~
+  ~spstuff/lang/english/weidu.tra~ // English
+  ~spstuff/lang/english/game.tra~
+  ~spstuff/lang/polish/weidu.tra~  // Polish
+  ~spstuff/lang/polish/game.tra~
 
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 /////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\

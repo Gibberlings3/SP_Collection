@@ -1,0 +1,260 @@
+/////                                                  \\\\\
+///// EE descriptions                                  \\\\\
+/////                                                  \\\\\
+
+// since EE generates usabilities automatically, we have to cut them from the descript
+// otherwise these are identical to the descriptions in setup.tra
+
+@103 = ~SYLVAŃSKI MISTYK: Sylvańscy Mistycy to starożytny zakon elfich i półelfich łowców z Faerunu. Specjalizują się oni w polowaniach na złych magów i łupieżców umysłu, dlatego też muszą odpowiednio rozwijać nie tylko swoje ciała, ale też umysły.
+
+Zalety:
+– Premia +1 do Klasy Pancerza, trafienia i obrażeń na 1. poziomie
+– Premia -1 do opóźnienia broni na każde pięć poziomów
+– Może rzucać Rozproszenie magii i Prawdziwe widzenie jako zdolności wrodzone
+– Na 9. poziomie zyskuje zdolność rzucenia zaklęć: Chaotyczne rozkazy oraz Żelazna skóra
+– Na 21. poziomie zyskuje zdolność rzucenia zaklęcia Aura płomiennej śmierci
+– Na 23. poziomie zyskuje zdolność rzucenia zaklęcia Przyzwanie devy
+
+Wady:
+– Otrzymuje kary do Siły (-5) i Kondycji (-4)
+– Nie posiada umiejętności Zauroczenie zwierzęcia
+– Może używać wyłącznie łuków i broni z ostrzami
+– Nie może nosić zbroi cięższej niż kolczuga 
+– Musi być elfem albo półelfem
+– Musi mieć charakter praworządny dobry albo neutralny dobry~
+
+@203 = ~MISTRZ OSTRZY: Mistrz Ostrzy używa wyłącznie broni z ostrzami, ale potrafi korzystać z nich w sposób nieznany zwyczajnym wojownikom. Uzyskuje wiele specjalnych zdolności, używając swych ostrzy, ale może nosić tylko lekkie zbroje. Mistrz Ostrzy może aktywować tylko jedną wrodzoną zdolność jednocześnie. 
+
+Zalety:
+– Premia +2 do Zręczności
+– Premia +10% do odporności na obrażenia sieczne i kłute
+– Na poziomach 4., 7. i 22. uzyskuje zdolność Precyzyjne uderzenie: +3 do trafienia na trzy rundy, 1K10 pkt obrażeń, 25% szansa na ogłuszenie celu 
+– Na poziomach 7., 10. i 22. uzyskuje zdolność Odparcie ataku: zapewnia niewrażliwość na ataki fizyczne przez dwie rundy
+– Na poziomach 10., 13. i 22. uzyskuje zdolność Kontratak: zadaje 1K10 pkt obrażeń atakującemu oraz zapewnia niewrażliwość na ataki fizyczne przez jedną rundę
+– Na poziomach 13., 16. i 22. uzyskuje zdolność Rozbrojenie: 50% szansa, że przeciwnik upuści broń 
+– Na poziomach 16., 19. i 22. uzyskuje zdolność Zmylenie: niewidzialność i niewykrywalność przez jedną rundę
+– Na poziomach 19. i 22. uzyskuje zdolność Błyskawiczne uderzenie: opóźnienie broni zmniejszone o 2, dodatkowy atak, premia +5 do trafienia, kara -2 do Klasy Pancerza na dwie rundy 
+– Otrzymuje dodatkowe pół ataku na rundę na poziomach 11., 15. i 19.
+
+Wady:
+– Kara -2 do Siły
+– Nie może nosić zbroi cięższej niż skórzana ćwiekowana
+– Może przyznawać punkty biegłości wyłącznie w jednoręczne bronie z ostrzami~ 
+
+@303 = ~RYCERZ ŚMIERCI: Rycerz Śmierci powstaje, gdy umiera upadły paladyn. Wypadki takiego wskrzeszenia zdarzają się jednak bardzo rzadko. Gdy do tego dojdzie, nowy Rycerz śmierci staje się zły i otrzymuje z czasem wiele powiązanych ze złem zdolności. Zamiast, jak paladyn, być w połowie wojownikiem, a w połowie kapłanem, staje się po części wojownikiem, po części zaś nekromantą. Uzyskuje zaklęcia nekromanckie jako zdolności wrodzone w miejsce zaklęć kapłańskich.
+
+Zalety:
+– Na 9. poziomie uzyskuje zdolność rzucania zaklęcia Pomniejsze drążenie Larlocha (kolejne użycie otrzymuje na poziomie 14.) 
+– Na 11. poziomie uzyskuje zdolność rzucania zaklęcia Dotyk ghula (kolejne użycie otrzymuje na poziomie 16.) 
+– Na 13. poziomie uzyskuje zdolność rzucania zaklęcia Wampiryczne dotknięcie (kolejne użycia otrzymuje na poziomach 16. i 17.)  
+– Na 19 poziomie uzyskuje zdolność rzucania zaklęcia Animacja martwego 
+– Na 1. poziomie otrzymuje zdolność Krzywdzący dotyk: w przypadku udanego rzutu na trafienie dotknięty przeciwnik otrzymuje 2K10 pkt obrażeń +1 pkt na poziom aż do maksymalnych 2K10+20 
+– Na 10. poziomie otrzymuje zaklęcie Ebonitowa ręka: dodaje +1 do trafienia i dodatkowo +1 na każde trzy poziomy rzucającego aż do maksymalnej wartości +7; zdolność trwa przez trzy rundy + 1 runda na poziom rzucającego, maksymalnie do 24 rund
+– Na 15. poziomie otrzymuje zaklęcie Pocałunek udręki: w przypadku udanego rzutu na trafienie zadaje 4K6 pkt obrażeń i ogłusza cel na 4 rundy; udany rzut obronny przeciw czarom redukuje czas ogłuszenia do dwóch rund 
+– Na 19. poziomie otrzymuje zaklęcie Zakażenie serca: zabija ono cel, jeśli nie powiedzie mu się rzut obronny przeciw śmierci; w przypadku udanego rzutu obronnego cel zostaje ogłuszony na 3 rundy i otrzymuję karę -2 do Zręczności na okres 10 rund; dodatkowo cel musi wykonać następny rzut obronny przeciw śmierci z modyfikatorem -1 albo straci 25% swoich punktów życia i kolejny z modyfikatorem -2, inaczej otrzyma jeszcze 18 pkt. obrażeń 
+
+Wady:
+– Nie posiada zdolności paladyna
+– W posługiwaniu się broniami może osiągnąć tylko specjalizację
+– Musi mieć zły charakter~
+
+@403 = ~NINJA WUSHI: Ninja Wushi to podgrupa, która rozwinęła się wśród zwyczajnych ninja. Stało się to dawno temu, kiedy ninja byli w wysokim stopniu wystawieni na działanie magii. Po pewnym czasie zaczęli nabywać zdolność rzucania zaklęć. Podobnie jak zwykli ninja mają możliwość specjalizacji we wszystkich broniach, jakich może używać złodziej. Są przy tym silniejsi od zwykłych złodziei, ale nie potrafią tak jak oni epatować wdziękiem. Pierwszym Ninja Wushi był Nagura Firo.
+
+Zalety:
+– Na 3. poziomie uzyskuje zdolność rzucania zaklęcia Magiczny pocisk (kolejne użycia otrzymuje na poziomach 9. i 18.) 
+– Na 4. poziomie uzyskuje zdolność rzucania zaklęcia Leczenie lekkich ran (kolejne użycia otrzymuje na poziomach 10. i 19.) 
+– Na 5. poziomie uzyskuje zdolność rzucania zaklęcia Porażający uścisk (kolejne użycia otrzymuje na poziomach 11. i 20.) 
+– Na 6. poziomie uzyskuje zdolność rzucania zaklęcia Płomienie Aganazzara (kolejne użycie otrzymuje na poziomie 12.) 
+– Na 7. poziomie uzyskuje zdolność rzucania zaklęcia Lustrzane odbicie (kolejne użycie otrzymuje na poziomie 13.) 
+– Na 14. poziomie uzyskuje zdolność rzucania zaklęcia Rozmycie
+– Na 15. poziomie uzyskuje zdolność rzucania zaklęcia Mniejsze odbicie czaru
+– Na 16. poziomie uzyskuje zdolność rzucania zaklęcia Drzwi z cienia
+– Na 17. poziomie uzyskuje zdolność rzucania zaklęcia Wyłom
+– Na niskich poziomach jego TraK0 rozwija się wolniej niż u zwykłego złodzieja, dorównując mu na wyższych poziomach 
+– Może specjalizować się w każdej broni, z jakiej może korzystać złodziej
+– +1 do Siły i Inteligencji
+
+Wady:
+– -2 do Charyzmy
+– Nie może nosić zbroi cięższej niż skórzana ćwiekowana 
+– Może być tylko człowiekiem
+– Co poziom otrzymuje jedynie 20 pkt. do rozdysponowania na umiejętności złodziejskie~
+
+@503 = ~Legenda powiada, że ten konkretny kamień Ioun stworzono z użyciem uwięzionej duszy zhentarimskiego maga. Kamień pozwala zapamiętać noszącemu jedno dodatkowe zaklęcie pierwszego poziomu.
+
+PARAMETRY:
+
+Specjalne:
+– Umożliwia zapamiętanie dodatkowego zaklęcia magii wtajemniczeń pierwszego poziomu
+ 
+Waga: 2
+~ 
+@505 = ~Znany ze swego poświęcenia się nauce, Juzam Reghanna bardzo niechętnie opuszczał swoją bibliotekę. Mimo to odbył liczne wyprawy do różnych zakątków Amn w poszukiwaniu zaginionej bądź zapomnianej wiedzy, dzięki której mógłby wzbogacić swój ogromny zasób wiadomości. Ten kostur pomagał mu wrócić bezpiecznie z podróży, niejednokrotnie wprawiając bandytów w zakłopotanie dzięki mocom iluzji i możliwości zaćmiewania ich wzroku.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Lustrzane odbicie, dwa razy dziennie
+– Ociemniałość, dwa razy dziennie
+
+Obrażenia: 1K6 +2
+TraK0: +2
+Typ obrażeń: obuchowe
+Opóźnienie: 3
+Rodzaj biegłości: kij
+Typ broni: 2-ręczna
+Wymagana siła: 5
+Wymagana inteligencja: 9
+
+Waga: 3
+~
+@507 = ~Khalvar Sagresshim był słynnym Mistrzem Przemian, który większość życia spędził badając gorgony. Zebrał w końcu dostatecznie dużo wiedzy, by stworzyć coś, co bez wątpienia stało się dziełem jego życia, Kij Gorgony.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +3
+– Rzuty obronne: +3
+– Ochrona przed petryfikacją
+– Ochrona przed obrażeniami od kwasu
+– Niewidzialność
+– Rozproszenie magii, po trafieniu
+
+Właściwości ładunków:
+– Zamiana ciała w kamień, dwa razy dziennie
+– Kwasowa strzała Melfa, pięć razy dziennie
+
+Obrażenia: 1K6 +5, +1K4 pkt. obrażeń od kwasu
+TraK0: +5
+Typ obrażeń: obuchowe
+Opóźnienie: 1
+Rodzaj biegłości: kij
+Typ broni: 2-ręczna
+Wymagana inteligencja: 17
+Wymagana kondycja: 15
+
+Waga: 4
+~ 
+@509 = ~Joorg był hersztem rozbójników na terenach otaczających Dziesięć Miast. Przez blisko cztery lata on i jego zbieranina orków, hobgoblinów i ogrów włóczyła się po szlakach handlowych niosąc wszędzie terror i pożogę. Trwało to, dopóki banda nie zaatakowała karawany, którą podróżowała  rodzina lorda Maarskena. Po tym zdarzeniu zorganizowano wyprawę, by wytropić bandytów i położyć kres ich grabieżom. Lord Maarsken podarował tę broń dowódcy wyprawy, by mieć pewność, że bandyta odpowie za swe zbrodnie .
+
+PARAMETRY:
+
+Specjalne:
+– Siła: +1
+– Kondycja: +2
+– Zręczność: -2
+– Regeneruje 2 pkt. życia na rundę
+– 5% szansa na natychmiastowe zabicie przeciwnika
+
+Obrażenia: 2K6 +4
+TraK0: +4
+Typ obrażeń: sieczne
+Opóźnienie: 6
+Rodzaj biegłości: topór
+Typ broni: 2-ręczna
+Wymagana siła: 18
+
+Waga: 20
+~
+@511 = ~Geirthan Agghadrais był wyznawcą Tempusa z okolic Dziesięciu Miast. W czasie służby swemu bogu uczestniczył w wielu zbrojnych kampaniach zarówno na północy, jak i na południu. Podczas jednej z nich został oskarżony przez grupę magów o popełnienie ohydnej zbrodni i po bardzo krótkim procesie skazany na uwięzienie w czeluściach ziemi. Kilka miesięcy później okazało się, że nie uczynił nic złego, a przestępstw, o które został oskarżony, dokonał w rzeczywistości nieznany z imienia nekromanta. Okazując najwyższą skruchę Henstraadt, Mistrz odrzucania, który kazał wrzucić Geirthana w głębiny, uwolnił go i stworzył dla niego tę zbroję, by odtąd chroniła go przed tak okropnym losem. Oprócz nasycenia jej magią chroniącą przed zaklęciami z jego własnej dziedziny, dodał do niej ulepszenia mające zabezpieczyć Geirthana przed śmiertelną magią, na wypadek gdyby natknął się na nekromantę będącego sprawcą jego nieszczęścia. Nie wiadomo, co stało się z Geirthanem ani z nekromantą, zaś Henstraadt został zamordowany już kilka miesięcy później przez własnych towarzyszy za stworzenie czegoś, co mogło, jak się obawiali, doprowadzić do ich upadku.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa pancerza: -4
+– Odporność na śmiertelną magię
+– Odporność na zaklęcia ze szkoły Odrzucania
+
+Wymagana siła: 18
+
+Waga: 50
+~ 
+@513 = ~Zdolny ochronić właściciela przed niemal wszystkimi sposobami ograniczenia swobody ruchów, miecz ten w pełni zasłużył na swoją nazwę. Największą jego zaletą wydaje się być to, że nie zapobiega przyspieszaniu ruchów, a nawet więcej - potrafi być w tym pomocny.
+
+PARAMETRY:
+
+Specjalne:
+– Noszący jest odporny na magiczne i naturalne działania, które wpływają na swobodę ruchów.
+– Ochrona przed negatywną energią
+
+Właściwości ładunków:
+– Ulepszone przyspieszenie ruchów, dwa razy dziennie
+
+Obrażenia: 2K4 +5
+TraK0: +5
+Typ obrażeń: sieczne
+Opóźnienie: 0
+Rodzaj biegłości: długi miecz
+Typ broni: 1-ręczna
+Wymagana siła: 9
+
+Waga: 3
+~
+
+@603 = ~ŁUCZNIK SILVANUSA: Ten rodzaj druida jest wyjątkowy, ponieważ jako broni używa głównie łuku. Jedyn a bronią do walki wręcz, której może używać, jest maczuga. Przedstawiciele tej podklasy posiadają zdolność zadawania ciężkich obrażeń przy pomocy łuku lub kuszy. Potrafią przywoływać duchy zwierząt, które służą im zazwyczaj do obrony, ponieważ sami są dość słabi w walce wręcz. Łucznikami Silvanusa mogą zostać wyłącznie półelfy.
+
+Zalety:
+– Może osiągnąć mistrzostwo w krótkich łukach, długich łukach i kuszach
+– +1 do trafienia bronią dystansową na każde trzy poziomy doświadczenia do poziomu 21.
+– +15% do odporności na obrażenia sieczne, kłute i obuchowe
+– Dwa razy dziennie może rzucać Przywołanie duchowego zwierzęcia
+– Na 4. poziomie doświadczenia zyskuje zdolność wykorzystania raz dziennie Specjalnego strzału (dodatkowe użycia otrzymuje na poziomach 9., 14. i 19.)
+
+SPECJALNY STRZAŁ: Każdy strzał oddany w ciągu następnych 10 sekund będzie miał następujące właściwości (według poziomu łucznika):
+4 poziom: –1 do TraK0 celu
+8 poziom: –1 do rzutu obronnego przeciw magii
+12 poziom: –1 do siły celu
+16 poziom: +2 premii do obrażeń
+
+– Dwa razy dziennie, poczynając od poziomu 1., może użyć zdolności Ukrycie (co pięć poziomów otrzymuje jedno dodatkowe użycie)
+
+UKRYCIE: Jest to połączenie niewidzialności z niewykrywalnością i trwa 10 rund.
+
+Wady:
+– Nie może nosić zbroi cięższej niż skórzana ćwiekowana
+– Może przydzielić tylko jeden punkt biegłości w maczugi
+– Może używać wyłącznie maczug, łuków i kusz~
+
+@703 = ~TAJEMNA PIĘŚĆ: Tajemna Pięść to starożytny zakon magów w Faerunie, którego członków można spotkać niezwykle rzadko. Nie zaliczają się oni do wirtuozów walki wręcz, jak również nie władają po mistrzowsku magią, stają się jednak śmiertelnie niebezpiecznymi przeciwnikami, łącząc umiejętności z tych dwóch dziedzin. Od najmłodszych lat są uczeni walki gołymi rękami oraz posługiwania się magicznymi mocami. Na ogół są samotnikami, a w grupy łączą się tylko z innymi członkami zakonu. Jedynie w obliczu wielkiego niebezpieczeństwa współdziałają z osobami z zewnątrz. Istnieją trzy sekcje Tajemnej Pięści: Zakon Światła, Bractwo Bakura oraz Prawo Śmierci.
+
+Zalety:
+– Obrażenia zadawane wręcz zwiększają się wraz ze wzrostem poziomu:
+      Poziom 1- 3:  1K5
+      Poziom 4- 6:  1K6
+      Poziom 7- 9:  1K7  (traktowane jak broń +1)
+      Poziom 10-12:  1K9  (traktowane jak broń +2)
+      Poziom 13-15:  1K10 
+      Poziom 16+ :  1K12 (traktowane jak broń +3)
+
+– Rozpoczyna z Klasą Pancerza 9 na 1. poziomie, która obniża się o 1 co trzy poziomy do poziomu 21.
+– +1 do rzutów obronnych przeciw czarom
+– Co poziom otrzymuje dodatkowy punkt życia
+– Przyspieszony rozwój TraK0:
+      Poziom 1-3:  20
+      Poziom 4-7:  18
+      Poziom 8-11: 16
+      Poziom 12-15:  14
+      Poziom 16-19:  12
+      Poziom 20+ :  8
+
+– Posiada zwiększoną prędkość poruszania o 2, która wzrasta o kolejny punkt co siedem poziomów
+– Dwa ataki na rundę na poziomie 12.
+– Ogłuszający cios na poziomie 5. i dodatkowo jeden dziennie na 5 poziomów
+
+OGŁUSZAJĄCY CIOS: Wszystkie ataki w kolejnej rundzie ogłuszają przeciwnika, chyba że wykona on udany rzut obronny przeciw czarom. Ta zdolność specjalna automatycznie modyfikuje normalny atak, nie trzeba specjalnie celować.
+
+– Odporność na choroby oraz efekty spowolnienia i przyspieszenia na poziomie 10.
+– Odporność na uroki na poziomie 15.
+– Odporność na trucizny na poziomie 18.
+– Trzy ataki na rundę na poziomie 20.
+– Drżąca dłoń na poziomie 21.
+
+DRŻĄCA DŁOŃ: Kolejny udany atak powoduje, że przeciwnik zginie, jesli nie wykona udanego rzutu obronnego przeciw czarom. Ta zdolność specjalna automatycznie modyfikuje normalny atak, nie trzeba specjalnie celować.
+
+Wady:
+– Nie może nosić zbroi, z wyjątkiem szat
+– Nie może używać tarcz
+– Nie może używać broni
+– Może się uczyć czarów maksymalnie 6. poziomu
+– Musi być człowiekiem
+– Musi mieć praworządny charakter~
