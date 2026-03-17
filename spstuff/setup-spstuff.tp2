@@ -99,10 +99,13 @@ ACTION_IF ((deva > 0) AND (FILE_EXISTS_IN_GAME ~%devaspl%.spl~)) THEN BEGIN // i
   
   LAF cd_clone_spell_bulk INT_VAR make_innate = 1 STR_VAR source = EVAL ~%devaspl%~ destination = ~cdsmdva~ RET_ARRAY cd_clone_spell_array END // summon deva innate
   OUTER_SPRINT smdeva @107
+  
+  COPY ~spstuff/sylmys/cdsylmys.2da~ ~override~
+  
 
 END ELSE BEGIN  
 
-  COPY_EXISTING ~cdsylmys.2da~ ~override~
+  COPY ~spstuff/sylmys/cdsylmys.2da~ ~override~
     REPLACE_TEXTUALLY ~GA_CDSMDVA~ ~****      ~ // remove from table
 	  BUT_ONLY
   
@@ -129,7 +132,7 @@ LAF ADD_KIT_EX
     dualclas  = ~0 0 0 0 0 0~
     luabbr    = ~Ra0~
     stweap    = ~LEAT14 * HELM16 BAG24 RING06 RING39 CLCK02 BOOT01 AMUL19 BRAC16 BELT07 * * * * * * * * *~
-    clab_path = ~spstuff/sylmys/cdsylmys.2da~
+    clab_path = ~override/cdsylmys.2da~
     kittable  = ~K_R_E   K_R_HE~
   RET CDSylMys = kit_id
 END
